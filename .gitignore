@@ -83,4 +83,3 @@ jspm_packages/
 # TWLint specific
 src/dictionaries/*.json
 !src/dictionaries/index.json
-../../../../CLAUDE.MD
