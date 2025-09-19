@@ -1,12 +1,57 @@
 {
   "name": "twlint",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
-  "scripts": {
-    "start": "node src/index.js",
-    "test": "echo \"No tests specified\" && exit 0"
+  "description": "A CLI tool for detecting simplified Chinese terms and suggesting Taiwan traditional alternatives",
+  "main": "dist/cli.js",
+  "type": "module",
+  "bin": {
+    "twlint": "./bin/twlint"
   },
-  "author": "",
-  "license": "MIT"
+  "scripts": {
+    "dev": "npm run dict:build && tsx watch src/cli.ts",
+    "build": "npm run dict:build && tsc",
+    "test": "vitest",
+    "dict:build": "tsx tools/build-dict.ts",
+    "dict:validate": "tsx tools/validate-dict.ts",
+    "lint": "eslint src/ --fix",
+    "format": "prettier --write src/",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist/",
+    "src/dictionaries/",
+    "bin/"
+  ],
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.0.0",
+    "glob": "^10.3.0",
+    "minimatch": "^9.0.3",
+    "opencc-js": "^1.0.5",
+    "papaparse": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/papaparse": "^5.3.7",
+    "@typescript-eslint/eslint-plugin": "^8.44.0",
+    "@typescript-eslint/parser": "^8.44.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "tsx": "^3.12.0",
+    "typescript": "^5.0.0",
+    "vitest": "^0.34.0"
+  },
+  "keywords": [
+    "chinese",
+    "traditional",
+    "simplified",
+    "taiwan",
+    "lint",
+    "cli"
+  ],
+  "author": "cyh",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }

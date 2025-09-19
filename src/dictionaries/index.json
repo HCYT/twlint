@@ -1,0 +1,16 @@
+{
+  "dictionaries": [
+    {
+      "name": "core",
+      "description": "核心詞庫",
+      "required": true
+    },
+    {
+      "name": "extended",
+      "description": "擴展詞庫",
+      "required": false
+    }
+  ],
+  "version": "1.0.0",
+  "buildTime": "2025-09-19T14:26:10.689Z"
+}
