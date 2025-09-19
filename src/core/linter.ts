@@ -1,6 +1,8 @@
 import { glob } from 'glob'
 import { readFile } from 'fs/promises'
 import { DictionaryManager } from './dictionary-manager.js'
+import { SimplifiedCharsRule } from './rules/simplified-chars.js'
+import { MainlandTermsRule } from './rules/mainland-terms.js'
 import type { LintResult, Issue, TWLintConfig, Rule } from '../types.js'
 
 export class TWLinter {
@@ -15,9 +17,11 @@ export class TWLinter {
   }
 
   private initializeRules(): void {
-    // TODO: Load and register rules
-    // this.rules.set('simplified-chars', new SimplifiedCharsRule())
-    // this.rules.set('mainland-terms', new MainlandTermsRule())
+    // 註冊簡體字檢測規則
+    this.rules.set('simplified-chars', new SimplifiedCharsRule())
+
+    // 註冊大陸用語檢測規則 (需要詞庫管理器)
+    this.rules.set('mainland-terms', new MainlandTermsRule(this.dictManager))
   }
 
   async lintFiles(patterns: string[]): Promise<LintResult[]> {
@@ -67,12 +71,27 @@ export class TWLinter {
   }
 
   async fixText(text: string): Promise<string> {
+    // 確保詞庫已載入
+    await this.loadDictionaries()
+
     let fixedText = text
     const activeRules = this.getActiveRules()
 
-    for (const rule of activeRules) {
+    // 按照優先級排序：先修復簡體字，再修復大陸用語
+    const orderedRules = activeRules.sort((a, b) => {
+      const priority = { 'simplified-chars': 1, 'mainland-terms': 2 }
+      return (priority[a.name as keyof typeof priority] || 99) -
+             (priority[b.name as keyof typeof priority] || 99)
+    })
+
+    for (const rule of orderedRules) {
       if (rule.fix) {
-        fixedText = await rule.fix(fixedText)
+        try {
+          fixedText = await rule.fix(fixedText)
+        } catch (error) {
+          const message = error instanceof Error ? error.message : String(error)
+          console.warn(`Warning: Failed to apply fix for rule ${rule.name}: ${message}`)
+        }
       }
     }
 

@@ -26,25 +26,29 @@ export class DictionaryManager {
 
   findMatches(text: string): DictEntry[] {
     const matches: DictEntry[] = []
+    const foundTerms = new Set<string>() // 避免重複匹配
 
     for (const dict of this.cache.values()) {
       for (const [term, entry] of Object.entries(dict.lookup)) {
-        if (text.includes(term)) {
+        if (text.includes(term) && !foundTerms.has(term)) {
+          foundTerms.add(term)
+
           matches.push({
-            id: term,
+            id: `${dict.metadata.name}-${term}`,
             taiwan: entry.taiwan,
             china_simplified: term,
             china_traditional: term,
             confidence: entry.confidence,
             category: entry.category,
             reason: entry.reason,
-            domain: 'general'
+            domain: dict.metadata.name
           })
         }
       }
     }
 
-    return matches
+    // 按照信心度排序，高信心度的優先
+    return matches.sort((a, b) => b.confidence - a.confidence)
   }
 
   getAvailableDictionaries(): string[] {
