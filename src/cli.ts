@@ -160,7 +160,9 @@ async function main() {
   await program.parseAsync()
 }
 
-if (import.meta.url.endsWith(process.argv[1])) {
+// 當作為主模組執行時啟動 CLI
+if (import.meta.url === `file://${process.argv[1]}` ||
+    process.argv[1]?.endsWith('cli.js')) {
   main().catch(error => {
     const message = error instanceof Error ? error.message : String(error)
     console.error(chalk.red('Fatal error:'), message)

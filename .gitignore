@@ -87,3 +87,4 @@ test-temp/
 *.tmp
 
 CLAUDE.MD
+.reference

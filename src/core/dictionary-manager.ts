@@ -1,5 +1,6 @@
 import { readFile } from 'fs/promises'
-import { join } from 'path'
+import { join, dirname } from 'path'
+import { fileURLToPath } from 'url'
 import type { CompiledDict, DictEntry, MatchResult } from '../types.js'
 import { MatchStrategyRegistry } from './matching/match-strategies.js'
 
@@ -9,7 +10,13 @@ export class DictionaryManager {
   private readonly strategyRegistry: MatchStrategyRegistry
 
   constructor(dictionariesPath?: string) {
-    this.dictionariesPath = dictionariesPath || join(process.cwd(), 'src', 'dictionaries')
+    if (dictionariesPath) {
+      this.dictionariesPath = dictionariesPath
+    } else {
+      // 動態解析詞庫路徑：相對於編譯後的 JS 檔案位置
+      const currentDir = dirname(fileURLToPath(import.meta.url))
+      this.dictionariesPath = join(currentDir, '..', 'dictionaries')
+    }
     this.strategyRegistry = new MatchStrategyRegistry()
   }
 
