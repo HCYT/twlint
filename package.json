@@ -5,7 +5,7 @@
   "main": "dist/cli.js",
   "type": "module",
   "bin": {
-    "twlint": "./bin/twlint"
+    "twlint": "bin/twlint"
   },
   "scripts": {
     "dev": "npm run dict:build && tsx watch src/cli.ts",

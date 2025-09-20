@@ -2,7 +2,7 @@
 
 import { Command } from 'commander'
 import chalk from 'chalk'
-import { writeFile, access } from 'fs/promises'
+import { writeFile, access, readFile } from 'fs/promises'
 import { TWLinter } from './core/linter.js'
 import { loadConfig } from './core/config-loader.js'
 import { createSampleConfig } from './core/config-schema.js'
@@ -146,13 +146,23 @@ async function performInit(force?: boolean): Promise<void> {
   console.log(chalk.dim('3. Use --fix to automatically fix issues'))
 }
 
+async function getVersion(): Promise<string> {
+  try {
+    const packageJsonPath = new URL('../package.json', import.meta.url).pathname
+    const packageJson = JSON.parse(await readFile(packageJsonPath, 'utf-8'))
+    return packageJson.version
+  } catch {
+    return '1.0.0' // fallback
+  }
+}
+
 async function main() {
   const program = new Command()
 
   program
     .name('twlint')
     .description('A CLI tool for detecting simplified Chinese terms and suggesting Taiwan traditional alternatives')
-    .version('1.0.0')
+    .version(await getVersion())
 
   program
     .command('check')
@@ -207,6 +217,9 @@ async function main() {
 
   await program.parseAsync()
 }
+
+// 導出 main 函數供 bin script 使用
+export { main }
 
 // 當作為主模組執行時啟動 CLI
 if (import.meta.url === `file://${process.argv[1]}` ||

@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
-import('../dist/cli.js').catch(err => {
-  console.error('Failed to load TWLint:', err.message);
+import('../dist/cli.js').then(module => {
+  return module.main();
+}).catch(err => {
+  console.error('Failed to run TWLint:', err.message);
   process.exit(1);
 });
