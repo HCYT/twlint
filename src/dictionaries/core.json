@@ -1,0 +1,1491 @@
+{
+  "metadata": {
+    "name": "core",
+    "version": "1.0.0",
+    "entries": 151
+  },
+  "lookup": {
+    "软件": {
+      "taiwan": "軟體",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣技術標準用語"
+    },
+    "軟件": {
+      "taiwan": "軟體",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣技術標準用語"
+    },
+    "网络": {
+      "taiwan": "網路",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣網路技術標準"
+    },
+    "網絡": {
+      "taiwan": "網路",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣網路技術標準"
+    },
+    "程序": {
+      "taiwan": "程式",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣軟體開發標準"
+    },
+    "访问": {
+      "taiwan": "存取",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣技術標準用語"
+    },
+    "訪問": {
+      "taiwan": "存取",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣技術標準用語"
+    },
+    "激活": {
+      "taiwan": "啟用",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣系統操作標準"
+    },
+    "添加": {
+      "taiwan": "新增",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣介面操作慣用語"
+    },
+    "算法": {
+      "taiwan": "演算法",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣學術標準用語"
+    },
+    "应用程序": {
+      "taiwan": "應用程式",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣軟體開發標準"
+    },
+    "應用程序": {
+      "taiwan": "應用程式",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣軟體開發標準"
+    },
+    "数组": {
+      "taiwan": "陣列",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣程式設計標準"
+    },
+    "數組": {
+      "taiwan": "陣列",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣程式設計標準"
+    },
+    "异步": {
+      "taiwan": "非同步",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣程式開發標準"
+    },
+    "異步": {
+      "taiwan": "非同步",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣程式開發標準"
+    },
+    "属性": {
+      "taiwan": "屬性",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣物件導向標準"
+    },
+    "屬性": {
+      "taiwan": "屬性",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣物件導向標準"
+    },
+    "音频": {
+      "taiwan": "音訊",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣多媒體標準"
+    },
+    "音頻": {
+      "taiwan": "音訊",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣多媒體標準"
+    },
+    "认证": {
+      "taiwan": "驗證",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資安標準用語"
+    },
+    "認證": {
+      "taiwan": "驗證",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資安標準用語"
+    },
+    "授权": {
+      "taiwan": "授權",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣權限管理標準"
+    },
+    "授權": {
+      "taiwan": "授權",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣權限管理標準"
+    },
+    "带宽": {
+      "taiwan": "頻寬",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣網路技術標準"
+    },
+    "帶寬": {
+      "taiwan": "頻寬",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣網路技術標準"
+    },
+    "二进制": {
+      "taiwan": "二元",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣計算機科學標準"
+    },
+    "二進制": {
+      "taiwan": "二元",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣計算機科學標準"
+    },
+    "布尔": {
+      "taiwan": "布林",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣程式語言標準"
+    },
+    "布爾": {
+      "taiwan": "布林",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣程式語言標準"
+    },
+    "构建": {
+      "taiwan": "建構",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣軟體開發標準"
+    },
+    "構建": {
+      "taiwan": "建構",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣軟體開發標準"
+    },
+    "字节": {
+      "taiwan": "位元組",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣計算機硬體標準"
+    },
+    "字節": {
+      "taiwan": "位元組",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣計算機硬體標準"
+    },
+    "缓存": {
+      "taiwan": "快取",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣系統效能標準"
+    },
+    "緩存": {
+      "taiwan": "快取",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣系統效能標準"
+    },
+    "调用": {
+      "taiwan": "呼叫",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣程式設計標準"
+    },
+    "調用": {
+      "taiwan": "呼叫",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣程式設計標準"
+    },
+    "回调": {
+      "taiwan": "回呼",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣非同步程式設計"
+    },
+    "回調": {
+      "taiwan": "回呼",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣非同步程式設計"
+    },
+    "证书": {
+      "taiwan": "憑證",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資安認證標準"
+    },
+    "證書": {
+      "taiwan": "憑證",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資安認證標準"
+    },
+    "字符": {
+      "taiwan": "字元",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣文字處理標準"
+    },
+    "类": {
+      "taiwan": "類別",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣物件導向標準"
+    },
+    "類": {
+      "taiwan": "類別",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣物件導向標準"
+    },
+    "客户端": {
+      "taiwan": "用戶端",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路架構標準"
+    },
+    "客戶端": {
+      "taiwan": "用戶端",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路架構標準"
+    },
+    "克隆": {
+      "taiwan": "複製",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣版本控制標準"
+    },
+    "云": {
+      "taiwan": "雲端",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣雲端運算標準"
+    },
+    "雲": {
+      "taiwan": "雲端",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣雲端運算標準"
+    },
+    "代码": {
+      "taiwan": "程式碼",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣軟體開發標準"
+    },
+    "代碼": {
+      "taiwan": "程式碼",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣軟體開發標準"
+    },
+    "编译": {
+      "taiwan": "編譯",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣程式語言標準"
+    },
+    "編譯": {
+      "taiwan": "編譯",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣程式語言標準"
+    },
+    "编译器": {
+      "taiwan": "編譯器",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣程式語言工具"
+    },
+    "編譯器": {
+      "taiwan": "編譯器",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣程式語言工具"
+    },
+    "组件": {
+      "taiwan": "組件",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣軟體架構標準"
+    },
+    "組件": {
+      "taiwan": "組件",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣軟體架構標準"
+    },
+    "压缩": {
+      "taiwan": "壓縮",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資料處理標準"
+    },
+    "壓縮": {
+      "taiwan": "壓縮",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資料處理標準"
+    },
+    "并发性": {
+      "taiwan": "並行性",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣平行處理標準"
+    },
+    "併發性": {
+      "taiwan": "並行性",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣平行處理標準"
+    },
+    "配置": {
+      "taiwan": "配置",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣系統設定標準"
+    },
+    "连接": {
+      "taiwan": "連線",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路連接標準"
+    },
+    "連接": {
+      "taiwan": "連線",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路連接標準"
+    },
+    "构造函数": {
+      "taiwan": "建構子",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣物件導向標準"
+    },
+    "構造函數": {
+      "taiwan": "建構子",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣物件導向標準"
+    },
+    "容器": {
+      "taiwan": "容器",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣虛擬化技術"
+    },
+    "控件": {
+      "taiwan": "控制項",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣介面元件標準"
+    },
+    "拷贝": {
+      "taiwan": "複製",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣檔案操作標準"
+    },
+    "拷貝": {
+      "taiwan": "複製",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣檔案操作標準"
+    },
+    "创建": {
+      "taiwan": "建立",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣系統操作標準"
+    },
+    "創建": {
+      "taiwan": "建立",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣系統操作標準"
+    },
+    "光标": {
+      "taiwan": "游標",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣介面操作標準"
+    },
+    "光標": {
+      "taiwan": "游標",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣介面操作標準"
+    },
+    "自定义": {
+      "taiwan": "自訂",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣客製化標準"
+    },
+    "自定義": {
+      "taiwan": "自訂",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣客製化標準"
+    },
+    "数据": {
+      "taiwan": "資料",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣資訊處理標準"
+    },
+    "數據": {
+      "taiwan": "資料",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣資訊處理標準"
+    },
+    "数据库": {
+      "taiwan": "資料庫",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣資料管理標準"
+    },
+    "數據庫": {
+      "taiwan": "資料庫",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣資料管理標準"
+    },
+    "调试": {
+      "taiwan": "除錯",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣程式開發標準"
+    },
+    "調試": {
+      "taiwan": "除錯",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣程式開發標準"
+    },
+    "默认": {
+      "taiwan": "預設",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣系統設定標準"
+    },
+    "默認": {
+      "taiwan": "預設",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣系統設定標準"
+    },
+    "定义": {
+      "taiwan": "定義",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣程式語言標準"
+    },
+    "定義": {
+      "taiwan": "定義",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣程式語言標準"
+    },
+    "目录": {
+      "taiwan": "目錄",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣檔案系統標準"
+    },
+    "目錄": {
+      "taiwan": "目錄",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣檔案系統標準"
+    },
+    "磁盘": {
+      "taiwan": "磁碟",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存裝置標準"
+    },
+    "磁盤": {
+      "taiwan": "磁碟",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存裝置標準"
+    },
+    "文档": {
+      "taiwan": "文件",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣技術文件標準"
+    },
+    "文檔": {
+      "taiwan": "文件",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣技術文件標準"
+    },
+    "域": {
+      "taiwan": "網域",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路技術標準"
+    },
+    "下载": {
+      "taiwan": "下載",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣網路傳輸標準"
+    },
+    "下載": {
+      "taiwan": "下載",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣網路傳輸標準"
+    },
+    "驱动程序": {
+      "taiwan": "驅動程式",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣硬體管理標準"
+    },
+    "驅動程序": {
+      "taiwan": "驅動程式",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣硬體管理標準"
+    },
+    "元素": {
+      "taiwan": "元素",
+      "confidence": 0.75,
+      "category": "mainland-term",
+      "reason": "台灣介面設計標準"
+    },
+    "电子邮件": {
+      "taiwan": "電子郵件",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣網路通訊標準"
+    },
+    "電子郵件": {
+      "taiwan": "電子郵件",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣網路通訊標準"
+    },
+    "启用": {
+      "taiwan": "啟用",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣系統操作標準"
+    },
+    "啟用": {
+      "taiwan": "啟用",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣系統操作標準"
+    },
+    "事件": {
+      "taiwan": "事件",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣程式設計標準"
+    },
+    "异常": {
+      "taiwan": "例外",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣錯誤處理標準"
+    },
+    "異常": {
+      "taiwan": "例外",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣錯誤處理標準"
+    },
+    "导出": {
+      "taiwan": "匯出",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資料處理標準"
+    },
+    "導出": {
+      "taiwan": "匯出",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資料處理標準"
+    },
+    "扩展": {
+      "taiwan": "擴充功能",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣軟體功能標準"
+    },
+    "擴展": {
+      "taiwan": "擴充功能",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣軟體功能標準"
+    },
+    "字段": {
+      "taiwan": "欄位",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資料庫標準"
+    },
+    "文件": {
+      "taiwan": "檔案",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣檔案系統標準"
+    },
+    "过滤器": {
+      "taiwan": "過濾器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣資料處理標準"
+    },
+    "過濾器": {
+      "taiwan": "過濾器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣資料處理標準"
+    },
+    "固件": {
+      "taiwan": "韌體",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣硬體技術標準"
+    },
+    "文件夹": {
+      "taiwan": "資料夾",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣檔案管理標準"
+    },
+    "文件夾": {
+      "taiwan": "資料夾",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣檔案管理標準"
+    },
+    "格式化": {
+      "taiwan": "格式化",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣資料處理標準"
+    },
+    "框架": {
+      "taiwan": "框架",
+      "confidence": 0.75,
+      "category": "mainland-term",
+      "reason": "台灣軟體開發標準"
+    },
+    "函数": {
+      "taiwan": "函式",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣程式設計標準"
+    },
+    "函數": {
+      "taiwan": "函式",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣程式設計標準"
+    },
+    "生成": {
+      "taiwan": "產生",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣程式開發標準"
+    },
+    "全局": {
+      "taiwan": "全域",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣程式設計標準"
+    },
+    "处理器": {
+      "taiwan": "處理器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣程式設計標準"
+    },
+    "處理器": {
+      "taiwan": "處理器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣程式設計標準"
+    },
+    "硬件": {
+      "taiwan": "硬體",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣計算機硬體標準"
+    },
+    "哈希": {
+      "taiwan": "雜湊",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣密碼學標準"
+    },
+    "头部": {
+      "taiwan": "標頭",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣網路協定標準"
+    },
+    "頭部": {
+      "taiwan": "標頭",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣網路協定標準"
+    },
+    "堆": {
+      "taiwan": "堆積",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣記憶體管理標準"
+    },
+    "图标": {
+      "taiwan": "圖示",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣介面設計標準"
+    },
+    "圖標": {
+      "taiwan": "圖示",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣介面設計標準"
+    },
+    "图像": {
+      "taiwan": "影像",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣多媒體標準"
+    },
+    "圖像": {
+      "taiwan": "影像",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣多媒體標準"
+    },
+    "实现": {
+      "taiwan": "實作",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣軟體開發標準"
+    },
+    "實現": {
+      "taiwan": "實作",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣軟體開發標準"
+    },
+    "导入": {
+      "taiwan": "匯入",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣程式開發標準"
+    },
+    "導入": {
+      "taiwan": "匯入",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣程式開發標準"
+    },
+    "信息": {
+      "taiwan": "資訊",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣資訊處理標準"
+    },
+    "继承": {
+      "taiwan": "繼承",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣物件導向標準"
+    },
+    "繼承": {
+      "taiwan": "繼承",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣物件導向標準"
+    },
+    "实例": {
+      "taiwan": "實體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣物件導向標準"
+    },
+    "實例": {
+      "taiwan": "實體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣物件導向標準"
+    },
+    "集成": {
+      "taiwan": "整合",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣系統整合標準"
+    },
+    "接口": {
+      "taiwan": "介面",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣軟體設計標準"
+    },
+    "互联网": {
+      "taiwan": "網際網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路技術標準"
+    },
+    "互聯網": {
+      "taiwan": "網際網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路技術標準"
+    },
+    "迭代": {
+      "taiwan": "疊代",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣程式設計標準"
+    },
+    "程序库": {
+      "taiwan": "程式庫",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣軟體開發標準"
+    },
+    "程序庫": {
+      "taiwan": "程式庫",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣軟體開發標準"
+    },
+    "链接": {
+      "taiwan": "連結",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣網路技術標準"
+    },
+    "鏈接": {
+      "taiwan": "連結",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣網路技術標準"
+    },
+    "加载": {
+      "taiwan": "載入",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣系統操作標準"
+    },
+    "加載": {
+      "taiwan": "載入",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣系統操作標準"
+    },
+    "本地": {
+      "taiwan": "本機",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣系統術語標準"
+    },
+    "日志": {
+      "taiwan": "記錄",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣系統監控標準"
+    },
+    "日誌": {
+      "taiwan": "記錄",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣系統監控標準"
+    },
+    "循环": {
+      "taiwan": "迴圈",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣程式設計標準"
+    },
+    "循環": {
+      "taiwan": "迴圈",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣程式設計標準"
+    },
+    "内存": {
+      "taiwan": "記憶體",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣計算機硬體標準"
+    },
+    "內存": {
+      "taiwan": "記憶體",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣計算機硬體標準"
+    },
+    "菜单": {
+      "taiwan": "選單",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣介面設計標準"
+    },
+    "菜單": {
+      "taiwan": "選單",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣介面設計標準"
+    },
+    "消息": {
+      "taiwan": "訊息",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣通訊協定標準"
+    },
+    "方法": {
+      "taiwan": "方法",
+      "confidence": 0.75,
+      "category": "mainland-term",
+      "reason": "台灣物件導向標準"
+    },
+    "移动": {
+      "taiwan": "行動",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣行動裝置標準"
+    },
+    "移動": {
+      "taiwan": "行動",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣行動裝置標準"
+    },
+    "模块": {
+      "taiwan": "模組",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣軟體架構標準"
+    },
+    "模塊": {
+      "taiwan": "模組",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣軟體架構標準"
+    },
+    "鼠标": {
+      "taiwan": "滑鼠",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣週邊裝置標準"
+    },
+    "鼠標": {
+      "taiwan": "滑鼠",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣週邊裝置標準"
+    },
+    "对象": {
+      "taiwan": "物件",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣物件導向標準"
+    },
+    "對象": {
+      "taiwan": "物件",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣物件導向標準"
+    },
+    "在线": {
+      "taiwan": "線上",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣網路服務標準"
+    },
+    "在線": {
+      "taiwan": "線上",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣網路服務標準"
+    },
+    "优化": {
+      "taiwan": "最佳化",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣效能調校標準"
+    },
+    "優化": {
+      "taiwan": "最佳化",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣效能調校標準"
+    },
+    "溢出": {
+      "taiwan": "溢位",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣程式錯誤處理"
+    },
+    "包": {
+      "taiwan": "套件",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣軟體發布標準"
+    },
+    "参数": {
+      "taiwan": "參數",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣程式設計標準"
+    },
+    "參數": {
+      "taiwan": "參數",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣程式設計標準"
+    },
+    "解析": {
+      "taiwan": "剖析",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣資料處理標準"
+    },
+    "性能": {
+      "taiwan": "效能",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣系統評測標準"
+    },
+    "插件": {
+      "taiwan": "外掛程式",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣軟體擴充標準"
+    },
+    "指针": {
+      "taiwan": "指標",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣程式設計標準"
+    },
+    "指針": {
+      "taiwan": "指標",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣程式設計標準"
+    },
+    "打印": {
+      "taiwan": "列印",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣週邊裝置標準"
+    },
+    "进程": {
+      "taiwan": "行程",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣作業系統標準"
+    },
+    "進程": {
+      "taiwan": "行程",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣作業系統標準"
+    },
+    "协议": {
+      "taiwan": "協定",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路通訊標準"
+    },
+    "協議": {
+      "taiwan": "協定",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路通訊標準"
+    },
+    "查询": {
+      "taiwan": "查詢",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣資料庫標準"
+    },
+    "查詢": {
+      "taiwan": "查詢",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣資料庫標準"
+    },
+    "队列": {
+      "taiwan": "佇列",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣資料結構標準"
+    },
+    "隊列": {
+      "taiwan": "佇列",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣資料結構標準"
+    },
+    "读取": {
+      "taiwan": "讀取",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣檔案操作標準"
+    },
+    "讀取": {
+      "taiwan": "讀取",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣檔案操作標準"
+    },
+    "寄存器": {
+      "taiwan": "暫存器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣計算機硬體標準"
+    },
+    "远程": {
+      "taiwan": "遠端",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路連線標準"
+    },
+    "遠程": {
+      "taiwan": "遠端",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路連線標準"
+    },
+    "渲染": {
+      "taiwan": "算繪",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣圖形處理標準"
+    },
+    "响应": {
+      "taiwan": "回應",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣網路通訊標準"
+    },
+    "響應": {
+      "taiwan": "回應",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣網路通訊標準"
+    },
+    "运行": {
+      "taiwan": "執行",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣系統操作標準"
+    },
+    "運行": {
+      "taiwan": "執行",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣系統操作標準"
+    },
+    "运行时": {
+      "taiwan": "執行時期",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣程式執行標準"
+    },
+    "運行時": {
+      "taiwan": "執行時期",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣程式執行標準"
+    },
+    "保存": {
+      "taiwan": "儲存",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣檔案操作標準"
+    },
+    "调度": {
+      "taiwan": "排程",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣系統管理標準"
+    },
+    "調度": {
+      "taiwan": "排程",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣系統管理標準"
+    },
+    "脚本": {
+      "taiwan": "指令碼",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣自動化標準"
+    },
+    "腳本": {
+      "taiwan": "指令碼",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣自動化標準"
+    },
+    "搜索": {
+      "taiwan": "搜尋",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣資料查找標準"
+    },
+    "服务器": {
+      "taiwan": "伺服器",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣網路服務標準"
+    },
+    "服務器": {
+      "taiwan": "伺服器",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣網路服務標準"
+    },
+    "会话": {
+      "taiwan": "工作階段",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路連線標準"
+    },
+    "會話": {
+      "taiwan": "工作階段",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路連線標準"
+    },
+    "栈": {
+      "taiwan": "堆疊",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資料結構標準"
+    },
+    "棧": {
+      "taiwan": "堆疊",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資料結構標準"
+    },
+    "存储": {
+      "taiwan": "儲存體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存技術標準"
+    },
+    "存儲": {
+      "taiwan": "儲存體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存技術標準"
+    },
+    "流": {
+      "taiwan": "串流",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣資料傳輸標準"
+    },
+    "字符串": {
+      "taiwan": "字串",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣程式設計標準"
+    },
+    "支持": {
+      "taiwan": "支援",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣技術服務標準"
+    },
+    "同步": {
+      "taiwan": "同步",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣程式設計標準"
+    },
+    "系统": {
+      "taiwan": "系統",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣計算機技術標準"
+    },
+    "系統": {
+      "taiwan": "系統",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣計算機技術標準"
+    },
+    "线程": {
+      "taiwan": "執行緒",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣平行處理標準"
+    },
+    "線程": {
+      "taiwan": "執行緒",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣平行處理標準"
+    },
+    "令牌": {
+      "taiwan": "標記",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣資安認證標準"
+    },
+    "教程": {
+      "taiwan": "教學",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣教育訓練標準"
+    },
+    "类型": {
+      "taiwan": "型別",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣程式語言標準"
+    },
+    "類型": {
+      "taiwan": "型別",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣程式語言標準"
+    },
+    "上传": {
+      "taiwan": "上傳",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣網路傳輸標準"
+    },
+    "上傳": {
+      "taiwan": "上傳",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣網路傳輸標準"
+    },
+    "用户": {
+      "taiwan": "使用者",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣使用者介面標準"
+    },
+    "用戶": {
+      "taiwan": "使用者",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣使用者介面標準"
+    },
+    "变量": {
+      "taiwan": "變數",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣程式設計標準"
+    },
+    "變量": {
+      "taiwan": "變數",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣程式設計標準"
+    },
+    "视频": {
+      "taiwan": "影片",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣多媒體標準"
+    },
+    "視頻": {
+      "taiwan": "影片",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣多媒體標準"
+    },
+    "视图": {
+      "taiwan": "檢視",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣介面設計標準"
+    },
+    "視圖": {
+      "taiwan": "檢視",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣介面設計標準"
+    },
+    "卷": {
+      "taiwan": "磁碟區",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣儲存管理標準"
+    },
+    "窗口": {
+      "taiwan": "視窗",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣介面設計標準"
+    },
+    "写入": {
+      "taiwan": "寫入",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣檔案操作標準"
+    },
+    "寫入": {
+      "taiwan": "寫入",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣檔案操作標準"
+    }
+  }
+}

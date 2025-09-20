@@ -26,7 +26,8 @@
     "dist/",
     "bin/",
     "LICENSE",
-    "README.md"
+    "README.md",
+    "TRADEMARK.md"
   ],
   "dependencies": {
     "chalk": "^5.3.0",
@@ -60,8 +61,8 @@
     "簡體中文",
     "用語檢測"
   ],
-  "author": "cyh",
-  "license": "MIT",
+  "author": "Huang Chung YI",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/username/twlint.git"
