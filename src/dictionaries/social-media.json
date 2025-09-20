@@ -1,0 +1,2833 @@
+{
+  "metadata": {
+    "name": "social-media",
+    "version": "1.0.0",
+    "entries": 106
+  },
+  "lookup": {
+    "社交媒体": {
+      "taiwan": "社群媒體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路平台術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "社交媒体_social_media": {
+      "taiwan": "社群媒體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路平台術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "社交媒體": {
+      "taiwan": "社群媒體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路平台術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "社交媒體_social_media": {
+      "taiwan": "社群媒體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路平台術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "社交网络": {
+      "taiwan": "社群網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路平台術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "社交网络_social_network": {
+      "taiwan": "社群網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路平台術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "社交網絡": {
+      "taiwan": "社群網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路平台術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "社交網絡_social_network": {
+      "taiwan": "社群網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路平台術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "帖子": {
+      "taiwan": "貼文",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群內容術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "帖子_post": {
+      "taiwan": "貼文",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群內容術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "状态": {
+      "taiwan": "動態",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群內容術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "状态_status": {
+      "taiwan": "動態",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群內容術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "狀態": {
+      "taiwan": "動態",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群內容術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "狀態_status": {
+      "taiwan": "動態",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群內容術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "故事": {
+      "taiwan": "限時動態",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "故事_story": {
+      "taiwan": "限時動態",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "信息流": {
+      "taiwan": "動態消息",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群內容術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "信息流_feed": {
+      "taiwan": "動態消息",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群內容術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "时间线": {
+      "taiwan": "時間軸",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群顯示術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "时间线_timeline": {
+      "taiwan": "時間軸",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群顯示術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "時間線": {
+      "taiwan": "時間軸",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群顯示術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "時間線_timeline": {
+      "taiwan": "時間軸",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群顯示術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "个人资料": {
+      "taiwan": "個人檔案",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群帳號術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "个人资料_profile": {
+      "taiwan": "個人檔案",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群帳號術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "個人資料": {
+      "taiwan": "個人檔案",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群帳號術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "個人資料_profile": {
+      "taiwan": "個人檔案",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群帳號術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "粉丝": {
+      "taiwan": "追蹤者",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群媒體術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "粉丝_follower": {
+      "taiwan": "追蹤者",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群媒體術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "粉絲": {
+      "taiwan": "追蹤者",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群媒體術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "粉絲_follower": {
+      "taiwan": "追蹤者",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群媒體術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "关注": {
+      "taiwan": "追蹤中",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群媒體術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "关注_following": {
+      "taiwan": "追蹤中",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群媒體術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "關注": {
+      "taiwan": "追蹤中",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群媒體術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "關注_following": {
+      "taiwan": "追蹤中",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群媒體術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "点赞": {
+      "taiwan": "按讚",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群互動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "点赞_like": {
+      "taiwan": "按讚",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群互動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "點讚": {
+      "taiwan": "按讚",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群互動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "點讚_like": {
+      "taiwan": "按讚",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群互動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "分享": {
+      "taiwan": "分享",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣社群互動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "分享_share": {
+      "taiwan": "分享",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣社群互動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "评论": {
+      "taiwan": "留言",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群互動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "评论_comment": {
+      "taiwan": "留言",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群互動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "評論": {
+      "taiwan": "留言",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群互動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "評論_comment": {
+      "taiwan": "留言",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群互動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "回复": {
+      "taiwan": "回覆",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群互動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "回复_reply": {
+      "taiwan": "回覆",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群互動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "回復": {
+      "taiwan": "回覆",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群互動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "回復_reply": {
+      "taiwan": "回覆",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群互動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "转发": {
+      "taiwan": "轉發",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群互動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "转发_repost": {
+      "taiwan": "轉發",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群互動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "轉發": {
+      "taiwan": "轉發",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群互動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "轉發_repost": {
+      "taiwan": "轉發",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群互動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "转推": {
+      "taiwan": "轉推",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣Twitter術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "转推_retweet": {
+      "taiwan": "轉推",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣Twitter術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "轉推": {
+      "taiwan": "轉推",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣Twitter術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "轉推_retweet": {
+      "taiwan": "轉推",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣Twitter術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "话题标签": {
+      "taiwan": "標籤",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群分類術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "话题标签_hashtag": {
+      "taiwan": "標籤",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群分類術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "話題標籤": {
+      "taiwan": "標籤",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群分類術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "話題標籤_hashtag": {
+      "taiwan": "標籤",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群分類術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "标记": {
+      "taiwan": "標記",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣內容管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "标记_tag": {
+      "taiwan": "標記",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "標記": {
+      "taiwan": "標記",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣內容管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "標記_tag": {
+      "taiwan": "標記",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "@": {
+      "taiwan": "提及",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群互動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "@_mention": {
+      "taiwan": "提及",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群互動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "通知": {
+      "taiwan": "通知",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣社群系統術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "通知_notification": {
+      "taiwan": "通知",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣社群系統術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "消息": {
+      "taiwan": "訊息",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群通訊術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "消息_message": {
+      "taiwan": "訊息",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群通訊術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "私信": {
+      "taiwan": "私訊",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群通訊術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "私信_dm": {
+      "taiwan": "私訊",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群通訊術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "聊天": {
+      "taiwan": "聊天",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣社群通訊術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "聊天_chat": {
+      "taiwan": "聊天",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣社群通訊術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "群聊": {
+      "taiwan": "群組聊天",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群通訊術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "群聊_group_chat": {
+      "taiwan": "群組聊天",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群通訊術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "广播": {
+      "taiwan": "廣播",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群傳播術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "广播_broadcast": {
+      "taiwan": "廣播",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群傳播術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "廣播": {
+      "taiwan": "廣播",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群傳播術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "廣播_broadcast": {
+      "taiwan": "廣播",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群傳播術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "直播": {
+      "taiwan": "直播",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣網路傳播術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "直播_live": {
+      "taiwan": "直播",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣社群功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "直播_livestream": {
+      "taiwan": "直播",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣網路傳播術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "流媒体": {
+      "taiwan": "串流",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位媒體術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "流媒体_streaming": {
+      "taiwan": "串流",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位媒體術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "流媒體": {
+      "taiwan": "串流",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位媒體術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "流媒體_streaming": {
+      "taiwan": "串流",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位媒體術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "视频通话": {
+      "taiwan": "視訊通話",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣通訊功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "视频通话_video_call": {
+      "taiwan": "視訊通話",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣通訊功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "視頻通話": {
+      "taiwan": "視訊通話",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣通訊功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "視頻通話_video_call": {
+      "taiwan": "視訊通話",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣通訊功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "语音通话": {
+      "taiwan": "語音通話",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣通訊功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "语音通话_voice_call": {
+      "taiwan": "語音通話",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣通訊功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "語音通話": {
+      "taiwan": "語音通話",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣通訊功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "語音通話_voice_call": {
+      "taiwan": "語音通話",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣通訊功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "表情符号": {
+      "taiwan": "表情符號",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數位表達術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "表情符号_emoji": {
+      "taiwan": "表情符號",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數位表達術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "表情符號": {
+      "taiwan": "表情符號",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數位表達術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "表情符號_emoji": {
+      "taiwan": "表情符號",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數位表達術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "表情": {
+      "taiwan": "表情符號",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數位表達術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "表情_emoticon": {
+      "taiwan": "表情符號",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數位表達術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "贴纸": {
+      "taiwan": "貼圖",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位表達術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "贴纸_sticker": {
+      "taiwan": "貼圖",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位表達術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "貼紙": {
+      "taiwan": "貼圖",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位表達術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "貼紙_sticker": {
+      "taiwan": "貼圖",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位表達術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "动图": {
+      "taiwan": "動圖",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數位媒體術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "动图_gif": {
+      "taiwan": "動圖",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數位媒體術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "動圖": {
+      "taiwan": "動圖",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數位媒體術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "動圖_gif": {
+      "taiwan": "動圖",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數位媒體術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "表情包": {
+      "taiwan": "迷因",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣網路文化術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "表情包_meme": {
+      "taiwan": "迷因",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣網路文化術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "病毒式传播": {
+      "taiwan": "爆紅",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣網路傳播術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "病毒式传播_viral": {
+      "taiwan": "爆紅",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣網路傳播術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "病毒式傳播": {
+      "taiwan": "爆紅",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣網路傳播術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "病毒式傳播_viral": {
+      "taiwan": "爆紅",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣網路傳播術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "热门": {
+      "taiwan": "熱門",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群趨勢術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "热门_trending": {
+      "taiwan": "熱門",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群趨勢術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "熱門": {
+      "taiwan": "熱門",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群趨勢術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "熱門_trending": {
+      "taiwan": "熱門",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群趨勢術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "趋势": {
+      "taiwan": "趨勢",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "趋势_trend": {
+      "taiwan": "趨勢",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "趨勢": {
+      "taiwan": "趨勢",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "趨勢_trend": {
+      "taiwan": "趨勢",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "网红": {
+      "taiwan": "網紅",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群行銷術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "网红_influencer": {
+      "taiwan": "網紅",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群行銷術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "網紅": {
+      "taiwan": "網紅",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群行銷術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "網紅_influencer": {
+      "taiwan": "網紅",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群行銷術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "KOL": {
+      "taiwan": "意見領袖",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群行銷術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "KOL_kol": {
+      "taiwan": "意見領袖",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群行銷術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "博主": {
+      "taiwan": "部落客",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路創作者",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "博主_blogger": {
+      "taiwan": "部落客",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路創作者",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "视频博主": {
+      "taiwan": "影音部落客",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路創作者",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "视频博主_vlogger": {
+      "taiwan": "影音部落客",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路創作者",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "視頻博主": {
+      "taiwan": "影音部落客",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路創作者",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "視頻博主_vlogger": {
+      "taiwan": "影音部落客",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路創作者",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "博客": {
+      "taiwan": "部落格",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路平台術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "博客_blog": {
+      "taiwan": "部落格",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路平台術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "视频博客": {
+      "taiwan": "影音部落格",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路內容術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "视频博客_vlog": {
+      "taiwan": "影音部落格",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路內容術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "視頻博客": {
+      "taiwan": "影音部落格",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路內容術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "視頻博客_vlog": {
+      "taiwan": "影音部落格",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路內容術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "播客": {
+      "taiwan": "播客",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數位媒體術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "播客_podcast": {
+      "taiwan": "播客",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數位媒體術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "频道": {
+      "taiwan": "頻道",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣媒體平台術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "频道_channel": {
+      "taiwan": "頻道",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣媒體平台術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "頻道": {
+      "taiwan": "頻道",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣媒體平台術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "頻道_channel": {
+      "taiwan": "頻道",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣媒體平台術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "订阅": {
+      "taiwan": "訂閱",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣媒體功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "订阅_subscribe": {
+      "taiwan": "訂閱",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣媒體功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "訂閱": {
+      "taiwan": "訂閱",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣媒體功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "訂閱_subscribe": {
+      "taiwan": "訂閱",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣媒體功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "订阅者": {
+      "taiwan": "訂閱者",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣媒體用戶術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "订阅者_subscriber": {
+      "taiwan": "訂閱者",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣媒體用戶術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "訂閱者": {
+      "taiwan": "訂閱者",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣媒體用戶術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "訂閱者_subscriber": {
+      "taiwan": "訂閱者",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣媒體用戶術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "退订": {
+      "taiwan": "取消訂閱",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣媒體功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "退订_unsubscribe": {
+      "taiwan": "取消訂閱",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣媒體功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "退訂": {
+      "taiwan": "取消訂閱",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣媒體功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "退訂_unsubscribe": {
+      "taiwan": "取消訂閱",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣媒體功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "小铃铛": {
+      "taiwan": "小鈴鐺",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣通知功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "小铃铛_bell_notification": {
+      "taiwan": "小鈴鐺",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣通知功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "小鈴鐺": {
+      "taiwan": "小鈴鐺",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣通知功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "小鈴鐺_bell_notification": {
+      "taiwan": "小鈴鐺",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣通知功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "算法": {
+      "taiwan": "演算法",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣技術術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "算法_algorithm": {
+      "taiwan": "演算法",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣技術術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "互动率": {
+      "taiwan": "互動率",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "互动率_engagement": {
+      "taiwan": "互動率",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "互動率": {
+      "taiwan": "互動率",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "互動率_engagement": {
+      "taiwan": "互動率",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "覆盖率": {
+      "taiwan": "觸及率",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "覆盖率_reach": {
+      "taiwan": "觸及率",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "覆蓋率": {
+      "taiwan": "觸及率",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "覆蓋率_reach": {
+      "taiwan": "觸及率",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "印象": {
+      "taiwan": "曝光",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣廣告術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "印象_impression": {
+      "taiwan": "曝光",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣廣告術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "分析": {
+      "taiwan": "分析",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣數據處理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "分析_analytics": {
+      "taiwan": "分析",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣數據處理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "洞察": {
+      "taiwan": "洞察報告",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數據分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "洞察_insights": {
+      "taiwan": "洞察報告",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數據分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "指标": {
+      "taiwan": "指標",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數據分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "指标_metric": {
+      "taiwan": "指標",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數據分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "指標": {
+      "taiwan": "指標",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數據分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "指標_metric": {
+      "taiwan": "指標",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數據分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "仪表盘": {
+      "taiwan": "儀表板",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數據視覺化",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "仪表盘_dashboard": {
+      "taiwan": "儀表板",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數據視覺化",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "儀表盤": {
+      "taiwan": "儀表板",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數據視覺化",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "儀表盤_dashboard": {
+      "taiwan": "儀表板",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數據視覺化",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "内容创作者": {
+      "taiwan": "內容創作者",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群職業術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "内容创作者_content_creator": {
+      "taiwan": "內容創作者",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群職業術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "內容創作者": {
+      "taiwan": "內容創作者",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群職業術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "內容創作者_content_creator": {
+      "taiwan": "內容創作者",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群職業術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "创作者经济": {
+      "taiwan": "創作者經濟",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位經濟術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "创作者经济_creator_economy": {
+      "taiwan": "創作者經濟",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位經濟術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "創作者經濟": {
+      "taiwan": "創作者經濟",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位經濟術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "創作者經濟_creator_economy": {
+      "taiwan": "創作者經濟",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位經濟術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "变现": {
+      "taiwan": "營利",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業模式術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "变现_monetization": {
+      "taiwan": "營利",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業模式術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "變現": {
+      "taiwan": "營利",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業模式術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "變現_monetization": {
+      "taiwan": "營利",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業模式術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "赞助": {
+      "taiwan": "贊助",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業合作術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "赞助_sponsorship": {
+      "taiwan": "贊助",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業合作術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "贊助": {
+      "taiwan": "贊助",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業合作術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "贊助_sponsorship": {
+      "taiwan": "贊助",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業合作術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "合作": {
+      "taiwan": "合作",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣商業關係術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "合作_collaboration": {
+      "taiwan": "合作",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣商業關係術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "品牌合作": {
+      "taiwan": "品牌合作",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業合作術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "品牌合作_brand_partnership": {
+      "taiwan": "品牌合作",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業合作術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "联盟营销": {
+      "taiwan": "聯盟行銷",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位行銷術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "联盟营销_affiliate_marketing": {
+      "taiwan": "聯盟行銷",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位行銷術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "聯盟營銷": {
+      "taiwan": "聯盟行銷",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位行銷術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "聯盟營銷_affiliate_marketing": {
+      "taiwan": "聯盟行銷",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位行銷術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "软文": {
+      "taiwan": "業配文",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣廣告內容術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "软文_sponsored_post": {
+      "taiwan": "業配文",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣廣告內容術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "軟文": {
+      "taiwan": "業配文",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣廣告內容術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "軟文_sponsored_post": {
+      "taiwan": "業配文",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣廣告內容術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "广告": {
+      "taiwan": "廣告",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業推廣術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "广告_advertisement": {
+      "taiwan": "廣告",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業推廣術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "廣告": {
+      "taiwan": "廣告",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業推廣術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "廣告_advertisement": {
+      "taiwan": "廣告",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業推廣術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "广告活动": {
+      "taiwan": "廣告活動",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣廣告行銷術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "广告活动_ad_campaign": {
+      "taiwan": "廣告活動",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣廣告行銷術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "廣告活動": {
+      "taiwan": "廣告活動",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣廣告行銷術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "廣告活動_ad_campaign": {
+      "taiwan": "廣告活動",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣廣告行銷術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "目标受众": {
+      "taiwan": "目標受眾",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣行銷策略術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "目标受众_target_audience": {
+      "taiwan": "目標受眾",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣行銷策略術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "目標受眾": {
+      "taiwan": "目標受眾",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣行銷策略術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "目標受眾_target_audience": {
+      "taiwan": "目標受眾",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣行銷策略術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "人口统计": {
+      "taiwan": "人口統計",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣市場分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "人口统计_demographic": {
+      "taiwan": "人口統計",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣市場分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "人口統計": {
+      "taiwan": "人口統計",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣市場分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "人口統計_demographic": {
+      "taiwan": "人口統計",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣市場分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "社区": {
+      "taiwan": "社群",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路群體術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "社区_community": {
+      "taiwan": "社群",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路群體術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "社區": {
+      "taiwan": "社群",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路群體術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "社區_community": {
+      "taiwan": "社群",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路群體術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "群组": {
+      "taiwan": "群組",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群組織術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "群组_group": {
+      "taiwan": "群組",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群組織術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "群組": {
+      "taiwan": "群組",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群組織術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "群組_group": {
+      "taiwan": "群組",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群組織術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "主页": {
+      "taiwan": "粉絲專頁",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣Facebook術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "主页_page": {
+      "taiwan": "粉絲專頁",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣Facebook術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "主頁": {
+      "taiwan": "粉絲專頁",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣Facebook術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "主頁_page": {
+      "taiwan": "粉絲專頁",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣Facebook術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "活动": {
+      "taiwan": "活動",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群活動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "活动_event": {
+      "taiwan": "活動",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群活動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "活動": {
+      "taiwan": "活動",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群活動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "活動_event": {
+      "taiwan": "活動",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群活動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "投票": {
+      "taiwan": "投票",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣互動功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "投票_poll": {
+      "taiwan": "投票",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣互動功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "测验": {
+      "taiwan": "測驗",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣互動功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "测验_quiz": {
+      "taiwan": "測驗",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣互動功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "測驗": {
+      "taiwan": "測驗",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣互動功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "測驗_quiz": {
+      "taiwan": "測驗",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣互動功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "滤镜": {
+      "taiwan": "濾鏡",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣影像處理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "滤镜_filter": {
+      "taiwan": "濾鏡",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣影像處理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "濾鏡": {
+      "taiwan": "濾鏡",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣影像處理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "濾鏡_filter": {
+      "taiwan": "濾鏡",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣影像處理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "特效": {
+      "taiwan": "特效",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣影像處理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "特效_effect": {
+      "taiwan": "特效",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣影像處理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "AR滤镜": {
+      "taiwan": "AR濾鏡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣擴增實境術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "AR滤镜_ar_filter": {
+      "taiwan": "AR濾鏡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣擴增實境術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "AR濾鏡": {
+      "taiwan": "AR濾鏡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣擴增實境術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "AR濾鏡_ar_filter": {
+      "taiwan": "AR濾鏡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣擴增實境術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "镜头": {
+      "taiwan": "鏡頭",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣相機功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "镜头_lens": {
+      "taiwan": "鏡頭",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣相機功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "鏡頭": {
+      "taiwan": "鏡頭",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣相機功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "鏡頭_lens": {
+      "taiwan": "鏡頭",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣相機功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "回旋镖": {
+      "taiwan": "迴力鏢",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣Instagram功能",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "回旋镖_boomerang": {
+      "taiwan": "迴力鏢",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣Instagram功能",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "迴旋鏢": {
+      "taiwan": "迴力鏢",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣Instagram功能",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "迴旋鏢_boomerang": {
+      "taiwan": "迴力鏢",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣Instagram功能",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "短视频": {
+      "taiwan": "短影音",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣YouTube功能",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "短视频_reel": {
+      "taiwan": "連續短片",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣Instagram功能",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "短視頻": {
+      "taiwan": "短影音",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣YouTube功能",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "短視頻_reel": {
+      "taiwan": "連續短片",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣Instagram功能",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "短视频_shorts": {
+      "taiwan": "短影音",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣YouTube功能",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "短視頻_shorts": {
+      "taiwan": "短影音",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣YouTube功能",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "高光": {
+      "taiwan": "精選",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "高光_highlight": {
+      "taiwan": "精選",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "归档": {
+      "taiwan": "封存",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "归档_archive": {
+      "taiwan": "封存",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "歸檔": {
+      "taiwan": "封存",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "歸檔_archive": {
+      "taiwan": "封存",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "收藏": {
+      "taiwan": "已儲存",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "收藏_saved": {
+      "taiwan": "已儲存",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "书签": {
+      "taiwan": "書籤",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "书签_bookmark_social": {
+      "taiwan": "書籤",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "書籤": {
+      "taiwan": "書籤",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "書籤_bookmark_social": {
+      "taiwan": "書籤",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "发现": {
+      "taiwan": "發現",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "发现_explore": {
+      "taiwan": "探索",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "發現": {
+      "taiwan": "發現",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "發現_explore": {
+      "taiwan": "探索",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "发现_discover": {
+      "taiwan": "發現",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "發現_discover": {
+      "taiwan": "發現",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "推荐": {
+      "taiwan": "推薦",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣內容推送術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "推荐_recommendation": {
+      "taiwan": "推薦",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣內容推送術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "推薦": {
+      "taiwan": "推薦",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣內容推送術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "推薦_recommendation": {
+      "taiwan": "推薦",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣內容推送術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "建议": {
+      "taiwan": "建議",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣內容推送術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "建议_suggested": {
+      "taiwan": "建議",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣內容推送術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "建議": {
+      "taiwan": "建議",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣內容推送術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "建議_suggested": {
+      "taiwan": "建議",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣內容推送術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "隐私": {
+      "taiwan": "隱私",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣資安設定術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "隐私_privacy": {
+      "taiwan": "隱私",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣資安設定術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "隱私": {
+      "taiwan": "隱私",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣資安設定術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "隱私_privacy": {
+      "taiwan": "隱私",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣資安設定術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "隐私设置": {
+      "taiwan": "隱私設定",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資安設定術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "隐私设置_privacy_setting": {
+      "taiwan": "隱私設定",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資安設定術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "隱私設置": {
+      "taiwan": "隱私設定",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資安設定術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "隱私設置_privacy_setting": {
+      "taiwan": "隱私設定",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資安設定術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "拉黑": {
+      "taiwan": "封鎖",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "拉黑_block": {
+      "taiwan": "封鎖",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "解除拉黑": {
+      "taiwan": "解除封鎖",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "解除拉黑_unblock": {
+      "taiwan": "解除封鎖",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "静音": {
+      "taiwan": "靜音",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "静音_mute": {
+      "taiwan": "靜音",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "靜音": {
+      "taiwan": "靜音",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "靜音_mute": {
+      "taiwan": "靜音",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "取消静音": {
+      "taiwan": "取消靜音",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "取消静音_unmute": {
+      "taiwan": "取消靜音",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "取消靜音": {
+      "taiwan": "取消靜音",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "取消靜音_unmute": {
+      "taiwan": "取消靜音",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣社群管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "举报": {
+      "taiwan": "檢舉",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "举报_report": {
+      "taiwan": "檢舉",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "舉報": {
+      "taiwan": "檢舉",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "舉報_report": {
+      "taiwan": "檢舉",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣社群管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "标记_flag": {
+      "taiwan": "標記",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣內容管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "標記_flag": {
+      "taiwan": "標記",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣內容管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "垃圾信息": {
+      "taiwan": "垃圾訊息",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣內容分類術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "垃圾信息_spam": {
+      "taiwan": "垃圾訊息",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣內容分類術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "假新闻": {
+      "taiwan": "假新聞",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資訊判別術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "假新闻_fake_news": {
+      "taiwan": "假新聞",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資訊判別術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "假新聞": {
+      "taiwan": "假新聞",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資訊判別術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "假新聞_fake_news": {
+      "taiwan": "假新聞",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資訊判別術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "事实核查": {
+      "taiwan": "事實查核",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資訊驗證術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "事实核查_fact_check": {
+      "taiwan": "事實查核",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資訊驗證術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "事實核查": {
+      "taiwan": "事實查核",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資訊驗證術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "事實核查_fact_check": {
+      "taiwan": "事實查核",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資訊驗證術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "验证": {
+      "taiwan": "驗證",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣帳號認證術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "验证_verification": {
+      "taiwan": "驗證",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣帳號認證術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "驗證": {
+      "taiwan": "驗證",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣帳號認證術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "驗證_verification": {
+      "taiwan": "驗證",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣帳號認證術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "认证账号": {
+      "taiwan": "認證帳號",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣帳號類型術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "认证账号_verified_account": {
+      "taiwan": "認證帳號",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣帳號類型術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "認證賬號": {
+      "taiwan": "認證帳號",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣帳號類型術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "認證賬號_verified_account": {
+      "taiwan": "認證帳號",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣帳號類型術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "蓝V": {
+      "taiwan": "藍勾勾",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣認證標記術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "蓝V_blue_tick": {
+      "taiwan": "藍勾勾",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣認證標記術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "藍V": {
+      "taiwan": "藍勾勾",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣認證標記術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "藍V_blue_tick": {
+      "taiwan": "藍勾勾",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣認證標記術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "徽章": {
+      "taiwan": "徽章",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣認證標記術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "徽章_badge": {
+      "taiwan": "徽章",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣認證標記術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    }
+  }
+}

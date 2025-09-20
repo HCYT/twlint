@@ -4,21 +4,20 @@ import { DictionaryManager } from './dictionary-manager.js'
 import { SimplifiedCharsRule } from './rules/simplified-chars.js'
 import { MainlandTermsRule } from './rules/mainland-terms.js'
 import { PositionMapper } from './position-mapper.js'
-import { Converter } from 'opencc-js'
 import type { LintResult, Issue, TWLintConfig, Rule } from '../types.js'
+import { formatError, ErrorHandler } from '../utils/error-utils.js'
+import { DictLoadStrategyFactory } from './dictionary-loading-strategies.js'
 
 export class TWLinter {
   private dictManager: DictionaryManager
   private rules = new Map<string, Rule>()
   private config: TWLintConfig
   private deepMode = false
-  private converter: ReturnType<typeof Converter>
 
   constructor(config: TWLintConfig, options?: { deep?: boolean }) {
     this.config = config
     this.deepMode = options?.deep || false
     this.dictManager = new DictionaryManager()
-    this.converter = Converter({ from: 'cn', to: 'tw' })
     this.initializeRules()
   }
 
@@ -43,13 +42,12 @@ export class TWLinter {
           messages: issues
         })
       } catch (error) {
-        const message = error instanceof Error ? error.message : String(error)
         results.push({
           filePath,
           messages: [{
             line: 1,
             column: 1,
-            message: `Failed to read file: ${message}`,
+            message: `Failed to read file: ${formatError(error)}`,
             severity: 'error',
             rule: 'file-read-error',
             fixable: false
@@ -61,36 +59,30 @@ export class TWLinter {
     return results
   }
 
-  async lintText(text: string, filePath?: string): Promise<Issue[]> {
+  async lintText(text: string, _filePath?: string): Promise<Issue[]> {
     await this.loadDictionaries(this.deepMode)
 
     const issues: Issue[] = []
     const activeRules = this.getActiveRules()
 
-    // Process all active rules
+    // Process all active rules with unified preprocessing
     for (const rule of activeRules) {
       try {
-        let textToCheck = text
-        let positionMapper: PositionMapper | undefined
+        // Let rule handle its own text preprocessing
+        const context = rule.preprocess
+          ? await rule.preprocess(text)
+          : { originalText: text, processedText: text }
 
-        // Apply text conversion if needed (for mainland-terms rule)
-        if (rule.name === 'mainland-terms') {
-          const convertedText = this.convertToTraditional(text)
-          textToCheck = convertedText
-          positionMapper = new PositionMapper(text, convertedText)
-        }
+        const ruleIssues = await rule.check(context.processedText)
 
-        const ruleIssues = await rule.check(textToCheck)
-
-        // Adjust positions if we used converted text
-        const adjustedIssues = positionMapper
-          ? this.adjustPositionsWithMapper(ruleIssues, positionMapper)
+        // Adjust positions if rule used text conversion
+        const adjustedIssues = context.positionMapper
+          ? this.adjustPositionsWithMapper(ruleIssues, context.positionMapper)
           : ruleIssues
 
         issues.push(...adjustedIssues)
       } catch (error) {
-        const message = error instanceof Error ? error.message : String(error)
-        console.warn(`Warning: Rule "${rule.name}" failed: ${message}`)
+        ErrorHandler.handle(error, `Rule "${rule.name}"`)
       }
     }
 
@@ -98,67 +90,107 @@ export class TWLinter {
   }
 
   async fixText(text: string): Promise<string> {
-    // 確保詞庫已載入
     await this.loadDictionaries(this.deepMode)
 
-    let fixedText = text
+    const activeRules = this.getActiveRules().filter(rule => rule.fix)
+    let result = text
 
-    // 階段1：簡繁轉換修復
-    const simplifiedRule = this.rules.get('simplified-chars')
-    if (simplifiedRule && this.isRuleActive('simplified-chars') && simplifiedRule.fix) {
+    // 按規則順序依次應用修復
+    for (const rule of activeRules) {
       try {
-        fixedText = await simplifiedRule.fix(fixedText)
+        result = await rule.fix!(result)
       } catch (error) {
-        const message = error instanceof Error ? error.message : String(error)
-        console.warn(`Warning: Failed to apply simplified-chars fix: ${message}`)
+        ErrorHandler.handle(error, `Rule ${rule.name} fix`)
       }
     }
 
-    // 階段2：大陸用語修復（在轉換後的文本上進行）
-    const mainlandRule = this.rules.get('mainland-terms')
-    if (mainlandRule && this.isRuleActive('mainland-terms') && mainlandRule.fix) {
-      try {
-        fixedText = await mainlandRule.fix(fixedText)
-      } catch (error) {
-        const message = error instanceof Error ? error.message : String(error)
-        console.warn(`Warning: Failed to apply mainland-terms fix: ${message}`)
-      }
-    }
-
-
-    return fixedText
+    return result
   }
 
   private async expandFilePatterns(patterns: string[]): Promise<string[]> {
     const files: string[] = []
+    const ignorePatterns = await this.getIgnorePatterns()
 
     for (const pattern of patterns) {
-      const matches = await glob(pattern, { ignore: 'node_modules/**' })
-      files.push(...matches)
+      // 檢查是否為明確的檔案路徑（沒有萬用字元）
+      const hasWildcards = pattern.includes('*') || pattern.includes('?') || pattern.includes('[')
+
+      if (!hasWildcards) {
+        // 明確的檔案路徑：直接加入，讓後續的檔案讀取來處理錯誤
+        files.push(pattern)
+      } else {
+        // 萬用字元模式：使用 glob 擴展，遵循 .gitignore 規則
+        const matches = await glob(pattern, {
+          ignore: ignorePatterns,
+          dot: false // 預設不包含隱藏檔案
+        })
+        files.push(...matches)
+      }
     }
 
     return [...new Set(files)] // Remove duplicates
   }
 
-  private async loadDictionaries(deep?: boolean): Promise<void> {
-    let dictNames = this.config.dictionaries || ['core']
+  private async getIgnorePatterns(): Promise<string[]> {
+    const defaultIgnores = [
+      'node_modules/**',
+      '.git/**',
+      '.next/**',
+      '.nuxt/**',
+      'dist/**',
+      'build/**',
+      'coverage/**',
+      'logs/**',
+      '*.log',
+      '.env*',
+      '.DS_Store',
+      '.vscode/**',
+      '.idea/**',
+      'test-temp/**',
+      '*.tmp'
+    ]
 
-    // 深度模式：載入所有可用詞庫
-    if (deep) {
-      const availableDicts = this.dictManager.getAvailableDictionaries()
-      dictNames = [...new Set([...dictNames, ...availableDicts])]
+    try {
+      const { readFile } = await import('fs/promises')
+      const gitignoreContent = await readFile('.gitignore', 'utf-8')
+
+      const gitignorePatterns = gitignoreContent
+        .split('\n')
+        .map(line => line.trim())
+        .filter(line => line && !line.startsWith('#')) // 排除空行和註解
+        .map(line => {
+          // 處理目錄模式
+          if (line.endsWith('/')) {
+            return line + '**'
+          }
+          // 處理檔案模式
+          if (!line.includes('*') && !line.includes('/')) {
+            return '**/' + line
+          }
+          return line
+        })
+
+      return [...defaultIgnores, ...gitignorePatterns]
+    } catch {
+      // 沒有 .gitignore 或讀取失敗，使用預設規則
+      return defaultIgnores
     }
+  }
+
+  private async loadDictionaries(deep?: boolean): Promise<void> {
+    const strategy = DictLoadStrategyFactory.create(this.config, deep)
+    const dictNames = await strategy.getDictionaries(this.config, this.dictManager)
 
     for (const name of dictNames) {
       try {
         await this.dictManager.loadDictionary(name)
       } catch (error) {
         // 忽略無法載入的詞庫，但記錄警告
-        const message = error instanceof Error ? error.message : String(error)
-        console.warn(`Warning: Failed to load dictionary "${name}": ${message}`)
+        ErrorHandler.handle(error, `Failed to load dictionary "${name}"`)
       }
     }
   }
+
 
   private getActiveRules(): Rule[] {
     const activeRules: Rule[] = []
@@ -179,12 +211,6 @@ export class TWLinter {
     return activeRules
   }
 
-  /**
-   * 使用 opencc-js 將簡體中文轉換為繁體中文
-   */
-  private convertToTraditional(text: string): string {
-    return this.converter(text)
-  }
 
   /**
    * 檢查規則是否啟用

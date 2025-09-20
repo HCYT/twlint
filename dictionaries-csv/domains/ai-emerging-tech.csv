@@ -1,0 +1,109 @@
+id,taiwan,china_simplified,china_traditional,english,confidence,category,reason,domain,match_type,context_before,context_after,context_exclude,autofix_safe
+artificial-intelligence,人工智慧,人工智能,人工智能,AI,0.95,mainland-term,台灣AI技術標準,tech,exact,,,,true
+machine-learning,機器學習,机器学习,機器學習,machine learning,0.90,mainland-term,台灣AI技術標準,tech,exact,,,,true
+deep-learning,深度學習,深度学习,深度學習,deep learning,0.90,mainland-term,台灣AI技術標準,tech,exact,,,,true
+neural-network,神經網路,神经网络,神經網絡,neural network,0.90,mainland-term,台灣AI架構標準,tech,exact,,,,true
+natural-language-processing,自然語言處理,自然语言处理,自然語言處理,NLP,0.90,mainland-term,台灣AI應用標準,tech,exact,,,,true
+computer-vision,電腦視覺,计算机视觉,計算機視覺,computer vision,0.90,mainland-term,台灣AI應用標準,tech,exact,,,,true
+reinforcement-learning,強化學習,强化学习,強化學習,reinforcement learning,0.90,mainland-term,台灣AI學習方法,tech,exact,,,,true
+supervised-learning,監督式學習,监督学习,監督學習,supervised learning,0.90,mainland-term,台灣AI學習方法,tech,exact,,,,true
+unsupervised-learning,非監督式學習,无监督学习,無監督學習,unsupervised learning,0.90,mainland-term,台灣AI學習方法,tech,exact,,,,true
+semi-supervised,半監督式,半监督,半監督,semi-supervised,0.90,mainland-term,台灣AI學習方法,tech,exact,,,,true
+transfer-learning,遷移學習,迁移学习,遷移學習,transfer learning,0.90,mainland-term,台灣AI技術方法,tech,exact,,,,true
+dataset,資料集,数据集,數據集,dataset,0.90,mainland-term,台灣AI資料標準,tech,exact,,,,true
+training-data,訓練資料,训练数据,訓練數據,training data,0.90,mainland-term,台灣AI資料類型,tech,exact,,,,true
+validation-data,驗證資料,验证数据,驗證數據,validation data,0.90,mainland-term,台灣AI資料類型,tech,exact,,,,true
+test-data,測試資料,测试数据,測試數據,test data,0.90,mainland-term,台灣AI資料類型,tech,exact,,,,true
+overfitting,過度擬合,过拟合,過擬合,overfitting,0.90,mainland-term,台灣AI模型問題,tech,exact,,,,true
+underfitting,欠擬合,欠拟合,欠擬合,underfitting,0.90,mainland-term,台灣AI模型問題,tech,exact,,,,true
+gradient-descent,梯度下降,梯度下降,梯度下降,gradient descent,0.85,mainland-term,台灣AI優化方法,tech,exact,,,,true
+backpropagation,反向傳播,反向传播,反向傳播,backpropagation,0.90,mainland-term,台灣AI訓練方法,tech,exact,,,,true
+activation-function,激活函數,激活函数,激活函數,activation function,0.90,mainland-term,台灣神經網路元件,tech,exact,,,,true
+convolutional-neural-network,卷積神經網路,卷积神经网络,卷積神經網絡,CNN,0.90,mainland-term,台灣深度學習架構,tech,exact,,,,true
+recurrent-neural-network,遞迴神經網路,循环神经网络,循環神經網絡,RNN,0.90,mainland-term,台灣深度學習架構,tech,exact,,,,true
+transformer,轉換器,变换器,變換器,transformer,0.85,mainland-term,台灣深度學習架構,tech,exact,,,,true
+attention-mechanism,注意力機制,注意力机制,注意力機制,attention mechanism,0.90,mainland-term,台灣深度學習技術,tech,exact,,,,true
+generative-ai,生成式AI,生成式AI,生成式AI,generative AI,0.85,mainland-term,台灣AI應用類型,tech,exact,,,,true
+large-language-model,大型語言模型,大语言模型,大語言模型,LLM,0.90,mainland-term,台灣AI模型類型,tech,exact,,,,true
+prompt-engineering,提示工程,提示工程,提示工程,prompt engineering,0.85,mainland-term,台灣AI互動技術,tech,exact,,,,true
+fine-tuning,微調,微调,微調,fine-tuning,0.85,mainland-term,台灣AI模型優化,tech,exact,,,,true
+embedding,嵌入,嵌入,嵌入,embedding,0.85,mainland-term,台灣AI表示方法,tech,exact,,,,true
+tokenization,分詞,分词,分詞,tokenization,0.90,mainland-term,台灣NLP處理技術,tech,exact,,,,true
+chatgpt,ChatGPT,ChatGPT,ChatGPT,ChatGPT,0.80,mainland-term,台灣AI應用產品,tech,exact,,,,true
+gpt,GPT,GPT,GPT,GPT,0.80,mainland-term,台灣AI模型名稱,tech,exact,,,,true
+bert,BERT,BERT,BERT,BERT,0.80,mainland-term,台灣AI模型名稱,tech,exact,,,,true
+gan,生成對抗網路,生成对抗网络,生成對抗網絡,GAN,0.90,mainland-term,台灣生成式AI技術,tech,exact,,,,true
+diffusion-model,擴散模型,扩散模型,擴散模型,diffusion model,0.90,mainland-term,台灣生成式AI技術,tech,exact,,,,true
+ai-ethics,AI倫理,AI伦理,AI倫理,AI ethics,0.85,mainland-term,台灣AI治理標準,tech,exact,,,,true
+bias-ai,偏見,偏见,偏見,bias,0.85,mainland-term,台灣AI公平性議題,tech,exact,,,,true
+explainable-ai,可解釋AI,可解释AI,可解釋AI,explainable AI,0.90,mainland-term,台灣AI透明度標準,tech,exact,,,,true
+blockchain,區塊鏈,区块链,區塊鏈,blockchain,0.90,mainland-term,台灣分散式技術,tech,exact,,,,true
+cryptocurrency,加密貨幣,加密货币,加密貨幣,cryptocurrency,0.90,mainland-term,台灣數位資產標準,tech,exact,,,,true
+bitcoin,比特幣,比特币,比特幣,Bitcoin,0.90,mainland-term,台灣加密貨幣名稱,tech,exact,,,,true
+ethereum,以太坊,以太坊,以太坊,Ethereum,0.85,mainland-term,台灣區塊鏈平台,tech,exact,,,,true
+smart-contract,智慧合約,智能合约,智能合約,smart contract,0.90,mainland-term,台灣區塊鏈應用,tech,exact,,,,true
+consensus-algorithm,共識演算法,共识算法,共識算法,consensus algorithm,0.90,mainland-term,台灣區塊鏈技術,tech,exact,,,,true
+proof-of-work,工作量證明,工作量证明,工作量證明,PoW,0.90,mainland-term,台灣共識機制類型,tech,exact,,,,true
+proof-of-stake,權益證明,权益证明,權益證明,PoS,0.90,mainland-term,台灣共識機制類型,tech,exact,,,,true
+distributed-ledger,分散式帳本,分布式账本,分布式賬本,distributed ledger,0.90,mainland-term,台灣區塊鏈架構,tech,exact,,,,true
+hash-function,雜湊函數,哈希函数,哈希函數,hash function,0.90,mainland-term,台灣密碼學技術,tech,exact,,,,true
+mining,挖礦,挖矿,挖礦,mining,0.85,mainland-term,台灣區塊鏈運作,tech,exact,,,,true
+wallet,錢包,钱包,錢包,wallet,0.85,mainland-term,台灣數位資產管理,tech,exact,,,,true
+nft,非同質化代幣,非同质化代币,非同質化代幣,NFT,0.90,mainland-term,台灣數位資產類型,tech,exact,,,,true
+defi,去中心化金融,去中心化金融,去中心化金融,DeFi,0.85,mainland-term,台灣區塊鏈金融,tech,exact,,,,true
+dao,去中心化自治組織,去中心化自治组织,去中心化自治組織,DAO,0.90,mainland-term,台灣區塊鏈組織,tech,exact,,,,true
+metaverse,元宇宙,元宇宙,元宇宙,metaverse,0.85,mainland-term,台灣虛擬世界概念,tech,exact,,,,true
+virtual-reality,虛擬實境,虚拟现实,虛擬現實,VR,0.90,mainland-term,台灣沉浸式技術,tech,exact,,,,true
+augmented-reality,擴增實境,增强现实,增強現實,AR,0.90,mainland-term,台灣混合實境技術,tech,exact,,,,true
+mixed-reality,混合實境,混合现实,混合現實,MR,0.90,mainland-term,台灣實境技術標準,tech,exact,,,,true
+extended-reality,延展實境,扩展现实,擴展現實,XR,0.90,mainland-term,台灣實境技術總稱,tech,exact,,,,true
+iot,物聯網,物联网,物聯網,IoT,0.90,mainland-term,台灣連網裝置技術,tech,exact,,,,true
+industrial-iot,工業物聯網,工业物联网,工業物聯網,IIoT,0.90,mainland-term,台灣工業4.0技術,tech,exact,,,,true
+edge-computing,邊緣運算,边缘计算,邊緣計算,edge computing,0.90,mainland-term,台灣分散式運算,tech,exact,,,,true
+fog-computing,霧運算,雾计算,霧計算,fog computing,0.90,mainland-term,台灣分散式運算,tech,exact,,,,true
+quantum-computing,量子運算,量子计算,量子計算,quantum computing,0.90,mainland-term,台灣前瞻運算技術,tech,exact,,,,true
+qubit,量子位元,量子比特,量子比特,qubit,0.90,mainland-term,台灣量子運算單位,tech,exact,,,,true
+quantum-entanglement,量子糾纏,量子纠缠,量子糾纏,quantum entanglement,0.90,mainland-term,台灣量子物理現象,tech,exact,,,,true
+quantum-supremacy,量子優越性,量子优越性,量子優越性,quantum supremacy,0.90,mainland-term,台灣量子運算里程碑,tech,exact,,,,true
+biotechnology,生物科技,生物技术,生物技術,biotechnology,0.90,mainland-term,台灣生命科學技術,tech,exact,,,,true
+bioinformatics,生物資訊,生物信息学,生物信息學,bioinformatics,0.90,mainland-term,台灣跨領域科學,tech,exact,,,,true
+genome-sequencing,基因定序,基因测序,基因測序,genome sequencing,0.90,mainland-term,台灣基因體技術,tech,exact,,,,true
+crispr,基因編輯,基因编辑,基因編輯,CRISPR,0.90,mainland-term,台灣基因工程技術,tech,exact,,,,true
+synthetic-biology,合成生物學,合成生物学,合成生物學,synthetic biology,0.90,mainland-term,台灣生物工程領域,tech,exact,,,,true
+nanotechnology,奈米科技,纳米技术,納米技術,nanotechnology,0.90,mainland-term,台灣微型技術標準,tech,exact,,,,true
+nanomaterial,奈米材料,纳米材料,納米材料,nanomaterial,0.90,mainland-term,台灣先進材料技術,tech,exact,,,,true
+3d-printing,3D列印,3D打印,3D打印,3D printing,0.90,mainland-term,台灣積層製造技術,tech,exact,,,,true
+additive-manufacturing,積層製造,增材制造,增材製造,additive manufacturing,0.90,mainland-term,台灣先進製造技術,tech,exact,,,,true
+robotics,機器人學,机器人学,機器人學,robotics,0.85,mainland-term,台灣自動化技術,tech,exact,,,,true
+robot,機器人,机器人,機器人,robot,0.85,mainland-term,台灣自動化設備,tech,exact,,,,true
+autonomous-vehicle,自動駕駛車,自动驾驶车,自動駕駛車,autonomous vehicle,0.90,mainland-term,台灣智慧運輸技術,tech,exact,,,,true
+self-driving,自動駕駛,自动驾驶,自動駕駛,self-driving,0.90,mainland-term,台灣智慧運輸技術,tech,exact,,,,true
+drone,無人機,无人机,無人機,drone,0.90,mainland-term,台灣無人載具技術,tech,exact,,,,true
+uav,無人飛行載具,无人飞行器,無人飛行器,UAV,0.90,mainland-term,台灣航空科技術語,tech,exact,,,,true
+lidar,光達,激光雷达,激光雷達,LiDAR,0.85,mainland-term,台灣感測技術標準,tech,exact,,,,true
+radar-tech,雷達,雷达,雷達,radar,0.80,mainland-term,台灣感測技術標準,tech,exact,,,,true
+sensor-fusion,感測器融合,传感器融合,傳感器融合,sensor fusion,0.90,mainland-term,台灣感測整合技術,tech,exact,,,,true
+renewable-energy,再生能源,可再生能源,可再生能源,renewable energy,0.90,mainland-term,台灣綠能技術標準,tech,exact,,,,true
+solar-energy,太陽能,太阳能,太陽能,solar energy,0.85,mainland-term,台灣綠能技術類型,tech,exact,,,,true
+wind-energy,風能,风能,風能,wind energy,0.85,mainland-term,台灣綠能技術類型,tech,exact,,,,true
+battery-tech,電池技術,电池技术,電池技術,battery technology,0.85,mainland-term,台灣能源儲存技術,tech,exact,,,,true
+fuel-cell,燃料電池,燃料电池,燃料電池,fuel cell,0.85,mainland-term,台灣清潔能源技術,tech,exact,,,,true
+smart-grid,智慧電網,智能电网,智能電網,smart grid,0.90,mainland-term,台灣電力系統技術,tech,exact,,,,true
+energy-storage,能源儲存,能源存储,能源存儲,energy storage,0.90,mainland-term,台灣能源管理技術,tech,exact,,,,true
+carbon-footprint,碳足跡,碳足迹,碳足跡,carbon footprint,0.90,mainland-term,台灣環保指標術語,tech,exact,,,,true
+carbon-neutral,碳中和,碳中和,碳中和,carbon neutral,0.85,mainland-term,台灣環保目標術語,tech,exact,,,,true
+net-zero,淨零,净零,淨零,net zero,0.85,mainland-term,台灣環保目標術語,tech,exact,,,,true
+sustainable-development,永續發展,可持续发展,可持續發展,sustainable development,0.85,mainland-term,台灣永續目標標準,tech,exact,,,,true
+circular-economy,循環經濟,循环经济,循環經濟,circular economy,0.90,mainland-term,台灣永續經濟模式,tech,exact,,,,true
+green-technology,綠色科技,绿色科技,綠色科技,green technology,0.85,mainland-term,台灣環保技術總稱,tech,exact,,,,true
+clean-tech,潔淨科技,清洁技术,清潔技術,clean tech,0.90,mainland-term,台灣環保技術標準,tech,exact,,,,true
+smart-city,智慧城市,智慧城市,智慧城市,smart city,0.85,mainland-term,台灣都市發展概念,tech,exact,,,,true
+digital-twin,數位雙胞胎,数字孪生,數字孿生,digital twin,0.90,mainland-term,台灣虛實整合技術,tech,exact,,,,true
+industry-4,工業4.0,工业4.0,工業4.0,Industry 4.0,0.85,mainland-term,台灣製造業革新,tech,exact,,,,true
+cyber-physical-system,虛實整合系統,信息物理系统,信息物理系統,CPS,0.90,mainland-term,台灣工業自動化,tech,exact,,,,true
+digital-transformation,數位轉型,数字化转型,數字化轉型,digital transformation,0.90,mainland-term,台灣企業革新術語,tech,exact,,,,true
+big-data,巨量資料,大数据,大數據,big data,0.90,mainland-term,台灣資料技術術語,tech,exact,,,,true
+data-analytics,資料分析,数据分析,數據分析,data analytics,0.90,mainland-term,台灣資料處理術語,tech,exact,,,,true
+data-science,資料科學,数据科学,數據科學,data science,0.90,mainland-term,台灣跨領域學科,tech,exact,,,,true
+data-mining,資料探勘,数据挖掘,數據挖掘,data mining,0.90,mainland-term,台灣資料處理技術,tech,exact,,,,true
+predictive-analytics,預測分析,预测分析,預測分析,predictive analytics,0.90,mainland-term,台灣資料應用技術,tech,exact,,,,true

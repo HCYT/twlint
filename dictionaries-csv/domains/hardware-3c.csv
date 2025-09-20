@@ -1,0 +1,92 @@
+id,taiwan,china_simplified,china_traditional,english,confidence,category,reason,domain,match_type,context_before,context_after,context_exclude,autofix_safe
+hardware,硬體,硬件,硬件,hardware,0.95,mainland-term,台灣計算機硬體標準,tech,exact,,,,true
+software,軟體,软件,軟件,software,0.95,mainland-term,台灣技術標準用語,tech,exact,,,,true
+firmware,韌體,固件,固件,firmware,0.95,mainland-term,台灣硬體技術標準,tech,exact,,,,true
+cpu,中央處理器,中央处理器,中央處理器,CPU,0.95,mainland-term,台灣電腦硬體標準,tech,exact,,,,true
+gpu,圖形處理器,图形处理器,圖形處理器,GPU,0.95,mainland-term,台灣顯示技術標準,tech,exact,,,,true
+ram,隨機存取記憶體,随机存取存储器,隨機存取存儲器,RAM,0.90,mainland-term,台灣記憶體技術,tech,exact,,,,true
+rom,唯讀記憶體,只读存储器,只讀存儲器,ROM,0.90,mainland-term,台灣記憶體技術,tech,exact,,,,true
+memory,記憶體,内存,內存,memory,0.95,mainland-term,台灣計算機硬體標準,tech,exact,,,,true
+ssd,固態硬碟,固态硬盘,固態硬盤,SSD,0.90,mainland-term,台灣儲存裝置標準,tech,exact,,,,true
+hdd,傳統硬碟,机械硬盘,機械硬盤,HDD,0.85,mainland-term,台灣儲存裝置標準,tech,exact,,,,true
+disk,磁碟,磁盘,磁盤,disk,0.90,mainland-term,台灣儲存裝置標準,tech,exact,,,,true
+drive,磁碟機,驱动器,驅動器,drive,0.90,mainland-term,台灣儲存設備標準,tech,exact,,,,true
+motherboard,主機板,主板,主板,motherboard,0.90,mainland-term,台灣電腦組件標準,tech,exact,,,,true
+chipset,晶片組,芯片组,芯片組,chipset,0.90,mainland-term,台灣晶片技術標準,tech,exact,,,,true
+chip,晶片,芯片,芯片,chip,0.95,mainland-term,台灣半導體標準,tech,exact,,,,true
+silicon,矽,硅,硅,silicon,0.95,mainland-term,台灣半導體材料,tech,exact,,,,true
+bios,基本輸入輸出系統,基本输入输出系统,基本輸入輸出系統,BIOS,0.90,mainland-term,台灣韌體標準,tech,exact,,,,true
+uefi,統一可延伸韌體介面,统一可扩展固件接口,統一可擴展固件接口,UEFI,0.90,mainland-term,台灣韌體標準,tech,exact,,,,true
+usb,通用序列匯流排,通用串行总线,通用串行總線,USB,0.90,mainland-term,台灣介面標準,tech,exact,,,,true
+hdmi,高畫質多媒體介面,高清多媒体接口,高清多媒體接口,HDMI,0.90,mainland-term,台灣顯示介面標準,tech,exact,,,,true
+displayport,顯示埠,显示端口,顯示端口,DisplayPort,0.85,mainland-term,台灣顯示介面標準,tech,exact,,,,true
+thunderbolt,雷電,雷电,雷電,Thunderbolt,0.85,mainland-term,台灣高速介面標準,tech,exact,,,,true
+screen,螢幕,屏幕,屏幕,screen,0.95,mainland-term,台灣顯示裝置標準,tech,exact,,,,true
+display,顯示器,显示器,顯示器,display,0.90,mainland-term,台灣顯示裝置標準,tech,exact,,,,true
+monitor,監視器,监视器,監視器,monitor,0.85,mainland-term,台灣顯示設備標準,tech,exact,,,,true
+resolution,解析度,分辨率,分辨率,resolution,0.90,mainland-term,台灣顯示技術標準,tech,exact,,,,true
+refresh-rate,更新率,刷新率,刷新率,refresh rate,0.90,mainland-term,台灣顯示技術標準,tech,exact,,,,true
+pixel,像素,像素,像素,pixel,0.80,mainland-term,台灣顯示技術標準,tech,exact,,,,true
+lcd,液晶顯示器,液晶显示器,液晶顯示器,LCD,0.90,mainland-term,台灣顯示技術標準,tech,exact,,,,true
+led,發光二極體,发光二极管,發光二極管,LED,0.90,mainland-term,台灣顯示技術標準,tech,exact,,,,true
+oled,有機發光二極體,有机发光二极管,有機發光二極管,OLED,0.90,mainland-term,台灣顯示技術標準,tech,exact,,,,true
+amoled,主動矩陣有機發光二極體,主动矩阵有机发光二极管,主動矩陣有機發光二極管,AMOLED,0.90,mainland-term,台灣顯示技術標準,tech,exact,,,,true
+touchpad,觸控板,触控板,觸控板,touchpad,0.85,mainland-term,台灣輸入裝置標準,tech,exact,,,,true
+touchscreen,觸控螢幕,触摸屏,觸摸屏,touchscreen,0.90,mainland-term,台灣輸入裝置標準,tech,exact,,,,true
+keyboard,鍵盤,键盘,鍵盤,keyboard,0.85,mainland-term,台灣輸入裝置標準,tech,exact,,,,true
+mouse,滑鼠,鼠标,鼠標,mouse,0.90,mainland-term,台灣週邊裝置標準,tech,exact,,,,true
+webcam,網路攝影機,网络摄像头,網絡攝像頭,webcam,0.90,mainland-term,台灣視訊裝置標準,tech,exact,,,,true
+microphone,麥克風,麦克风,麥克風,microphone,0.85,mainland-term,台灣音訊裝置標準,tech,exact,,,,true
+speaker,揚聲器,扬声器,揚聲器,speaker,0.85,mainland-term,台灣音訊裝置標準,tech,exact,,,,true
+headphone,耳機,耳机,耳機,headphone,0.80,mainland-term,台灣音訊裝置標準,tech,exact,,,,true
+printer,印表機,打印机,打印機,printer,0.90,mainland-term,台灣週邊裝置標準,tech,exact,,,,true
+scanner,掃描器,扫描仪,掃描儀,scanner,0.90,mainland-term,台灣週邊裝置標準,tech,exact,,,,true
+power-supply,電源供應器,电源,電源,power supply,0.90,mainland-term,台灣電腦組件標準,tech,exact,,,,true
+cooling-fan,散熱風扇,散热风扇,散熱風扇,cooling fan,0.85,mainland-term,台灣散熱系統標準,tech,exact,,,,true
+heat-sink,散熱片,散热片,散熱片,heat sink,0.85,mainland-term,台灣散熱系統標準,tech,exact,,,,true
+thermal-paste,散熱膏,导热硅脂,導熱硅脂,thermal paste,0.85,mainland-term,台灣散熱材料標準,tech,exact,,,,true
+overclocking,超頻,超频,超頻,overclocking,0.85,mainland-term,台灣效能調校技術,tech,exact,,,,true
+benchmark-tool,效能測試工具,基准测试工具,基準測試工具,benchmark tool,0.85,mainland-term,台灣硬體測試標準,tech,exact,,,,true
+driver,驅動程式,驱动程序,驅動程序,driver,0.90,mainland-term,台灣硬體管理標準,tech,exact,,,,true
+register,暫存器,寄存器,寄存器,register,0.90,mainland-term,台灣計算機硬體標準,tech,exact,,,,true
+bus,匯流排,总线,總線,bus,0.90,mainland-term,台灣電腦架構標準,tech,exact,,,,true
+bandwidth,頻寬,带宽,帶寬,bandwidth,0.95,mainland-term,台灣網路技術標準,tech,exact,,,,true
+storage,儲存體,存储,存儲,storage,0.90,mainland-term,台灣儲存技術標準,tech,exact,,,,true
+volume,磁碟區,卷,卷,volume,0.85,mainland-term,台灣儲存管理標準,tech,exact,,,,true
+raid,磁碟陣列,磁盘阵列,磁盤陣列,RAID,0.90,mainland-term,台灣儲存技術標準,tech,exact,,,,true
+nas,網路附接儲存,网络附加存储,網絡附加存儲,NAS,0.90,mainland-term,台灣儲存設備標準,tech,exact,,,,true
+laser,雷射,激光,激光,laser,0.95,mainland-term,台灣光學技術標準,tech,exact,,,,true
+sensor,感測器,传感器,傳感器,sensor,0.90,mainland-term,台灣感測裝置標準,tech,exact,,,,true
+actuator,致動器,执行器,執行器,actuator,0.85,mainland-term,台灣控制元件標準,tech,exact,,,,true
+mems,微機電系統,微机电系统,微機電系統,MEMS,0.90,mainland-term,台灣微型技術標準,tech,exact,,,,true
+lidar,光達,激光雷达,激光雷達,LiDAR,0.85,mainland-term,台灣感測技術標準,tech,exact,,,,true
+radar,雷達,雷达,雷達,radar,0.80,mainland-term,台灣感測技術標準,tech,exact,,,,true
+battery,電池,电池,電池,battery,0.85,mainland-term,台灣電源技術標準,tech,exact,,,,true
+lithium-battery,鋰電池,锂电池,鋰電池,lithium battery,0.85,mainland-term,台灣電池技術標準,tech,exact,,,,true
+adapter,轉接器,适配器,適配器,adapter,0.90,mainland-term,台灣週邊配件標準,tech,exact,,,,true
+dongle,轉接頭,适配器,適配器,dongle,0.85,mainland-term,台灣週邊配件標準,tech,exact,,,,true
+cable,纜線,电缆,電纜,cable,0.85,mainland-term,台灣連接線材標準,tech,exact,,,,true
+connector,連接器,连接器,連接器,connector,0.85,mainland-term,台灣介面元件標準,tech,exact,,,,true
+port,連接埠,端口,端口,port,0.95,mainland-term,台灣介面端點標準,tech,exact,,,,true
+slot,插槽,插槽,插槽,slot,0.85,mainland-term,台灣擴充介面標準,tech,exact,,,,true
+expansion-card,擴充卡,扩展卡,擴展卡,expansion card,0.90,mainland-term,台灣硬體擴充標準,tech,exact,,,,true
+graphics-card,顯示卡,显卡,顯卡,graphics card,0.90,mainland-term,台灣顯示硬體標準,tech,exact,,,,true
+sound-card,音效卡,声卡,聲卡,sound card,0.90,mainland-term,台灣音訊硬體標準,tech,exact,,,,true
+network-card,網路卡,网卡,網卡,network card,0.90,mainland-term,台灣網路硬體標準,tech,exact,,,,true
+wireless-card,無線網卡,无线网卡,無線網卡,wireless card,0.90,mainland-term,台灣無線硬體標準,tech,exact,,,,true
+bluetooth,藍牙,蓝牙,藍牙,Bluetooth,0.85,mainland-term,台灣無線技術標準,tech,exact,,,,true
+wifi,無線網路,无线网络,無線網絡,Wi-Fi,0.90,mainland-term,台灣無線技術標準,tech,exact,,,,true
+5g,第五代行動通訊,第五代移动通信,第五代移動通信,5G,0.90,mainland-term,台灣通訊技術標準,tech,exact,,,,true
+lte,長期演進技術,长期演进,長期演進,LTE,0.85,mainland-term,台灣通訊技術標準,tech,exact,,,,true
+nfc,近場通訊,近场通信,近場通信,NFC,0.85,mainland-term,台灣無線技術標準,tech,exact,,,,true
+ethernet,乙太網路,以太网,以太網,Ethernet,0.90,mainland-term,台灣網路標準,tech,exact,,,,true
+router,路由器,路由器,路由器,router,0.80,mainland-term,台灣網路設備標準,tech,exact,,,,true
+switch,交換器,交换机,交換機,switch,0.90,mainland-term,台灣網路設備標準,tech,exact,,,,true
+hub,集線器,集线器,集線器,hub,0.90,mainland-term,台灣網路設備標準,tech,exact,,,,true
+modem,數據機,调制解调器,調製解調器,modem,0.90,mainland-term,台灣網路設備標準,tech,exact,,,,true
+gateway,閘道器,网关,網關,gateway,0.90,mainland-term,台灣網路設備術語,tech,exact,,,,true
+repeater,中繼器,中继器,中繼器,repeater,0.85,mainland-term,台灣網路設備術語,tech,exact,,,,true
+bridge,橋接器,网桥,網橋,bridge,0.90,mainland-term,台灣網路設備術語,tech,exact,,,,true
+access-point,無線存取點,无线接入点,無線接入點,access point,0.90,mainland-term,台灣無線網路設備,tech,exact,,,,true
+antenna,天線,天线,天線,antenna,0.85,mainland-term,台灣無線設備元件,tech,exact,,,,true
+amplifier,放大器,放大器,放大器,amplifier,0.85,mainland-term,台灣訊號處理設備,tech,exact,,,,true

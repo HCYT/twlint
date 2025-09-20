@@ -1,0 +1,107 @@
+id,taiwan,china_simplified,china_traditional,english,confidence,category,reason,domain,match_type,context_before,context_after,context_exclude,autofix_safe
+social-media,社群媒體,社交媒体,社交媒體,social media,0.90,mainland-term,台灣網路平台術語,tech,exact,,,,true
+social-network,社群網路,社交网络,社交網絡,social network,0.90,mainland-term,台灣網路平台術語,tech,exact,,,,true
+post,貼文,帖子,帖子,post,0.90,mainland-term,台灣社群內容術語,tech,exact,,,,true
+status,動態,状态,狀態,status,0.85,mainland-term,台灣社群內容術語,tech,exact,,,,true
+story,限時動態,故事,故事,story,0.85,mainland-term,台灣社群功能術語,tech,exact,,,,true
+feed,動態消息,信息流,信息流,feed,0.85,mainland-term,台灣社群內容術語,tech,exact,,,,true
+timeline,時間軸,时间线,時間線,timeline,0.90,mainland-term,台灣社群顯示術語,tech,exact,,,,true
+profile,個人檔案,个人资料,個人資料,profile,0.85,mainland-term,台灣社群帳號術語,tech,exact,,,,true
+follower,追蹤者,粉丝,粉絲,follower,0.90,mainland-term,台灣社群媒體術語,tech,exact,,,,true
+following,追蹤中,关注,關注,following,0.90,mainland-term,台灣社群媒體術語,tech,exact,,,,true
+like,按讚,点赞,點讚,like,0.90,mainland-term,台灣社群互動術語,tech,exact,,,,true
+share,分享,分享,分享,share,0.80,mainland-term,台灣社群互動術語,tech,exact,,,,true
+comment,留言,评论,評論,comment,0.90,mainland-term,台灣社群互動術語,tech,exact,,,,true
+reply,回覆,回复,回復,reply,0.85,mainland-term,台灣社群互動術語,tech,exact,,,,true
+repost,轉發,转发,轉發,repost,0.85,mainland-term,台灣社群互動術語,tech,exact,,,,true
+retweet,轉推,转推,轉推,retweet,0.85,mainland-term,台灣Twitter術語,tech,exact,,,,true
+hashtag,標籤,话题标签,話題標籤,hashtag,0.85,mainland-term,台灣社群分類術語,tech,exact,,,,true
+tag,標記,标记,標記,tag,0.85,mainland-term,台灣社群功能術語,tech,exact,,,,true
+mention,提及,@,@,mention,0.85,mainland-term,台灣社群互動術語,tech,exact,,,,true
+notification,通知,通知,通知,notification,0.80,mainland-term,台灣社群系統術語,tech,exact,,,,true
+message,訊息,消息,消息,message,0.85,mainland-term,台灣社群通訊術語,tech,exact,,,,true
+dm,私訊,私信,私信,DM,0.90,mainland-term,台灣社群通訊術語,tech,exact,,,,true
+chat,聊天,聊天,聊天,chat,0.80,mainland-term,台灣社群通訊術語,tech,exact,,,,true
+group-chat,群組聊天,群聊,群聊,group chat,0.90,mainland-term,台灣社群通訊術語,tech,exact,,,,true
+broadcast,廣播,广播,廣播,broadcast,0.85,mainland-term,台灣社群傳播術語,tech,exact,,,,true
+live,直播,直播,直播,live,0.80,mainland-term,台灣社群功能術語,tech,exact,,,,true
+livestream,直播,直播,直播,livestream,0.80,mainland-term,台灣網路傳播術語,tech,exact,,,,true
+streaming,串流,流媒体,流媒體,streaming,0.90,mainland-term,台灣數位媒體術語,tech,exact,,,,true
+video-call,視訊通話,视频通话,視頻通話,video call,0.90,mainland-term,台灣通訊功能術語,tech,exact,,,,true
+voice-call,語音通話,语音通话,語音通話,voice call,0.85,mainland-term,台灣通訊功能術語,tech,exact,,,,true
+emoji,表情符號,表情符号,表情符號,emoji,0.85,mainland-term,台灣數位表達術語,tech,exact,,,,true
+emoticon,表情符號,表情,表情,emoticon,0.85,mainland-term,台灣數位表達術語,tech,exact,,,,true
+sticker,貼圖,贴纸,貼紙,sticker,0.90,mainland-term,台灣數位表達術語,tech,exact,,,,true
+gif,動圖,动图,動圖,GIF,0.85,mainland-term,台灣數位媒體術語,tech,exact,,,,true
+meme,迷因,表情包,表情包,meme,0.85,mainland-term,台灣網路文化術語,tech,exact,,,,true
+viral,爆紅,病毒式传播,病毒式傳播,viral,0.85,mainland-term,台灣網路傳播術語,tech,exact,,,,true
+trending,熱門,热门,熱門,trending,0.85,mainland-term,台灣社群趨勢術語,tech,exact,,,,true
+trend,趨勢,趋势,趨勢,trend,0.85,mainland-term,台灣社群分析術語,tech,exact,,,,true
+influencer,網紅,网红,網紅,influencer,0.85,mainland-term,台灣社群行銷術語,tech,exact,,,,true
+kol,意見領袖,KOL,KOL,KOL,0.85,mainland-term,台灣社群行銷術語,tech,exact,,,,true
+blogger,部落客,博主,博主,blogger,0.90,mainland-term,台灣網路創作者,tech,exact,,,,true
+vlogger,影音部落客,视频博主,視頻博主,vlogger,0.90,mainland-term,台灣網路創作者,tech,exact,,,,true
+blog,部落格,博客,博客,blog,0.90,mainland-term,台灣網路平台術語,tech,exact,,,,true
+vlog,影音部落格,视频博客,視頻博客,vlog,0.90,mainland-term,台灣網路內容術語,tech,exact,,,,true
+podcast,播客,播客,播客,podcast,0.85,mainland-term,台灣數位媒體術語,tech,exact,,,,true
+channel,頻道,频道,頻道,channel,0.85,mainland-term,台灣媒體平台術語,tech,exact,,,,true
+subscribe,訂閱,订阅,訂閱,subscribe,0.85,mainland-term,台灣媒體功能術語,tech,exact,,,,true
+subscriber,訂閱者,订阅者,訂閱者,subscriber,0.85,mainland-term,台灣媒體用戶術語,tech,exact,,,,true
+unsubscribe,取消訂閱,退订,退訂,unsubscribe,0.90,mainland-term,台灣媒體功能術語,tech,exact,,,,true
+bell-notification,小鈴鐺,小铃铛,小鈴鐺,bell notification,0.85,mainland-term,台灣通知功能術語,tech,exact,,,,true
+algorithm,演算法,算法,算法,algorithm,0.95,mainland-term,台灣技術術語標準,tech,exact,,,,true
+engagement,互動率,互动率,互動率,engagement,0.85,mainland-term,台灣社群分析術語,tech,exact,,,,true
+reach,觸及率,覆盖率,覆蓋率,reach,0.85,mainland-term,台灣社群分析術語,tech,exact,,,,true
+impression,曝光,印象,印象,impression,0.85,mainland-term,台灣廣告術語標準,tech,exact,,,,true
+analytics,分析,分析,分析,analytics,0.80,mainland-term,台灣數據處理術語,tech,exact,,,,true
+insights,洞察報告,洞察,洞察,insights,0.85,mainland-term,台灣數據分析術語,tech,exact,,,,true
+metric,指標,指标,指標,metric,0.85,mainland-term,台灣數據分析術語,tech,exact,,,,true
+dashboard,儀表板,仪表盘,儀表盤,dashboard,0.85,mainland-term,台灣數據視覺化,tech,exact,,,,true
+content-creator,內容創作者,内容创作者,內容創作者,content creator,0.90,mainland-term,台灣社群職業術語,tech,exact,,,,true
+creator-economy,創作者經濟,创作者经济,創作者經濟,creator economy,0.90,mainland-term,台灣數位經濟術語,tech,exact,,,,true
+monetization,營利,变现,變現,monetization,0.90,mainland-term,台灣商業模式術語,tech,exact,,,,true
+sponsorship,贊助,赞助,贊助,sponsorship,0.85,mainland-term,台灣商業合作術語,tech,exact,,,,true
+collaboration,合作,合作,合作,collaboration,0.80,mainland-term,台灣商業關係術語,tech,exact,,,,true
+brand-partnership,品牌合作,品牌合作,品牌合作,brand partnership,0.85,mainland-term,台灣商業合作術語,tech,exact,,,,true
+affiliate-marketing,聯盟行銷,联盟营销,聯盟營銷,affiliate marketing,0.90,mainland-term,台灣數位行銷術語,tech,exact,,,,true
+sponsored-post,業配文,软文,軟文,sponsored post,0.90,mainland-term,台灣廣告內容術語,tech,exact,,,,true
+advertisement,廣告,广告,廣告,advertisement,0.85,mainland-term,台灣商業推廣術語,tech,exact,,,,true
+ad-campaign,廣告活動,广告活动,廣告活動,ad campaign,0.85,mainland-term,台灣廣告行銷術語,tech,exact,,,,true
+target-audience,目標受眾,目标受众,目標受眾,target audience,0.90,mainland-term,台灣行銷策略術語,tech,exact,,,,true
+demographic,人口統計,人口统计,人口統計,demographic,0.85,mainland-term,台灣市場分析術語,tech,exact,,,,true
+community,社群,社区,社區,community,0.90,mainland-term,台灣網路群體術語,tech,exact,,,,true
+group,群組,群组,群組,group,0.85,mainland-term,台灣社群組織術語,tech,exact,,,,true
+page,粉絲專頁,主页,主頁,page,0.90,mainland-term,台灣Facebook術語,tech,exact,,,,true
+event,活動,活动,活動,event,0.85,mainland-term,台灣社群活動術語,tech,exact,,,,true
+poll,投票,投票,投票,poll,0.80,mainland-term,台灣互動功能術語,tech,exact,,,,true
+quiz,測驗,测验,測驗,quiz,0.85,mainland-term,台灣互動功能術語,tech,exact,,,,true
+filter,濾鏡,滤镜,濾鏡,filter,0.85,mainland-term,台灣影像處理術語,tech,exact,,,,true
+effect,特效,特效,特效,effect,0.80,mainland-term,台灣影像處理術語,tech,exact,,,,true
+ar-filter,AR濾鏡,AR滤镜,AR濾鏡,AR filter,0.90,mainland-term,台灣擴增實境術語,tech,exact,,,,true
+lens,鏡頭,镜头,鏡頭,lens,0.85,mainland-term,台灣相機功能術語,tech,exact,,,,true
+boomerang,迴力鏢,回旋镖,迴旋鏢,boomerang,0.85,mainland-term,台灣Instagram功能,tech,exact,,,,true
+reel,連續短片,短视频,短視頻,reel,0.90,mainland-term,台灣Instagram功能,tech,exact,,,,true
+shorts,短影音,短视频,短視頻,shorts,0.90,mainland-term,台灣YouTube功能,tech,exact,,,,true
+highlight,精選,高光,高光,highlight,0.85,mainland-term,台灣社群功能術語,tech,exact,,,,true
+archive,封存,归档,歸檔,archive,0.90,mainland-term,台灣社群功能術語,tech,exact,,,,true
+saved,已儲存,收藏,收藏,saved,0.85,mainland-term,台灣社群功能術語,tech,exact,,,,true
+bookmark-social,書籤,书签,書籤,bookmark,0.85,mainland-term,台灣社群功能術語,tech,exact,,,,true
+explore,探索,发现,發現,explore,0.85,mainland-term,台灣社群功能術語,tech,exact,,,,true
+discover,發現,发现,發現,discover,0.85,mainland-term,台灣社群功能術語,tech,exact,,,,true
+recommendation,推薦,推荐,推薦,recommendation,0.85,mainland-term,台灣內容推送術語,tech,exact,,,,true
+suggested,建議,建议,建議,suggested,0.85,mainland-term,台灣內容推送術語,tech,exact,,,,true
+privacy,隱私,隐私,隱私,privacy,0.85,mainland-term,台灣資安設定術語,tech,exact,,,,true
+privacy-setting,隱私設定,隐私设置,隱私設置,privacy setting,0.90,mainland-term,台灣資安設定術語,tech,exact,,,,true
+block,封鎖,拉黑,拉黑,block,0.90,mainland-term,台灣社群管理術語,tech,exact,,,,true
+unblock,解除封鎖,解除拉黑,解除拉黑,unblock,0.90,mainland-term,台灣社群管理術語,tech,exact,,,,true
+mute,靜音,静音,靜音,mute,0.85,mainland-term,台灣社群管理術語,tech,exact,,,,true
+unmute,取消靜音,取消静音,取消靜音,unmute,0.85,mainland-term,台灣社群管理術語,tech,exact,,,,true
+report,檢舉,举报,舉報,report,0.90,mainland-term,台灣社群管理術語,tech,exact,,,,true
+flag,標記,标记,標記,flag,0.85,mainland-term,台灣內容管理術語,tech,exact,,,,true
+spam,垃圾訊息,垃圾信息,垃圾信息,spam,0.90,mainland-term,台灣內容分類術語,tech,exact,,,,true
+fake-news,假新聞,假新闻,假新聞,fake news,0.90,mainland-term,台灣資訊判別術語,tech,exact,,,,true
+fact-check,事實查核,事实核查,事實核查,fact check,0.90,mainland-term,台灣資訊驗證術語,tech,exact,,,,true
+verification,驗證,验证,驗證,verification,0.85,mainland-term,台灣帳號認證術語,tech,exact,,,,true
+verified-account,認證帳號,认证账号,認證賬號,verified account,0.90,mainland-term,台灣帳號類型術語,tech,exact,,,,true
+blue-tick,藍勾勾,蓝V,藍V,blue tick,0.85,mainland-term,台灣認證標記術語,tech,exact,,,,true
+badge,徽章,徽章,徽章,badge,0.80,mainland-term,台灣認證標記術語,tech,exact,,,,true

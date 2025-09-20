@@ -1,0 +1,3449 @@
+{
+  "metadata": {
+    "name": "business-finance",
+    "version": "1.0.0",
+    "entries": 123
+  },
+  "lookup": {
+    "项目经理": {
+      "taiwan": "專案經理",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣職位名稱標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "项目经理_project_manager": {
+      "taiwan": "專案經理",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣職位名稱標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "項目經理": {
+      "taiwan": "專案經理",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣職位名稱標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "項目經理_project_manager": {
+      "taiwan": "專案經理",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣職位名稱標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "项目管理": {
+      "taiwan": "專案管理",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "项目管理_project_management": {
+      "taiwan": "專案管理",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "項目管理": {
+      "taiwan": "專案管理",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "項目管理_project_management": {
+      "taiwan": "專案管理",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "项目": {
+      "taiwan": "專案",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣商業術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "项目_project": {
+      "taiwan": "專案",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣商業術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "項目": {
+      "taiwan": "專案",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣商業術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "項目_project": {
+      "taiwan": "專案",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣商業術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "里程碑": {
+      "taiwan": "里程碑",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣專案管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "里程碑_milestone": {
+      "taiwan": "里程碑",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣專案管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "可交付成果": {
+      "taiwan": "交付項目",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣專案管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "可交付成果_deliverable": {
+      "taiwan": "交付項目",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣專案管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "利益相关者": {
+      "taiwan": "利害關係人",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "利益相关者_stakeholder": {
+      "taiwan": "利害關係人",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "利益相關者": {
+      "taiwan": "利害關係人",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "利益相關者_stakeholder": {
+      "taiwan": "利害關係人",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "预算": {
+      "taiwan": "預算",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣財務管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "预算_budget": {
+      "taiwan": "預算",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣財務管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "預算": {
+      "taiwan": "預算",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣財務管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "預算_budget": {
+      "taiwan": "預算",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣財務管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "收入": {
+      "taiwan": "營收",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣財務術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "收入_revenue": {
+      "taiwan": "營收",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣財務術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "利润": {
+      "taiwan": "利潤",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣財務術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "利润_profit": {
+      "taiwan": "利潤",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣財務術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "利潤": {
+      "taiwan": "利潤",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣財務術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "利潤_profit": {
+      "taiwan": "利潤",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣財務術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "亏损": {
+      "taiwan": "虧損",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "亏损_loss": {
+      "taiwan": "虧損",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "虧損": {
+      "taiwan": "虧損",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "虧損_loss": {
+      "taiwan": "虧損",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "投资": {
+      "taiwan": "投資",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣金融術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "投资_investment": {
+      "taiwan": "投資",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣金融術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "投資": {
+      "taiwan": "投資",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣金融術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "投資_investment": {
+      "taiwan": "投資",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣金融術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "回报": {
+      "taiwan": "報酬",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣投資術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "回报_return": {
+      "taiwan": "報酬",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣投資術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "回報": {
+      "taiwan": "報酬",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣投資術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "回報_return": {
+      "taiwan": "報酬",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣投資術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "股息": {
+      "taiwan": "股利",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣股市術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "股息_dividend": {
+      "taiwan": "股利",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣股市術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "股票": {
+      "taiwan": "股票",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣證券術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "股票_stock": {
+      "taiwan": "股票",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣證券術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "债券": {
+      "taiwan": "債券",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣金融商品術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "债券_bond": {
+      "taiwan": "債券",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣金融商品術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "債券": {
+      "taiwan": "債券",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣金融商品術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "債券_bond": {
+      "taiwan": "債券",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣金融商品術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "期货": {
+      "taiwan": "期貨",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣衍生性商品",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "期货_futures": {
+      "taiwan": "期貨",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣衍生性商品",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "期貨": {
+      "taiwan": "期貨",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣衍生性商品",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "期貨_futures": {
+      "taiwan": "期貨",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣衍生性商品",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "期权": {
+      "taiwan": "選擇權",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣衍生性商品",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "期权_option_finance": {
+      "taiwan": "選擇權",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣衍生性商品",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "期權": {
+      "taiwan": "選擇權",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣衍生性商品",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "期權_option_finance": {
+      "taiwan": "選擇權",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣衍生性商品",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "投资组合": {
+      "taiwan": "投資組合",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣投資管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "投资组合_portfolio": {
+      "taiwan": "投資組合",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣投資管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "投資組合": {
+      "taiwan": "投資組合",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣投資管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "投資組合_portfolio": {
+      "taiwan": "投資組合",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣投資管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "资产": {
+      "taiwan": "資產",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣會計術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "资产_asset": {
+      "taiwan": "資產",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣會計術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "資產": {
+      "taiwan": "資產",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣會計術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "資產_asset": {
+      "taiwan": "資產",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣會計術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "负债": {
+      "taiwan": "負債",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣會計術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "负债_liability": {
+      "taiwan": "負債",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣會計術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "負債": {
+      "taiwan": "負債",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣會計術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "負債_liability": {
+      "taiwan": "負債",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣會計術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "权益": {
+      "taiwan": "權益",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣會計術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "权益_equity": {
+      "taiwan": "權益",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣會計術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "權益": {
+      "taiwan": "權益",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣會計術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "權益_equity": {
+      "taiwan": "權益",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣會計術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "资产负债表": {
+      "taiwan": "資產負債表",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務報表術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "资产负债表_balance_sheet": {
+      "taiwan": "資產負債表",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務報表術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "資產負債表": {
+      "taiwan": "資產負債表",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務報表術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "資產負債表_balance_sheet": {
+      "taiwan": "資產負債表",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務報表術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "损益表": {
+      "taiwan": "損益表",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務報表術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "损益表_income_statement": {
+      "taiwan": "損益表",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務報表術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "損益表": {
+      "taiwan": "損益表",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務報表術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "損益表_income_statement": {
+      "taiwan": "損益表",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務報表術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "现金流": {
+      "taiwan": "現金流量",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "现金流_cash_flow": {
+      "taiwan": "現金流量",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "現金流": {
+      "taiwan": "現金流量",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "現金流_cash_flow": {
+      "taiwan": "現金流量",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "审计": {
+      "taiwan": "稽核",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣會計稽核術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "审计_audit": {
+      "taiwan": "稽核",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣會計稽核術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "審計": {
+      "taiwan": "稽核",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣會計稽核術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "審計_audit": {
+      "taiwan": "稽核",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣會計稽核術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "合规": {
+      "taiwan": "法規遵循",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業治理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "合规_compliance": {
+      "taiwan": "法規遵循",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業治理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "合規": {
+      "taiwan": "法規遵循",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業治理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "合規_compliance": {
+      "taiwan": "法規遵循",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業治理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "治理": {
+      "taiwan": "公司治理",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "治理_governance": {
+      "taiwan": "公司治理",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "战略": {
+      "taiwan": "策略",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業規劃術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "战略_strategy": {
+      "taiwan": "策略",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業規劃術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "戰略": {
+      "taiwan": "策略",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業規劃術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "戰略_strategy": {
+      "taiwan": "策略",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業規劃術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "战术": {
+      "taiwan": "戰術",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業執行術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "战术_tactics": {
+      "taiwan": "戰術",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業執行術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "戰術": {
+      "taiwan": "戰術",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業執行術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "戰術_tactics": {
+      "taiwan": "戰術",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業執行術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "关键绩效指标": {
+      "taiwan": "關鍵績效指標",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣績效管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "关键绩效指标_kpi": {
+      "taiwan": "關鍵績效指標",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣績效管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "關鍵績效指標": {
+      "taiwan": "關鍵績效指標",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣績效管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "關鍵績效指標_kpi": {
+      "taiwan": "關鍵績效指標",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣績效管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "投资回报率": {
+      "taiwan": "投資報酬率",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "投资回报率_roi": {
+      "taiwan": "投資報酬率",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "投資回報率": {
+      "taiwan": "投資報酬率",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "投資回報率_roi": {
+      "taiwan": "投資報酬率",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "盈亏平衡": {
+      "taiwan": "損益兩平",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "盈亏平衡_breakeven": {
+      "taiwan": "損益兩平",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "盈虧平衡": {
+      "taiwan": "損益兩平",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "盈虧平衡_breakeven": {
+      "taiwan": "損益兩平",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣財務分析術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "利润率": {
+      "taiwan": "利潤率",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣財務指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "利润率_margin": {
+      "taiwan": "利潤率",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣財務指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "利潤率": {
+      "taiwan": "利潤率",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣財務指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "利潤率_margin": {
+      "taiwan": "利潤率",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣財務指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "加价": {
+      "taiwan": "加成",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣定價策略術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "加价_markup": {
+      "taiwan": "加成",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣定價策略術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "加價": {
+      "taiwan": "加成",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣定價策略術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "加價_markup": {
+      "taiwan": "加成",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣定價策略術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "折扣": {
+      "taiwan": "折扣",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣行銷術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "折扣_discount": {
+      "taiwan": "折扣",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣行銷術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "促销": {
+      "taiwan": "促銷",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣行銷活動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "促销_promotion": {
+      "taiwan": "促銷",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣行銷活動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "促銷": {
+      "taiwan": "促銷",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣行銷活動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "促銷_promotion": {
+      "taiwan": "促銷",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣行銷活動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "营销": {
+      "taiwan": "行銷",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "营销_marketing": {
+      "taiwan": "行銷",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "營銷": {
+      "taiwan": "行銷",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "營銷_marketing": {
+      "taiwan": "行銷",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "广告": {
+      "taiwan": "廣告",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣行銷傳播術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "广告_advertising": {
+      "taiwan": "廣告",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣行銷傳播術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "廣告": {
+      "taiwan": "廣告",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣行銷傳播術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "廣告_advertising": {
+      "taiwan": "廣告",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣行銷傳播術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "品牌": {
+      "taiwan": "品牌",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣行銷管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "品牌_brand": {
+      "taiwan": "品牌",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣行銷管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "客户": {
+      "taiwan": "客戶",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業關係術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "客户_customer": {
+      "taiwan": "客戶",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣顧客關係術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "客戶": {
+      "taiwan": "客戶",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業關係術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "客戶_customer": {
+      "taiwan": "客戶",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣顧客關係術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "客户_client_business": {
+      "taiwan": "客戶",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業關係術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "客戶_client_business": {
+      "taiwan": "客戶",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業關係術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "供应商": {
+      "taiwan": "供應商",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣供應鏈術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "供应商_vendor": {
+      "taiwan": "供應商",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣供應鏈術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "供應商": {
+      "taiwan": "供應商",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣供應鏈術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "供應商_vendor": {
+      "taiwan": "供應商",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣供應鏈術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "供货商": {
+      "taiwan": "供應商",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣供應鏈術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "供货商_supplier": {
+      "taiwan": "供應商",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣供應鏈術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "供貨商": {
+      "taiwan": "供應商",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣供應鏈術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "供貨商_supplier": {
+      "taiwan": "供應商",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣供應鏈術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "采购": {
+      "taiwan": "採購",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣供應鏈術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "采购_procurement": {
+      "taiwan": "採購",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣供應鏈術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "采購": {
+      "taiwan": "採購",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣供應鏈術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "采購_procurement": {
+      "taiwan": "採購",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣供應鏈術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "库存": {
+      "taiwan": "庫存",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣物料管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "库存_inventory": {
+      "taiwan": "庫存",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣物料管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "庫存": {
+      "taiwan": "庫存",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣物料管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "庫存_inventory": {
+      "taiwan": "庫存",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣物料管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "物流": {
+      "taiwan": "物流",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣供應鏈術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "物流_logistics": {
+      "taiwan": "物流",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣供應鏈術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "仓库": {
+      "taiwan": "倉庫",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣物流設施術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "仓库_warehouse": {
+      "taiwan": "倉庫",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣物流設施術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "倉庫": {
+      "taiwan": "倉庫",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣物流設施術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "倉庫_warehouse": {
+      "taiwan": "倉庫",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣物流設施術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "分销": {
+      "taiwan": "配銷",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣通路管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "分销_distribution": {
+      "taiwan": "配銷",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣通路管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "分銷": {
+      "taiwan": "配銷",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣通路管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "分銷_distribution": {
+      "taiwan": "配銷",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣通路管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "零售": {
+      "taiwan": "零售",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣商業模式術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "零售_retail": {
+      "taiwan": "零售",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣商業模式術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "批发": {
+      "taiwan": "批發",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業模式術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "批发_wholesale": {
+      "taiwan": "批發",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業模式術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "批發": {
+      "taiwan": "批發",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業模式術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "批發_wholesale": {
+      "taiwan": "批發",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業模式術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "电子商务": {
+      "taiwan": "電子商務",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數位商業術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "电子商务_e_commerce": {
+      "taiwan": "電子商務",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數位商業術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "電子商務": {
+      "taiwan": "電子商務",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數位商業術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "電子商務_e_commerce": {
+      "taiwan": "電子商務",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數位商業術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "B2B": {
+      "taiwan": "企業對企業",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業模式術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "B2B_b2b": {
+      "taiwan": "企業對企業",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業模式術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "B2C": {
+      "taiwan": "企業對消費者",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業模式術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "B2C_b2c": {
+      "taiwan": "企業對消費者",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業模式術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "C2C": {
+      "taiwan": "消費者對消費者",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業模式術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "C2C_c2c": {
+      "taiwan": "消費者對消費者",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業模式術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "特许经营": {
+      "taiwan": "加盟",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業模式術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "特许经营_franchise": {
+      "taiwan": "加盟",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業模式術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "特許經營": {
+      "taiwan": "加盟",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業模式術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "特許經營_franchise": {
+      "taiwan": "加盟",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業模式術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "并购": {
+      "taiwan": "併購",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業發展術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "并购_merger": {
+      "taiwan": "併購",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業發展術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "併購": {
+      "taiwan": "併購",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業發展術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "併購_merger": {
+      "taiwan": "併購",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業發展術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "收购": {
+      "taiwan": "收購",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業發展術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "收购_acquisition": {
+      "taiwan": "收購",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業發展術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "收購": {
+      "taiwan": "收購",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業發展術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "收購_acquisition": {
+      "taiwan": "收購",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業發展術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "首次公开募股": {
+      "taiwan": "首次公開發行",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資本市場術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "首次公开募股_ipo": {
+      "taiwan": "首次公開發行",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資本市場術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "首次公開募股": {
+      "taiwan": "首次公開發行",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資本市場術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "首次公開募股_ipo": {
+      "taiwan": "首次公開發行",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資本市場術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "上市": {
+      "taiwan": "上市",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣證券市場術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "上市_listing": {
+      "taiwan": "上市",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣證券市場術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "退市": {
+      "taiwan": "下市",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣證券市場術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "退市_delisting": {
+      "taiwan": "下市",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣證券市場術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "股东": {
+      "taiwan": "股東",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣公司組織術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "股东_shareholder": {
+      "taiwan": "股東",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣公司組織術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "股東": {
+      "taiwan": "股東",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣公司組織術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "股東_shareholder": {
+      "taiwan": "股東",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣公司組織術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "董事会": {
+      "taiwan": "董事會",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣公司治理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "董事会_board_of_directors": {
+      "taiwan": "董事會",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣公司治理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "董事會": {
+      "taiwan": "董事會",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣公司治理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "董事會_board_of_directors": {
+      "taiwan": "董事會",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣公司治理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "首席执行官": {
+      "taiwan": "執行長",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業職位術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "首席执行官_ceo": {
+      "taiwan": "執行長",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業職位術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "首席執行官": {
+      "taiwan": "執行長",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業職位術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "首席執行官_ceo": {
+      "taiwan": "執行長",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業職位術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "首席财务官": {
+      "taiwan": "財務長",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業職位術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "首席财务官_cfo": {
+      "taiwan": "財務長",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業職位術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "首席財務官": {
+      "taiwan": "財務長",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業職位術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "首席財務官_cfo": {
+      "taiwan": "財務長",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業職位術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "首席技术官": {
+      "taiwan": "技術長",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業職位術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "首席技术官_cto": {
+      "taiwan": "技術長",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業職位術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "首席技術官": {
+      "taiwan": "技術長",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業職位術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "首席技術官_cto": {
+      "taiwan": "技術長",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業職位術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "首席运营官": {
+      "taiwan": "營運長",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業職位術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "首席运营官_coo": {
+      "taiwan": "營運長",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業職位術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "首席運營官": {
+      "taiwan": "營運長",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業職位術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "首席運營官_coo": {
+      "taiwan": "營運長",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業職位術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "人力资源": {
+      "taiwan": "人力資源",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業部門術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "人力资源_hr": {
+      "taiwan": "人力資源",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業部門術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "人力資源": {
+      "taiwan": "人力資源",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業部門術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "人力資源_hr": {
+      "taiwan": "人力資源",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業部門術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "招聘": {
+      "taiwan": "招募",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣人資管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "招聘_recruitment": {
+      "taiwan": "招募",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣人資管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "培训": {
+      "taiwan": "訓練",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣人資發展術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "培训_training": {
+      "taiwan": "訓練",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣人資發展術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "培訓": {
+      "taiwan": "訓練",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣人資發展術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "培訓_training": {
+      "taiwan": "訓練",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣人資發展術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "绩效评估": {
+      "taiwan": "績效考核",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣人資管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "绩效评估_performance_review": {
+      "taiwan": "績效考核",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣人資管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "績效評估": {
+      "taiwan": "績效考核",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣人資管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "績效評估_performance_review": {
+      "taiwan": "績效考核",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣人資管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "薪酬": {
+      "taiwan": "薪酬",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣人資管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "薪酬_compensation": {
+      "taiwan": "薪酬",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣人資管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "福利": {
+      "taiwan": "福利",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣人資管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "福利_benefit": {
+      "taiwan": "福利",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣人資管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "奖金": {
+      "taiwan": "獎金",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣薪資福利術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "奖金_bonus": {
+      "taiwan": "獎金",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣薪資福利術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "獎金": {
+      "taiwan": "獎金",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣薪資福利術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "獎金_bonus": {
+      "taiwan": "獎金",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣薪資福利術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "激励": {
+      "taiwan": "激勵",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣人資管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "激励_incentive": {
+      "taiwan": "激勵",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣人資管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "激勵": {
+      "taiwan": "激勵",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣人資管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "激勵_incentive": {
+      "taiwan": "激勵",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣人資管理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "加班": {
+      "taiwan": "加班",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣勞動條件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "加班_overtime": {
+      "taiwan": "加班",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣勞動條件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "请假": {
+      "taiwan": "請假",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣勞動條件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "请假_leave": {
+      "taiwan": "請假",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣勞動條件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "請假": {
+      "taiwan": "請假",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣勞動條件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "請假_leave": {
+      "taiwan": "請假",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣勞動條件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "辞职": {
+      "taiwan": "離職",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣人事異動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "辞职_resignation": {
+      "taiwan": "離職",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣人事異動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "辭職": {
+      "taiwan": "離職",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣人事異動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "辭職_resignation": {
+      "taiwan": "離職",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣人事異動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "解雇": {
+      "taiwan": "解僱",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣人事異動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "解雇_termination": {
+      "taiwan": "解僱",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣人事異動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "退休": {
+      "taiwan": "退休",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣人事異動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "退休_retirement": {
+      "taiwan": "退休",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣人事異動術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "养老金": {
+      "taiwan": "退休金",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣勞工福利術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "养老金_pension": {
+      "taiwan": "退休金",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣勞工福利術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "養老金": {
+      "taiwan": "退休金",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣勞工福利術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "養老金_pension": {
+      "taiwan": "退休金",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣勞工福利術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "保险": {
+      "taiwan": "保險",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣金融商品術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "保险_insurance": {
+      "taiwan": "保險",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣金融商品術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "保險": {
+      "taiwan": "保險",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣金融商品術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "保險_insurance": {
+      "taiwan": "保險",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣金融商品術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "保费": {
+      "taiwan": "保費",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣保險術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "保费_premium": {
+      "taiwan": "保費",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣保險術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "保費": {
+      "taiwan": "保費",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣保險術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "保費_premium": {
+      "taiwan": "保費",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣保險術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "理赔": {
+      "taiwan": "理賠",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣保險術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "理赔_claim": {
+      "taiwan": "理賠",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣保險術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "理賠": {
+      "taiwan": "理賠",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣保險術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "理賠_claim": {
+      "taiwan": "理賠",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣保險術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "免赔额": {
+      "taiwan": "自負額",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣保險術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "免赔额_deductible": {
+      "taiwan": "自負額",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣保險術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "免賠額": {
+      "taiwan": "自負額",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣保險術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "免賠額_deductible": {
+      "taiwan": "自負額",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣保險術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "保险范围": {
+      "taiwan": "保障範圍",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣保險術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "保险范围_coverage": {
+      "taiwan": "保障範圍",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣保險術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "保險範圍": {
+      "taiwan": "保障範圍",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣保險術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "保險範圍_coverage": {
+      "taiwan": "保障範圍",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣保險術語標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "保单": {
+      "taiwan": "保單",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣保險文件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "保单_policy_insurance": {
+      "taiwan": "保單",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣保險文件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "保單": {
+      "taiwan": "保單",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣保險文件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "保單_policy_insurance": {
+      "taiwan": "保單",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣保險文件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "受益人": {
+      "taiwan": "受益人",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣保險關係術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "受益人_beneficiary": {
+      "taiwan": "受益人",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣保險關係術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "利率": {
+      "taiwan": "利率",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣金融市場術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "利率_interest_rate": {
+      "taiwan": "利率",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣金融市場術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "通货膨胀": {
+      "taiwan": "通貨膨脹",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣經濟指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "通货膨胀_inflation": {
+      "taiwan": "通貨膨脹",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣經濟指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "通貨膨脹": {
+      "taiwan": "通貨膨脹",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣經濟指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "通貨膨脹_inflation": {
+      "taiwan": "通貨膨脹",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣經濟指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "通货紧缩": {
+      "taiwan": "通貨緊縮",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣經濟指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "通货紧缩_deflation": {
+      "taiwan": "通貨緊縮",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣經濟指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "通貨緊縮": {
+      "taiwan": "通貨緊縮",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣經濟指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "通貨緊縮_deflation": {
+      "taiwan": "通貨緊縮",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣經濟指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "衰退": {
+      "taiwan": "衰退",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣經濟週期術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "衰退_recession": {
+      "taiwan": "衰退",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣經濟週期術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "复苏": {
+      "taiwan": "復甦",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣經濟週期術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "复苏_recovery": {
+      "taiwan": "復甦",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣經濟週期術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "復甦": {
+      "taiwan": "復甦",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣經濟週期術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "復甦_recovery": {
+      "taiwan": "復甦",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣經濟週期術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "国内生产总值": {
+      "taiwan": "國內生產毛額",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣經濟指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "国内生产总值_gdp": {
+      "taiwan": "國內生產毛額",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣經濟指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "國內生產總值": {
+      "taiwan": "國內生產毛額",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣經濟指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "國內生產總值_gdp": {
+      "taiwan": "國內生產毛額",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣經濟指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "失业": {
+      "taiwan": "失業",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣勞動市場術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "失业_unemployment": {
+      "taiwan": "失業",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣勞動市場術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "失業": {
+      "taiwan": "失業",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣勞動市場術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "失業_unemployment": {
+      "taiwan": "失業",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣勞動市場術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "汇率": {
+      "taiwan": "匯率",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣外匯市場術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "汇率_exchange_rate": {
+      "taiwan": "匯率",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣外匯市場術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "匯率": {
+      "taiwan": "匯率",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣外匯市場術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "匯率_exchange_rate": {
+      "taiwan": "匯率",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣外匯市場術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "货币": {
+      "taiwan": "貨幣",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣金融體系術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "货币_currency": {
+      "taiwan": "貨幣",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣金融體系術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "貨幣": {
+      "taiwan": "貨幣",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣金融體系術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "貨幣_currency": {
+      "taiwan": "貨幣",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣金融體系術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "金融科技": {
+      "taiwan": "金融科技",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣金融創新術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "金融科技_fintech": {
+      "taiwan": "金融科技",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣金融創新術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "数字支付": {
+      "taiwan": "數位支付",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣支付科技術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "数字支付_digital_payment": {
+      "taiwan": "數位支付",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣支付科技術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "數字支付": {
+      "taiwan": "數位支付",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣支付科技術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "數字支付_digital_payment": {
+      "taiwan": "數位支付",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣支付科技術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "移动支付": {
+      "taiwan": "行動支付",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣支付科技術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "移动支付_mobile_payment": {
+      "taiwan": "行動支付",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣支付科技術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "移動支付": {
+      "taiwan": "行動支付",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣支付科技術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "移動支付_mobile_payment": {
+      "taiwan": "行動支付",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣支付科技術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "电子钱包": {
+      "taiwan": "電子錢包",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位金融術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "电子钱包_e_wallet": {
+      "taiwan": "電子錢包",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位金融術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "電子錢包": {
+      "taiwan": "電子錢包",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位金融術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "電子錢包_e_wallet": {
+      "taiwan": "電子錢包",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位金融術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "事务": {
+      "taiwan": "交易",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣資料庫標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "事务_transaction": {
+      "taiwan": "交易",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣資料庫標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "事務": {
+      "taiwan": "交易",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣資料庫標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "事務_transaction": {
+      "taiwan": "交易",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣資料庫標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "发票": {
+      "taiwan": "發票",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣財務文件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "发票_invoice": {
+      "taiwan": "發票",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣財務文件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "發票": {
+      "taiwan": "發票",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣財務文件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "發票_invoice": {
+      "taiwan": "發票",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣財務文件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "收据": {
+      "taiwan": "收據",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣財務憑證術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "收据_receipt": {
+      "taiwan": "收據",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣財務憑證術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "收據": {
+      "taiwan": "收據",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣財務憑證術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "收據_receipt": {
+      "taiwan": "收據",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣財務憑證術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "退款": {
+      "taiwan": "退款",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣交易處理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "退款_refund": {
+      "taiwan": "退款",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣交易處理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "结账": {
+      "taiwan": "結帳",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣購物流程術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "结账_checkout": {
+      "taiwan": "結帳",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣購物流程術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "結賬": {
+      "taiwan": "結帳",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣購物流程術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "結賬_checkout": {
+      "taiwan": "結帳",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣購物流程術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "购物车": {
+      "taiwan": "購物車",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣電商功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "购物车_cart": {
+      "taiwan": "購物車",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣電商功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "購物車": {
+      "taiwan": "購物車",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣電商功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "購物車_cart": {
+      "taiwan": "購物車",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣電商功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "愿望单": {
+      "taiwan": "願望清單",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣電商功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "愿望单_wishlist": {
+      "taiwan": "願望清單",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣電商功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "願望單": {
+      "taiwan": "願望清單",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣電商功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "願望單_wishlist": {
+      "taiwan": "願望清單",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣電商功能術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "评价": {
+      "taiwan": "評價",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣產品回饋術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "评价_review_product": {
+      "taiwan": "評價",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣產品回饋術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "評價": {
+      "taiwan": "評價",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣產品回饋術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "評價_review_product": {
+      "taiwan": "評價",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣產品回饋術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "评分": {
+      "taiwan": "評分",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣品質評估術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "评分_rating": {
+      "taiwan": "評分",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣品質評估術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "評分": {
+      "taiwan": "評分",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣品質評估術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "評分_rating": {
+      "taiwan": "評分",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣品質評估術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "反馈": {
+      "taiwan": "回饋",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣意見收集術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "反馈_feedback": {
+      "taiwan": "回饋",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣意見收集術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "反饋": {
+      "taiwan": "回饋",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣意見收集術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "反饋_feedback": {
+      "taiwan": "回饋",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣意見收集術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "调查": {
+      "taiwan": "問卷",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣市場研究術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "调查_survey": {
+      "taiwan": "問卷",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣市場研究術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "調查": {
+      "taiwan": "問卷",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣市場研究術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "調查_survey": {
+      "taiwan": "問卷",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣市場研究術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "演示": {
+      "taiwan": "簡報",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商務溝通術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "演示_presentation": {
+      "taiwan": "簡報",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商務溝通術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "报告": {
+      "taiwan": "報告",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業文件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "报告_report": {
+      "taiwan": "報告",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業文件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "報告": {
+      "taiwan": "報告",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業文件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "報告_report": {
+      "taiwan": "報告",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商業文件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "合同": {
+      "taiwan": "合約",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣法律文件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "合同_contract": {
+      "taiwan": "合約",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣法律文件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "协议": {
+      "taiwan": "協議",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣法律文件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "协议_agreement": {
+      "taiwan": "協議",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣法律文件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "協議": {
+      "taiwan": "協議",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣法律文件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "協議_agreement": {
+      "taiwan": "協議",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣法律文件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "条款": {
+      "taiwan": "條款",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣合約內容術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "条款_terms": {
+      "taiwan": "條款",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣合約內容術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "條款": {
+      "taiwan": "條款",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣合約內容術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "條款_terms": {
+      "taiwan": "條款",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣合約內容術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "谈判": {
+      "taiwan": "談判",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商務溝通術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "谈判_negotiation": {
+      "taiwan": "談判",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商務溝通術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "談判": {
+      "taiwan": "談判",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商務溝通術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "談判_negotiation": {
+      "taiwan": "談判",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣商務溝通術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "合伙": {
+      "taiwan": "合夥",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業關係術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "合伙_partnership": {
+      "taiwan": "合夥",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業關係術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "合夥": {
+      "taiwan": "合夥",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業關係術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "合夥_partnership": {
+      "taiwan": "合夥",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業關係術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "合资": {
+      "taiwan": "合資",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業合作術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "合资_joint_venture": {
+      "taiwan": "合資",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業合作術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "合資": {
+      "taiwan": "合資",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業合作術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "合資_joint_venture": {
+      "taiwan": "合資",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣商業合作術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "子公司": {
+      "taiwan": "子公司",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業組織術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "子公司_subsidiary": {
+      "taiwan": "子公司",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業組織術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "关联企业": {
+      "taiwan": "關係企業",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業組織術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "关联企业_affiliate": {
+      "taiwan": "關係企業",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業組織術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "關聯企業": {
+      "taiwan": "關係企業",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業組織術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "關聯企業_affiliate": {
+      "taiwan": "關係企業",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業組織術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "总部": {
+      "taiwan": "總部",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業組織術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "总部_headquarters": {
+      "taiwan": "總部",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業組織術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "總部": {
+      "taiwan": "總部",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業組織術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "總部_headquarters": {
+      "taiwan": "總部",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業組織術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "分公司": {
+      "taiwan": "分公司",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業組織術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "分公司_branch": {
+      "taiwan": "分公司",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣企業組織術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    }
+  }
+}

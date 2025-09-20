@@ -1,3 +1,6 @@
+// Import PositionMapper directly to avoid type issues
+import type { PositionMapper } from './core/position-mapper.js'
+
 export interface Issue {
   line: number
   column: number
@@ -15,7 +18,8 @@ export interface LintResult {
 
 export interface TWLintConfig {
   files?: string[]
-  dictionaries?: string[]
+  dictionaries?: string[]  // 舊的詞庫配置方式（向後相容）
+  domains?: string[]       // 新的領域配置方式
   rules?: Record<string, 'error' | 'warning' | 'info' | 'off'>
 }
 
@@ -39,6 +43,7 @@ export interface DictEntry {
   domain: string
   match_type: MatchType
   context?: ContextRule
+  autofix_safe?: boolean  // 是否可安全自動修正
 }
 
 export interface MatchResult {
@@ -48,6 +53,17 @@ export interface MatchResult {
   end: number
   confidence: number
   rule: string
+  autofix_safe?: boolean
+}
+
+export interface DictLookupEntry {
+  taiwan: string
+  confidence: number
+  category: string
+  reason: string
+  match_type: MatchType
+  context?: ContextRule
+  autofix_safe?: boolean
 }
 
 export interface CompiledDict {
@@ -56,14 +72,7 @@ export interface CompiledDict {
     version: string
     entries: number
   }
-  lookup: Record<string, {
-    taiwan: string
-    confidence: number
-    category: string
-    reason: string
-    match_type: MatchType
-    context?: ContextRule
-  }>
+  lookup: Record<string, DictLookupEntry>
 }
 
 export interface MatchStrategy {
@@ -71,8 +80,15 @@ export interface MatchStrategy {
   match(text: string, term: string, context?: ContextRule): MatchResult[]
 }
 
+export interface TextProcessingContext {
+  originalText: string
+  processedText: string
+  positionMapper?: PositionMapper
+}
+
 export interface Rule {
   name: string
+  preprocess?(text: string): Promise<TextProcessingContext>
   check(text: string): Promise<Issue[]>
   fix?(text: string): Promise<string>
 }

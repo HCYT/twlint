@@ -1,21 +1,83 @@
 {
   "dictionaries": [
     {
-      "name": "core",
-      "description": "核心詞庫",
-      "required": true
-    },
-    {
       "name": "academic",
       "description": "學術詞庫",
-      "required": false
+      "type": "extended",
+      "required": false,
+      "entries": 12
+    },
+    {
+      "name": "ai-emerging-tech",
+      "description": "AI新興技術",
+      "type": "domain",
+      "required": false,
+      "entries": 108
+    },
+    {
+      "name": "business-finance",
+      "description": "商業金融",
+      "type": "domain",
+      "required": false,
+      "entries": 123
+    },
+    {
+      "name": "core",
+      "description": "核心詞庫",
+      "type": "core",
+      "required": true,
+      "entries": 150
     },
     {
       "name": "extended",
       "description": "擴展詞庫",
-      "required": false
+      "type": "extended",
+      "required": false,
+      "entries": 12
+    },
+    {
+      "name": "hardware-3c",
+      "description": "硬體3C",
+      "type": "domain",
+      "required": false,
+      "entries": 91
+    },
+    {
+      "name": "network-cloud",
+      "description": "網路雲端",
+      "type": "domain",
+      "required": false,
+      "entries": 113
+    },
+    {
+      "name": "operating-system",
+      "description": "作業系統",
+      "type": "domain",
+      "required": false,
+      "entries": 101
+    },
+    {
+      "name": "social-media",
+      "description": "社群媒體",
+      "type": "domain",
+      "required": false,
+      "entries": 106
+    },
+    {
+      "name": "software-development",
+      "description": "軟體開發",
+      "type": "domain",
+      "required": false,
+      "entries": 139
+    },
+    {
+      "name": "user-interface",
+      "description": "使用者介面",
+      "type": "domain",
+      "required": false,
+      "entries": 119
     }
   ],
   "version": "1.0.0",
-  "buildTime": "2025-09-20T09:13:04.221Z"
+  "buildTime": "2025-09-20T14:12:53.586Z"
 }

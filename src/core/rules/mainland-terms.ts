@@ -1,12 +1,28 @@
-import type { Rule, Issue } from '../../types.js'
+import type { Rule, Issue, TextProcessingContext } from '../../types.js'
 import type { DictionaryManager } from '../dictionary-manager.js'
+import { PositionMapper } from '../position-mapper.js'
+import { Converter } from 'opencc-js'
 
 export class MainlandTermsRule implements Rule {
   readonly name = 'mainland-terms'
   private dictManager: DictionaryManager
+  private converter: ReturnType<typeof Converter>
 
   constructor(dictManager: DictionaryManager) {
     this.dictManager = dictManager
+    this.converter = Converter({ from: 'cn', to: 'tw' })
+  }
+
+  async preprocess(text: string): Promise<TextProcessingContext> {
+    // Convert simplified to traditional for better matching
+    const convertedText = this.converter(text)
+    const positionMapper = new PositionMapper(text, convertedText)
+
+    return {
+      originalText: text,
+      processedText: convertedText,
+      positionMapper
+    }
   }
 
   async check(text: string): Promise<Issue[]> {
@@ -16,14 +32,20 @@ export class MainlandTermsRule implements Rule {
     for (const match of matches) {
       const lineInfo = this.getLineInfo(text, match.start)
 
+      // 根據 autofix_safe 決定訊息和可修復性
+      const isContextSensitive = match.rule.includes('context_sensitive')
+      const message = isContextSensitive
+        ? `可能的大陸用語 '${match.term}' 建議使用臺灣用語 '${match.replacement}' (請確認語境)`
+        : `大陸用語 '${match.term}' 建議使用臺灣用語 '${match.replacement}'`
+
       issues.push({
         line: lineInfo.line,
         column: lineInfo.column,
-        message: `大陸用語 '${match.term}' 建議使用臺灣用語 '${match.replacement}'`,
-        severity: 'warning',
+        message,
+        severity: match.autofix_safe ? 'warning' : 'info',
         rule: this.name,
         suggestions: [match.replacement],
-        fixable: true
+        fixable: match.autofix_safe || false
       })
     }
 
@@ -34,8 +56,11 @@ export class MainlandTermsRule implements Rule {
     let fixedText = text
     const matches = this.dictManager.findMatches(text)
 
+    // 只修正標記為安全的詞彙
+    const safeMatches = matches.filter(match => match.autofix_safe)
+
     // Sort by position (from end to start) to avoid offset issues
-    const sortedMatches = matches.sort((a, b) => b.start - a.start)
+    const sortedMatches = safeMatches.sort((a, b) => b.start - a.start)
 
     for (const match of sortedMatches) {
       // Replace using precise position information
