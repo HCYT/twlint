@@ -1,5 +1,5 @@
 {
-  "name": "twlint",
+  "name": "@termdock/twlint",
   "version": "1.0.0",
   "description": "A CLI tool for detecting simplified Chinese terms and suggesting Taiwan traditional alternatives",
   "main": "dist/cli.js",
@@ -65,11 +65,11 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/username/twlint.git"
+    "url": "git+https://github.com/HCYT/twlint.git"
   },
-  "homepage": "https://github.com/username/twlint#readme",
+  "homepage": "https://github.com/HCYT/twlint#readme",
   "bugs": {
-    "url": "https://github.com/username/twlint/issues"
+    "url": "https://github.com/HCYT/twlint/issues"
   },
   "engines": {
     "node": ">=18.0.0"

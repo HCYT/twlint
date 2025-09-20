@@ -15,7 +15,7 @@ TWLint 幫助臺灣開發者和內容創作者檢測並修正意外使用的大�
 ## 安裝
 
 ```bash
-npm install -g twlint
+npm install -g @termdock/twlint
 ```
 
 ## 快速開始
@@ -135,7 +135,7 @@ twlint check file.md --dict core academic
 
 ### 本機開發
 ```bash
-git clone https://github.com/username/twlint.git
+git clone https://github.com/HCYT/twlint.git
 cd twlint
 npm install
 npm run build
