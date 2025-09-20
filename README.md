@@ -2,7 +2,7 @@
 
 > 檢測簡體中文用語並建議臺灣繁體替代方案的 CLI 工具
 
-TWLint 幫助臺灣開發者和內容創作者檢測並修正意外使用的大陸用語，確保文本符合臺灣慣用的表達方式。
+TWLint 幫助臺灣開發者和內容創作者檢測並修正意外使用的大陸用語，確保你使用了正確的用語，提升文件品質。
 
 ## 特色功能
 
@@ -166,20 +166,4 @@ Apache License 2.0
 
 詳見 [LICENSE](LICENSE) 檔案。
 
-## 商標
-
-"TWLint" 名稱和標誌為本專案商標。使用前請參閱 [商標使用指南](TRADEMARK.md)。
-
-## 貢獻
-
-歡迎提交 Pull Request 或回報問題！
-
-1. Fork 本專案
-2. 建立功能分支 (`git checkout -b feature/amazing-feature`)
-3. 提交變更 (`git commit -m 'Add amazing feature'`)
-4. 推送到分支 (`git push origin feature/amazing-feature`)
-5. 開啟 Pull Request
-
----
-
-**讓我們一起維護臺灣中文的純正性！**
+**讓我們一起維護臺灣繁體中文的純正性！**
