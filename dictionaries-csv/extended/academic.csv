@@ -1,0 +1,13 @@
+id,taiwan,china_simplified,china_traditional,english,confidence,category,reason,domain
+algo-analysis,演算法,算法,算法,algorithm,0.90,mainland-term,台灣學術標準用語,academic
+data-structure,資料結構,数据结构,數據結構,data structure,0.95,mainland-term,台灣計算機科學標準,academic
+computer-science,計算機科學,计算机科学,計算機科學,computer science,0.85,mainland-term,台灣學術慣用語,academic
+artificial-intelligence,人工智慧,人工智能,人工智能,artificial intelligence,0.90,mainland-term,台灣AI領域標準,academic
+machine-learning,機器學習,机器学习,機器學習,machine learning,0.80,mainland-term,台灣ML領域用語,academic
+database-system,資料庫系統,数据库系统,數據庫系統,database system,0.95,mainland-term,台灣資訊科學標準,academic
+operating-system,作業系統,操作系统,操作系統,operating system,0.90,mainland-term,台灣系統軟體標準,academic
+user-interface,使用者介面,用户界面,用戶界面,user interface,0.85,mainland-term,台灣HCI標準用語,academic
+object-oriented,物件導向,面向对象,面向對象,object-oriented,0.80,mainland-term,台灣程式設計標準,academic
+functional-programming,函數式程式設計,函数式编程,函數式編程,functional programming,0.75,mainland-term,台灣程式語言理論,academic
+computer-vision,電腦視覺,计算机视觉,計算機視覺,computer vision,0.85,mainland-term,台灣影像處理標準,academic
+natural-language,自然語言處理,自然语言处理,自然語言處理,natural language processing,0.90,mainland-term,台灣NLP標準用語,academic

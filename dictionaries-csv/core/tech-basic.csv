@@ -1,4 +1,0 @@
-id,taiwan,china_simplified,china_traditional,english,confidence,category,reason,domain
-software-term,軟體,软件,軟件,software,0.95,mainland-term,台灣技術標準用語,tech
-network-term,網路,网络,網絡,network,0.90,mainland-term,台灣慣用語,tech
-program-term,程式,程序,程序,program,0.85,mainland-term,台灣標準用語,tech

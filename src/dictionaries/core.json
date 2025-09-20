@@ -2,39 +2,9 @@
   "metadata": {
     "name": "core",
     "version": "1.0.0",
-    "entries": 151
+    "entries": 148
   },
   "lookup": {
-    "软件": {
-      "taiwan": "軟體",
-      "confidence": 0.95,
-      "category": "mainland-term",
-      "reason": "台灣技術標準用語"
-    },
-    "軟件": {
-      "taiwan": "軟體",
-      "confidence": 0.95,
-      "category": "mainland-term",
-      "reason": "台灣技術標準用語"
-    },
-    "网络": {
-      "taiwan": "網路",
-      "confidence": 0.95,
-      "category": "mainland-term",
-      "reason": "台灣網路技術標準"
-    },
-    "網絡": {
-      "taiwan": "網路",
-      "confidence": 0.95,
-      "category": "mainland-term",
-      "reason": "台灣網路技術標準"
-    },
-    "程序": {
-      "taiwan": "程式",
-      "confidence": 0.95,
-      "category": "mainland-term",
-      "reason": "台灣軟體開發標準"
-    },
     "访问": {
       "taiwan": "存取",
       "confidence": 0.95,
@@ -1031,6 +1001,18 @@
       "category": "mainland-term",
       "reason": "台灣週邊裝置標準"
     },
+    "网络": {
+      "taiwan": "網路",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣網路技術標準"
+    },
+    "網絡": {
+      "taiwan": "網路",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣網路技術標準"
+    },
     "对象": {
       "taiwan": "物件",
       "confidence": 0.95,
@@ -1138,6 +1120,12 @@
       "confidence": 0.9,
       "category": "mainland-term",
       "reason": "台灣作業系統標準"
+    },
+    "程序": {
+      "taiwan": "程式",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣軟體開發標準"
     },
     "协议": {
       "taiwan": "協定",
@@ -1306,6 +1294,18 @@
       "confidence": 0.9,
       "category": "mainland-term",
       "reason": "台灣網路連線標準"
+    },
+    "软件": {
+      "taiwan": "軟體",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣技術標準用語"
+    },
+    "軟件": {
+      "taiwan": "軟體",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣技術標準用語"
     },
     "栈": {
       "taiwan": "堆疊",
