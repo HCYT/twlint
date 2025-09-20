@@ -81,7 +81,9 @@ jspm_packages/
 .claude/
 
 # TWLint specific
-src/dictionaries/*.json
-!src/dictionaries/index.json
+# 測試臨時文件
+test-temp/
+*temp*
+*.tmp
 
 CLAUDE.MD

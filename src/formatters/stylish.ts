@@ -27,12 +27,23 @@ export class StylishFormatter implements Formatter {
     if (totalErrors > 0 || totalWarnings > 0) {
       output += `\n${chalk.red('✖')} ${totalErrors + totalWarnings} problems (${totalErrors} errors, ${totalWarnings} warnings)`
 
-      const fixableCount = results.reduce((sum, result) =>
-        sum + result.messages.filter(msg => msg.fixable).length, 0)
+      const fixableErrors = results.reduce((sum, result) =>
+        sum + result.messages.filter(msg => msg.fixable && msg.severity === 'error').length, 0)
+      const fixableWarnings = results.reduce((sum, result) =>
+        sum + result.messages.filter(msg => msg.fixable && msg.severity === 'warning').length, 0)
 
-      if (fixableCount > 0) {
-        output += `\n  ${fixableCount} errors potentially fixable with the \`--fix\` option.`
+      if (fixableErrors > 0 || fixableWarnings > 0) {
+        output += `\n  ${fixableErrors + fixableWarnings} problems potentially fixable with the \`--fix\` option`
+        if (fixableErrors > 0 && fixableWarnings > 0) {
+          output += ` (${fixableErrors} errors, ${fixableWarnings} warnings).`
+        } else if (fixableErrors > 0) {
+          output += ` (${fixableErrors} errors).`
+        } else {
+          output += ` (${fixableWarnings} warnings).`
+        }
       }
+    } else {
+      output += `\n${chalk.green('✓')} No problems found!`
     }
 
     return output

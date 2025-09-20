@@ -2,9 +2,10 @@
 
 import { Command } from 'commander'
 import chalk from 'chalk'
-import { writeFile } from 'fs/promises'
+import { writeFile, access } from 'fs/promises'
 import { TWLinter } from './core/linter.js'
 import { loadConfig } from './core/config-loader.js'
+import { createSampleConfig } from './core/config-schema.js'
 import { StylishFormatter } from './formatters/stylish.js'
 import { JsonFormatter } from './formatters/json.js'
 
@@ -69,6 +70,32 @@ async function performAutoFix(linter: TWLinter, files: string[], options: CLIOpt
   }
 }
 
+async function performInit(force?: boolean): Promise<void> {
+  const configFile = 'twlint.config.js'
+
+  // 檢查是否已存在配置檔案
+  try {
+    await access(configFile)
+    if (!force) {
+      console.log(chalk.yellow(`⚠️  Configuration file ${configFile} already exists.`))
+      console.log(chalk.dim('Use --force to overwrite it.'))
+      return
+    }
+  } catch {
+    // 檔案不存在，可以繼續建立
+  }
+
+  // 建立配置檔案
+  const configContent = createSampleConfig()
+  await writeFile(configFile, configContent, 'utf-8')
+
+  console.log(chalk.green(`✅ Created ${configFile}`))
+  console.log(chalk.dim('\nNext steps:'))
+  console.log(chalk.dim('1. Customize the configuration to fit your needs'))
+  console.log(chalk.dim('2. Run: twlint check **/*.md'))
+  console.log(chalk.dim('3. Use --fix to automatically fix issues'))
+}
+
 async function main() {
   const program = new Command()
 
@@ -90,7 +117,17 @@ async function main() {
     .action(async (files: string[], options: CLIOptions) => {
       try {
         const config = await loadConfig(options.config)
-        const linter = new TWLinter(config)
+
+        // 如果指定了 --dict 選項，覆蓋配置中的詞庫設定
+        if (options.dict) {
+          config.dictionaries = options.dict
+        }
+
+        const linter = new TWLinter(config, { deep: options.deep })
+
+        if (options.deep && options.verbose) {
+          console.log(chalk.dim('🔍 Deep mode enabled - loading all available dictionaries'))
+        }
 
         if (options.fix) {
           // 自動修復模式
@@ -109,9 +146,15 @@ async function main() {
   program
     .command('init')
     .description('Initialize a TWLint configuration file')
-    .action(async () => {
-      // TODO: Implement configuration file initialization
-      console.log(chalk.green('Configuration file created: twlint.config.js'))
+    .option('--force', 'Overwrite existing configuration file')
+    .action(async (options: { force?: boolean }) => {
+      try {
+        await performInit(options.force)
+      } catch (error) {
+        const message = error instanceof Error ? error.message : String(error)
+        console.error(chalk.red('Error:'), message)
+        process.exit(1)
+      }
     })
 
   await program.parseAsync()

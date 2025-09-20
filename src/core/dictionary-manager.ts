@@ -1,10 +1,17 @@
 import { readFile } from 'fs/promises'
 import { join } from 'path'
-import type { CompiledDict, DictEntry } from '../types.js'
+import type { CompiledDict, DictEntry, MatchResult } from '../types.js'
+import { MatchStrategyRegistry } from './matching/match-strategies.js'
 
 export class DictionaryManager {
   private cache = new Map<string, CompiledDict>()
-  private readonly dictionariesPath = join(process.cwd(), 'src', 'dictionaries')
+  private readonly dictionariesPath: string
+  private readonly strategyRegistry: MatchStrategyRegistry
+
+  constructor(dictionariesPath?: string) {
+    this.dictionariesPath = dictionariesPath || join(process.cwd(), 'src', 'dictionaries')
+    this.strategyRegistry = new MatchStrategyRegistry()
+  }
 
   async loadDictionary(name: string): Promise<CompiledDict> {
     if (this.cache.has(name)) {
@@ -24,39 +31,70 @@ export class DictionaryManager {
     }
   }
 
-  findMatches(text: string): DictEntry[] {
-    const matches: DictEntry[] = []
-    const foundTerms = new Set<string>() // 避免重複匹配
+  findMatches(text: string): MatchResult[] {
+    const allMatches: MatchResult[] = []
+    const processedRanges = new Set<string>()
 
     for (const dict of this.cache.values()) {
       for (const [term, entry] of Object.entries(dict.lookup)) {
-        if (text.includes(term) && !foundTerms.has(term)) {
-          foundTerms.add(term)
+        const strategy = this.strategyRegistry.getStrategy(entry.match_type || 'exact')
+        if (!strategy) continue
 
-          matches.push({
-            id: `${dict.metadata.name}-${term}`,
-            taiwan: entry.taiwan,
-            china_simplified: term,
-            china_traditional: term,
-            confidence: entry.confidence,
-            category: entry.category,
-            reason: entry.reason,
-            domain: dict.metadata.name
-          })
+        const matches = strategy.match(text, term, entry.context)
+
+        for (const match of matches) {
+          const rangeKey = `${match.start}-${match.end}`
+
+          // 避免重複匹配同一個位置
+          if (!processedRanges.has(rangeKey)) {
+            processedRanges.add(rangeKey)
+
+            allMatches.push({
+              ...match,
+              replacement: entry.taiwan,
+              confidence: entry.confidence,
+              rule: `${dict.metadata.name}-${entry.match_type}`
+            })
+          }
         }
       }
     }
 
-    // 按照信心度排序，高信心度的優先
-    return matches.sort((a, b) => b.confidence - a.confidence)
+    // 按信心度和位置排序：高信心度優先，相同信心度則按位置順序
+    return allMatches.sort((a, b) => {
+      if (Math.abs(a.confidence - b.confidence) > 0.01) {
+        return b.confidence - a.confidence
+      }
+      return a.start - b.start
+    })
   }
 
-  getAvailableDictionaries(): string[] {
-    // TODO: Scan dictionaries directory and return available dictionary names
-    return ['core', 'academic', 'extended']
+  async scanAvailableDictionaries(): Promise<string[]> {
+    try {
+      const { readdir } = await import('fs/promises')
+      const files = await readdir(this.dictionariesPath)
+
+      return files
+        .filter(file => file.endsWith('.json'))
+        .map(file => file.replace('.json', ''))
+        .filter(name => name !== 'index') // 排除索引文件
+    } catch {
+      console.warn(`Failed to scan dictionary directory: ${this.dictionariesPath}`)
+      return []
+    }
+  }
+
+  getLoadedDictionaries(): string[] {
+    return Array.from(this.cache.keys())
   }
 
   clearCache(): void {
     this.cache.clear()
+  }
+
+  // Legacy method for backward compatibility - delegates to scanAvailableDictionaries
+  getAvailableDictionaries(): string[] {
+    console.warn('getAvailableDictionaries() is deprecated. Use scanAvailableDictionaries() instead.')
+    return ['core', 'academic', 'extended'] // Fallback hardcoded list
   }
 }

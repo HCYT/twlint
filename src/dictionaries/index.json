@@ -6,11 +6,16 @@
       "required": true
     },
     {
+      "name": "academic",
+      "description": "學術詞庫",
+      "required": false
+    },
+    {
       "name": "extended",
       "description": "擴展詞庫",
       "required": false
     }
   ],
   "version": "1.0.0",
-  "buildTime": "2025-09-19T14:50:17.001Z"
+  "buildTime": "2025-09-20T07:25:42.131Z"
 }

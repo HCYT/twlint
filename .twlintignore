@@ -1,0 +1,29 @@
+# TWLint 忽略文件
+# 不檢查的文件和目錄
+
+# 詞庫目錄 - 包含簡體字和大陸用語作為檢測來源
+dictionaries-csv/
+src/dictionaries/
+dist/dictionaries/
+
+# 測試文件 - 可能包含測試用的簡體字
+test-*.md
+*test*.md
+*.test.ts
+tests/
+__tests__/
+
+# 建構輸出
+dist/
+node_modules/
+
+# 開發工具
+.git/
+.vscode/
+.idea/
+.termdock/
+.claude/
+
+# 臨時文件
+*.tmp
+*temp*

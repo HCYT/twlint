@@ -3,16 +3,22 @@ import { readFile } from 'fs/promises'
 import { DictionaryManager } from './dictionary-manager.js'
 import { SimplifiedCharsRule } from './rules/simplified-chars.js'
 import { MainlandTermsRule } from './rules/mainland-terms.js'
+import { PositionMapper } from './position-mapper.js'
+import { Converter } from 'opencc-js'
 import type { LintResult, Issue, TWLintConfig, Rule } from '../types.js'
 
 export class TWLinter {
   private dictManager: DictionaryManager
   private rules = new Map<string, Rule>()
   private config: TWLintConfig
+  private deepMode = false
+  private converter: ReturnType<typeof Converter>
 
-  constructor(config: TWLintConfig) {
+  constructor(config: TWLintConfig, options?: { deep?: boolean }) {
     this.config = config
+    this.deepMode = options?.deep || false
     this.dictManager = new DictionaryManager()
+    this.converter = Converter({ from: 'cn', to: 'tw' })
     this.initializeRules()
   }
 
@@ -56,15 +62,36 @@ export class TWLinter {
   }
 
   async lintText(text: string, filePath?: string): Promise<Issue[]> {
-    // Load dictionaries based on configuration
-    await this.loadDictionaries()
+    await this.loadDictionaries(this.deepMode)
 
     const issues: Issue[] = []
     const activeRules = this.getActiveRules()
 
+    // Process all active rules
     for (const rule of activeRules) {
-      const ruleIssues = await rule.check(text)
-      issues.push(...ruleIssues)
+      try {
+        let textToCheck = text
+        let positionMapper: PositionMapper | undefined
+
+        // Apply text conversion if needed (for mainland-terms rule)
+        if (rule.name === 'mainland-terms') {
+          const convertedText = this.convertToTraditional(text)
+          textToCheck = convertedText
+          positionMapper = new PositionMapper(text, convertedText)
+        }
+
+        const ruleIssues = await rule.check(textToCheck)
+
+        // Adjust positions if we used converted text
+        const adjustedIssues = positionMapper
+          ? this.adjustPositionsWithMapper(ruleIssues, positionMapper)
+          : ruleIssues
+
+        issues.push(...adjustedIssues)
+      } catch (error) {
+        const message = error instanceof Error ? error.message : String(error)
+        console.warn(`Warning: Rule "${rule.name}" failed: ${message}`)
+      }
     }
 
     return issues
@@ -72,28 +99,32 @@ export class TWLinter {
 
   async fixText(text: string): Promise<string> {
     // 確保詞庫已載入
-    await this.loadDictionaries()
+    await this.loadDictionaries(this.deepMode)
 
     let fixedText = text
-    const activeRules = this.getActiveRules()
 
-    // 按照優先級排序：先修復簡體字，再修復大陸用語
-    const orderedRules = activeRules.sort((a, b) => {
-      const priority = { 'simplified-chars': 1, 'mainland-terms': 2 }
-      return (priority[a.name as keyof typeof priority] || 99) -
-             (priority[b.name as keyof typeof priority] || 99)
-    })
-
-    for (const rule of orderedRules) {
-      if (rule.fix) {
-        try {
-          fixedText = await rule.fix(fixedText)
-        } catch (error) {
-          const message = error instanceof Error ? error.message : String(error)
-          console.warn(`Warning: Failed to apply fix for rule ${rule.name}: ${message}`)
-        }
+    // 階段1：簡繁轉換修復
+    const simplifiedRule = this.rules.get('simplified-chars')
+    if (simplifiedRule && this.isRuleActive('simplified-chars') && simplifiedRule.fix) {
+      try {
+        fixedText = await simplifiedRule.fix(fixedText)
+      } catch (error) {
+        const message = error instanceof Error ? error.message : String(error)
+        console.warn(`Warning: Failed to apply simplified-chars fix: ${message}`)
       }
     }
+
+    // 階段2：大陸用語修復（在轉換後的文本上進行）
+    const mainlandRule = this.rules.get('mainland-terms')
+    if (mainlandRule && this.isRuleActive('mainland-terms') && mainlandRule.fix) {
+      try {
+        fixedText = await mainlandRule.fix(fixedText)
+      } catch (error) {
+        const message = error instanceof Error ? error.message : String(error)
+        console.warn(`Warning: Failed to apply mainland-terms fix: ${message}`)
+      }
+    }
+
 
     return fixedText
   }
@@ -109,11 +140,23 @@ export class TWLinter {
     return [...new Set(files)] // Remove duplicates
   }
 
-  private async loadDictionaries(): Promise<void> {
-    const dictNames = this.config.dictionaries || ['core']
+  private async loadDictionaries(deep?: boolean): Promise<void> {
+    let dictNames = this.config.dictionaries || ['core']
+
+    // 深度模式：載入所有可用詞庫
+    if (deep) {
+      const availableDicts = this.dictManager.getAvailableDictionaries()
+      dictNames = [...new Set([...dictNames, ...availableDicts])]
+    }
 
     for (const name of dictNames) {
-      await this.dictManager.loadDictionary(name)
+      try {
+        await this.dictManager.loadDictionary(name)
+      } catch (error) {
+        // 忽略無法載入的詞庫，但記錄警告
+        const message = error instanceof Error ? error.message : String(error)
+        console.warn(`Warning: Failed to load dictionary "${name}": ${message}`)
+      }
     }
   }
 
@@ -134,5 +177,34 @@ export class TWLinter {
     }
 
     return activeRules
+  }
+
+  /**
+   * 使用 opencc-js 將簡體中文轉換為繁體中文
+   */
+  private convertToTraditional(text: string): string {
+    return this.converter(text)
+  }
+
+  /**
+   * 檢查規則是否啟用
+   */
+  private isRuleActive(ruleName: string): boolean {
+    const rules = this.config.rules || {}
+    return rules[ruleName] !== 'off'
+  }
+
+  /**
+   * 使用 PositionMapper 調整位置映射
+   */
+  private adjustPositionsWithMapper(issues: Issue[], mapper: PositionMapper): Issue[] {
+    return issues.map(issue => {
+      const originalPos = mapper.mapToOriginal(issue.line, issue.column)
+      return {
+        ...issue,
+        line: originalPos.line,
+        column: originalPos.column
+      }
+    })
   }
 }

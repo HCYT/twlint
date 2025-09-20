@@ -9,18 +9,24 @@
   },
   "scripts": {
     "dev": "npm run dict:build && tsx watch src/cli.ts",
-    "build": "npm run dict:build && tsc",
+    "build": "npm run dict:build && tsc && cp -r src/dictionaries dist/",
     "test": "vitest",
     "dict:build": "tsx tools/build-dict.ts",
     "dict:validate": "tsx tools/validate-dict.ts",
+    "dict:convert": "tsx tools/dict-manager.ts convert",
+    "dict:template": "tsx tools/dict-manager.ts template",
+    "dict:check": "tsx tools/dict-manager.ts validate",
+    "dict:list": "tsx tools/dict-manager.ts list",
+    "dict:merge": "tsx tools/dict-manager.ts merge",
     "lint": "eslint src/ --fix",
     "format": "prettier --write src/",
     "prepublishOnly": "npm run build"
   },
   "files": [
     "dist/",
-    "src/dictionaries/",
-    "bin/"
+    "bin/",
+    "LICENSE",
+    "README.md"
   ],
   "dependencies": {
     "chalk": "^5.3.0",
@@ -47,10 +53,23 @@
     "simplified",
     "taiwan",
     "lint",
-    "cli"
+    "cli",
+    "linter",
+    "mainland-terms",
+    "繁體中文",
+    "簡體中文",
+    "用語檢測"
   ],
   "author": "cyh",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/twlint.git"
+  },
+  "homepage": "https://github.com/username/twlint#readme",
+  "bugs": {
+    "url": "https://github.com/username/twlint/issues"
+  },
   "engines": {
     "node": ">=18.0.0"
   }

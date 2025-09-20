@@ -19,6 +19,14 @@ export interface TWLintConfig {
   rules?: Record<string, 'error' | 'warning' | 'info' | 'off'>
 }
 
+export type MatchType = 'exact' | 'word_boundary' | 'context_sensitive'
+
+export interface ContextRule {
+  before?: string[]
+  after?: string[]
+  exclude?: string[]
+}
+
 export interface DictEntry {
   id: string
   taiwan: string
@@ -29,6 +37,17 @@ export interface DictEntry {
   category: string
   reason: string
   domain: string
+  match_type: MatchType
+  context?: ContextRule
+}
+
+export interface MatchResult {
+  term: string
+  replacement: string
+  start: number
+  end: number
+  confidence: number
+  rule: string
 }
 
 export interface CompiledDict {
@@ -42,7 +61,14 @@ export interface CompiledDict {
     confidence: number
     category: string
     reason: string
+    match_type: MatchType
+    context?: ContextRule
   }>
+}
+
+export interface MatchStrategy {
+  name: MatchType
+  match(text: string, term: string, context?: ContextRule): MatchResult[]
 }
 
 export interface Rule {

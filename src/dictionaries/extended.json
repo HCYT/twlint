@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "name": "extended",
+    "version": "1.0.0",
+    "entries": 12
+  },
+  "lookup": {
+    "算法": {
+      "taiwan": "演算法",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣學術標準用語"
+    },
+    "数据结构": {
+      "taiwan": "資料結構",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣計算機科學標準"
+    },
+    "數據結構": {
+      "taiwan": "資料結構",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣計算機科學標準"
+    },
+    "计算机科学": {
+      "taiwan": "計算機科學",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣學術慣用語"
+    },
+    "計算機科學": {
+      "taiwan": "計算機科學",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣學術慣用語"
+    },
+    "人工智能": {
+      "taiwan": "人工智慧",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI領域標準"
+    },
+    "机器学习": {
+      "taiwan": "機器學習",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣ML領域用語"
+    },
+    "機器學習": {
+      "taiwan": "機器學習",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣ML領域用語"
+    },
+    "数据库系统": {
+      "taiwan": "資料庫系統",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣資訊科學標準"
+    },
+    "數據庫系統": {
+      "taiwan": "資料庫系統",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣資訊科學標準"
+    },
+    "操作系统": {
+      "taiwan": "作業系統",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣系統軟體標準"
+    },
+    "操作系統": {
+      "taiwan": "作業系統",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣系統軟體標準"
+    },
+    "用户界面": {
+      "taiwan": "使用者介面",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣HCI標準用語"
+    },
+    "用戶界面": {
+      "taiwan": "使用者介面",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣HCI標準用語"
+    },
+    "面向对象": {
+      "taiwan": "物件導向",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣程式設計標準"
+    },
+    "面向對象": {
+      "taiwan": "物件導向",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣程式設計標準"
+    },
+    "函数式编程": {
+      "taiwan": "函數式程式設計",
+      "confidence": 0.75,
+      "category": "mainland-term",
+      "reason": "台灣程式語言理論"
+    },
+    "函數式編程": {
+      "taiwan": "函數式程式設計",
+      "confidence": 0.75,
+      "category": "mainland-term",
+      "reason": "台灣程式語言理論"
+    },
+    "计算机视觉": {
+      "taiwan": "電腦視覺",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣影像處理標準"
+    },
+    "計算機視覺": {
+      "taiwan": "電腦視覺",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣影像處理標準"
+    },
+    "自然语言处理": {
+      "taiwan": "自然語言處理",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣NLP標準用語"
+    },
+    "自然語言處理": {
+      "taiwan": "自然語言處理",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣NLP標準用語"
+    }
+  }
+}

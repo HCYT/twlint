@@ -33,6 +33,9 @@ class DictBuilder {
     // 建構核心詞庫
     await this.buildCoreDict()
 
+    // 建構學術詞庫
+    await this.buildAcademicDict()
+
     // 建構擴展詞庫
     await this.buildExtendedDict()
 
@@ -60,14 +63,32 @@ class DictBuilder {
     console.log(`✅ 核心詞庫建構完成 (${dict.metadata.entries} 條目)`)
   }
 
+  async buildAcademicDict(): Promise<void> {
+    console.log('🎓 建構學術詞庫...')
+
+    const academicFile = join(this.csvDir, 'extended', 'academic.csv')
+
+    try {
+      await readFile(academicFile, 'utf-8')
+      const dict = await this.compileDict([academicFile], 'academic')
+      await this.saveDict(dict, 'academic')
+      console.log(`✅ 學術詞庫建構完成 (${dict.metadata.entries} 條目)`)
+    } catch {
+      console.log('ℹ️  未找到學術詞庫，跳過')
+    }
+  }
+
   async buildExtendedDict(): Promise<void> {
     console.log('📖 建構擴展詞庫...')
 
     const extendedDir = join(this.csvDir, 'extended')
-    const csvFiles = await this.findCSVFiles(extendedDir)
+    const allCsvFiles = await this.findCSVFiles(extendedDir)
+
+    // 排除 academic.csv，因為它已經被單獨處理了
+    const csvFiles = allCsvFiles.filter(file => !file.endsWith('academic.csv'))
 
     if (csvFiles.length === 0) {
-      console.log('ℹ️  未找到擴展詞庫，跳過')
+      console.log('ℹ️  未找到其他擴展詞庫，跳過')
       return
     }
 
@@ -83,6 +104,7 @@ class DictBuilder {
     const index = {
       dictionaries: [
         { name: 'core', description: '核心詞庫', required: true },
+        { name: 'academic', description: '學術詞庫', required: false },
         { name: 'extended', description: '擴展詞庫', required: false }
       ],
       version: '1.0.0',
