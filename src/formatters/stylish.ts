@@ -17,7 +17,11 @@ export class StylishFormatter implements Formatter {
         const icon = severity === 'error' ? chalk.red('✖') : chalk.yellow('⚠')
         const severityText = severity === 'error' ? chalk.red('error') : chalk.yellow('warning')
 
-        output += `  ${String(line).padStart(3)}:${String(column).padEnd(3)} ${icon} ${severityText}  ${msg}  ${chalk.dim(rule)}\n`
+        // info 級別用不同圖示和顏色
+        const infoIcon = severity === 'info' ? chalk.blue('ℹ') : icon
+        const infoSeverityText = severity === 'info' ? chalk.blue('info') : severityText
+
+        output += `  ${String(line).padStart(3)}:${String(column).padEnd(3)} ${infoIcon} ${infoSeverityText}  ${msg}  ${chalk.dim(rule)}\n`
 
         if (severity === 'error') totalErrors++
         if (severity === 'warning') totalWarnings++
@@ -27,21 +31,7 @@ export class StylishFormatter implements Formatter {
     if (totalErrors > 0 || totalWarnings > 0) {
       output += `\n${chalk.red('✖')} ${totalErrors + totalWarnings} problems (${totalErrors} errors, ${totalWarnings} warnings)`
 
-      const fixableErrors = results.reduce((sum, result) =>
-        sum + result.messages.filter(msg => msg.fixable && msg.severity === 'error').length, 0)
-      const fixableWarnings = results.reduce((sum, result) =>
-        sum + result.messages.filter(msg => msg.fixable && msg.severity === 'warning').length, 0)
-
-      if (fixableErrors > 0 || fixableWarnings > 0) {
-        output += `\n  ${fixableErrors + fixableWarnings} problems potentially fixable with the \`--fix\` option`
-        if (fixableErrors > 0 && fixableWarnings > 0) {
-          output += ` (${fixableErrors} errors, ${fixableWarnings} warnings).`
-        } else if (fixableErrors > 0) {
-          output += ` (${fixableErrors} errors).`
-        } else {
-          output += ` (${fixableWarnings} warnings).`
-        }
-      }
+      // 修復提示由 CLI 統一處理，這裡不輸出
     } else {
       output += `\n${chalk.green('✓')} No problems found!`
     }

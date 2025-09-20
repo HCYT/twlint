@@ -1,0 +1,120 @@
+id,taiwan,china_simplified,china_traditional,english,confidence,category,reason,domain,match_type,context_before,context_after,context_exclude,autofix_safe
+window,視窗,窗口,窗口,window,0.90,mainland-term,台灣介面設計標準,tech,exact,,,,true
+dialog,對話方塊,对话框,對話框,dialog,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+toolbar,工具列,工具栏,工具欄,toolbar,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+menubar,選單列,菜单栏,菜單欄,menubar,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+menu,選單,菜单,菜單,menu,0.90,mainland-term,台灣介面設計標準,tech,exact,,,,true
+statusbar,狀態列,状态栏,狀態欄,statusbar,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+scrollbar,捲軸,滚动条,滾動條,scrollbar,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+dropdown,下拉式選單,下拉菜单,下拉菜單,dropdown,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+checkbox,核取方塊,复选框,複選框,checkbox,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+radiobutton,選項按鈕,单选按钮,單選按鈕,radio button,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+textbox,文字方塊,文本框,文本框,textbox,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+listbox,清單方塊,列表框,列表框,listbox,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+combobox,下拉式方塊,组合框,組合框,combobox,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+tab,分頁,标签页,標籤頁,tab,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+tooltip,工具提示,工具提示,工具提示,tooltip,0.85,mainland-term,台灣介面元件標準,tech,exact,,,,true
+control,控制項,控件,控件,control,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+button,按鈕,按钮,按鈕,button,0.85,mainland-term,台灣介面元件標準,tech,exact,,,,true
+icon,圖示,图标,圖標,icon,0.85,mainland-term,台灣介面設計標準,tech,exact,,,,true
+image,影像,图像,圖像,image,0.85,mainland-term,台灣多媒體標準,tech,exact,,,,true
+cursor,游標,光标,光標,cursor,0.90,mainland-term,台灣介面操作標準,tech,exact,,,,true
+pointer,指標,指针,指針,pointer,0.90,mainland-term,台灣介面元素標準,tech,exact,,,,true
+clipboard,剪貼簿,剪贴板,剪貼板,clipboard,0.90,mainland-term,台灣系統功能標準,tech,exact,,,,true
+paste,貼上,粘贴,粘貼,paste,0.90,mainland-term,台灣編輯操作標準,tech,exact,,,,true
+cut,剪下,剪切,剪切,cut,0.90,mainland-term,台灣編輯操作標準,tech,exact,,,,true
+copy,複製,拷贝,拷貝,copy,0.85,mainland-term,台灣檔案操作標準,tech,exact,,,,true
+undo,復原,撤销,撤銷,undo,0.90,mainland-term,台灣編輯操作標準,tech,exact,,,,true
+redo,重做,重做,重做,redo,0.85,mainland-term,台灣編輯操作標準,tech,exact,,,,true
+find,尋找,查找,查找,find,0.90,mainland-term,台灣編輯操作標準,tech,exact,,,,true
+replace,取代,替换,替換,replace,0.90,mainland-term,台灣編輯操作標準,tech,exact,,,,true
+refresh,重新整理,刷新,刷新,refresh,0.90,mainland-term,台灣瀏覽器操作,tech,exact,,,,true
+reload,重新載入,重新加载,重新加載,reload,0.90,mainland-term,台灣瀏覽器操作,tech,exact,,,,true
+home-page,首頁,主页,主頁,homepage,0.90,mainland-term,台灣網頁標準術語,tech,exact,,,,true
+bookmark,書籤,收藏夹,收藏夾,bookmark,0.90,mainland-term,台灣瀏覽器功能,tech,exact,,,,true
+favorites,我的最愛,收藏,收藏,favorites,0.90,mainland-term,台灣瀏覽器功能,tech,exact,,,,true
+history,歷程記錄,历史记录,歷史記錄,history,0.85,mainland-term,台灣瀏覽器功能,tech,exact,,,,true
+extension-browser,擴充套件,浏览器扩展,瀏覽器擴展,browser extension,0.90,mainland-term,台灣瀏覽器功能,tech,exact,,,,true
+incognito,無痕模式,隐身模式,隱身模式,incognito,0.90,mainland-term,台灣瀏覽器隱私,tech,exact,,,,true
+private-browsing,隱私瀏覽,隐私浏览,隱私瀏覽,private browsing,0.85,mainland-term,台灣瀏覽器隱私,tech,exact,,,,true
+pop-up,彈出視窗,弹窗,彈窗,pop-up,0.90,mainland-term,台灣網頁元件標準,tech,exact,,,,true
+modal,強制回應視窗,模态窗口,模態窗口,modal,0.85,mainland-term,台灣介面設計標準,tech,exact,,,,true
+wizard,精靈,向导,嚮導,wizard,0.90,mainland-term,台灣介面設計標準,tech,exact,,,,true
+template,範本,模板,模板,template,0.90,mainland-term,台灣文件標準術語,tech,exact,,,,true
+preset,預設集,预设,預設,preset,0.85,mainland-term,台灣系統設定術語,tech,exact,,,,true
+preference,偏好設定,首选项,首選項,preference,0.90,mainland-term,台灣系統設定術語,tech,exact,,,,true
+option,選項,选项,選項,option,0.85,mainland-term,台灣系統設定術語,tech,exact,,,,true
+setting,設定,设置,設置,setting,0.90,mainland-term,台灣系統設定術語,tech,exact,,,,true
+configuration,組態,配置,配置,configuration,0.90,mainland-term,台灣系統設定術語,tech,exact,,,,true
+profile,設定檔,配置文件,配置文件,profile,0.90,mainland-term,台灣系統設定術語,tech,exact,,,,true
+shortcut,捷徑,快捷方式,快捷方式,shortcut,0.90,mainland-term,台灣系統功能術語,tech,exact,,,,true
+hotkey,快速鍵,热键,熱鍵,hotkey,0.90,mainland-term,台灣鍵盤操作術語,tech,exact,,,,true
+keyboard-shortcut,鍵盤快速鍵,键盘快捷键,鍵盤快捷鍵,keyboard shortcut,0.90,mainland-term,台灣鍵盤操作術語,tech,exact,,,,true
+context-menu,快顯功能表,右键菜单,右鍵菜單,context menu,0.90,mainland-term,台灣介面操作術語,tech,exact,,,,true
+right-click,按右鍵,右击,右擊,right-click,0.90,mainland-term,台灣滑鼠操作術語,tech,exact,,,,true
+double-click,按兩下,双击,雙擊,double-click,0.90,mainland-term,台灣滑鼠操作術語,tech,exact,,,,true
+drag-drop,拖放,拖放,拖放,drag and drop,0.85,mainland-term,台灣介面操作術語,tech,exact,,,,true
+zoom-in,放大,放大,放大,zoom in,0.80,mainland-term,台灣顯示操作術語,tech,exact,,,,true
+zoom-out,縮小,缩小,縮小,zoom out,0.85,mainland-term,台灣顯示操作術語,tech,exact,,,,true
+maximize,最大化,最大化,最大化,maximize,0.85,mainland-term,台灣視窗操作術語,tech,exact,,,,true
+minimize,最小化,最小化,最小化,minimize,0.85,mainland-term,台灣視窗操作術語,tech,exact,,,,true
+resize,調整大小,调整大小,調整大小,resize,0.85,mainland-term,台灣視窗操作術語,tech,exact,,,,true
+fullscreen,全螢幕,全屏,全屏,fullscreen,0.90,mainland-term,台灣顯示模式標準,tech,exact,,,,true
+screenshot,螢幕擷取,截屏,截屏,screenshot,0.90,mainland-term,台灣螢幕操作標準,tech,exact,,,,true
+screensaver,螢幕保護程式,屏保,屏保,screensaver,0.90,mainland-term,台灣系統功能標準,tech,exact,,,,true
+resolution-setting,解析度設定,分辨率设置,分辨率設置,resolution setting,0.90,mainland-term,台灣顯示設定術語,tech,exact,,,,true
+brightness,亮度,亮度,亮度,brightness,0.80,mainland-term,台灣顯示設定術語,tech,exact,,,,true
+contrast,對比,对比度,對比度,contrast,0.85,mainland-term,台灣顯示設定術語,tech,exact,,,,true
+saturation,飽和度,饱和度,飽和度,saturation,0.85,mainland-term,台灣顯示設定術語,tech,exact,,,,true
+font,字型,字体,字體,font,0.90,mainland-term,台灣文字顯示術語,tech,exact,,,,true
+font-size,字型大小,字号,字號,font size,0.90,mainland-term,台灣文字顯示術語,tech,exact,,,,true
+bold,粗體,粗体,粗體,bold,0.85,mainland-term,台灣文字格式術語,tech,exact,,,,true
+italic,斜體,斜体,斜體,italic,0.85,mainland-term,台灣文字格式術語,tech,exact,,,,true
+underline,底線,下划线,下劃線,underline,0.90,mainland-term,台灣文字格式術語,tech,exact,,,,true
+strikethrough,刪除線,删除线,刪除線,strikethrough,0.85,mainland-term,台灣文字格式術語,tech,exact,,,,true
+alignment,對齊,对齐,對齊,alignment,0.85,mainland-term,台灣文字排版術語,tech,exact,,,,true
+justify,左右對齊,两端对齐,兩端對齊,justify,0.90,mainland-term,台灣文字排版術語,tech,exact,,,,true
+indent,縮排,缩进,縮進,indent,0.90,mainland-term,台灣文字排版術語,tech,exact,,,,true
+paragraph,段落,段落,段落,paragraph,0.80,mainland-term,台灣文字排版術語,tech,exact,,,,true
+header-text,標題,标题,標題,header,0.85,mainland-term,台灣文件結構術語,tech,exact,,,,true
+footer-text,頁尾,页脚,頁腳,footer,0.90,mainland-term,台灣文件結構術語,tech,exact,,,,true
+page-number,頁碼,页码,頁碼,page number,0.85,mainland-term,台灣文件結構術語,tech,exact,,,,true
+table-of-contents,目錄,目录,目錄,table of contents,0.85,mainland-term,台灣文件結構術語,tech,exact,,,,true
+hyperlink,超連結,超链接,超鏈接,hyperlink,0.90,mainland-term,台灣網頁元件術語,tech,exact,,,,true
+notification,通知,通知,通知,notification,0.80,mainland-term,台灣系統訊息術語,tech,exact,,,,true
+reminder,提醒,提醒,提醒,reminder,0.80,mainland-term,台灣系統訊息術語,tech,exact,,,,true
+alert,警示,警告,警告,alert,0.85,mainland-term,台灣系統訊息術語,tech,exact,,,,true
+prompt,提示,提示,提示,prompt,0.80,mainland-term,台灣系統訊息術語,tech,exact,,,,true
+confirm,確認,确认,確認,confirm,0.85,mainland-term,台灣系統訊息術語,tech,exact,,,,true
+cancel,取消,取消,取消,cancel,0.80,mainland-term,台灣系統操作術語,tech,exact,,,,true
+save,儲存,保存,保存,save,0.85,mainland-term,台灣檔案操作標準,tech,exact,,,,true
+load,載入,加载,加載,load,0.90,mainland-term,台灣系統操作標準,tech,exact,,,,true
+export,匯出,导出,導出,export,0.90,mainland-term,台灣資料處理標準,tech,exact,,,,true
+import,匯入,导入,導入,import,0.90,mainland-term,台灣資料處理標準,tech,exact,,,,true
+print,列印,打印,打印,print,0.90,mainland-term,台灣週邊裝置標準,tech,exact,,,,true
+preview,預覽,预览,預覽,preview,0.85,mainland-term,台灣顯示功能術語,tech,exact,,,,true
+view,檢視,视图,視圖,view,0.85,mainland-term,台灣介面設計標準,tech,exact,,,,true
+edit,編輯,编辑,編輯,edit,0.85,mainland-term,台灣操作功能術語,tech,exact,,,,true
+delete,刪除,删除,刪除,delete,0.85,mainland-term,台灣操作功能術語,tech,exact,,,,true
+create,建立,创建,創建,create,0.85,mainland-term,台灣系統操作標準,tech,exact,,,,true
+open,開啟,打开,打開,open,0.85,mainland-term,台灣檔案操作標準,tech,exact,,,,true
+close,關閉,关闭,關閉,close,0.85,mainland-term,台灣系統操作標準,tech,exact,,,,true
+file,檔案,文件,文件,file,0.90,mainland-term,台灣檔案系統標準,tech,exact,,,,true
+folder,資料夾,文件夹,文件夾,folder,0.90,mainland-term,台灣檔案管理標準,tech,exact,,,,true
+directory,目錄,目录,目錄,directory,0.85,mainland-term,台灣檔案系統標準,tech,exact,,,,true
+path,路徑,路径,路徑,path,0.85,mainland-term,台灣檔案系統標準,tech,exact,,,,true
+extension,副檔名,扩展名,擴展名,extension,0.90,mainland-term,台灣檔案系統標準,tech,exact,,,,true
+taskbar,工作列,任务栏,任務欄,taskbar,0.90,mainland-term,台灣桌面元件術語,tech,exact,,,,true
+dock,工具列,程序坞,程序塢,dock,0.90,mainland-term,台灣macOS介面元件,tech,exact,,,,true
+launcher,啟動器,启动器,啟動器,launcher,0.85,mainland-term,台灣應用程式管理,tech,exact,,,,true
+widget,小工具,小部件,小部件,widget,0.90,mainland-term,台灣桌面元件術語,tech,exact,,,,true
+gadget,小工具,小工具,小工具,gadget,0.80,mainland-term,台灣桌面輔助工具,tech,exact,,,,true
+desktop,桌面,桌面,桌面,desktop,0.80,mainland-term,台灣作業系統介面,tech,exact,,,,true
+wallpaper,桌布,壁纸,壁紙,wallpaper,0.90,mainland-term,台灣桌面美化術語,tech,exact,,,,true
+theme,主題,主题,主題,theme,0.85,mainland-term,台灣介面美化術語,tech,exact,,,,true
+skin,外觀,皮肤,皮膚,skin,0.85,mainland-term,台灣介面美化術語,tech,exact,,,,true
+layout,版面配置,布局,布局,layout,0.85,mainland-term,台灣介面設計術語,tech,exact,,,,true
+grid,格線,网格,網格,grid,0.85,mainland-term,台灣介面設計術語,tech,exact,,,,true
+panel,面板,面板,面板,panel,0.80,mainland-term,台灣介面元件術語,tech,exact,,,,true
+sidebar,側邊欄,侧边栏,側邊欄,sidebar,0.85,mainland-term,台灣介面元件術語,tech,exact,,,,true
+ribbon,功能區,功能区,功能區,ribbon,0.85,mainland-term,台灣Office介面術語,tech,exact,,,,true

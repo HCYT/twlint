@@ -75,8 +75,8 @@ describe('CLI Integration Tests', () => {
       await writeFile(testFile, content, 'utf-8')
 
       const result = await execAsync(`node ${cliPath} check ${testFile}`)
-      // 當沒有錯誤時，應該正常執行完成
-      expect(result.stdout).toBe('')
+      // 當沒有錯誤時，應該顯示成功訊息
+      expect(result.stdout).toContain('✓ No problems found!')
     })
   })
 
@@ -151,10 +151,11 @@ describe('CLI Integration Tests', () => {
     it('should handle non-existent files gracefully', async () => {
       try {
         await execAsync(`node ${cliPath} check non-existent-file.md`)
-        expect.fail('Should have thrown an error')
+        expect.fail('Should have exited with error code')
       } catch (error: any) {
         expect(error.code).toBe(1)
-        expect(error.stdout || error.stderr).toContain('Error')
+        // 檢查是否包含檔案讀取錯誤的信息
+        expect(error.stdout).toContain('Failed to read file')
       }
     })
 

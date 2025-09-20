@@ -1,0 +1,3209 @@
+{
+  "metadata": {
+    "name": "ai-emerging-tech",
+    "version": "1.0.0",
+    "entries": 108
+  },
+  "lookup": {
+    "人工智能": {
+      "taiwan": "人工智慧",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣AI技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "人工智能_artificial_intelligence": {
+      "taiwan": "人工智慧",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣AI技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "机器学习": {
+      "taiwan": "機器學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "机器学习_machine_learning": {
+      "taiwan": "機器學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "機器學習": {
+      "taiwan": "機器學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "機器學習_machine_learning": {
+      "taiwan": "機器學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "深度学习": {
+      "taiwan": "深度學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "深度学习_deep_learning": {
+      "taiwan": "深度學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "深度學習": {
+      "taiwan": "深度學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "深度學習_deep_learning": {
+      "taiwan": "深度學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "神经网络": {
+      "taiwan": "神經網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI架構標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "神经网络_neural_network": {
+      "taiwan": "神經網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI架構標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "神經網絡": {
+      "taiwan": "神經網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI架構標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "神經網絡_neural_network": {
+      "taiwan": "神經網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI架構標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "自然语言处理": {
+      "taiwan": "自然語言處理",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI應用標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "自然语言处理_natural_language_processing": {
+      "taiwan": "自然語言處理",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI應用標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "自然語言處理": {
+      "taiwan": "自然語言處理",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI應用標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "自然語言處理_natural_language_processing": {
+      "taiwan": "自然語言處理",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI應用標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "计算机视觉": {
+      "taiwan": "電腦視覺",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI應用標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "计算机视觉_computer_vision": {
+      "taiwan": "電腦視覺",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI應用標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "計算機視覺": {
+      "taiwan": "電腦視覺",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI應用標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "計算機視覺_computer_vision": {
+      "taiwan": "電腦視覺",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI應用標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "强化学习": {
+      "taiwan": "強化學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI學習方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "强化学习_reinforcement_learning": {
+      "taiwan": "強化學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI學習方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "強化學習": {
+      "taiwan": "強化學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI學習方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "強化學習_reinforcement_learning": {
+      "taiwan": "強化學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI學習方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "监督学习": {
+      "taiwan": "監督式學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI學習方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "监督学习_supervised_learning": {
+      "taiwan": "監督式學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI學習方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "監督學習": {
+      "taiwan": "監督式學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI學習方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "監督學習_supervised_learning": {
+      "taiwan": "監督式學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI學習方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "无监督学习": {
+      "taiwan": "非監督式學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI學習方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "无监督学习_unsupervised_learning": {
+      "taiwan": "非監督式學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI學習方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "無監督學習": {
+      "taiwan": "非監督式學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI學習方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "無監督學習_unsupervised_learning": {
+      "taiwan": "非監督式學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI學習方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "半监督": {
+      "taiwan": "半監督式",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI學習方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "半监督_semi_supervised": {
+      "taiwan": "半監督式",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI學習方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "半監督": {
+      "taiwan": "半監督式",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI學習方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "半監督_semi_supervised": {
+      "taiwan": "半監督式",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI學習方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "迁移学习": {
+      "taiwan": "遷移學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI技術方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "迁移学习_transfer_learning": {
+      "taiwan": "遷移學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI技術方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "遷移學習": {
+      "taiwan": "遷移學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI技術方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "遷移學習_transfer_learning": {
+      "taiwan": "遷移學習",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI技術方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "数据集": {
+      "taiwan": "資料集",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI資料標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "数据集_dataset": {
+      "taiwan": "資料集",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI資料標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "數據集": {
+      "taiwan": "資料集",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI資料標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "數據集_dataset": {
+      "taiwan": "資料集",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI資料標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "训练数据": {
+      "taiwan": "訓練資料",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI資料類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "训练数据_training_data": {
+      "taiwan": "訓練資料",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI資料類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "訓練數據": {
+      "taiwan": "訓練資料",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI資料類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "訓練數據_training_data": {
+      "taiwan": "訓練資料",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI資料類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "验证数据": {
+      "taiwan": "驗證資料",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI資料類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "验证数据_validation_data": {
+      "taiwan": "驗證資料",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI資料類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "驗證數據": {
+      "taiwan": "驗證資料",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI資料類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "驗證數據_validation_data": {
+      "taiwan": "驗證資料",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI資料類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "测试数据": {
+      "taiwan": "測試資料",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI資料類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "测试数据_test_data": {
+      "taiwan": "測試資料",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI資料類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "測試數據": {
+      "taiwan": "測試資料",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI資料類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "測試數據_test_data": {
+      "taiwan": "測試資料",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI資料類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "过拟合": {
+      "taiwan": "過度擬合",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI模型問題",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "过拟合_overfitting": {
+      "taiwan": "過度擬合",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI模型問題",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "過擬合": {
+      "taiwan": "過度擬合",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI模型問題",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "過擬合_overfitting": {
+      "taiwan": "過度擬合",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI模型問題",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "欠拟合": {
+      "taiwan": "欠擬合",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI模型問題",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "欠拟合_underfitting": {
+      "taiwan": "欠擬合",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI模型問題",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "欠擬合": {
+      "taiwan": "欠擬合",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI模型問題",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "欠擬合_underfitting": {
+      "taiwan": "欠擬合",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI模型問題",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "梯度下降": {
+      "taiwan": "梯度下降",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣AI優化方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "梯度下降_gradient_descent": {
+      "taiwan": "梯度下降",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣AI優化方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "反向传播": {
+      "taiwan": "反向傳播",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI訓練方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "反向传播_backpropagation": {
+      "taiwan": "反向傳播",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI訓練方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "反向傳播": {
+      "taiwan": "反向傳播",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI訓練方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "反向傳播_backpropagation": {
+      "taiwan": "反向傳播",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI訓練方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "激活函数": {
+      "taiwan": "激活函數",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣神經網路元件",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "激活函数_activation_function": {
+      "taiwan": "激活函數",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣神經網路元件",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "激活函數": {
+      "taiwan": "激活函數",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣神經網路元件",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "激活函數_activation_function": {
+      "taiwan": "激活函數",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣神經網路元件",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "卷积神经网络": {
+      "taiwan": "卷積神經網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣深度學習架構",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "卷积神经网络_convolutional_neural_network": {
+      "taiwan": "卷積神經網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣深度學習架構",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "卷積神經網絡": {
+      "taiwan": "卷積神經網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣深度學習架構",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "卷積神經網絡_convolutional_neural_network": {
+      "taiwan": "卷積神經網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣深度學習架構",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "循环神经网络": {
+      "taiwan": "遞迴神經網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣深度學習架構",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "循环神经网络_recurrent_neural_network": {
+      "taiwan": "遞迴神經網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣深度學習架構",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "循環神經網絡": {
+      "taiwan": "遞迴神經網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣深度學習架構",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "循環神經網絡_recurrent_neural_network": {
+      "taiwan": "遞迴神經網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣深度學習架構",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "变换器": {
+      "taiwan": "轉換器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣深度學習架構",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "变换器_transformer": {
+      "taiwan": "轉換器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣深度學習架構",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "變換器": {
+      "taiwan": "轉換器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣深度學習架構",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "變換器_transformer": {
+      "taiwan": "轉換器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣深度學習架構",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "注意力机制": {
+      "taiwan": "注意力機制",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣深度學習技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "注意力机制_attention_mechanism": {
+      "taiwan": "注意力機制",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣深度學習技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "注意力機制": {
+      "taiwan": "注意力機制",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣深度學習技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "注意力機制_attention_mechanism": {
+      "taiwan": "注意力機制",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣深度學習技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "生成式AI": {
+      "taiwan": "生成式AI",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣AI應用類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "生成式AI_generative_ai": {
+      "taiwan": "生成式AI",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣AI應用類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "大语言模型": {
+      "taiwan": "大型語言模型",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI模型類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "大语言模型_large_language_model": {
+      "taiwan": "大型語言模型",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI模型類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "大語言模型": {
+      "taiwan": "大型語言模型",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI模型類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "大語言模型_large_language_model": {
+      "taiwan": "大型語言模型",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI模型類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "提示工程": {
+      "taiwan": "提示工程",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣AI互動技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "提示工程_prompt_engineering": {
+      "taiwan": "提示工程",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣AI互動技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "微调": {
+      "taiwan": "微調",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣AI模型優化",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "微调_fine_tuning": {
+      "taiwan": "微調",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣AI模型優化",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "微調": {
+      "taiwan": "微調",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣AI模型優化",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "微調_fine_tuning": {
+      "taiwan": "微調",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣AI模型優化",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "嵌入": {
+      "taiwan": "嵌入",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣AI表示方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "嵌入_embedding": {
+      "taiwan": "嵌入",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣AI表示方法",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "分词": {
+      "taiwan": "分詞",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣NLP處理技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "分词_tokenization": {
+      "taiwan": "分詞",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣NLP處理技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "分詞": {
+      "taiwan": "分詞",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣NLP處理技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "分詞_tokenization": {
+      "taiwan": "分詞",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣NLP處理技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "ChatGPT": {
+      "taiwan": "ChatGPT",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣AI應用產品",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "ChatGPT_chatgpt": {
+      "taiwan": "ChatGPT",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣AI應用產品",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "GPT": {
+      "taiwan": "GPT",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣AI模型名稱",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "GPT_gpt": {
+      "taiwan": "GPT",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣AI模型名稱",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "BERT": {
+      "taiwan": "BERT",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣AI模型名稱",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "BERT_bert": {
+      "taiwan": "BERT",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣AI模型名稱",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "生成对抗网络": {
+      "taiwan": "生成對抗網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣生成式AI技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "生成对抗网络_gan": {
+      "taiwan": "生成對抗網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣生成式AI技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "生成對抗網絡": {
+      "taiwan": "生成對抗網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣生成式AI技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "生成對抗網絡_gan": {
+      "taiwan": "生成對抗網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣生成式AI技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "扩散模型": {
+      "taiwan": "擴散模型",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣生成式AI技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "扩散模型_diffusion_model": {
+      "taiwan": "擴散模型",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣生成式AI技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "擴散模型": {
+      "taiwan": "擴散模型",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣生成式AI技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "擴散模型_diffusion_model": {
+      "taiwan": "擴散模型",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣生成式AI技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "AI伦理": {
+      "taiwan": "AI倫理",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣AI治理標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "AI伦理_ai_ethics": {
+      "taiwan": "AI倫理",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣AI治理標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "AI倫理": {
+      "taiwan": "AI倫理",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣AI治理標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "AI倫理_ai_ethics": {
+      "taiwan": "AI倫理",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣AI治理標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "偏见": {
+      "taiwan": "偏見",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣AI公平性議題",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "偏见_bias_ai": {
+      "taiwan": "偏見",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣AI公平性議題",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "偏見": {
+      "taiwan": "偏見",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣AI公平性議題",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "偏見_bias_ai": {
+      "taiwan": "偏見",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣AI公平性議題",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "可解释AI": {
+      "taiwan": "可解釋AI",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI透明度標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "可解释AI_explainable_ai": {
+      "taiwan": "可解釋AI",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI透明度標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "可解釋AI": {
+      "taiwan": "可解釋AI",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI透明度標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "可解釋AI_explainable_ai": {
+      "taiwan": "可解釋AI",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣AI透明度標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "区块链": {
+      "taiwan": "區塊鏈",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣分散式技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "区块链_blockchain": {
+      "taiwan": "區塊鏈",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣分散式技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "區塊鏈": {
+      "taiwan": "區塊鏈",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣分散式技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "區塊鏈_blockchain": {
+      "taiwan": "區塊鏈",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣分散式技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "加密货币": {
+      "taiwan": "加密貨幣",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位資產標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "加密货币_cryptocurrency": {
+      "taiwan": "加密貨幣",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位資產標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "加密貨幣": {
+      "taiwan": "加密貨幣",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位資產標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "加密貨幣_cryptocurrency": {
+      "taiwan": "加密貨幣",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位資產標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "比特币": {
+      "taiwan": "比特幣",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣加密貨幣名稱",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "比特币_bitcoin": {
+      "taiwan": "比特幣",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣加密貨幣名稱",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "比特幣": {
+      "taiwan": "比特幣",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣加密貨幣名稱",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "比特幣_bitcoin": {
+      "taiwan": "比特幣",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣加密貨幣名稱",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "以太坊": {
+      "taiwan": "以太坊",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈平台",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "以太坊_ethereum": {
+      "taiwan": "以太坊",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈平台",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "智能合约": {
+      "taiwan": "智慧合約",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈應用",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "智能合约_smart_contract": {
+      "taiwan": "智慧合約",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈應用",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "智能合約": {
+      "taiwan": "智慧合約",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈應用",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "智能合約_smart_contract": {
+      "taiwan": "智慧合約",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈應用",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "共识算法": {
+      "taiwan": "共識演算法",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "共识算法_consensus_algorithm": {
+      "taiwan": "共識演算法",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "共識算法": {
+      "taiwan": "共識演算法",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "共識算法_consensus_algorithm": {
+      "taiwan": "共識演算法",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "工作量证明": {
+      "taiwan": "工作量證明",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣共識機制類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "工作量证明_proof_of_work": {
+      "taiwan": "工作量證明",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣共識機制類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "工作量證明": {
+      "taiwan": "工作量證明",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣共識機制類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "工作量證明_proof_of_work": {
+      "taiwan": "工作量證明",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣共識機制類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "权益证明": {
+      "taiwan": "權益證明",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣共識機制類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "权益证明_proof_of_stake": {
+      "taiwan": "權益證明",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣共識機制類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "權益證明": {
+      "taiwan": "權益證明",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣共識機制類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "權益證明_proof_of_stake": {
+      "taiwan": "權益證明",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣共識機制類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "分布式账本": {
+      "taiwan": "分散式帳本",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈架構",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "分布式账本_distributed_ledger": {
+      "taiwan": "分散式帳本",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈架構",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "分布式賬本": {
+      "taiwan": "分散式帳本",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈架構",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "分布式賬本_distributed_ledger": {
+      "taiwan": "分散式帳本",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈架構",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "哈希函数": {
+      "taiwan": "雜湊函數",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣密碼學技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "哈希函数_hash_function": {
+      "taiwan": "雜湊函數",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣密碼學技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "哈希函數": {
+      "taiwan": "雜湊函數",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣密碼學技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "哈希函數_hash_function": {
+      "taiwan": "雜湊函數",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣密碼學技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "挖矿": {
+      "taiwan": "挖礦",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈運作",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "挖矿_mining": {
+      "taiwan": "挖礦",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈運作",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "挖礦": {
+      "taiwan": "挖礦",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈運作",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "挖礦_mining": {
+      "taiwan": "挖礦",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈運作",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "钱包": {
+      "taiwan": "錢包",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數位資產管理",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "钱包_wallet": {
+      "taiwan": "錢包",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數位資產管理",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "錢包": {
+      "taiwan": "錢包",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數位資產管理",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "錢包_wallet": {
+      "taiwan": "錢包",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣數位資產管理",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "非同质化代币": {
+      "taiwan": "非同質化代幣",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位資產類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "非同质化代币_nft": {
+      "taiwan": "非同質化代幣",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位資產類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "非同質化代幣": {
+      "taiwan": "非同質化代幣",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位資產類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "非同質化代幣_nft": {
+      "taiwan": "非同質化代幣",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣數位資產類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "去中心化金融": {
+      "taiwan": "去中心化金融",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈金融",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "去中心化金融_defi": {
+      "taiwan": "去中心化金融",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈金融",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "去中心化自治组织": {
+      "taiwan": "去中心化自治組織",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈組織",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "去中心化自治组织_dao": {
+      "taiwan": "去中心化自治組織",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈組織",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "去中心化自治組織": {
+      "taiwan": "去中心化自治組織",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈組織",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "去中心化自治組織_dao": {
+      "taiwan": "去中心化自治組織",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣區塊鏈組織",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "元宇宙": {
+      "taiwan": "元宇宙",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣虛擬世界概念",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "元宇宙_metaverse": {
+      "taiwan": "元宇宙",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣虛擬世界概念",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "虚拟现实": {
+      "taiwan": "虛擬實境",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣沉浸式技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "虚拟现实_virtual_reality": {
+      "taiwan": "虛擬實境",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣沉浸式技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "虛擬現實": {
+      "taiwan": "虛擬實境",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣沉浸式技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "虛擬現實_virtual_reality": {
+      "taiwan": "虛擬實境",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣沉浸式技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "增强现实": {
+      "taiwan": "擴增實境",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣混合實境技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "增强现实_augmented_reality": {
+      "taiwan": "擴增實境",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣混合實境技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "增強現實": {
+      "taiwan": "擴增實境",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣混合實境技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "增強現實_augmented_reality": {
+      "taiwan": "擴增實境",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣混合實境技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "混合现实": {
+      "taiwan": "混合實境",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣實境技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "混合现实_mixed_reality": {
+      "taiwan": "混合實境",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣實境技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "混合現實": {
+      "taiwan": "混合實境",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣實境技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "混合現實_mixed_reality": {
+      "taiwan": "混合實境",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣實境技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "扩展现实": {
+      "taiwan": "延展實境",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣實境技術總稱",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "扩展现实_extended_reality": {
+      "taiwan": "延展實境",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣實境技術總稱",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "擴展現實": {
+      "taiwan": "延展實境",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣實境技術總稱",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "擴展現實_extended_reality": {
+      "taiwan": "延展實境",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣實境技術總稱",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "物联网": {
+      "taiwan": "物聯網",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣連網裝置技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "物联网_iot": {
+      "taiwan": "物聯網",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣連網裝置技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "物聯網": {
+      "taiwan": "物聯網",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣連網裝置技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "物聯網_iot": {
+      "taiwan": "物聯網",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣連網裝置技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "工业物联网": {
+      "taiwan": "工業物聯網",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣工業4.0技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "工业物联网_industrial_iot": {
+      "taiwan": "工業物聯網",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣工業4.0技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "工業物聯網": {
+      "taiwan": "工業物聯網",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣工業4.0技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "工業物聯網_industrial_iot": {
+      "taiwan": "工業物聯網",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣工業4.0技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "边缘计算": {
+      "taiwan": "邊緣運算",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣分散式運算",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "边缘计算_edge_computing": {
+      "taiwan": "邊緣運算",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣分散式運算",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "邊緣計算": {
+      "taiwan": "邊緣運算",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣分散式運算",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "邊緣計算_edge_computing": {
+      "taiwan": "邊緣運算",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣分散式運算",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "雾计算": {
+      "taiwan": "霧運算",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣分散式運算",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "雾计算_fog_computing": {
+      "taiwan": "霧運算",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣分散式運算",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "霧計算": {
+      "taiwan": "霧運算",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣分散式運算",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "霧計算_fog_computing": {
+      "taiwan": "霧運算",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣分散式運算",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "量子计算": {
+      "taiwan": "量子運算",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣前瞻運算技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "量子计算_quantum_computing": {
+      "taiwan": "量子運算",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣前瞻運算技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "量子計算": {
+      "taiwan": "量子運算",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣前瞻運算技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "量子計算_quantum_computing": {
+      "taiwan": "量子運算",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣前瞻運算技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "量子比特": {
+      "taiwan": "量子位元",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣量子運算單位",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "量子比特_qubit": {
+      "taiwan": "量子位元",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣量子運算單位",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "量子纠缠": {
+      "taiwan": "量子糾纏",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣量子物理現象",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "量子纠缠_quantum_entanglement": {
+      "taiwan": "量子糾纏",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣量子物理現象",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "量子糾纏": {
+      "taiwan": "量子糾纏",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣量子物理現象",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "量子糾纏_quantum_entanglement": {
+      "taiwan": "量子糾纏",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣量子物理現象",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "量子优越性": {
+      "taiwan": "量子優越性",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣量子運算里程碑",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "量子优越性_quantum_supremacy": {
+      "taiwan": "量子優越性",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣量子運算里程碑",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "量子優越性": {
+      "taiwan": "量子優越性",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣量子運算里程碑",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "量子優越性_quantum_supremacy": {
+      "taiwan": "量子優越性",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣量子運算里程碑",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "生物技术": {
+      "taiwan": "生物科技",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣生命科學技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "生物技术_biotechnology": {
+      "taiwan": "生物科技",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣生命科學技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "生物技術": {
+      "taiwan": "生物科技",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣生命科學技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "生物技術_biotechnology": {
+      "taiwan": "生物科技",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣生命科學技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "生物信息学": {
+      "taiwan": "生物資訊",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣跨領域科學",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "生物信息学_bioinformatics": {
+      "taiwan": "生物資訊",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣跨領域科學",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "生物信息學": {
+      "taiwan": "生物資訊",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣跨領域科學",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "生物信息學_bioinformatics": {
+      "taiwan": "生物資訊",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣跨領域科學",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "基因测序": {
+      "taiwan": "基因定序",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣基因體技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "基因测序_genome_sequencing": {
+      "taiwan": "基因定序",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣基因體技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "基因測序": {
+      "taiwan": "基因定序",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣基因體技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "基因測序_genome_sequencing": {
+      "taiwan": "基因定序",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣基因體技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "基因编辑": {
+      "taiwan": "基因編輯",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣基因工程技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "基因编辑_crispr": {
+      "taiwan": "基因編輯",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣基因工程技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "基因編輯": {
+      "taiwan": "基因編輯",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣基因工程技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "基因編輯_crispr": {
+      "taiwan": "基因編輯",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣基因工程技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "合成生物学": {
+      "taiwan": "合成生物學",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣生物工程領域",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "合成生物学_synthetic_biology": {
+      "taiwan": "合成生物學",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣生物工程領域",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "合成生物學": {
+      "taiwan": "合成生物學",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣生物工程領域",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "合成生物學_synthetic_biology": {
+      "taiwan": "合成生物學",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣生物工程領域",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "纳米技术": {
+      "taiwan": "奈米科技",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣微型技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "纳米技术_nanotechnology": {
+      "taiwan": "奈米科技",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣微型技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "納米技術": {
+      "taiwan": "奈米科技",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣微型技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "納米技術_nanotechnology": {
+      "taiwan": "奈米科技",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣微型技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "纳米材料": {
+      "taiwan": "奈米材料",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣先進材料技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "纳米材料_nanomaterial": {
+      "taiwan": "奈米材料",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣先進材料技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "納米材料": {
+      "taiwan": "奈米材料",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣先進材料技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "納米材料_nanomaterial": {
+      "taiwan": "奈米材料",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣先進材料技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "3D打印": {
+      "taiwan": "3D列印",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣積層製造技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "3D打印_3d_printing": {
+      "taiwan": "3D列印",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣積層製造技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "增材制造": {
+      "taiwan": "積層製造",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣先進製造技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "增材制造_additive_manufacturing": {
+      "taiwan": "積層製造",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣先進製造技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "增材製造": {
+      "taiwan": "積層製造",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣先進製造技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "增材製造_additive_manufacturing": {
+      "taiwan": "積層製造",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣先進製造技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "机器人学": {
+      "taiwan": "機器人學",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣自動化技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "机器人学_robotics": {
+      "taiwan": "機器人學",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣自動化技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "機器人學": {
+      "taiwan": "機器人學",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣自動化技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "機器人學_robotics": {
+      "taiwan": "機器人學",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣自動化技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "机器人": {
+      "taiwan": "機器人",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣自動化設備",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "机器人_robot": {
+      "taiwan": "機器人",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣自動化設備",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "機器人": {
+      "taiwan": "機器人",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣自動化設備",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "機器人_robot": {
+      "taiwan": "機器人",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣自動化設備",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "自动驾驶车": {
+      "taiwan": "自動駕駛車",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣智慧運輸技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "自动驾驶车_autonomous_vehicle": {
+      "taiwan": "自動駕駛車",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣智慧運輸技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "自動駕駛車": {
+      "taiwan": "自動駕駛車",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣智慧運輸技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "自動駕駛車_autonomous_vehicle": {
+      "taiwan": "自動駕駛車",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣智慧運輸技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "自动驾驶": {
+      "taiwan": "自動駕駛",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣智慧運輸技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "自动驾驶_self_driving": {
+      "taiwan": "自動駕駛",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣智慧運輸技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "自動駕駛": {
+      "taiwan": "自動駕駛",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣智慧運輸技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "自動駕駛_self_driving": {
+      "taiwan": "自動駕駛",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣智慧運輸技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "无人机": {
+      "taiwan": "無人機",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣無人載具技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "无人机_drone": {
+      "taiwan": "無人機",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣無人載具技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "無人機": {
+      "taiwan": "無人機",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣無人載具技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "無人機_drone": {
+      "taiwan": "無人機",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣無人載具技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "无人飞行器": {
+      "taiwan": "無人飛行載具",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣航空科技術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "无人飞行器_uav": {
+      "taiwan": "無人飛行載具",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣航空科技術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "無人飛行器": {
+      "taiwan": "無人飛行載具",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣航空科技術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "無人飛行器_uav": {
+      "taiwan": "無人飛行載具",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣航空科技術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "激光雷达": {
+      "taiwan": "光達",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣感測技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "激光雷达_lidar": {
+      "taiwan": "光達",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣感測技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "激光雷達": {
+      "taiwan": "光達",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣感測技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "激光雷達_lidar": {
+      "taiwan": "光達",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣感測技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "雷达": {
+      "taiwan": "雷達",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣感測技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "雷达_radar_tech": {
+      "taiwan": "雷達",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣感測技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "雷達": {
+      "taiwan": "雷達",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣感測技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "雷達_radar_tech": {
+      "taiwan": "雷達",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣感測技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "传感器融合": {
+      "taiwan": "感測器融合",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣感測整合技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "传感器融合_sensor_fusion": {
+      "taiwan": "感測器融合",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣感測整合技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "傳感器融合": {
+      "taiwan": "感測器融合",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣感測整合技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "傳感器融合_sensor_fusion": {
+      "taiwan": "感測器融合",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣感測整合技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "可再生能源": {
+      "taiwan": "再生能源",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣綠能技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "可再生能源_renewable_energy": {
+      "taiwan": "再生能源",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣綠能技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "太阳能": {
+      "taiwan": "太陽能",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣綠能技術類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "太阳能_solar_energy": {
+      "taiwan": "太陽能",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣綠能技術類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "太陽能": {
+      "taiwan": "太陽能",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣綠能技術類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "太陽能_solar_energy": {
+      "taiwan": "太陽能",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣綠能技術類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "风能": {
+      "taiwan": "風能",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣綠能技術類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "风能_wind_energy": {
+      "taiwan": "風能",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣綠能技術類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "風能": {
+      "taiwan": "風能",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣綠能技術類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "風能_wind_energy": {
+      "taiwan": "風能",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣綠能技術類型",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "电池技术": {
+      "taiwan": "電池技術",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣能源儲存技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "电池技术_battery_tech": {
+      "taiwan": "電池技術",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣能源儲存技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "電池技術": {
+      "taiwan": "電池技術",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣能源儲存技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "電池技術_battery_tech": {
+      "taiwan": "電池技術",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣能源儲存技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "燃料电池": {
+      "taiwan": "燃料電池",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣清潔能源技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "燃料电池_fuel_cell": {
+      "taiwan": "燃料電池",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣清潔能源技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "燃料電池": {
+      "taiwan": "燃料電池",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣清潔能源技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "燃料電池_fuel_cell": {
+      "taiwan": "燃料電池",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣清潔能源技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "智能电网": {
+      "taiwan": "智慧電網",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣電力系統技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "智能电网_smart_grid": {
+      "taiwan": "智慧電網",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣電力系統技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "智能電網": {
+      "taiwan": "智慧電網",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣電力系統技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "智能電網_smart_grid": {
+      "taiwan": "智慧電網",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣電力系統技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "能源存储": {
+      "taiwan": "能源儲存",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣能源管理技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "能源存储_energy_storage": {
+      "taiwan": "能源儲存",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣能源管理技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "能源存儲": {
+      "taiwan": "能源儲存",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣能源管理技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "能源存儲_energy_storage": {
+      "taiwan": "能源儲存",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣能源管理技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "碳足迹": {
+      "taiwan": "碳足跡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣環保指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "碳足迹_carbon_footprint": {
+      "taiwan": "碳足跡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣環保指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "碳足跡": {
+      "taiwan": "碳足跡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣環保指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "碳足跡_carbon_footprint": {
+      "taiwan": "碳足跡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣環保指標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "碳中和": {
+      "taiwan": "碳中和",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣環保目標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "碳中和_carbon_neutral": {
+      "taiwan": "碳中和",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣環保目標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "净零": {
+      "taiwan": "淨零",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣環保目標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "净零_net_zero": {
+      "taiwan": "淨零",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣環保目標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "淨零": {
+      "taiwan": "淨零",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣環保目標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "淨零_net_zero": {
+      "taiwan": "淨零",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣環保目標術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "可持续发展": {
+      "taiwan": "永續發展",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣永續目標標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "可持续发展_sustainable_development": {
+      "taiwan": "永續發展",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣永續目標標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "可持續發展": {
+      "taiwan": "永續發展",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣永續目標標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "可持續發展_sustainable_development": {
+      "taiwan": "永續發展",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣永續目標標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "循环经济": {
+      "taiwan": "循環經濟",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣永續經濟模式",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "循环经济_circular_economy": {
+      "taiwan": "循環經濟",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣永續經濟模式",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "循環經濟": {
+      "taiwan": "循環經濟",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣永續經濟模式",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "循環經濟_circular_economy": {
+      "taiwan": "循環經濟",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣永續經濟模式",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "绿色科技": {
+      "taiwan": "綠色科技",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣環保技術總稱",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "绿色科技_green_technology": {
+      "taiwan": "綠色科技",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣環保技術總稱",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "綠色科技": {
+      "taiwan": "綠色科技",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣環保技術總稱",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "綠色科技_green_technology": {
+      "taiwan": "綠色科技",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣環保技術總稱",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "清洁技术": {
+      "taiwan": "潔淨科技",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣環保技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "清洁技术_clean_tech": {
+      "taiwan": "潔淨科技",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣環保技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "清潔技術": {
+      "taiwan": "潔淨科技",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣環保技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "清潔技術_clean_tech": {
+      "taiwan": "潔淨科技",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣環保技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "智慧城市": {
+      "taiwan": "智慧城市",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣都市發展概念",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "智慧城市_smart_city": {
+      "taiwan": "智慧城市",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣都市發展概念",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "数字孪生": {
+      "taiwan": "數位雙胞胎",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣虛實整合技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "数字孪生_digital_twin": {
+      "taiwan": "數位雙胞胎",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣虛實整合技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "數字孿生": {
+      "taiwan": "數位雙胞胎",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣虛實整合技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "數字孿生_digital_twin": {
+      "taiwan": "數位雙胞胎",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣虛實整合技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "工业4.0": {
+      "taiwan": "工業4.0",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣製造業革新",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "工业4.0_industry_4": {
+      "taiwan": "工業4.0",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣製造業革新",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "工業4.0": {
+      "taiwan": "工業4.0",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣製造業革新",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "工業4.0_industry_4": {
+      "taiwan": "工業4.0",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣製造業革新",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "信息物理系统": {
+      "taiwan": "虛實整合系統",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣工業自動化",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "信息物理系统_cyber_physical_system": {
+      "taiwan": "虛實整合系統",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣工業自動化",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "信息物理系統": {
+      "taiwan": "虛實整合系統",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣工業自動化",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "信息物理系統_cyber_physical_system": {
+      "taiwan": "虛實整合系統",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣工業自動化",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "数字化转型": {
+      "taiwan": "數位轉型",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業革新術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "数字化转型_digital_transformation": {
+      "taiwan": "數位轉型",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業革新術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "數字化轉型": {
+      "taiwan": "數位轉型",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業革新術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "數字化轉型_digital_transformation": {
+      "taiwan": "數位轉型",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣企業革新術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "大数据": {
+      "taiwan": "巨量資料",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資料技術術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "大数据_big_data": {
+      "taiwan": "巨量資料",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資料技術術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "大數據": {
+      "taiwan": "巨量資料",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資料技術術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "大數據_big_data": {
+      "taiwan": "巨量資料",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資料技術術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "数据分析": {
+      "taiwan": "資料分析",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資料處理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "数据分析_data_analytics": {
+      "taiwan": "資料分析",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資料處理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "數據分析": {
+      "taiwan": "資料分析",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資料處理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "數據分析_data_analytics": {
+      "taiwan": "資料分析",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資料處理術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "数据科学": {
+      "taiwan": "資料科學",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣跨領域學科",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "数据科学_data_science": {
+      "taiwan": "資料科學",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣跨領域學科",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "數據科學": {
+      "taiwan": "資料科學",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣跨領域學科",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "數據科學_data_science": {
+      "taiwan": "資料科學",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣跨領域學科",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "数据挖掘": {
+      "taiwan": "資料探勘",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資料處理技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "数据挖掘_data_mining": {
+      "taiwan": "資料探勘",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資料處理技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "數據挖掘": {
+      "taiwan": "資料探勘",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資料處理技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "數據挖掘_data_mining": {
+      "taiwan": "資料探勘",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資料處理技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "预测分析": {
+      "taiwan": "預測分析",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資料應用技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "预测分析_predictive_analytics": {
+      "taiwan": "預測分析",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資料應用技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "預測分析": {
+      "taiwan": "預測分析",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資料應用技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "預測分析_predictive_analytics": {
+      "taiwan": "預測分析",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣資料應用技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    }
+  }
+}

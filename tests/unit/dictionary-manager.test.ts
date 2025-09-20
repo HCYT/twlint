@@ -37,8 +37,8 @@ describe('DictionaryManager', () => {
       const matches = dictManager.findMatches(text)
 
       expect(matches.length).toBeGreaterThan(0)
-      expect(matches.some(match => match.china_simplified === '软件')).toBe(true)
-      expect(matches.some(match => match.china_simplified === '网络')).toBe(true)
+      expect(matches.some(match => match.term === '软件')).toBe(true)
+      expect(matches.some(match => match.term === '网络')).toBe(true)
     })
 
     it('should return Taiwan alternatives', async () => {
@@ -46,8 +46,8 @@ describe('DictionaryManager', () => {
       const matches = dictManager.findMatches(text)
 
       expect(matches.length).toBeGreaterThan(0)
-      const softwareMatch = matches.find(match => match.china_simplified === '软件')
-      expect(softwareMatch?.taiwan).toBe('軟體')
+      const softwareMatch = matches.find(match => match.term === '软件')
+      expect(softwareMatch?.replacement).toBe('軟體')
     })
 
     it('should include confidence scores', async () => {
@@ -71,12 +71,16 @@ describe('DictionaryManager', () => {
       }
     })
 
-    it('should not return duplicates', async () => {
-      const text = '软件软件软件' // 重複的詞彙
+    it('should not return duplicates for same position', async () => {
+      const text = '软件软件软件' // 重複的詞彙但在不同位置
       const matches = dictManager.findMatches(text)
 
-      const uniqueTerms = new Set(matches.map(match => match.china_simplified))
-      expect(uniqueTerms.size).toBe(matches.length)
+      // 檢查沒有重複的位置範圍
+      const uniqueRanges = new Set(matches.map(match => `${match.start}-${match.end}`))
+      expect(uniqueRanges.size).toBe(matches.length)
+
+      // 應該找到 3 個匹配（不同位置的相同詞彙）
+      expect(matches.length).toBe(3)
     })
 
     it('should return empty array for text without mainland terms', async () => {

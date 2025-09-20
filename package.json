@@ -18,7 +18,7 @@
     "dict:check": "tsx tools/dict-manager.ts validate",
     "dict:list": "tsx tools/dict-manager.ts list",
     "dict:merge": "tsx tools/dict-manager.ts merge",
-    "lint": "eslint src/ --fix",
+    "lint": "eslint \"src/**/*.ts\" --fix",
     "format": "prettier --write src/",
     "prepublishOnly": "npm run build"
   },
@@ -42,10 +42,10 @@
     "@types/papaparse": "^5.3.7",
     "@typescript-eslint/eslint-plugin": "^8.44.0",
     "@typescript-eslint/parser": "^8.44.0",
-    "eslint": "^8.0.0",
+    "eslint": "^9.36.0",
     "prettier": "^3.0.0",
     "tsx": "^3.12.0",
-    "typescript": "^5.0.0",
+    "typescript": "^5.9.2",
     "vitest": "^0.34.0"
   },
   "keywords": [

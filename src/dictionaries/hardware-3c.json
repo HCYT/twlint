@@ -1,0 +1,2649 @@
+{
+  "metadata": {
+    "name": "hardware-3c",
+    "version": "1.0.0",
+    "entries": 91
+  },
+  "lookup": {
+    "硬件": {
+      "taiwan": "硬體",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣計算機硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "硬件_hardware": {
+      "taiwan": "硬體",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣計算機硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "软件": {
+      "taiwan": "軟體",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣技術標準用語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "软件_software": {
+      "taiwan": "軟體",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣技術標準用語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "軟件": {
+      "taiwan": "軟體",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣技術標準用語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "軟件_software": {
+      "taiwan": "軟體",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣技術標準用語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "固件": {
+      "taiwan": "韌體",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣硬體技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "固件_firmware": {
+      "taiwan": "韌體",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣硬體技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "中央处理器": {
+      "taiwan": "中央處理器",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣電腦硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "中央处理器_cpu": {
+      "taiwan": "中央處理器",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣電腦硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "中央處理器": {
+      "taiwan": "中央處理器",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣電腦硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "中央處理器_cpu": {
+      "taiwan": "中央處理器",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣電腦硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "图形处理器": {
+      "taiwan": "圖形處理器",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "图形处理器_gpu": {
+      "taiwan": "圖形處理器",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "圖形處理器": {
+      "taiwan": "圖形處理器",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "圖形處理器_gpu": {
+      "taiwan": "圖形處理器",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "随机存取存储器": {
+      "taiwan": "隨機存取記憶體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣記憶體技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "随机存取存储器_ram": {
+      "taiwan": "隨機存取記憶體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣記憶體技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "隨機存取存儲器": {
+      "taiwan": "隨機存取記憶體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣記憶體技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "隨機存取存儲器_ram": {
+      "taiwan": "隨機存取記憶體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣記憶體技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "只读存储器": {
+      "taiwan": "唯讀記憶體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣記憶體技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "只读存储器_rom": {
+      "taiwan": "唯讀記憶體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣記憶體技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "只讀存儲器": {
+      "taiwan": "唯讀記憶體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣記憶體技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "只讀存儲器_rom": {
+      "taiwan": "唯讀記憶體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣記憶體技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "内存": {
+      "taiwan": "記憶體",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣計算機硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "内存_memory": {
+      "taiwan": "記憶體",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣計算機硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "內存": {
+      "taiwan": "記憶體",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣計算機硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "內存_memory": {
+      "taiwan": "記憶體",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣計算機硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "固态硬盘": {
+      "taiwan": "固態硬碟",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "固态硬盘_ssd": {
+      "taiwan": "固態硬碟",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "固態硬盤": {
+      "taiwan": "固態硬碟",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "固態硬盤_ssd": {
+      "taiwan": "固態硬碟",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "机械硬盘": {
+      "taiwan": "傳統硬碟",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣儲存裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "机械硬盘_hdd": {
+      "taiwan": "傳統硬碟",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣儲存裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "機械硬盤": {
+      "taiwan": "傳統硬碟",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣儲存裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "機械硬盤_hdd": {
+      "taiwan": "傳統硬碟",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣儲存裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "磁盘": {
+      "taiwan": "磁碟",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "磁盘_disk": {
+      "taiwan": "磁碟",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "磁盤": {
+      "taiwan": "磁碟",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "磁盤_disk": {
+      "taiwan": "磁碟",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "驱动器": {
+      "taiwan": "磁碟機",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "驱动器_drive": {
+      "taiwan": "磁碟機",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "驅動器": {
+      "taiwan": "磁碟機",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "驅動器_drive": {
+      "taiwan": "磁碟機",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "主板": {
+      "taiwan": "主機板",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣電腦組件標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "主板_motherboard": {
+      "taiwan": "主機板",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣電腦組件標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "芯片组": {
+      "taiwan": "晶片組",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣晶片技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "芯片组_chipset": {
+      "taiwan": "晶片組",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣晶片技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "芯片組": {
+      "taiwan": "晶片組",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣晶片技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "芯片組_chipset": {
+      "taiwan": "晶片組",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣晶片技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "芯片": {
+      "taiwan": "晶片",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣半導體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "芯片_chip": {
+      "taiwan": "晶片",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣半導體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "硅": {
+      "taiwan": "矽",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣半導體材料",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "硅_silicon": {
+      "taiwan": "矽",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣半導體材料",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "基本输入输出系统": {
+      "taiwan": "基本輸入輸出系統",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣韌體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "基本输入输出系统_bios": {
+      "taiwan": "基本輸入輸出系統",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣韌體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "基本輸入輸出系統": {
+      "taiwan": "基本輸入輸出系統",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣韌體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "基本輸入輸出系統_bios": {
+      "taiwan": "基本輸入輸出系統",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣韌體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "统一可扩展固件接口": {
+      "taiwan": "統一可延伸韌體介面",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣韌體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "统一可扩展固件接口_uefi": {
+      "taiwan": "統一可延伸韌體介面",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣韌體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "統一可擴展固件接口": {
+      "taiwan": "統一可延伸韌體介面",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣韌體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "統一可擴展固件接口_uefi": {
+      "taiwan": "統一可延伸韌體介面",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣韌體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "通用串行总线": {
+      "taiwan": "通用序列匯流排",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣介面標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "通用串行总线_usb": {
+      "taiwan": "通用序列匯流排",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣介面標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "通用串行總線": {
+      "taiwan": "通用序列匯流排",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣介面標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "通用串行總線_usb": {
+      "taiwan": "通用序列匯流排",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣介面標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "高清多媒体接口": {
+      "taiwan": "高畫質多媒體介面",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示介面標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "高清多媒体接口_hdmi": {
+      "taiwan": "高畫質多媒體介面",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示介面標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "高清多媒體接口": {
+      "taiwan": "高畫質多媒體介面",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示介面標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "高清多媒體接口_hdmi": {
+      "taiwan": "高畫質多媒體介面",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示介面標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "显示端口": {
+      "taiwan": "顯示埠",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣顯示介面標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "显示端口_displayport": {
+      "taiwan": "顯示埠",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣顯示介面標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "顯示端口": {
+      "taiwan": "顯示埠",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣顯示介面標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "顯示端口_displayport": {
+      "taiwan": "顯示埠",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣顯示介面標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "雷电": {
+      "taiwan": "雷電",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣高速介面標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "雷电_thunderbolt": {
+      "taiwan": "雷電",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣高速介面標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "雷電": {
+      "taiwan": "雷電",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣高速介面標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "雷電_thunderbolt": {
+      "taiwan": "雷電",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣高速介面標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "屏幕": {
+      "taiwan": "螢幕",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣顯示裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "屏幕_screen": {
+      "taiwan": "螢幕",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣顯示裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "显示器": {
+      "taiwan": "顯示器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "显示器_display": {
+      "taiwan": "顯示器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "顯示器": {
+      "taiwan": "顯示器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "顯示器_display": {
+      "taiwan": "顯示器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "监视器": {
+      "taiwan": "監視器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣顯示設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "监视器_monitor": {
+      "taiwan": "監視器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣顯示設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "監視器": {
+      "taiwan": "監視器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣顯示設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "監視器_monitor": {
+      "taiwan": "監視器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣顯示設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "分辨率": {
+      "taiwan": "解析度",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "分辨率_resolution": {
+      "taiwan": "解析度",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "刷新率": {
+      "taiwan": "更新率",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "刷新率_refresh_rate": {
+      "taiwan": "更新率",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "像素": {
+      "taiwan": "像素",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "像素_pixel": {
+      "taiwan": "像素",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "液晶显示器": {
+      "taiwan": "液晶顯示器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "液晶显示器_lcd": {
+      "taiwan": "液晶顯示器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "液晶顯示器": {
+      "taiwan": "液晶顯示器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "液晶顯示器_lcd": {
+      "taiwan": "液晶顯示器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "发光二极管": {
+      "taiwan": "發光二極體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "发光二极管_led": {
+      "taiwan": "發光二極體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "發光二極管": {
+      "taiwan": "發光二極體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "發光二極管_led": {
+      "taiwan": "發光二極體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "有机发光二极管": {
+      "taiwan": "有機發光二極體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "有机发光二极管_oled": {
+      "taiwan": "有機發光二極體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "有機發光二極管": {
+      "taiwan": "有機發光二極體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "有機發光二極管_oled": {
+      "taiwan": "有機發光二極體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "主动矩阵有机发光二极管": {
+      "taiwan": "主動矩陣有機發光二極體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "主动矩阵有机发光二极管_amoled": {
+      "taiwan": "主動矩陣有機發光二極體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "主動矩陣有機發光二極管": {
+      "taiwan": "主動矩陣有機發光二極體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "主動矩陣有機發光二極管_amoled": {
+      "taiwan": "主動矩陣有機發光二極體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "触控板": {
+      "taiwan": "觸控板",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣輸入裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "触控板_touchpad": {
+      "taiwan": "觸控板",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣輸入裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "觸控板": {
+      "taiwan": "觸控板",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣輸入裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "觸控板_touchpad": {
+      "taiwan": "觸控板",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣輸入裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "触摸屏": {
+      "taiwan": "觸控螢幕",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣輸入裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "触摸屏_touchscreen": {
+      "taiwan": "觸控螢幕",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣輸入裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "觸摸屏": {
+      "taiwan": "觸控螢幕",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣輸入裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "觸摸屏_touchscreen": {
+      "taiwan": "觸控螢幕",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣輸入裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "键盘": {
+      "taiwan": "鍵盤",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣輸入裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "键盘_keyboard": {
+      "taiwan": "鍵盤",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣輸入裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "鍵盤": {
+      "taiwan": "鍵盤",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣輸入裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "鍵盤_keyboard": {
+      "taiwan": "鍵盤",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣輸入裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "鼠标": {
+      "taiwan": "滑鼠",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣週邊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "鼠标_mouse": {
+      "taiwan": "滑鼠",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣週邊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "鼠標": {
+      "taiwan": "滑鼠",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣週邊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "鼠標_mouse": {
+      "taiwan": "滑鼠",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣週邊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "网络摄像头": {
+      "taiwan": "網路攝影機",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣視訊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "网络摄像头_webcam": {
+      "taiwan": "網路攝影機",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣視訊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "網絡攝像頭": {
+      "taiwan": "網路攝影機",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣視訊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "網絡攝像頭_webcam": {
+      "taiwan": "網路攝影機",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣視訊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "麦克风": {
+      "taiwan": "麥克風",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣音訊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "麦克风_microphone": {
+      "taiwan": "麥克風",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣音訊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "麥克風": {
+      "taiwan": "麥克風",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣音訊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "麥克風_microphone": {
+      "taiwan": "麥克風",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣音訊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "扬声器": {
+      "taiwan": "揚聲器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣音訊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "扬声器_speaker": {
+      "taiwan": "揚聲器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣音訊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "揚聲器": {
+      "taiwan": "揚聲器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣音訊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "揚聲器_speaker": {
+      "taiwan": "揚聲器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣音訊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "耳机": {
+      "taiwan": "耳機",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣音訊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "耳机_headphone": {
+      "taiwan": "耳機",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣音訊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "耳機": {
+      "taiwan": "耳機",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣音訊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "耳機_headphone": {
+      "taiwan": "耳機",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣音訊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "打印机": {
+      "taiwan": "印表機",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣週邊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "打印机_printer": {
+      "taiwan": "印表機",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣週邊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "打印機": {
+      "taiwan": "印表機",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣週邊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "打印機_printer": {
+      "taiwan": "印表機",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣週邊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "扫描仪": {
+      "taiwan": "掃描器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣週邊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "扫描仪_scanner": {
+      "taiwan": "掃描器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣週邊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "掃描儀": {
+      "taiwan": "掃描器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣週邊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "掃描儀_scanner": {
+      "taiwan": "掃描器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣週邊裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "电源": {
+      "taiwan": "電源供應器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣電腦組件標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "电源_power_supply": {
+      "taiwan": "電源供應器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣電腦組件標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "電源": {
+      "taiwan": "電源供應器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣電腦組件標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "電源_power_supply": {
+      "taiwan": "電源供應器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣電腦組件標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "散热风扇": {
+      "taiwan": "散熱風扇",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣散熱系統標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "散热风扇_cooling_fan": {
+      "taiwan": "散熱風扇",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣散熱系統標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "散熱風扇": {
+      "taiwan": "散熱風扇",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣散熱系統標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "散熱風扇_cooling_fan": {
+      "taiwan": "散熱風扇",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣散熱系統標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "散热片": {
+      "taiwan": "散熱片",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣散熱系統標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "散热片_heat_sink": {
+      "taiwan": "散熱片",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣散熱系統標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "散熱片": {
+      "taiwan": "散熱片",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣散熱系統標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "散熱片_heat_sink": {
+      "taiwan": "散熱片",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣散熱系統標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "导热硅脂": {
+      "taiwan": "散熱膏",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣散熱材料標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "导热硅脂_thermal_paste": {
+      "taiwan": "散熱膏",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣散熱材料標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "導熱硅脂": {
+      "taiwan": "散熱膏",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣散熱材料標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "導熱硅脂_thermal_paste": {
+      "taiwan": "散熱膏",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣散熱材料標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "超频": {
+      "taiwan": "超頻",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣效能調校技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "超频_overclocking": {
+      "taiwan": "超頻",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣效能調校技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "超頻": {
+      "taiwan": "超頻",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣效能調校技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "超頻_overclocking": {
+      "taiwan": "超頻",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣效能調校技術",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "基准测试工具": {
+      "taiwan": "效能測試工具",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣硬體測試標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "基准测试工具_benchmark_tool": {
+      "taiwan": "效能測試工具",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣硬體測試標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "基準測試工具": {
+      "taiwan": "效能測試工具",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣硬體測試標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "基準測試工具_benchmark_tool": {
+      "taiwan": "效能測試工具",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣硬體測試標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "驱动程序": {
+      "taiwan": "驅動程式",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣硬體管理標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "驱动程序_driver": {
+      "taiwan": "驅動程式",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣硬體管理標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "驅動程序": {
+      "taiwan": "驅動程式",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣硬體管理標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "驅動程序_driver": {
+      "taiwan": "驅動程式",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣硬體管理標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "寄存器": {
+      "taiwan": "暫存器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣計算機硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "寄存器_register": {
+      "taiwan": "暫存器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣計算機硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "总线": {
+      "taiwan": "匯流排",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣電腦架構標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "总线_bus": {
+      "taiwan": "匯流排",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣電腦架構標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "總線": {
+      "taiwan": "匯流排",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣電腦架構標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "總線_bus": {
+      "taiwan": "匯流排",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣電腦架構標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "带宽": {
+      "taiwan": "頻寬",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣網路技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "带宽_bandwidth": {
+      "taiwan": "頻寬",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣網路技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "帶寬": {
+      "taiwan": "頻寬",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣網路技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "帶寬_bandwidth": {
+      "taiwan": "頻寬",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣網路技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "存储": {
+      "taiwan": "儲存體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "存储_storage": {
+      "taiwan": "儲存體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "存儲": {
+      "taiwan": "儲存體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "存儲_storage": {
+      "taiwan": "儲存體",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "卷": {
+      "taiwan": "磁碟區",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣儲存管理標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "卷_volume": {
+      "taiwan": "磁碟區",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣儲存管理標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "磁盘阵列": {
+      "taiwan": "磁碟陣列",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "磁盘阵列_raid": {
+      "taiwan": "磁碟陣列",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "磁盤陣列": {
+      "taiwan": "磁碟陣列",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "磁盤陣列_raid": {
+      "taiwan": "磁碟陣列",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "网络附加存储": {
+      "taiwan": "網路附接儲存",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "网络附加存储_nas": {
+      "taiwan": "網路附接儲存",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "網絡附加存儲": {
+      "taiwan": "網路附接儲存",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "網絡附加存儲_nas": {
+      "taiwan": "網路附接儲存",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣儲存設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "激光": {
+      "taiwan": "雷射",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣光學技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "激光_laser": {
+      "taiwan": "雷射",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣光學技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "传感器": {
+      "taiwan": "感測器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣感測裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "传感器_sensor": {
+      "taiwan": "感測器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣感測裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "傳感器": {
+      "taiwan": "感測器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣感測裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "傳感器_sensor": {
+      "taiwan": "感測器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣感測裝置標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "执行器": {
+      "taiwan": "致動器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣控制元件標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "执行器_actuator": {
+      "taiwan": "致動器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣控制元件標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "執行器": {
+      "taiwan": "致動器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣控制元件標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "執行器_actuator": {
+      "taiwan": "致動器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣控制元件標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "微机电系统": {
+      "taiwan": "微機電系統",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣微型技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "微机电系统_mems": {
+      "taiwan": "微機電系統",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣微型技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "微機電系統": {
+      "taiwan": "微機電系統",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣微型技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "微機電系統_mems": {
+      "taiwan": "微機電系統",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣微型技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "激光雷达": {
+      "taiwan": "光達",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣感測技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "激光雷达_lidar": {
+      "taiwan": "光達",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣感測技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "激光雷達": {
+      "taiwan": "光達",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣感測技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "激光雷達_lidar": {
+      "taiwan": "光達",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣感測技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "雷达": {
+      "taiwan": "雷達",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣感測技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "雷达_radar": {
+      "taiwan": "雷達",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣感測技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "雷達": {
+      "taiwan": "雷達",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣感測技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "雷達_radar": {
+      "taiwan": "雷達",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣感測技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "电池": {
+      "taiwan": "電池",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣電源技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "电池_battery": {
+      "taiwan": "電池",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣電源技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "電池": {
+      "taiwan": "電池",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣電源技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "電池_battery": {
+      "taiwan": "電池",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣電源技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "锂电池": {
+      "taiwan": "鋰電池",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣電池技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "锂电池_lithium_battery": {
+      "taiwan": "鋰電池",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣電池技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "鋰電池": {
+      "taiwan": "鋰電池",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣電池技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "鋰電池_lithium_battery": {
+      "taiwan": "鋰電池",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣電池技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "适配器": {
+      "taiwan": "轉接頭",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣週邊配件標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "适配器_adapter": {
+      "taiwan": "轉接器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣週邊配件標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "適配器": {
+      "taiwan": "轉接頭",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣週邊配件標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "適配器_adapter": {
+      "taiwan": "轉接器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣週邊配件標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "适配器_dongle": {
+      "taiwan": "轉接頭",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣週邊配件標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "適配器_dongle": {
+      "taiwan": "轉接頭",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣週邊配件標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "电缆": {
+      "taiwan": "纜線",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣連接線材標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "电缆_cable": {
+      "taiwan": "纜線",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣連接線材標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "電纜": {
+      "taiwan": "纜線",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣連接線材標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "電纜_cable": {
+      "taiwan": "纜線",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣連接線材標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "连接器": {
+      "taiwan": "連接器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣介面元件標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "连接器_connector": {
+      "taiwan": "連接器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣介面元件標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "連接器": {
+      "taiwan": "連接器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣介面元件標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "連接器_connector": {
+      "taiwan": "連接器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣介面元件標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "端口": {
+      "taiwan": "連接埠",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣介面端點標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "端口_port": {
+      "taiwan": "連接埠",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣介面端點標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "插槽": {
+      "taiwan": "插槽",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣擴充介面標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "插槽_slot": {
+      "taiwan": "插槽",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣擴充介面標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "扩展卡": {
+      "taiwan": "擴充卡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣硬體擴充標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "扩展卡_expansion_card": {
+      "taiwan": "擴充卡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣硬體擴充標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "擴展卡": {
+      "taiwan": "擴充卡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣硬體擴充標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "擴展卡_expansion_card": {
+      "taiwan": "擴充卡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣硬體擴充標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "显卡": {
+      "taiwan": "顯示卡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "显卡_graphics_card": {
+      "taiwan": "顯示卡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "顯卡": {
+      "taiwan": "顯示卡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "顯卡_graphics_card": {
+      "taiwan": "顯示卡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣顯示硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "声卡": {
+      "taiwan": "音效卡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣音訊硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "声卡_sound_card": {
+      "taiwan": "音效卡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣音訊硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "聲卡": {
+      "taiwan": "音效卡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣音訊硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "聲卡_sound_card": {
+      "taiwan": "音效卡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣音訊硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "网卡": {
+      "taiwan": "網路卡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "网卡_network_card": {
+      "taiwan": "網路卡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "網卡": {
+      "taiwan": "網路卡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "網卡_network_card": {
+      "taiwan": "網路卡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "无线网卡": {
+      "taiwan": "無線網卡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣無線硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "无线网卡_wireless_card": {
+      "taiwan": "無線網卡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣無線硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "無線網卡": {
+      "taiwan": "無線網卡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣無線硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "無線網卡_wireless_card": {
+      "taiwan": "無線網卡",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣無線硬體標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "蓝牙": {
+      "taiwan": "藍牙",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣無線技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "蓝牙_bluetooth": {
+      "taiwan": "藍牙",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣無線技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "藍牙": {
+      "taiwan": "藍牙",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣無線技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "藍牙_bluetooth": {
+      "taiwan": "藍牙",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣無線技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "无线网络": {
+      "taiwan": "無線網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣無線技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "无线网络_wifi": {
+      "taiwan": "無線網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣無線技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "無線網絡": {
+      "taiwan": "無線網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣無線技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "無線網絡_wifi": {
+      "taiwan": "無線網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣無線技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "第五代移动通信": {
+      "taiwan": "第五代行動通訊",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣通訊技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "第五代移动通信_5g": {
+      "taiwan": "第五代行動通訊",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣通訊技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "第五代移動通信": {
+      "taiwan": "第五代行動通訊",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣通訊技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "第五代移動通信_5g": {
+      "taiwan": "第五代行動通訊",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣通訊技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "长期演进": {
+      "taiwan": "長期演進技術",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣通訊技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "长期演进_lte": {
+      "taiwan": "長期演進技術",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣通訊技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "長期演進": {
+      "taiwan": "長期演進技術",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣通訊技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "長期演進_lte": {
+      "taiwan": "長期演進技術",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣通訊技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "近场通信": {
+      "taiwan": "近場通訊",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣無線技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "近场通信_nfc": {
+      "taiwan": "近場通訊",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣無線技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "近場通信": {
+      "taiwan": "近場通訊",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣無線技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "近場通信_nfc": {
+      "taiwan": "近場通訊",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣無線技術標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "以太网": {
+      "taiwan": "乙太網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "以太网_ethernet": {
+      "taiwan": "乙太網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "以太網": {
+      "taiwan": "乙太網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "以太網_ethernet": {
+      "taiwan": "乙太網路",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "路由器": {
+      "taiwan": "路由器",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣網路設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "路由器_router": {
+      "taiwan": "路由器",
+      "confidence": 0.8,
+      "category": "mainland-term",
+      "reason": "台灣網路設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "交换机": {
+      "taiwan": "交換器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "交换机_switch": {
+      "taiwan": "交換器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "交換機": {
+      "taiwan": "交換器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "交換機_switch": {
+      "taiwan": "交換器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "集线器": {
+      "taiwan": "集線器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "集线器_hub": {
+      "taiwan": "集線器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "集線器": {
+      "taiwan": "集線器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "集線器_hub": {
+      "taiwan": "集線器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "调制解调器": {
+      "taiwan": "數據機",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "调制解调器_modem": {
+      "taiwan": "數據機",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "調製解調器": {
+      "taiwan": "數據機",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "調製解調器_modem": {
+      "taiwan": "數據機",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路設備標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "网关": {
+      "taiwan": "閘道器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路設備術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "网关_gateway": {
+      "taiwan": "閘道器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路設備術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "網關": {
+      "taiwan": "閘道器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路設備術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "網關_gateway": {
+      "taiwan": "閘道器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路設備術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "中继器": {
+      "taiwan": "中繼器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣網路設備術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "中继器_repeater": {
+      "taiwan": "中繼器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣網路設備術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "中繼器": {
+      "taiwan": "中繼器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣網路設備術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "中繼器_repeater": {
+      "taiwan": "中繼器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣網路設備術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "网桥": {
+      "taiwan": "橋接器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路設備術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "网桥_bridge": {
+      "taiwan": "橋接器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路設備術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "網橋": {
+      "taiwan": "橋接器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路設備術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "網橋_bridge": {
+      "taiwan": "橋接器",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣網路設備術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "无线接入点": {
+      "taiwan": "無線存取點",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣無線網路設備",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "无线接入点_access_point": {
+      "taiwan": "無線存取點",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣無線網路設備",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "無線接入點": {
+      "taiwan": "無線存取點",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣無線網路設備",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "無線接入點_access_point": {
+      "taiwan": "無線存取點",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣無線網路設備",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "天线": {
+      "taiwan": "天線",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣無線設備元件",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "天线_antenna": {
+      "taiwan": "天線",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣無線設備元件",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "天線": {
+      "taiwan": "天線",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣無線設備元件",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "天線_antenna": {
+      "taiwan": "天線",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣無線設備元件",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "放大器": {
+      "taiwan": "放大器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣訊號處理設備",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "放大器_amplifier": {
+      "taiwan": "放大器",
+      "confidence": 0.85,
+      "category": "mainland-term",
+      "reason": "台灣訊號處理設備",
+      "match_type": "exact",
+      "autofix_safe": true
+    }
+  }
+}

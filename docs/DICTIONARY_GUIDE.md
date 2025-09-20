@@ -1,67 +1,80 @@
-# TWLint 詞庫擴充指南
+# TWLint 詞庫架構指南
 
-## 📚 詞庫架構設計
+## 📚 新架構設計
 
-### 目錄結構
+### 實際目錄結構
 ```
 dictionaries-csv/
-├── core/              # 核心詞庫（必備）
-│   ├── tech-basic.csv
-│   └── tech-comprehensive.csv
-├── tech/              # 技術領域
-│   ├── programming.csv     # 程式設計
-│   ├── web-dev.csv        # 網頁開發
-│   ├── mobile-dev.csv     # 行動開發
-│   ├── database.csv       # 資料庫
-│   └── devops.csv         # DevOps
-├── business/          # 商業領域
-│   ├── marketing.csv      # 行銷
-│   ├── finance.csv        # 金融
-│   ├── management.csv     # 管理
-│   └── ecommerce.csv      # 電商
-├── academic/          # 學術領域
-│   ├── science.csv        # 科學
-│   ├── medicine.csv       # 醫學
-│   ├── law.csv           # 法律
-│   └── education.csv      # 教育
-├── media/             # 媒體領域
-│   ├── journalism.csv     # 新聞
-│   ├── entertainment.csv  # 娛樂
-│   └── social-media.csv   # 社群媒體
-└── lifestyle/         # 生活領域
-    ├── food.csv          # 美食
-    ├── travel.csv        # 旅遊
-    ├── fashion.csv       # 時尚
-    └── sports.csv        # 運動
+├── core/                        # 核心詞庫（必載）
+│   └── core.csv                # 核心技術用語 (150 條目)
+├── domains/                     # 領域專門詞庫
+│   ├── software-development.csv # 軟體開發 (139 條目)
+│   ├── user-interface.csv      # 使用者介面 (119 條目)
+│   ├── network-cloud.csv       # 網路雲端 (113 條目)
+│   ├── social-media.csv        # 社群媒體 (106 條目)
+│   ├── operating-system.csv    # 作業系統 (101 條目)
+│   ├── hardware-3c.csv         # 硬體3C (91 條目)
+│   ├── business-finance.csv    # 商業金融 (123 條目)
+│   └── ai-emerging-tech.csv    # AI新興技術 (108 條目)
+└── extended/                    # 傳統擴展詞庫（向後相容）
+    └── academic.csv            # 學術用語 (12 條目)
 ```
 
-## 📝 詞庫格式標準
+### 編譯後結構
+```
+src/dictionaries/
+├── index.json                  # 詞庫索引
+├── core.json                   # 編譯後核心詞庫
+├── software-development.json   # 編譯後領域詞庫
+├── user-interface.json
+├── network-cloud.json
+├── social-media.json
+├── operating-system.json
+├── hardware-3c.json
+├── business-finance.json
+├── ai-emerging-tech.json
+├── academic.json               # 傳統詞庫
+└── extended.json
+```
 
-### CSV 欄位定義
+## 📝 詞庫格式標準（新版）
+
+### 完整 CSV 欄位定義
 ```csv
-id,taiwan,china_simplified,china_traditional,english,confidence,category,reason,domain
+id,taiwan,china_simplified,china_traditional,english,confidence,category,reason,domain,match_type,context_before,context_after,context_exclude,autofix_safe
 ```
 
 ### 欄位說明
-- **id**: 唯一識別碼 (domain-number 格式，如 tech-001)
-- **taiwan**: 台灣慣用詞彙
-- **china_simplified**: 大陸簡體用詞
-- **china_traditional**: 大陸繁體用詞
-- **english**: 英文對應詞（可選）
-- **confidence**: 信心度 (0.0-1.0)
-- **category**: 分類標籤
-- **reason**: 建議理由
-- **domain**: 領域標識
+| 欄位 | 必填 | 說明 | 範例 |
+|------|------|------|------|
+| **id** | ✅ | 唯一識別碼 | `software-term-1` |
+| **taiwan** | ✅ | 台灣建議用語 | `軟體` |
+| **china_simplified** | ✅ | 大陸簡體用語 | `软件` |
+| **china_traditional** | ✅ | 大陸繁體用語 | `軟件` |
+| **english** | ❌ | 英文對照 | `software` |
+| **confidence** | ✅ | 信心度 (0.0-1.0) | `0.95` |
+| **category** | ✅ | 分類 | `mainland-term` |
+| **reason** | ✅ | 建議理由 | `台灣技術標準用語` |
+| **domain** | ✅ | 所屬領域 | `tech` |
+| **match_type** | ❌ | 匹配模式 | `exact`/`context_sensitive` |
+| **context_before** | ❌ | 前置語境 | `開發,設計` |
+| **context_after** | ❌ | 後置語境 | `工程師,架構` |
+| **context_exclude** | ❌ | 排除語境 | `硬體` |
+| **autofix_safe** | ❌ | 安全修復 | `true`/`false` |
 
-### 範例：程式設計詞庫
+### 範例：軟體開發詞庫
 ```csv
-id,taiwan,china_simplified,china_traditional,english,confidence,category,reason,domain
-prog-001,程式,程序,程序,program,0.95,mainland-term,台灣技術標準用語,programming
-prog-002,軟體,软件,軟件,software,0.95,mainland-term,台灣技術標準用語,programming
-prog-003,資料庫,数据库,數據庫,database,0.90,mainland-term,台灣慣用語,programming
-prog-004,演算法,算法,算法,algorithm,0.95,mainland-term,台灣學術標準,programming
-prog-005,變數,变量,變量,variable,0.85,mainland-term,台灣程式術語,programming
+id,taiwan,china_simplified,china_traditional,english,confidence,category,reason,domain,match_type,context_before,context_after,context_exclude,autofix_safe
+software-basic,軟體,软件,軟件,software,0.95,mainland-term,台灣技術標準用語,tech,exact,,,，true
+program-basic,程式,程序,程序,program,0.95,mainland-term,台灣技術標準用語,tech,exact,,,，true
+quality-business,品質,质量,質量,quality,0.90,mainland-term,商業品質管理,business,context_sensitive,"產品,服務,商品","控制,管理,標準",物理,false
+quality-physics,質量,质量,質量,mass,0.95,mainland-term,物理學質量單位,physics,context_sensitive,"密度,重量,公斤","守恆,轉換,定律",商業,false
 ```
+
+### 匹配模式說明
+- **exact**（預設）：精確匹配，適用標準替換
+- **word_boundary**：詞邊界匹配，避免部分匹配
+- **context_sensitive**：語境感知，用於同形異義詞
 
 ## 🔧 詞庫管理工具
 
@@ -108,19 +121,25 @@ npm run dict:test 新領域名
 
 ## 🚀 使用方式
 
-### 基本使用
+### 新版領域配置（推薦）
 ```bash
-# 使用核心詞庫
-twlint check *.md
+# 軟體開發專案
+twlint check src/ --domains software-development user-interface
 
-# 指定技術詞庫
-twlint check *.md --dict core tech
+# 商業文件
+twlint check docs/ --domains business-finance
 
-# 使用商業詞庫
-twlint check *.md --dict core business
+# AI 技術文檔
+twlint check papers/ --domains ai-emerging-tech network-cloud
 
 # 深度模式（載入所有詞庫）
 twlint check *.md --deep
+```
+
+### 傳統詞庫配置（向後相容）
+```bash
+# 使用傳統詞庫
+twlint check *.md --dict core academic extended
 ```
 
 ### 配置檔案
@@ -129,18 +148,28 @@ twlint check *.md --deep
 export default [
   {
     files: ["**/*.md"],
-    dictionaries: ["core", "tech", "business"],
+    // 新版領域配置
+    domains: ["software-development", "user-interface"],
     rules: {
       "simplified-chars": "error",
       "mainland-terms": "warning"
     }
   },
   {
-    files: ["docs/api/**/*.md"],
-    dictionaries: ["core", "tech/programming", "tech/database"],
+    files: ["docs/business/**/*.md"],
+    domains: ["business-finance"],
     rules: {
       "simplified-chars": "error",
-      "mainland-terms": "error"  // API 文件更嚴格
+      "mainland-terms": "error"  // 商業文件更嚴格
+    }
+  },
+  {
+    files: ["legacy/**/*.md"],
+    // 舊版詞庫配置（向後相容）
+    dictionaries: ["core", "academic"],
+    rules: {
+      "simplified-chars": "error",
+      "mainland-terms": "warning"
     }
   }
 ]
@@ -177,30 +206,59 @@ npm run test
   - 覆蓋領域說明
   - 測試結果截圖
 
-## 🎯 詞庫優先順序
+## 🎯 詞庫現狀與發展
 
-### Phase 1: 技術基礎 ✅
-- ✅ 核心技術用語
-- 🔄 程式設計進階詞彙
-- 📋 網頁開發用語
-- 📋 資料庫專業術語
+### 已完成詞庫 ✅
+- ✅ **core** (150) - 核心技術用語
+- ✅ **software-development** (139) - 軟體開發
+- ✅ **user-interface** (119) - 使用者介面
+- ✅ **network-cloud** (113) - 網路雲端
+- ✅ **social-media** (106) - 社群媒體
+- ✅ **operating-system** (101) - 作業系統
+- ✅ **hardware-3c** (91) - 硬體3C
+- ✅ **business-finance** (123) - 商業金融
+- ✅ **ai-emerging-tech** (108) - AI新興技術
+- ✅ **academic** (12) - 學術用語（傳統）
+- ✅ **extended** (12) - 擴展詞庫（傳統）
 
-### Phase 2: 商業應用
-- 📋 數位行銷用語
-- 📋 電商平台術語
-- 📋 金融科技詞彙
-- 📋 專案管理用語
+### 進階功能 🚀
+- ✅ **語境感知檢測** - 同形異義詞精確識別
+- ✅ **智慧自動修復** - 安全修復 vs 建議修復
+- ✅ **領域專門化** - 按需載入特定領域詞庫
+- ✅ **向後相容** - 支援舊版配置格式
 
-### Phase 3: 學術專業
-- 📋 電腦科學論文用語
-- 📋 工程技術標準
-- 📋 研究方法術語
+### 未來擴展方向
+- 📋 醫療健康領域
+- 📋 法律政策領域
+- 📋 教育學術擴展
+- 📋 文化創意領域
+- 📋 製造工業領域
 
-### Phase 4: 日常應用
-- 📋 社群媒體用語
-- 📋 生活消費詞彙
-- 📋 新聞媒體用語
+## 📊 詞庫統計
+
+| 類型 | 數量 | 總項目 | 平均信心度 |
+|------|------|---------|------------|
+| 核心詞庫 | 1 | 150 | 0.92 |
+| 領域詞庫 | 8 | 843 | 0.88 |
+| 傳統詞庫 | 2 | 24 | 0.85 |
+| **總計** | **11** | **1,017** | **0.89** |
+
+## 🔧 詞庫維護工具
+
+```bash
+# 建構所有詞庫
+npm run dict:build
+
+# 驗證詞庫格式
+npm run dict:validate
+
+# 檢查詞庫狀態
+npm run dict:check
+
+# 清單所有詞庫
+npm run dict:list
+```
 
 ---
 
-**歡迎社群貢獻各領域詞庫，讓 TWLint 更加完善！** 🚀
+**採用新領域架構，詞庫管理更精確！** 🚀

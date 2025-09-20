@@ -1,0 +1,924 @@
+id,taiwan,china_simplified,china_traditional,english,confidence,category,reason,domain,match_type,context_before,context_after,context_exclude,autofix_safe
+access-visit,存取,访问,訪問,access,0.95,mainland-term,台灣技術標準用語,tech,exact,,,,true
+quality-physics,質量,质量,質量,mass,0.95,mainland-term,物理學質量單位,physics,context_sensitive,"密度,重量,公斤,kg,物理,物体,物體,物質,質點","守恆,轉換,定律,公式,m/s,單位",,false
+quality-business,品質,质量,質量,quality,0.90,mainland-term,商業品質管理,business,context_sensitive,"產品,服務,商品,客戶","控制,管理,標準,檢驗,提升",物理,false
+activate,啟用,激活,激活,activate,0.90,mainland-term,台灣系統操作標準,tech,exact,,,,true
+add,新增,添加,添加,add,0.85,mainland-term,台灣介面操作慣用語,tech,exact,,,,true
+algorithm,演算法,算法,算法,algorithm,0.95,mainland-term,台灣學術標準用語,tech,exact,,,,true
+application,應用程式,应用程序,應用程序,application,0.90,mainland-term,台灣軟體開發標準,tech,exact,,,,true
+array,陣列,数组,數組,array,0.95,mainland-term,台灣程式設計標準,tech,exact,,,,true
+async,非同步,异步,異步,asynchronous,0.90,mainland-term,台灣程式開發標準,tech,exact,,,,true
+attribute,屬性,属性,屬性,attribute,0.80,mainland-term,台灣物件導向標準,tech,exact,,,,true
+audio,音訊,音频,音頻,audio,0.85,mainland-term,台灣多媒體標準,tech,exact,,,,true
+auth,驗證,认证,認證,authentication,0.90,mainland-term,台灣資安標準用語,tech,exact,,,,true
+authorization,授權,授权,授權,authorization,0.85,mainland-term,台灣權限管理標準,tech,exact,,,,true
+bandwidth,頻寬,带宽,帶寬,bandwidth,0.95,mainland-term,台灣網路技術標準,tech,exact,,,,true
+binary,二元,二进制,二進制,binary,0.90,mainland-term,台灣計算機科學標準,tech,exact,,,,true
+boolean,布林,布尔,布爾,boolean,0.95,mainland-term,台灣程式語言標準,tech,exact,,,,true
+build,建構,构建,構建,build,0.85,mainland-term,台灣軟體開發標準,tech,exact,,,,true
+byte,位元組,字节,字節,byte,0.95,mainland-term,台灣計算機硬體標準,tech,exact,,,,true
+cache,快取,缓存,緩存,cache,0.90,mainland-term,台灣系統效能標準,tech,exact,,,,true
+call,呼叫,调用,調用,call,0.90,mainland-term,台灣程式設計標準,tech,exact,,,,true
+callback,回呼,回调,回調,callback,0.85,mainland-term,台灣非同步程式設計,tech,exact,,,,true
+certificate,憑證,证书,證書,certificate,0.90,mainland-term,台灣資安認證標準,tech,exact,,,,true
+character,字元,字符,字符,character,0.90,mainland-term,台灣文字處理標準,tech,exact,,,,true
+class,類別,类,類,class,0.95,mainland-term,台灣物件導向標準,tech,exact,,,,true
+client,用戶端,客户端,客戶端,client,0.90,mainland-term,台灣網路架構標準,tech,exact,,,,true
+clone,複製,克隆,克隆,clone,0.85,mainland-term,台灣版本控制標準,tech,exact,,,,true
+cloud,雲端,云,雲,cloud,0.95,mainland-term,台灣雲端運算標準,tech,exact,,,,true
+code,程式碼,代码,代碼,code,0.95,mainland-term,台灣軟體開發標準,tech,exact,,,,true
+compile,編譯,编译,編譯,compile,0.95,mainland-term,台灣程式語言標準,tech,exact,,,,true
+compiler,編譯器,编译器,編譯器,compiler,0.95,mainland-term,台灣程式語言工具,tech,exact,,,,true
+component,組件,组件,組件,component,0.85,mainland-term,台灣軟體架構標準,tech,exact,,,,true
+compress,壓縮,压缩,壓縮,compress,0.90,mainland-term,台灣資料處理標準,tech,exact,,,,true
+concurrency,並行性,并发性,併發性,concurrency,0.85,mainland-term,台灣平行處理標準,tech,exact,,,,true
+config,配置,配置,配置,configuration,0.90,mainland-term,台灣系統設定標準,tech,exact,,,,true
+connect,連線,连接,連接,connect,0.90,mainland-term,台灣網路連接標準,tech,exact,,,,true
+constructor,建構子,构造函数,構造函數,constructor,0.90,mainland-term,台灣物件導向標準,tech,exact,,,,true
+container,容器,容器,容器,container,0.80,mainland-term,台灣虛擬化技術,tech,exact,,,,true
+control,控制項,控件,控件,control,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+copy,複製,拷贝,拷貝,copy,0.85,mainland-term,台灣檔案操作標準,tech,exact,,,,true
+create,建立,创建,創建,create,0.85,mainland-term,台灣系統操作標準,tech,exact,,,,true
+cursor,游標,光标,光標,cursor,0.90,mainland-term,台灣介面操作標準,tech,exact,,,,true
+custom,自訂,自定义,自定義,custom,0.85,mainland-term,台灣客製化標準,tech,exact,,,,true
+data,資料,数据,數據,data,0.95,mainland-term,台灣資訊處理標準,tech,exact,,,,true
+database,資料庫,数据库,數據庫,database,0.95,mainland-term,台灣資料管理標準,tech,exact,,,,true
+debug,除錯,调试,調試,debug,0.90,mainland-term,台灣程式開發標準,tech,exact,,,,true
+default,預設,默认,默認,default,0.90,mainland-term,台灣系統設定標準,tech,exact,,,,true
+definition,定義,定义,定義,definition,0.80,mainland-term,台灣程式語言標準,tech,exact,,,,true
+directory,目錄,目录,目錄,directory,0.85,mainland-term,台灣檔案系統標準,tech,exact,,,,true
+disk,磁碟,磁盘,磁盤,disk,0.90,mainland-term,台灣儲存裝置標準,tech,exact,,,,true
+document,文件,文档,文檔,document,0.85,mainland-term,台灣技術文件標準,tech,exact,,,,true
+domain,網域,域,域,domain,0.90,mainland-term,台灣網路技術標準,tech,exact,,,,true
+download,下載,下载,下載,download,0.80,mainland-term,台灣網路傳輸標準,tech,exact,,,,true
+driver,驅動程式,驱动程序,驅動程序,driver,0.90,mainland-term,台灣硬體管理標準,tech,exact,,,,true
+element,元素,元素,元素,element,0.75,mainland-term,台灣介面設計標準,tech,exact,,,,true
+email,電子郵件,电子邮件,電子郵件,email,0.80,mainland-term,台灣網路通訊標準,tech,exact,,,,true
+enable,啟用,启用,啟用,enable,0.85,mainland-term,台灣系統操作標準,tech,exact,,,,true
+event,事件,事件,事件,event,0.80,mainland-term,台灣程式設計標準,tech,exact,,,,true
+exception,例外,异常,異常,exception,0.90,mainland-term,台灣錯誤處理標準,tech,exact,,,,true
+export,匯出,导出,導出,export,0.90,mainland-term,台灣資料處理標準,tech,exact,,,,true
+extension,擴充功能,扩展,擴展,extension,0.85,mainland-term,台灣軟體功能標準,tech,exact,,,,true
+field,欄位,字段,字段,field,0.90,mainland-term,台灣資料庫標準,tech,exact,,,,true
+file,檔案,文件,文件,file,0.90,mainland-term,台灣檔案系統標準,tech,exact,,,,true
+filter,過濾器,过滤器,過濾器,filter,0.85,mainland-term,台灣資料處理標準,tech,exact,,,,true
+firmware,韌體,固件,固件,firmware,0.95,mainland-term,台灣硬體技術標準,tech,exact,,,,true
+folder,資料夾,文件夹,文件夾,folder,0.90,mainland-term,台灣檔案管理標準,tech,exact,,,,true
+format,格式化,格式化,格式化,format,0.80,mainland-term,台灣資料處理標準,tech,exact,,,,true
+framework,框架,框架,框架,framework,0.75,mainland-term,台灣軟體開發標準,tech,exact,,,,true
+function,函式,函数,函數,function,0.95,mainland-term,台灣程式設計標準,tech,exact,,,,true
+generate,產生,生成,生成,generate,0.85,mainland-term,台灣程式開發標準,tech,exact,,,,true
+global,全域,全局,全局,global,0.90,mainland-term,台灣程式設計標準,tech,exact,,,,true
+handler,處理器,处理器,處理器,handler,0.85,mainland-term,台灣程式設計標準,tech,exact,,,,true
+hardware,硬體,硬件,硬件,hardware,0.95,mainland-term,台灣計算機硬體標準,tech,exact,,,,true
+hash,雜湊,哈希,哈希,hash,0.90,mainland-term,台灣密碼學標準,tech,exact,,,,true
+header,標頭,头部,頭部,header,0.85,mainland-term,台灣網路協定標準,tech,exact,,,,true
+heap,堆積,堆,堆,heap,0.90,mainland-term,台灣記憶體管理標準,tech,exact,,,,true
+icon,圖示,图标,圖標,icon,0.85,mainland-term,台灣介面設計標準,tech,exact,,,,true
+image,影像,图像,圖像,image,0.85,mainland-term,台灣多媒體標準,tech,exact,,,,true
+implement,實作,实现,實現,implement,0.90,mainland-term,台灣軟體開發標準,tech,exact,,,,true
+import,匯入,导入,導入,import,0.90,mainland-term,台灣程式開發標準,tech,exact,,,,true
+info,資訊,信息,信息,information,0.85,mainland-term,台灣資訊處理標準,tech,exact,,,,true
+inheritance,繼承,继承,繼承,inheritance,0.85,mainland-term,台灣物件導向標準,tech,exact,,,,true
+instance,實體,实例,實例,instance,0.90,mainland-term,台灣物件導向標準,tech,exact,,,,true
+integrate,整合,集成,集成,integrate,0.85,mainland-term,台灣系統整合標準,tech,exact,,,,true
+interface,介面,接口,接口,interface,0.95,mainland-term,台灣軟體設計標準,tech,exact,,,,true
+internet,網際網路,互联网,互聯網,internet,0.90,mainland-term,台灣網路技術標準,tech,exact,,,,true
+invoke,呼叫,调用,調用,invoke,0.85,mainland-term,台灣程式設計標準,tech,exact,,,,true
+iterate,疊代,迭代,迭代,iterate,0.90,mainland-term,台灣程式設計標準,tech,exact,,,,true
+library,程式庫,程序库,程序庫,library,0.95,mainland-term,台灣軟體開發標準,tech,exact,,,,true
+link,連結,链接,鏈接,link,0.85,mainland-term,台灣網路技術標準,tech,exact,,,,true
+load,載入,加载,加載,load,0.90,mainland-term,台灣系統操作標準,tech,exact,,,,true
+local,本機,本地,本地,local,0.85,mainland-term,台灣系統術語標準,tech,exact,,,,true
+log,記錄,日志,日誌,log,0.85,mainland-term,台灣系統監控標準,tech,exact,,,,true
+loop,迴圈,循环,循環,loop,0.90,mainland-term,台灣程式設計標準,tech,exact,,,,true
+memory,記憶體,内存,內存,memory,0.95,mainland-term,台灣計算機硬體標準,tech,exact,,,,true
+menu,選單,菜单,菜單,menu,0.90,mainland-term,台灣介面設計標準,tech,exact,,,,true
+message,訊息,消息,消息,message,0.85,mainland-term,台灣通訊協定標準,tech,exact,,,,true
+method,方法,方法,方法,method,0.75,mainland-term,台灣物件導向標準,tech,exact,,,,true
+mobile,行動,移动,移動,mobile,0.90,mainland-term,台灣行動裝置標準,tech,exact,,,,true
+module,模組,模块,模塊,module,0.90,mainland-term,台灣軟體架構標準,tech,exact,,,,true
+mouse,滑鼠,鼠标,鼠標,mouse,0.90,mainland-term,台灣週邊裝置標準,tech,exact,,,,true
+network,網路,网络,網絡,network,0.95,mainland-term,台灣網路技術標準,tech,exact,,,,true
+object,物件,对象,對象,object,0.95,mainland-term,台灣物件導向標準,tech,exact,,,,true
+online,線上,在线,在線,online,0.85,mainland-term,台灣網路服務標準,tech,exact,,,,true
+optimize,最佳化,优化,優化,optimize,0.90,mainland-term,台灣效能調校標準,tech,exact,,,,true
+overflow,溢位,溢出,溢出,overflow,0.85,mainland-term,台灣程式錯誤處理,tech,exact,,,,true
+package,套件,包,包,package,0.85,mainland-term,台灣軟體發布標準,tech,exact,,,,true
+parameter,參數,参数,參數,parameter,0.85,mainland-term,台灣程式設計標準,tech,exact,,,,true
+parse,剖析,解析,解析,parse,0.85,mainland-term,台灣資料處理標準,tech,exact,,,,true
+performance,效能,性能,性能,performance,0.90,mainland-term,台灣系統評測標準,tech,exact,,,,true
+plugin,外掛程式,插件,插件,plugin,0.90,mainland-term,台灣軟體擴充標準,tech,exact,,,,true
+pointer,指標,指针,指針,pointer,0.90,mainland-term,台灣程式設計標準,tech,exact,,,,true
+print,列印,打印,打印,print,0.90,mainland-term,台灣週邊裝置標準,tech,exact,,,,true
+process,行程,进程,進程,process,0.90,mainland-term,台灣作業系統標準,tech,exact,,,,true
+program,程式,程序,程序,program,0.95,mainland-term,台灣軟體開發標準,tech,exact,,,,true
+protocol,協定,协议,協議,protocol,0.90,mainland-term,台灣網路通訊標準,tech,exact,,,,true
+query,查詢,查询,查詢,query,0.80,mainland-term,台灣資料庫標準,tech,exact,,,,true
+queue,佇列,队列,隊列,queue,0.95,mainland-term,台灣資料結構標準,tech,exact,,,,true
+read,讀取,读取,讀取,read,0.80,mainland-term,台灣檔案操作標準,tech,exact,,,,true
+register,暫存器,寄存器,寄存器,register,0.90,mainland-term,台灣計算機硬體標準,tech,exact,,,,true
+remote,遠端,远程,遠程,remote,0.90,mainland-term,台灣網路連線標準,tech,exact,,,,true
+render,算繪,渲染,渲染,render,0.85,mainland-term,台灣圖形處理標準,tech,exact,,,,true
+response,回應,响应,響應,response,0.85,mainland-term,台灣網路通訊標準,tech,exact,,,,true
+run,執行,运行,運行,run,0.85,mainland-term,台灣系統操作標準,tech,exact,,,,true
+runtime,執行時期,运行时,運行時,runtime,0.85,mainland-term,台灣程式執行標準,tech,exact,,,,true
+save,儲存,保存,保存,save,0.85,mainland-term,台灣檔案操作標準,tech,exact,,,,true
+schedule,排程,调度,調度,schedule,0.90,mainland-term,台灣系統管理標準,tech,exact,,,,true
+script,指令碼,脚本,腳本,script,0.85,mainland-term,台灣自動化標準,tech,exact,,,,true
+search,搜尋,搜索,搜索,search,0.85,mainland-term,台灣資料查找標準,tech,exact,,,,true
+server,伺服器,服务器,服務器,server,0.95,mainland-term,台灣網路服務標準,tech,exact,,,,true
+session,工作階段,会话,會話,session,0.90,mainland-term,台灣網路連線標準,tech,exact,,,,true
+software,軟體,软件,軟件,software,0.95,mainland-term,台灣技術標準用語,tech,exact,,,,true
+stack,堆疊,栈,棧,stack,0.90,mainland-term,台灣資料結構標準,tech,exact,,,,true
+storage,儲存體,存储,存儲,storage,0.90,mainland-term,台灣儲存技術標準,tech,exact,,,,true
+stream,串流,流,流,stream,0.85,mainland-term,台灣資料傳輸標準,tech,exact,,,,true
+string,字串,字符串,字符串,string,0.95,mainland-term,台灣程式設計標準,tech,exact,,,,true
+support,支援,支持,支持,support,0.85,mainland-term,台灣技術服務標準,tech,exact,,,,true
+sync,同步,同步,同步,synchronize,0.80,mainland-term,台灣程式設計標準,tech,exact,,,,true
+system,系統,系统,系統,system,0.80,mainland-term,台灣計算機技術標準,tech,exact,,,,true
+thread,執行緒,线程,線程,thread,0.95,mainland-term,台灣平行處理標準,tech,exact,,,,true
+token,標記,令牌,令牌,token,0.85,mainland-term,台灣資安認證標準,tech,exact,,,,true
+tutorial,教學,教程,教程,tutorial,0.85,mainland-term,台灣教育訓練標準,tech,exact,,,,true
+type,型別,类型,類型,type,0.90,mainland-term,台灣程式語言標準,tech,exact,,,,true
+upload,上傳,上传,上傳,upload,0.80,mainland-term,台灣網路傳輸標準,tech,exact,,,,true
+user,使用者,用户,用戶,user,0.85,mainland-term,台灣使用者介面標準,tech,exact,,,,true
+variable,變數,变量,變量,variable,0.90,mainland-term,台灣程式設計標準,tech,exact,,,,true
+video,影片,视频,視頻,video,0.90,mainland-term,台灣多媒體標準,tech,exact,,,,true
+view,檢視,视图,視圖,view,0.85,mainland-term,台灣介面設計標準,tech,exact,,,,true
+volume,磁碟區,卷,卷,volume,0.85,mainland-term,台灣儲存管理標準,tech,exact,,,,true
+window,視窗,窗口,窗口,window,0.90,mainland-term,台灣介面設計標準,tech,exact,,,,true
+write,寫入,写入,寫入,write,0.80,mainland-term,台灣檔案操作標準,tech,exact,,,,true
+virtualization,虛擬化,虚拟化,虛擬化,virtualization,0.95,mainland-term,台灣雲端技術標準,tech,exact,,,,true
+microservice,微服務,微服务,微服務,microservice,0.95,mainland-term,台灣架構設計標準,tech,exact,,,,true
+container-orchestration,容器編排,容器编排,容器編排,container orchestration,0.90,mainland-term,台灣容器技術標準,tech,exact,,,,true
+dependency-injection,依賴注入,依赖注入,依賴注入,dependency injection,0.90,mainland-term,台灣設計模式標準,tech,exact,,,,true
+middleware,中介軟體,中间件,中間件,middleware,0.90,mainland-term,台灣系統架構標準,tech,exact,,,,true
+proxy,代理伺服器,代理服务器,代理服務器,proxy,0.90,mainland-term,台灣網路架構標準,tech,exact,,,,true
+load-balancer,負載平衡器,负载均衡器,負載均衡器,load balancer,0.90,mainland-term,台灣網路架構標準,tech,exact,,,,true
+scalability,擴充性,可扩展性,可擴展性,scalability,0.85,mainland-term,台灣系統設計標準,tech,exact,,,,true
+high-availability,高可用性,高可用性,高可用性,high availability,0.85,mainland-term,台灣系統架構標準,tech,exact,,,,true
+failover,故障轉移,故障转移,故障轉移,failover,0.90,mainland-term,台灣容錯技術標準,tech,exact,,,,true
+backup,備份,备份,備份,backup,0.85,mainland-term,台灣資料保護標準,tech,exact,,,,true
+restore,復原,恢复,恢復,restore,0.85,mainland-term,台灣資料救援標準,tech,exact,,,,true
+migration,遷移,迁移,遷移,migration,0.85,mainland-term,台灣系統升級標準,tech,exact,,,,true
+deployment,部署,部署,部署,deployment,0.80,mainland-term,台灣軟體發布標準,tech,exact,,,,true
+continuous-integration,持續整合,持续集成,持續集成,CI,0.90,mainland-term,台灣DevOps標準,tech,exact,,,,true
+continuous-delivery,持續交付,持续交付,持續交付,CD,0.90,mainland-term,台灣DevOps標準,tech,exact,,,,true
+repository,版本庫,仓库,倉庫,repository,0.90,mainland-term,台灣版本控制標準,tech,exact,,,,true
+branch,分支,分支,分支,branch,0.80,mainland-term,台灣版本控制標準,tech,exact,,,,true
+merge,合併,合并,合併,merge,0.85,mainland-term,台灣版本控制標準,tech,exact,,,,true
+commit,提交,提交,提交,commit,0.80,mainland-term,台灣版本控制標準,tech,exact,,,,true
+pull-request,拉取請求,拉取请求,拉取請求,pull request,0.90,mainland-term,台灣協作開發標準,tech,exact,,,,true
+rollback,回溯,回滚,回滾,rollback,0.90,mainland-term,台灣版本控制標準,tech,exact,,,,true
+refactor,重構,重构,重構,refactor,0.90,mainland-term,台灣程式改進標準,tech,exact,,,,true
+unit-test,單元測試,单元测试,單元測試,unit test,0.90,mainland-term,台灣測試標準,tech,exact,,,,true
+integration-test,整合測試,集成测试,集成測試,integration test,0.90,mainland-term,台灣測試標準,tech,exact,,,,true
+regression-test,迴歸測試,回归测试,回歸測試,regression test,0.90,mainland-term,台灣測試標準,tech,exact,,,,true
+mock,模擬,模拟,模擬,mock,0.85,mainland-term,台灣測試技術標準,tech,exact,,,,true
+stub,樁,桩,樁,stub,0.90,mainland-term,台灣測試技術標準,tech,exact,,,,true
+debugger,除錯器,调试器,調試器,debugger,0.90,mainland-term,台灣開發工具標準,tech,exact,,,,true
+profiler,分析器,分析器,分析器,profiler,0.80,mainland-term,台灣效能分析標準,tech,exact,,,,true
+benchmark,基準測試,基准测试,基準測試,benchmark,0.90,mainland-term,台灣效能評測標準,tech,exact,,,,true
+latency,延遲,延迟,延遲,latency,0.85,mainland-term,台灣網路效能標準,tech,exact,,,,true
+throughput,吞吐量,吞吐量,吞吐量,throughput,0.85,mainland-term,台灣效能指標標準,tech,exact,,,,true
+bottleneck,瓶頸,瓶颈,瓶頸,bottleneck,0.85,mainland-term,台灣效能分析標準,tech,exact,,,,true
+deadlock,死結,死锁,死鎖,deadlock,0.90,mainland-term,台灣並行程式標準,tech,exact,,,,true
+race-condition,競爭條件,竞争条件,競爭條件,race condition,0.90,mainland-term,台灣並行程式標準,tech,exact,,,,true
+mutex,互斥鎖,互斥锁,互斥鎖,mutex,0.90,mainland-term,台灣同步機制標準,tech,exact,,,,true
+semaphore,號誌,信号量,信號量,semaphore,0.90,mainland-term,台灣同步機制標準,tech,exact,,,,true
+transaction,交易,事务,事務,transaction,0.85,mainland-term,台灣資料庫標準,tech,exact,,,,true
+rollback-transaction,交易回溯,事务回滚,事務回滾,rollback,0.90,mainland-term,台灣資料庫標準,tech,exact,,,,true
+index,索引,索引,索引,index,0.80,mainland-term,台灣資料庫標準,tech,exact,,,,true
+primary-key,主鍵,主键,主鍵,primary key,0.90,mainland-term,台灣資料庫標準,tech,exact,,,,true
+foreign-key,外鍵,外键,外鍵,foreign key,0.90,mainland-term,台灣資料庫標準,tech,exact,,,,true
+normalization,正規化,规范化,規範化,normalization,0.85,mainland-term,台灣資料庫設計,tech,exact,,,,true
+denormalization,反正規化,反规范化,反規範化,denormalization,0.85,mainland-term,台灣資料庫優化,tech,exact,,,,true
+schema,綱要,模式,模式,schema,0.85,mainland-term,台灣資料庫架構,tech,exact,,,,true
+trigger,觸發器,触发器,觸發器,trigger,0.90,mainland-term,台灣資料庫標準,tech,exact,,,,true
+stored-procedure,預存程序,存储过程,存儲過程,stored procedure,0.90,mainland-term,台灣資料庫標準,tech,exact,,,,true
+clustering,叢集,集群,集群,clustering,0.90,mainland-term,台灣分散式系統,tech,exact,,,,true
+replication,複寫,复制,複製,replication,0.85,mainland-term,台灣資料同步標準,tech,exact,,,,true
+sharding,分片,分片,分片,sharding,0.85,mainland-term,台灣資料庫擴展,tech,exact,,,,true
+caching,快取機制,缓存机制,緩存機制,caching,0.90,mainland-term,台灣效能優化標準,tech,exact,,,,true
+cdn,內容傳遞網路,内容分发网络,內容分發網絡,CDN,0.90,mainland-term,台灣網路服務標準,tech,exact,,,,true
+api-gateway,API閘道,API网关,API網關,API gateway,0.90,mainland-term,台灣微服務架構,tech,exact,,,,true
+service-mesh,服務網格,服务网格,服務網格,service mesh,0.90,mainland-term,台灣微服務架構,tech,exact,,,,true
+circuit-breaker,斷路器,断路器,斷路器,circuit breaker,0.90,mainland-term,台灣容錯模式標準,tech,exact,,,,true
+rate-limiting,速率限制,速率限制,速率限制,rate limiting,0.85,mainland-term,台灣流量控制標準,tech,exact,,,,true
+throttling,節流,节流,節流,throttling,0.85,mainland-term,台灣流量控制標準,tech,exact,,,,true
+webhook,網路鉤子,网络钩子,網絡鉤子,webhook,0.85,mainland-term,台灣事件通知標準,tech,exact,,,,true
+websocket,網路通訊端,网络套接字,網絡套接字,WebSocket,0.90,mainland-term,台灣即時通訊標準,tech,exact,,,,true
+rest-api,REST API,REST API,REST API,REST API,0.80,mainland-term,台灣API設計標準,tech,exact,,,,true
+graphql,GraphQL,GraphQL,GraphQL,GraphQL,0.80,mainland-term,台灣API查詢標準,tech,exact,,,,true
+grpc,gRPC,gRPC,gRPC,gRPC,0.80,mainland-term,台灣RPC框架標準,tech,exact,,,,true
+message-queue,訊息佇列,消息队列,消息隊列,message queue,0.90,mainland-term,台灣非同步通訊,tech,exact,,,,true
+pub-sub,發布訂閱,发布订阅,發布訂閱,pub-sub,0.90,mainland-term,台灣訊息模式標準,tech,exact,,,,true
+event-driven,事件驅動,事件驱动,事件驅動,event-driven,0.90,mainland-term,台灣架構模式標準,tech,exact,,,,true
+serverless,無伺服器,无服务器,無服務器,serverless,0.90,mainland-term,台灣雲端運算標準,tech,exact,,,,true
+function-as-service,函式即服務,函数即服务,函數即服務,FaaS,0.90,mainland-term,台灣雲端服務標準,tech,exact,,,,true
+infrastructure-as-code,基礎設施即程式碼,基础设施即代码,基礎設施即代碼,IaC,0.90,mainland-term,台灣DevOps標準,tech,exact,,,,true
+terraform,Terraform,Terraform,Terraform,Terraform,0.80,mainland-term,台灣基礎設施工具,tech,exact,,,,true
+ansible,Ansible,Ansible,Ansible,Ansible,0.80,mainland-term,台灣自動化工具,tech,exact,,,,true
+kubernetes,Kubernetes,Kubernetes,Kubernetes,K8s,0.85,mainland-term,台灣容器編排標準,tech,exact,,,,true
+docker,Docker,Docker,Docker,Docker,0.85,mainland-term,台灣容器技術標準,tech,exact,,,,true
+helm,Helm,Helm,Helm,Helm,0.80,mainland-term,台灣K8s套件管理,tech,exact,,,,true
+ingress,入口控制器,入口控制器,入口控制器,ingress,0.85,mainland-term,台灣K8s網路標準,tech,exact,,,,true
+pod,容器組,容器组,容器組,pod,0.85,mainland-term,台灣K8s基本單位,tech,exact,,,,true
+namespace,命名空間,命名空间,命名空間,namespace,0.85,mainland-term,台灣資源隔離標準,tech,exact,,,,true
+secret,密鑰,密钥,密鑰,secret,0.85,mainland-term,台灣機密管理標準,tech,exact,,,,true
+configmap,設定對映,配置映射,配置映射,ConfigMap,0.85,mainland-term,台灣K8s配置管理,tech,exact,,,,true
+statefulset,有狀態集,有状态集,有狀態集,StatefulSet,0.85,mainland-term,台灣K8s工作負載,tech,exact,,,,true
+daemonset,守護程式集,守护进程集,守護進程集,DaemonSet,0.85,mainland-term,台灣K8s工作負載,tech,exact,,,,true
+cronjob,定時任務,定时任务,定時任務,CronJob,0.85,mainland-term,台灣K8s排程任務,tech,exact,,,,true
+service-discovery,服務發現,服务发现,服務發現,service discovery,0.90,mainland-term,台灣微服務標準,tech,exact,,,,true
+health-check,健康檢查,健康检查,健康檢查,health check,0.85,mainland-term,台灣監控標準,tech,exact,,,,true
+monitoring,監控,监控,監控,monitoring,0.85,mainland-term,台灣系統維運標準,tech,exact,,,,true
+logging,日誌紀錄,日志记录,日誌記錄,logging,0.85,mainland-term,台灣系統監控標準,tech,exact,,,,true
+tracing,追蹤,追踪,追蹤,tracing,0.85,mainland-term,台灣分散式追蹤,tech,exact,,,,true
+metrics,指標,指标,指標,metrics,0.85,mainland-term,台灣監控度量標準,tech,exact,,,,true
+dashboard,儀表板,仪表盘,儀表盤,dashboard,0.85,mainland-term,台灣資料視覺化,tech,exact,,,,true
+alert,警示,告警,告警,alert,0.85,mainland-term,台灣監控通知標準,tech,exact,,,,true
+encryption,加密,加密,加密,encryption,0.80,mainland-term,台灣資安技術標準,tech,exact,,,,true
+decryption,解密,解密,解密,decryption,0.80,mainland-term,台灣資安技術標準,tech,exact,,,,true
+symmetric-encryption,對稱加密,对称加密,對稱加密,symmetric encryption,0.90,mainland-term,台灣密碼學標準,tech,exact,,,,true
+asymmetric-encryption,非對稱加密,非对称加密,非對稱加密,asymmetric encryption,0.90,mainland-term,台灣密碼學標準,tech,exact,,,,true
+public-key,公鑰,公钥,公鑰,public key,0.90,mainland-term,台灣密碼學標準,tech,exact,,,,true
+private-key,私鑰,私钥,私鑰,private key,0.90,mainland-term,台灣密碼學標準,tech,exact,,,,true
+digital-signature,數位簽章,数字签名,數字簽名,digital signature,0.90,mainland-term,台灣資安認證標準,tech,exact,,,,true
+ssl-certificate,SSL憑證,SSL证书,SSL證書,SSL certificate,0.90,mainland-term,台灣網路安全標準,tech,exact,,,,true
+tls,傳輸層安全性,传输层安全,傳輸層安全,TLS,0.90,mainland-term,台灣網路協定標準,tech,exact,,,,true
+oauth,OAuth,OAuth,OAuth,OAuth,0.80,mainland-term,台灣授權協定標準,tech,exact,,,,true
+jwt,JWT,JWT,JWT,JWT,0.80,mainland-term,台灣認證標記標準,tech,exact,,,,true
+cors,跨來源資源共用,跨源资源共享,跨源資源共享,CORS,0.90,mainland-term,台灣網頁安全標準,tech,exact,,,,true
+xss,跨網站指令碼,跨站脚本,跨站腳本,XSS,0.90,mainland-term,台灣網頁攻擊防護,tech,exact,,,,true
+sql-injection,SQL注入,SQL注入,SQL注入,SQL injection,0.85,mainland-term,台灣資料庫安全,tech,exact,,,,true
+csrf,跨站請求偽造,跨站请求伪造,跨站請求偽造,CSRF,0.90,mainland-term,台灣網頁安全防護,tech,exact,,,,true
+firewall,防火牆,防火墙,防火牆,firewall,0.90,mainland-term,台灣網路安全標準,tech,exact,,,,true
+vpn,虛擬私人網路,虚拟专用网,虛擬專用網,VPN,0.90,mainland-term,台灣網路安全標準,tech,exact,,,,true
+penetration-test,滲透測試,渗透测试,滲透測試,penetration test,0.90,mainland-term,台灣資安測試標準,tech,exact,,,,true
+vulnerability,弱點,漏洞,漏洞,vulnerability,0.85,mainland-term,台灣資安評估標準,tech,exact,,,,true
+exploit,攻擊程式,漏洞利用,漏洞利用,exploit,0.85,mainland-term,台灣資安威脅標準,tech,exact,,,,true
+malware,惡意軟體,恶意软件,惡意軟件,malware,0.90,mainland-term,台灣資安威脅分類,tech,exact,,,,true
+ransomware,勒索軟體,勒索软件,勒索軟件,ransomware,0.90,mainland-term,台灣資安威脅類型,tech,exact,,,,true
+phishing,釣魚,钓鱼,釣魚,phishing,0.85,mainland-term,台灣資安攻擊手法,tech,exact,,,,true
+ddos,分散式阻斷服務,分布式拒绝服务,分佈式拒絕服務,DDoS,0.90,mainland-term,台灣網路攻擊類型,tech,exact,,,,true
+zero-day,零時差,零日,零日,zero-day,0.85,mainland-term,台灣資安漏洞分類,tech,exact,,,,true
+patch,修補程式,补丁,補丁,patch,0.85,mainland-term,台灣系統更新標準,tech,exact,,,,true
+hotfix,緊急修正,热修复,熱修復,hotfix,0.85,mainland-term,台灣緊急更新標準,tech,exact,,,,true
+cpu,中央處理器,中央处理器,中央處理器,CPU,0.95,mainland-term,台灣電腦硬體標準,tech,exact,,,,true
+gpu,圖形處理器,图形处理器,圖形處理器,GPU,0.95,mainland-term,台灣顯示技術標準,tech,exact,,,,true
+ram,隨機存取記憶體,随机存取存储器,隨機存取存儲器,RAM,0.90,mainland-term,台灣記憶體技術,tech,exact,,,,true
+rom,唯讀記憶體,只读存储器,只讀存儲器,ROM,0.90,mainland-term,台灣記憶體技術,tech,exact,,,,true
+ssd,固態硬碟,固态硬盘,固態硬盤,SSD,0.90,mainland-term,台灣儲存裝置標準,tech,exact,,,,true
+hdd,傳統硬碟,机械硬盘,機械硬盤,HDD,0.85,mainland-term,台灣儲存裝置標準,tech,exact,,,,true
+motherboard,主機板,主板,主板,motherboard,0.90,mainland-term,台灣電腦組件標準,tech,exact,,,,true
+chipset,晶片組,芯片组,芯片組,chipset,0.90,mainland-term,台灣晶片技術標準,tech,exact,,,,true
+bios,基本輸入輸出系統,基本输入输出系统,基本輸入輸出系統,BIOS,0.90,mainland-term,台灣韌體標準,tech,exact,,,,true
+uefi,統一可延伸韌體介面,统一可扩展固件接口,統一可擴展固件接口,UEFI,0.90,mainland-term,台灣韌體標準,tech,exact,,,,true
+usb,通用序列匯流排,通用串行总线,通用串行總線,USB,0.90,mainland-term,台灣介面標準,tech,exact,,,,true
+hdmi,高畫質多媒體介面,高清多媒体接口,高清多媒體接口,HDMI,0.90,mainland-term,台灣顯示介面標準,tech,exact,,,,true
+displayport,顯示埠,显示端口,顯示端口,DisplayPort,0.85,mainland-term,台灣顯示介面標準,tech,exact,,,,true
+thunderbolt,雷電,雷电,雷電,Thunderbolt,0.85,mainland-term,台灣高速介面標準,tech,exact,,,,true
+ethernet,乙太網路,以太网,以太網,Ethernet,0.90,mainland-term,台灣網路標準,tech,exact,,,,true
+wifi,無線網路,无线网络,無線網絡,Wi-Fi,0.90,mainland-term,台灣無線技術標準,tech,exact,,,,true
+bluetooth,藍牙,蓝牙,藍牙,Bluetooth,0.85,mainland-term,台灣無線技術標準,tech,exact,,,,true
+5g,第五代行動通訊,第五代移动通信,第五代移動通信,5G,0.90,mainland-term,台灣通訊技術標準,tech,exact,,,,true
+lte,長期演進技術,长期演进,長期演進,LTE,0.85,mainland-term,台灣通訊技術標準,tech,exact,,,,true
+nfc,近場通訊,近场通信,近場通信,NFC,0.85,mainland-term,台灣無線技術標準,tech,exact,,,,true
+resolution,解析度,分辨率,分辨率,resolution,0.90,mainland-term,台灣顯示技術標準,tech,exact,,,,true
+refresh-rate,更新率,刷新率,刷新率,refresh rate,0.90,mainland-term,台灣顯示技術標準,tech,exact,,,,true
+pixel,像素,像素,像素,pixel,0.80,mainland-term,台灣顯示技術標準,tech,exact,,,,true
+lcd,液晶顯示器,液晶显示器,液晶顯示器,LCD,0.90,mainland-term,台灣顯示技術標準,tech,exact,,,,true
+led,發光二極體,发光二极管,發光二極管,LED,0.90,mainland-term,台灣顯示技術標準,tech,exact,,,,true
+oled,有機發光二極體,有机发光二极管,有機發光二極管,OLED,0.90,mainland-term,台灣顯示技術標準,tech,exact,,,,true
+amoled,主動矩陣有機發光二極體,主动矩阵有机发光二极管,主動矩陣有機發光二極管,AMOLED,0.90,mainland-term,台灣顯示技術標準,tech,exact,,,,true
+touchpad,觸控板,触控板,觸控板,touchpad,0.85,mainland-term,台灣輸入裝置標準,tech,exact,,,,true
+touchscreen,觸控螢幕,触摸屏,觸摸屏,touchscreen,0.90,mainland-term,台灣輸入裝置標準,tech,exact,,,,true
+keyboard,鍵盤,键盘,鍵盤,keyboard,0.85,mainland-term,台灣輸入裝置標準,tech,exact,,,,true
+webcam,網路攝影機,网络摄像头,網絡攝像頭,webcam,0.90,mainland-term,台灣視訊裝置標準,tech,exact,,,,true
+microphone,麥克風,麦克风,麥克風,microphone,0.85,mainland-term,台灣音訊裝置標準,tech,exact,,,,true
+speaker,揚聲器,扬声器,揚聲器,speaker,0.85,mainland-term,台灣音訊裝置標準,tech,exact,,,,true
+headphone,耳機,耳机,耳機,headphone,0.80,mainland-term,台灣音訊裝置標準,tech,exact,,,,true
+router,路由器,路由器,路由器,router,0.80,mainland-term,台灣網路設備標準,tech,exact,,,,true
+switch,交換器,交换机,交換機,switch,0.90,mainland-term,台灣網路設備標準,tech,exact,,,,true
+hub,集線器,集线器,集線器,hub,0.90,mainland-term,台灣網路設備標準,tech,exact,,,,true
+modem,數據機,调制解调器,調製解調器,modem,0.90,mainland-term,台灣網路設備標準,tech,exact,,,,true
+nas,網路附接儲存,网络附加存储,網絡附加存儲,NAS,0.90,mainland-term,台灣儲存設備標準,tech,exact,,,,true
+raid,磁碟陣列,磁盘阵列,磁盤陣列,RAID,0.90,mainland-term,台灣儲存技術標準,tech,exact,,,,true
+power-supply,電源供應器,电源,電源,power supply,0.90,mainland-term,台灣電腦組件標準,tech,exact,,,,true
+cooling-fan,散熱風扇,散热风扇,散熱風扇,cooling fan,0.85,mainland-term,台灣散熱系統標準,tech,exact,,,,true
+heat-sink,散熱片,散热片,散熱片,heat sink,0.85,mainland-term,台灣散熱系統標準,tech,exact,,,,true
+thermal-paste,散熱膏,导热硅脂,導熱硅脂,thermal paste,0.85,mainland-term,台灣散熱材料標準,tech,exact,,,,true
+overclocking,超頻,超频,超頻,overclocking,0.85,mainland-term,台灣效能調校技術,tech,exact,,,,true
+benchmark-tool,效能測試工具,基准测试工具,基準測試工具,benchmark tool,0.85,mainland-term,台灣硬體測試標準,tech,exact,,,,true
+machine-learning,機器學習,机器学习,機器學習,machine learning,0.95,mainland-term,台灣人工智慧標準,tech,exact,,,,true
+deep-learning,深度學習,深度学习,深度學習,deep learning,0.95,mainland-term,台灣人工智慧標準,tech,exact,,,,true
+neural-network,神經網路,神经网络,神經網絡,neural network,0.95,mainland-term,台灣人工智慧標準,tech,exact,,,,true
+artificial-intelligence,人工智慧,人工智能,人工智能,AI,0.95,mainland-term,台灣科技標準用語,tech,exact,,,,true
+natural-language-processing,自然語言處理,自然语言处理,自然語言處理,NLP,0.90,mainland-term,台灣人工智慧應用,tech,exact,,,,true
+computer-vision,電腦視覺,计算机视觉,計算機視覺,computer vision,0.90,mainland-term,台灣人工智慧應用,tech,exact,,,,true
+reinforcement-learning,強化學習,强化学习,強化學習,reinforcement learning,0.90,mainland-term,台灣機器學習方法,tech,exact,,,,true
+supervised-learning,監督式學習,监督学习,監督學習,supervised learning,0.90,mainland-term,台灣機器學習方法,tech,exact,,,,true
+unsupervised-learning,非監督式學習,无监督学习,無監督學習,unsupervised learning,0.90,mainland-term,台灣機器學習方法,tech,exact,,,,true
+transfer-learning,遷移學習,迁移学习,遷移學習,transfer learning,0.90,mainland-term,台灣深度學習技術,tech,exact,,,,true
+dataset,資料集,数据集,數據集,dataset,0.90,mainland-term,台灣資料科學標準,tech,exact,,,,true
+training-data,訓練資料,训练数据,訓練數據,training data,0.90,mainland-term,台灣機器學習標準,tech,exact,,,,true
+validation-data,驗證資料,验证数据,驗證數據,validation data,0.90,mainland-term,台灣機器學習標準,tech,exact,,,,true
+test-data,測試資料,测试数据,測試數據,test data,0.90,mainland-term,台灣機器學習標準,tech,exact,,,,true
+overfitting,過度擬合,过拟合,過擬合,overfitting,0.90,mainland-term,台灣機器學習問題,tech,exact,,,,true
+underfitting,擬合不足,欠拟合,欠擬合,underfitting,0.90,mainland-term,台灣機器學習問題,tech,exact,,,,true
+gradient-descent,梯度下降,梯度下降,梯度下降,gradient descent,0.85,mainland-term,台灣優化演算法,tech,exact,,,,true
+backpropagation,反向傳播,反向传播,反向傳播,backpropagation,0.90,mainland-term,台灣神經網路訓練,tech,exact,,,,true
+activation-function,激活函數,激活函数,激活函數,activation function,0.90,mainland-term,台灣神經網路元件,tech,exact,,,,true
+convolutional-neural-network,卷積神經網路,卷积神经网络,卷積神經網絡,CNN,0.90,mainland-term,台灣深度學習架構,tech,exact,,,,true
+recurrent-neural-network,遞迴神經網路,循环神经网络,循環神經網絡,RNN,0.90,mainland-term,台灣深度學習架構,tech,exact,,,,true
+transformer,轉換器,变换器,變換器,transformer,0.85,mainland-term,台灣深度學習模型,tech,exact,,,,true
+generative-ai,生成式人工智慧,生成式人工智能,生成式人工智能,generative AI,0.90,mainland-term,台灣AI應用標準,tech,exact,,,,true
+large-language-model,大型語言模型,大型语言模型,大型語言模型,LLM,0.95,mainland-term,台灣自然語言處理,tech,exact,,,,true
+prompt-engineering,提示工程,提示工程,提示工程,prompt engineering,0.85,mainland-term,台灣AI互動技術,tech,exact,,,,true
+fine-tuning,微調,微调,微調,fine-tuning,0.85,mainland-term,台灣模型優化技術,tech,exact,,,,true
+embedding,嵌入,嵌入,嵌入,embedding,0.80,mainland-term,台灣向量表示技術,tech,exact,,,,true
+tokenization,標記化,分词,分詞,tokenization,0.85,mainland-term,台灣文字處理技術,tech,exact,,,,true
+blockchain,區塊鏈,区块链,區塊鏈,blockchain,0.90,mainland-term,台灣分散式技術,tech,exact,,,,true
+cryptocurrency,加密貨幣,加密货币,加密貨幣,cryptocurrency,0.90,mainland-term,台灣數位金融標準,tech,exact,,,,true
+bitcoin,比特幣,比特币,比特幣,Bitcoin,0.85,mainland-term,台灣加密貨幣標準,tech,exact,,,,true
+ethereum,以太坊,以太坊,以太坊,Ethereum,0.85,mainland-term,台灣區塊鏈平台,tech,exact,,,,true
+smart-contract,智慧合約,智能合约,智能合約,smart contract,0.90,mainland-term,台灣區塊鏈應用,tech,exact,,,,true
+consensus-algorithm,共識演算法,共识算法,共識算法,consensus algorithm,0.90,mainland-term,台灣區塊鏈技術,tech,exact,,,,true
+proof-of-work,工作量證明,工作量证明,工作量證明,PoW,0.90,mainland-term,台灣區塊鏈共識,tech,exact,,,,true
+proof-of-stake,權益證明,权益证明,權益證明,PoS,0.90,mainland-term,台灣區塊鏈共識,tech,exact,,,,true
+distributed-ledger,分散式帳本,分布式账本,分佈式賬本,distributed ledger,0.90,mainland-term,台灣區塊鏈基礎,tech,exact,,,,true
+hash-function,雜湊函數,哈希函数,哈希函數,hash function,0.90,mainland-term,台灣密碼學基礎,tech,exact,,,,true
+mining,挖礦,挖矿,挖礦,mining,0.85,mainland-term,台灣加密貨幣產生,tech,exact,,,,true
+wallet,錢包,钱包,錢包,wallet,0.80,mainland-term,台灣數位資產管理,tech,exact,,,,true
+nft,非同質化代幣,非同质化代币,非同質化代幣,NFT,0.90,mainland-term,台灣數位資產標準,tech,exact,,,,true
+defi,去中心化金融,去中心化金融,去中心化金融,DeFi,0.85,mainland-term,台灣區塊鏈金融,tech,exact,,,,true
+dao,去中心化自治組織,去中心化自治组织,去中心化自治組織,DAO,0.85,mainland-term,台灣區塊鏈治理,tech,exact,,,,true
+metaverse,元宇宙,元宇宙,元宇宙,metaverse,0.85,mainland-term,台灣虛擬世界概念,tech,exact,,,,true
+virtual-reality,虛擬實境,虚拟现实,虛擬現實,VR,0.90,mainland-term,台灣沉浸式技術,tech,exact,,,,true
+augmented-reality,擴增實境,增强现实,增強現實,AR,0.90,mainland-term,台灣混合實境技術,tech,exact,,,,true
+mixed-reality,混合實境,混合现实,混合現實,MR,0.90,mainland-term,台灣實境技術標準,tech,exact,,,,true
+internet-of-things,物聯網,物联网,物聯網,IoT,0.90,mainland-term,台灣連網裝置標準,tech,exact,,,,true
+edge-computing,邊緣運算,边缘计算,邊緣計算,edge computing,0.90,mainland-term,台灣分散式運算,tech,exact,,,,true
+fog-computing,霧運算,雾计算,霧計算,fog computing,0.85,mainland-term,台灣分散式架構,tech,exact,,,,true
+quantum-computing,量子運算,量子计算,量子計算,quantum computing,0.90,mainland-term,台灣前瞻運算技術,tech,exact,,,,true
+qubit,量子位元,量子比特,量子比特,qubit,0.90,mainland-term,台灣量子運算單位,tech,exact,,,,true
+quantum-entanglement,量子糾纏,量子纠缠,量子糾纏,quantum entanglement,0.90,mainland-term,台灣量子物理現象,tech,exact,,,,true
+quantum-supremacy,量子優越性,量子优越性,量子優越性,quantum supremacy,0.85,mainland-term,台灣量子運算里程,tech,exact,,,,true
+biotechnology,生物科技,生物技术,生物技術,biotechnology,0.85,mainland-term,台灣生技產業標準,tech,exact,,,,true
+bioinformatics,生物資訊學,生物信息学,生物信息學,bioinformatics,0.90,mainland-term,台灣跨領域學科,tech,exact,,,,true
+genome-sequencing,基因定序,基因测序,基因測序,genome sequencing,0.90,mainland-term,台灣基因技術標準,tech,exact,,,,true
+crispr,基因編輯,基因编辑,基因編輯,CRISPR,0.85,mainland-term,台灣生物技術工具,tech,exact,,,,true
+nanotechnology,奈米科技,纳米技术,納米技術,nanotechnology,0.90,mainland-term,台灣尖端材料技術,tech,exact,,,,true
+3d-printing,3D列印,3D打印,3D打印,3D printing,0.90,mainland-term,台灣製造技術標準,tech,exact,,,,true
+additive-manufacturing,積層製造,增材制造,增材製造,additive manufacturing,0.85,mainland-term,台灣先進製造技術,tech,exact,,,,true
+robotics,機器人學,机器人学,機器人學,robotics,0.85,mainland-term,台灣自動化技術,tech,exact,,,,true
+autonomous-vehicle,自動駕駛車,自动驾驶车,自動駕駛車,autonomous vehicle,0.90,mainland-term,台灣智慧交通技術,tech,exact,,,,true
+drone,無人機,无人机,無人機,drone,0.85,mainland-term,台灣無人載具標準,tech,exact,,,,true
+lidar,光達,激光雷达,激光雷達,LiDAR,0.85,mainland-term,台灣感測技術標準,tech,exact,,,,true
+radar,雷達,雷达,雷達,radar,0.80,mainland-term,台灣感測技術標準,tech,exact,,,,true
+sensor,感測器,传感器,傳感器,sensor,0.90,mainland-term,台灣感測裝置標準,tech,exact,,,,true
+actuator,致動器,执行器,執行器,actuator,0.85,mainland-term,台灣控制元件標準,tech,exact,,,,true
+mems,微機電系統,微机电系统,微機電系統,MEMS,0.90,mainland-term,台灣微型技術標準,tech,exact,,,,true
+renewable-energy,再生能源,可再生能源,可再生能源,renewable energy,0.85,mainland-term,台灣綠能技術標準,tech,exact,,,,true
+solar-panel,太陽能板,太阳能电池板,太陽能電池板,solar panel,0.85,mainland-term,台灣太陽能技術,tech,exact,,,,true
+wind-turbine,風力發電機,风力涡轮机,風力渦輪機,wind turbine,0.85,mainland-term,台灣風電技術標準,tech,exact,,,,true
+battery-technology,電池技術,电池技术,電池技術,battery technology,0.85,mainland-term,台灣能源儲存技術,tech,exact,,,,true
+lithium-battery,鋰電池,锂电池,鋰電池,lithium battery,0.85,mainland-term,台灣電池技術標準,tech,exact,,,,true
+fuel-cell,燃料電池,燃料电池,燃料電池,fuel cell,0.85,mainland-term,台灣清潔能源技術,tech,exact,,,,true
+smart-grid,智慧電網,智能电网,智能電網,smart grid,0.90,mainland-term,台灣電力系統標準,tech,exact,,,,true
+carbon-footprint,碳足跡,碳足迹,碳足跡,carbon footprint,0.85,mainland-term,台灣環保評估標準,tech,exact,,,,true
+sustainable-development,永續發展,可持续发展,可持續發展,sustainable development,0.85,mainland-term,台灣永續目標標準,tech,exact,,,,true
+tree,樹狀結構,树,樹,tree,0.85,mainland-term,台灣資料結構標準,tech,exact,,,,true
+graph,圖,图,圖,graph,0.80,mainland-term,台灣資料結構標準,tech,exact,,,,true
+linked-list,鏈結串列,链表,鏈表,linked list,0.90,mainland-term,台灣資料結構標準,tech,exact,,,,true
+hash-table,雜湊表,哈希表,哈希表,hash table,0.90,mainland-term,台灣資料結構標準,tech,exact,,,,true
+binary-tree,二元樹,二叉树,二叉樹,binary tree,0.90,mainland-term,台灣資料結構標準,tech,exact,,,,true
+heap-structure,堆積結構,堆结构,堆結構,heap,0.85,mainland-term,台灣資料結構標準,tech,exact,,,,true
+sorting-algorithm,排序演算法,排序算法,排序算法,sorting algorithm,0.90,mainland-term,台灣演算法標準,tech,exact,,,,true
+search-algorithm,搜尋演算法,搜索算法,搜索算法,search algorithm,0.90,mainland-term,台灣演算法標準,tech,exact,,,,true
+dynamic-programming,動態規劃,动态规划,動態規劃,dynamic programming,0.90,mainland-term,台灣演算法設計,tech,exact,,,,true
+greedy-algorithm,貪婪演算法,贪心算法,貪心算法,greedy algorithm,0.90,mainland-term,台灣演算法設計,tech,exact,,,,true
+recursion,遞迴,递归,遞歸,recursion,0.90,mainland-term,台灣程式設計技巧,tech,exact,,,,true
+time-complexity,時間複雜度,时间复杂度,時間複雜度,time complexity,0.90,mainland-term,台灣演算法分析,tech,exact,,,,true
+space-complexity,空間複雜度,空间复杂度,空間複雜度,space complexity,0.90,mainland-term,台灣演算法分析,tech,exact,,,,true
+big-o,大O標記法,大O记法,大O記法,Big O notation,0.85,mainland-term,台灣複雜度分析,tech,exact,,,,true
+breadth-first-search,廣度優先搜尋,广度优先搜索,廣度優先搜索,BFS,0.90,mainland-term,台灣圖形演算法,tech,exact,,,,true
+depth-first-search,深度優先搜尋,深度优先搜索,深度優先搜索,DFS,0.90,mainland-term,台灣圖形演算法,tech,exact,,,,true
+dijkstra,戴克斯特拉演算法,迪杰斯特拉算法,迪傑斯特拉算法,Dijkstra,0.85,mainland-term,台灣最短路徑演算法,tech,exact,,,,true
+quicksort,快速排序,快速排序,快速排序,quicksort,0.85,mainland-term,台灣排序演算法,tech,exact,,,,true
+mergesort,合併排序,归并排序,歸併排序,merge sort,0.90,mainland-term,台灣排序演算法,tech,exact,,,,true
+bubblesort,泡沫排序,冒泡排序,冒泡排序,bubble sort,0.90,mainland-term,台灣排序演算法,tech,exact,,,,true
+binary-search,二元搜尋,二分搜索,二分搜索,binary search,0.90,mainland-term,台灣搜尋演算法,tech,exact,,,,true
+regular-expression,正規表示式,正则表达式,正則表達式,regex,0.90,mainland-term,台灣文字處理標準,tech,exact,,,,true
+parsing,剖析,解析,解析,parsing,0.85,mainland-term,台灣語法分析標準,tech,exact,,,,true
+lexical-analysis,詞法分析,词法分析,詞法分析,lexical analysis,0.90,mainland-term,台灣編譯器技術,tech,exact,,,,true
+syntax-analysis,語法分析,语法分析,語法分析,syntax analysis,0.90,mainland-term,台灣編譯器技術,tech,exact,,,,true
+semantic-analysis,語意分析,语义分析,語義分析,semantic analysis,0.90,mainland-term,台灣編譯器技術,tech,exact,,,,true
+garbage-collection,垃圾回收,垃圾回收,垃圾回收,garbage collection,0.85,mainland-term,台灣記憶體管理,tech,exact,,,,true
+memory-leak,記憶體洩漏,内存泄漏,內存泄漏,memory leak,0.90,mainland-term,台灣程式錯誤類型,tech,exact,,,,true
+buffer-overflow,緩衝區溢位,缓冲区溢出,緩衝區溢出,buffer overflow,0.90,mainland-term,台灣安全漏洞類型,tech,exact,,,,true
+segmentation-fault,區段錯誤,段错误,段錯誤,segmentation fault,0.90,mainland-term,台灣系統錯誤類型,tech,exact,,,,true
+null-pointer,空指標,空指针,空指針,null pointer,0.90,mainland-term,台灣程式錯誤類型,tech,exact,,,,true
+polymorphism,多型,多态,多態,polymorphism,0.90,mainland-term,台灣物件導向概念,tech,exact,,,,true
+encapsulation,封裝,封装,封裝,encapsulation,0.85,mainland-term,台灣物件導向概念,tech,exact,,,,true
+abstraction,抽象化,抽象,抽象,abstraction,0.85,mainland-term,台灣物件導向概念,tech,exact,,,,true
+composition,組合,组合,組合,composition,0.80,mainland-term,台灣物件導向設計,tech,exact,,,,true
+aggregation,聚合,聚合,聚合,aggregation,0.80,mainland-term,台灣物件導向設計,tech,exact,,,,true
+design-pattern,設計模式,设计模式,設計模式,design pattern,0.90,mainland-term,台灣軟體設計標準,tech,exact,,,,true
+singleton,單例模式,单例模式,單例模式,singleton,0.90,mainland-term,台灣設計模式類型,tech,exact,,,,true
+factory-pattern,工廠模式,工厂模式,工廠模式,factory pattern,0.90,mainland-term,台灣設計模式類型,tech,exact,,,,true
+observer-pattern,觀察者模式,观察者模式,觀察者模式,observer pattern,0.90,mainland-term,台灣設計模式類型,tech,exact,,,,true
+strategy-pattern,策略模式,策略模式,策略模式,strategy pattern,0.85,mainland-term,台灣設計模式類型,tech,exact,,,,true
+decorator-pattern,裝飾者模式,装饰器模式,裝飾器模式,decorator pattern,0.90,mainland-term,台灣設計模式類型,tech,exact,,,,true
+mvc,MVC架構,MVC架构,MVC架構,MVC,0.85,mainland-term,台灣軟體架構模式,tech,exact,,,,true
+mvvm,MVVM架構,MVVM架构,MVVM架構,MVVM,0.85,mainland-term,台灣軟體架構模式,tech,exact,,,,true
+mvp,MVP架構,MVP架构,MVP架構,MVP,0.85,mainland-term,台灣軟體架構模式,tech,exact,,,,true
+reactive-programming,響應式程式設計,响应式编程,響應式編程,reactive programming,0.90,mainland-term,台灣程式設計範式,tech,exact,,,,true
+functional-programming,函數式程式設計,函数式编程,函數式編程,functional programming,0.90,mainland-term,台灣程式設計範式,tech,exact,,,,true
+imperative-programming,指令式程式設計,命令式编程,命令式編程,imperative programming,0.90,mainland-term,台灣程式設計範式,tech,exact,,,,true
+declarative-programming,宣告式程式設計,声明式编程,聲明式編程,declarative programming,0.90,mainland-term,台灣程式設計範式,tech,exact,,,,true
+lambda-function,Lambda函式,Lambda函数,Lambda函數,lambda function,0.90,mainland-term,台灣函數式程式設計,tech,exact,,,,true
+closure,閉包,闭包,閉包,closure,0.85,mainland-term,台灣程式語言特性,tech,exact,,,,true
+hoisting,提升,提升,提升,hoisting,0.80,mainland-term,台灣JavaScript特性,tech,exact,,,,true
+promise,Promise物件,Promise对象,Promise對象,Promise,0.85,mainland-term,台灣非同步程式設計,tech,exact,,,,true
+async-await,async/await,async/await,async/await,async/await,0.85,mainland-term,台灣非同步語法,tech,exact,,,,true
+generator,產生器,生成器,生成器,generator,0.85,mainland-term,台灣程式語言特性,tech,exact,,,,true
+iterator,迭代器,迭代器,迭代器,iterator,0.85,mainland-term,台灣程式設計模式,tech,exact,,,,true
+serialization,序列化,序列化,序列化,serialization,0.85,mainland-term,台灣資料處理技術,tech,exact,,,,true
+deserialization,反序列化,反序列化,反序列化,deserialization,0.85,mainland-term,台灣資料處理技術,tech,exact,,,,true
+json,JSON,JSON,JSON,JSON,0.80,mainland-term,台灣資料交換格式,tech,exact,,,,true
+xml,XML,XML,XML,XML,0.80,mainland-term,台灣標記語言標準,tech,exact,,,,true
+yaml,YAML,YAML,YAML,YAML,0.80,mainland-term,台灣資料序列格式,tech,exact,,,,true
+markdown,Markdown,Markdown,Markdown,Markdown,0.80,mainland-term,台灣輕量標記語言,tech,exact,,,,true
+regex-pattern,正規表達式模式,正则表达式模式,正則表達式模式,regex pattern,0.90,mainland-term,台灣模式匹配技術,tech,exact,,,,true
+authentication,身分驗證,身份验证,身份驗證,authentication,0.90,mainland-term,台灣身分管理標準,tech,exact,,,,true
+authorization-2,授權管理,授权管理,授權管理,authorization,0.85,mainland-term,台灣權限控制標準,tech,exact,,,,true
+session-management,工作階段管理,会话管理,會話管理,session management,0.90,mainland-term,台灣狀態管理技術,tech,exact,,,,true
+cookie,Cookie,Cookie,Cookie,cookie,0.80,mainland-term,台灣網頁儲存技術,tech,exact,,,,true
+localstorage,本機儲存,本地存储,本地存儲,localStorage,0.90,mainland-term,台灣瀏覽器儲存,tech,exact,,,,true
+sessionstorage,工作階段儲存,会话存储,會話存儲,sessionStorage,0.90,mainland-term,台灣瀏覽器儲存,tech,exact,,,,true
+indexeddb,索引資料庫,索引数据库,索引數據庫,IndexedDB,0.85,mainland-term,台灣瀏覽器資料庫,tech,exact,,,,true
+react,React,React,React,React,0.80,mainland-term,台灣前端框架,tech,exact,,,,true
+angular,Angular,Angular,Angular,Angular,0.80,mainland-term,台灣前端框架,tech,exact,,,,true
+vue,Vue,Vue,Vue,Vue,0.80,mainland-term,台灣前端框架,tech,exact,,,,true
+nodejs,Node.js,Node.js,Node.js,Node.js,0.80,mainland-term,台灣JavaScript執行環境,tech,exact,,,,true
+express,Express,Express,Express,Express,0.80,mainland-term,台灣Node.js框架,tech,exact,,,,true
+django,Django,Django,Django,Django,0.80,mainland-term,台灣Python框架,tech,exact,,,,true
+flask,Flask,Flask,Flask,Flask,0.80,mainland-term,台灣Python框架,tech,exact,,,,true
+spring,Spring,Spring,Spring,Spring,0.80,mainland-term,台灣Java框架,tech,exact,,,,true
+springboot,Spring Boot,Spring Boot,Spring Boot,Spring Boot,0.80,mainland-term,台灣Java框架,tech,exact,,,,true
+dotnet,.NET,.NET,.NET,.NET,0.80,mainland-term,台灣微軟開發平台,tech,exact,,,,true
+aspnet,ASP.NET,ASP.NET,ASP.NET,ASP.NET,0.80,mainland-term,台灣網頁開發框架,tech,exact,,,,true
+rails,Ruby on Rails,Ruby on Rails,Ruby on Rails,Rails,0.80,mainland-term,台灣Ruby框架,tech,exact,,,,true
+laravel,Laravel,Laravel,Laravel,Laravel,0.80,mainland-term,台灣PHP框架,tech,exact,,,,true
+redux,Redux,Redux,Redux,Redux,0.80,mainland-term,台灣狀態管理工具,tech,exact,,,,true
+webpack,Webpack,Webpack,Webpack,Webpack,0.80,mainland-term,台灣模組打包工具,tech,exact,,,,true
+babel,Babel,Babel,Babel,Babel,0.80,mainland-term,台灣JavaScript編譯器,tech,exact,,,,true
+typescript,TypeScript,TypeScript,TypeScript,TypeScript,0.80,mainland-term,台灣程式語言,tech,exact,,,,true
+sass,Sass,Sass,Sass,Sass,0.80,mainland-term,台灣CSS預處理器,tech,exact,,,,true
+less,Less,Less,Less,Less,0.80,mainland-term,台灣CSS預處理器,tech,exact,,,,true
+bootstrap,Bootstrap,Bootstrap,Bootstrap,Bootstrap,0.80,mainland-term,台灣CSS框架,tech,exact,,,,true
+tailwind,Tailwind CSS,Tailwind CSS,Tailwind CSS,Tailwind,0.80,mainland-term,台灣CSS框架,tech,exact,,,,true
+jquery,jQuery,jQuery,jQuery,jQuery,0.80,mainland-term,台灣JavaScript函式庫,tech,exact,,,,true
+lodash,Lodash,Lodash,Lodash,Lodash,0.80,mainland-term,台灣JavaScript工具庫,tech,exact,,,,true
+npm,npm,npm,npm,npm,0.80,mainland-term,台灣套件管理工具,tech,exact,,,,true
+yarn,Yarn,Yarn,Yarn,Yarn,0.80,mainland-term,台灣套件管理工具,tech,exact,,,,true
+pip,pip,pip,pip,pip,0.80,mainland-term,台灣Python套件管理,tech,exact,,,,true
+maven,Maven,Maven,Maven,Maven,0.80,mainland-term,台灣Java建構工具,tech,exact,,,,true
+gradle,Gradle,Gradle,Gradle,Gradle,0.80,mainland-term,台灣建構自動化工具,tech,exact,,,,true
+git,Git,Git,Git,Git,0.80,mainland-term,台灣版本控制系統,tech,exact,,,,true
+github,GitHub,GitHub,GitHub,GitHub,0.80,mainland-term,台灣程式碼託管平台,tech,exact,,,,true
+gitlab,GitLab,GitLab,GitLab,GitLab,0.80,mainland-term,台灣DevOps平台,tech,exact,,,,true
+bitbucket,Bitbucket,Bitbucket,Bitbucket,Bitbucket,0.80,mainland-term,台灣程式碼管理平台,tech,exact,,,,true
+jenkins,Jenkins,Jenkins,Jenkins,Jenkins,0.80,mainland-term,台灣CI/CD工具,tech,exact,,,,true
+travis-ci,Travis CI,Travis CI,Travis CI,Travis CI,0.80,mainland-term,台灣持續整合服務,tech,exact,,,,true
+circleci,CircleCI,CircleCI,CircleCI,CircleCI,0.80,mainland-term,台灣CI/CD平台,tech,exact,,,,true
+jira,Jira,Jira,Jira,Jira,0.80,mainland-term,台灣專案管理工具,tech,exact,,,,true
+confluence,Confluence,Confluence,Confluence,Confluence,0.80,mainland-term,台灣協作文件平台,tech,exact,,,,true
+slack,Slack,Slack,Slack,Slack,0.80,mainland-term,台灣團隊溝通工具,tech,exact,,,,true
+agile,敏捷開發,敏捷开发,敏捷開發,Agile,0.90,mainland-term,台灣軟體開發方法,tech,exact,,,,true
+scrum,Scrum,Scrum,Scrum,Scrum,0.80,mainland-term,台灣敏捷框架,tech,exact,,,,true
+kanban,看板,看板,看板,Kanban,0.85,mainland-term,台灣專案管理方法,tech,exact,,,,true
+waterfall,瀑布式開發,瀑布式开发,瀑布式開發,waterfall,0.85,mainland-term,台灣傳統開發模式,tech,exact,,,,true
+devops,DevOps,DevOps,DevOps,DevOps,0.80,mainland-term,台灣開發維運文化,tech,exact,,,,true
+cicd,CI/CD,CI/CD,CI/CD,CI/CD,0.80,mainland-term,台灣持續整合交付,tech,exact,,,,true
+tdd,測試驅動開發,测试驱动开发,測試驅動開發,TDD,0.90,mainland-term,台灣開發方法論,tech,exact,,,,true
+bdd,行為驅動開發,行为驱动开发,行為驅動開發,BDD,0.90,mainland-term,台灣開發方法論,tech,exact,,,,true
+ddd,領域驅動設計,领域驱动设计,領域驅動設計,DDD,0.90,mainland-term,台灣軟體設計方法,tech,exact,,,,true
+solid,SOLID原則,SOLID原则,SOLID原則,SOLID,0.85,mainland-term,台灣物件導向設計原則,tech,exact,,,,true
+dry,DRY原則,DRY原则,DRY原則,DRY,0.85,mainland-term,台灣程式設計原則,tech,exact,,,,true
+kiss,KISS原則,KISS原则,KISS原則,KISS,0.85,mainland-term,台灣設計簡化原則,tech,exact,,,,true
+yagni,YAGNI原則,YAGNI原则,YAGNI原則,YAGNI,0.85,mainland-term,台灣極限程式設計原則,tech,exact,,,,true
+crud,CRUD操作,CRUD操作,CRUD操作,CRUD,0.85,mainland-term,台灣資料庫操作基礎,tech,exact,,,,true
+orm,物件關聯對映,对象关系映射,對象關係映射,ORM,0.90,mainland-term,台灣資料庫抽象層,tech,exact,,,,true
+sql,SQL,SQL,SQL,SQL,0.80,mainland-term,台灣資料庫查詢語言,tech,exact,,,,true
+nosql,NoSQL,NoSQL,NoSQL,NoSQL,0.80,mainland-term,台灣非關聯式資料庫,tech,exact,,,,true
+mongodb,MongoDB,MongoDB,MongoDB,MongoDB,0.80,mainland-term,台灣文件資料庫,tech,exact,,,,true
+redis,Redis,Redis,Redis,Redis,0.80,mainland-term,台灣記憶體資料庫,tech,exact,,,,true
+postgresql,PostgreSQL,PostgreSQL,PostgreSQL,PostgreSQL,0.80,mainland-term,台灣關聯式資料庫,tech,exact,,,,true
+mysql,MySQL,MySQL,MySQL,MySQL,0.80,mainland-term,台灣關聯式資料庫,tech,exact,,,,true
+mariadb,MariaDB,MariaDB,MariaDB,MariaDB,0.80,mainland-term,台灣開源資料庫,tech,exact,,,,true
+elasticsearch,Elasticsearch,Elasticsearch,Elasticsearch,Elasticsearch,0.80,mainland-term,台灣搜尋引擎,tech,exact,,,,true
+kibana,Kibana,Kibana,Kibana,Kibana,0.80,mainland-term,台灣資料視覺化工具,tech,exact,,,,true
+logstash,Logstash,Logstash,Logstash,Logstash,0.80,mainland-term,台灣日誌處理工具,tech,exact,,,,true
+prometheus,Prometheus,Prometheus,Prometheus,Prometheus,0.80,mainland-term,台灣監控系統,tech,exact,,,,true
+grafana,Grafana,Grafana,Grafana,Grafana,0.80,mainland-term,台灣監控儀表板,tech,exact,,,,true
+nginx,Nginx,Nginx,Nginx,Nginx,0.80,mainland-term,台灣網頁伺服器,tech,exact,,,,true
+apache,Apache,Apache,Apache,Apache,0.80,mainland-term,台灣網頁伺服器,tech,exact,,,,true
+tomcat,Tomcat,Tomcat,Tomcat,Tomcat,0.80,mainland-term,台灣Java應用伺服器,tech,exact,,,,true
+iis,IIS,IIS,IIS,IIS,0.80,mainland-term,台灣微軟網頁伺服器,tech,exact,,,,true
+rabbitmq,RabbitMQ,RabbitMQ,RabbitMQ,RabbitMQ,0.80,mainland-term,台灣訊息佇列系統,tech,exact,,,,true
+kafka,Kafka,Kafka,Kafka,Kafka,0.80,mainland-term,台灣串流處理平台,tech,exact,,,,true
+zookeeper,ZooKeeper,ZooKeeper,ZooKeeper,ZooKeeper,0.80,mainland-term,台灣分散式協調服務,tech,exact,,,,true
+consul,Consul,Consul,Consul,Consul,0.80,mainland-term,台灣服務網格工具,tech,exact,,,,true
+etcd,etcd,etcd,etcd,etcd,0.80,mainland-term,台灣分散式鍵值儲存,tech,exact,,,,true
+vault,Vault,Vault,Vault,Vault,0.80,mainland-term,台灣機密管理工具,tech,exact,,,,true
+istio,Istio,Istio,Istio,Istio,0.80,mainland-term,台灣服務網格平台,tech,exact,,,,true
+linkerd,Linkerd,Linkerd,Linkerd,Linkerd,0.80,mainland-term,台灣服務網格工具,tech,exact,,,,true
+envoy,Envoy,Envoy,Envoy,Envoy,0.80,mainland-term,台灣邊緣代理,tech,exact,,,,true
+screen,螢幕,屏幕,屏幕,screen,0.95,mainland-term,台灣顯示裝置標準,tech,exact,,,,true
+fullscreen,全螢幕,全屏,全屏,fullscreen,0.90,mainland-term,台灣顯示模式標準,tech,exact,,,,true
+screenshot,螢幕擷取,截屏,截屏,screenshot,0.90,mainland-term,台灣螢幕操作標準,tech,exact,,,,true
+screensaver,螢幕保護程式,屏保,屏保,screensaver,0.90,mainland-term,台灣系統功能標準,tech,exact,,,,true
+display-screen,顯示螢幕,显示屏,顯示屏,display screen,0.95,mainland-term,台灣顯示裝置標準,tech,exact,,,,true
+laser,雷射,激光,激光,laser,0.95,mainland-term,台灣光學技術標準,tech,exact,,,,true
+silicon,矽,硅,硅,silicon,0.95,mainland-term,台灣半導體材料,tech,exact,,,,true
+silicon-valley,矽谷,硅谷,硅谷,Silicon Valley,0.95,mainland-term,台灣科技地名標準,tech,exact,,,,true
+chip,晶片,芯片,芯片,chip,0.95,mainland-term,台灣半導體標準,tech,exact,,,,true
+dialog,對話方塊,对话框,對話框,dialog,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+toolbar,工具列,工具栏,工具欄,toolbar,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+menubar,選單列,菜单栏,菜單欄,menubar,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+statusbar,狀態列,状态栏,狀態欄,statusbar,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+scrollbar,捲軸,滚动条,滾動條,scrollbar,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+dropdown,下拉式選單,下拉菜单,下拉菜單,dropdown,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+checkbox,核取方塊,复选框,複選框,checkbox,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+radiobutton,選項按鈕,单选按钮,單選按鈕,radio button,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+textbox,文字方塊,文本框,文本框,textbox,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+listbox,清單方塊,列表框,列表框,listbox,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+combobox,下拉式方塊,组合框,組合框,combobox,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+tab,分頁,标签页,標籤頁,tab,0.90,mainland-term,台灣介面元件標準,tech,exact,,,,true
+tooltip,工具提示,工具提示,工具提示,tooltip,0.85,mainland-term,台灣介面元件標準,tech,exact,,,,true
+clipboard,剪貼簿,剪贴板,剪貼板,clipboard,0.90,mainland-term,台灣系統功能標準,tech,exact,,,,true
+paste,貼上,粘贴,粘貼,paste,0.90,mainland-term,台灣編輯操作標準,tech,exact,,,,true
+cut,剪下,剪切,剪切,cut,0.90,mainland-term,台灣編輯操作標準,tech,exact,,,,true
+undo,復原,撤销,撤銷,undo,0.90,mainland-term,台灣編輯操作標準,tech,exact,,,,true
+redo,重做,重做,重做,redo,0.85,mainland-term,台灣編輯操作標準,tech,exact,,,,true
+find,尋找,查找,查找,find,0.90,mainland-term,台灣編輯操作標準,tech,exact,,,,true
+replace,取代,替换,替換,replace,0.90,mainland-term,台灣編輯操作標準,tech,exact,,,,true
+refresh,重新整理,刷新,刷新,refresh,0.90,mainland-term,台灣瀏覽器操作,tech,exact,,,,true
+reload,重新載入,重新加载,重新加載,reload,0.90,mainland-term,台灣瀏覽器操作,tech,exact,,,,true
+home-page,首頁,主页,主頁,homepage,0.90,mainland-term,台灣網頁標準術語,tech,exact,,,,true
+bookmark,書籤,收藏夹,收藏夾,bookmark,0.90,mainland-term,台灣瀏覽器功能,tech,exact,,,,true
+favorites,我的最愛,收藏,收藏,favorites,0.90,mainland-term,台灣瀏覽器功能,tech,exact,,,,true
+history,歷程記錄,历史记录,歷史記錄,history,0.85,mainland-term,台灣瀏覽器功能,tech,exact,,,,true
+extension-browser,擴充套件,浏览器扩展,瀏覽器擴展,browser extension,0.90,mainland-term,台灣瀏覽器功能,tech,exact,,,,true
+incognito,無痕模式,隐身模式,隱身模式,incognito,0.90,mainland-term,台灣瀏覽器隱私,tech,exact,,,,true
+private-browsing,隱私瀏覽,隐私浏览,隱私瀏覽,private browsing,0.85,mainland-term,台灣瀏覽器隱私,tech,exact,,,,true
+pop-up,彈出視窗,弹窗,彈窗,pop-up,0.90,mainland-term,台灣網頁元件標準,tech,exact,,,,true
+modal,強制回應視窗,模态窗口,模態窗口,modal,0.85,mainland-term,台灣介面設計標準,tech,exact,,,,true
+wizard,精靈,向导,嚮導,wizard,0.90,mainland-term,台灣介面設計標準,tech,exact,,,,true
+template,範本,模板,模板,template,0.90,mainland-term,台灣文件標準術語,tech,exact,,,,true
+preset,預設集,预设,預設,preset,0.85,mainland-term,台灣系統設定術語,tech,exact,,,,true
+preference,偏好設定,首选项,首選項,preference,0.90,mainland-term,台灣系統設定術語,tech,exact,,,,true
+option,選項,选项,選項,option,0.85,mainland-term,台灣系統設定術語,tech,exact,,,,true
+setting,設定,设置,設置,setting,0.90,mainland-term,台灣系統設定術語,tech,exact,,,,true
+configuration,組態,配置,配置,configuration,0.90,mainland-term,台灣系統設定術語,tech,exact,,,,true
+profile,設定檔,配置文件,配置文件,profile,0.90,mainland-term,台灣系統設定術語,tech,exact,,,,true
+permission,權限,权限,權限,permission,0.85,mainland-term,台灣系統安全術語,tech,exact,,,,true
+privilege,特權,特权,特權,privilege,0.85,mainland-term,台灣系統安全術語,tech,exact,,,,true
+administrator,系統管理員,管理员,管理員,administrator,0.90,mainland-term,台灣使用者權限,tech,exact,,,,true
+guest,訪客,访客,訪客,guest,0.85,mainland-term,台灣使用者權限,tech,exact,,,,true
+startup,啟動,启动,啟動,startup,0.85,mainland-term,台灣系統操作術語,tech,exact,,,,true
+shutdown,關機,关机,關機,shutdown,0.90,mainland-term,台灣系統操作術語,tech,exact,,,,true
+restart,重新啟動,重启,重啟,restart,0.90,mainland-term,台灣系統操作術語,tech,exact,,,,true
+sleep,睡眠,睡眠,睡眠,sleep,0.85,mainland-term,台灣電源管理術語,tech,exact,,,,true
+hibernate,休眠,休眠,休眠,hibernate,0.85,mainland-term,台灣電源管理術語,tech,exact,,,,true
+standby,待命,待机,待機,standby,0.90,mainland-term,台灣電源管理術語,tech,exact,,,,true
+notification,通知,通知,通知,notification,0.80,mainland-term,台灣系統訊息術語,tech,exact,,,,true
+reminder,提醒,提醒,提醒,reminder,0.80,mainland-term,台灣系統訊息術語,tech,exact,,,,true
+shortcut,捷徑,快捷方式,快捷方式,shortcut,0.90,mainland-term,台灣系統功能術語,tech,exact,,,,true
+hotkey,快速鍵,热键,熱鍵,hotkey,0.90,mainland-term,台灣鍵盤操作術語,tech,exact,,,,true
+keyboard-shortcut,鍵盤快速鍵,键盘快捷键,鍵盤快捷鍵,keyboard shortcut,0.90,mainland-term,台灣鍵盤操作術語,tech,exact,,,,true
+context-menu,快顯功能表,右键菜单,右鍵菜單,context menu,0.90,mainland-term,台灣介面操作術語,tech,exact,,,,true
+right-click,按右鍵,右击,右擊,right-click,0.90,mainland-term,台灣滑鼠操作術語,tech,exact,,,,true
+double-click,按兩下,双击,雙擊,double-click,0.90,mainland-term,台灣滑鼠操作術語,tech,exact,,,,true
+drag-drop,拖放,拖放,拖放,drag and drop,0.85,mainland-term,台灣介面操作術語,tech,exact,,,,true
+zoom-in,放大,放大,放大,zoom in,0.80,mainland-term,台灣顯示操作術語,tech,exact,,,,true
+zoom-out,縮小,缩小,縮小,zoom out,0.85,mainland-term,台灣顯示操作術語,tech,exact,,,,true
+maximize,最大化,最大化,最大化,maximize,0.85,mainland-term,台灣視窗操作術語,tech,exact,,,,true
+minimize,最小化,最小化,最小化,minimize,0.85,mainland-term,台灣視窗操作術語,tech,exact,,,,true
+resize,調整大小,调整大小,調整大小,resize,0.85,mainland-term,台灣視窗操作術語,tech,exact,,,,true
+resolution-setting,解析度設定,分辨率设置,分辨率設置,resolution setting,0.90,mainland-term,台灣顯示設定術語,tech,exact,,,,true
+brightness,亮度,亮度,亮度,brightness,0.80,mainland-term,台灣顯示設定術語,tech,exact,,,,true
+contrast,對比,对比度,對比度,contrast,0.85,mainland-term,台灣顯示設定術語,tech,exact,,,,true
+saturation,飽和度,饱和度,飽和度,saturation,0.85,mainland-term,台灣顯示設定術語,tech,exact,,,,true
+font,字型,字体,字體,font,0.90,mainland-term,台灣文字顯示術語,tech,exact,,,,true
+font-size,字型大小,字号,字號,font size,0.90,mainland-term,台灣文字顯示術語,tech,exact,,,,true
+bold,粗體,粗体,粗體,bold,0.85,mainland-term,台灣文字格式術語,tech,exact,,,,true
+italic,斜體,斜体,斜體,italic,0.85,mainland-term,台灣文字格式術語,tech,exact,,,,true
+underline,底線,下划线,下劃線,underline,0.90,mainland-term,台灣文字格式術語,tech,exact,,,,true
+strikethrough,刪除線,删除线,刪除線,strikethrough,0.85,mainland-term,台灣文字格式術語,tech,exact,,,,true
+alignment,對齊,对齐,對齊,alignment,0.85,mainland-term,台灣文字排版術語,tech,exact,,,,true
+justify,左右對齊,两端对齐,兩端對齊,justify,0.90,mainland-term,台灣文字排版術語,tech,exact,,,,true
+indent,縮排,缩进,縮進,indent,0.90,mainland-term,台灣文字排版術語,tech,exact,,,,true
+paragraph,段落,段落,段落,paragraph,0.80,mainland-term,台灣文字排版術語,tech,exact,,,,true
+header-text,標題,标题,標題,header,0.85,mainland-term,台灣文件結構術語,tech,exact,,,,true
+footer-text,頁尾,页脚,頁腳,footer,0.90,mainland-term,台灣文件結構術語,tech,exact,,,,true
+page-number,頁碼,页码,頁碼,page number,0.85,mainland-term,台灣文件結構術語,tech,exact,,,,true
+table-of-contents,目錄,目录,目錄,table of contents,0.85,mainland-term,台灣文件結構術語,tech,exact,,,,true
+hyperlink,超連結,超链接,超鏈接,hyperlink,0.90,mainland-term,台灣網頁元件術語,tech,exact,,,,true
+attachment,附件,附件,附件,attachment,0.80,mainland-term,台灣郵件功能術語,tech,exact,,,,true
+forward-email,轉寄,转发,轉發,forward,0.90,mainland-term,台灣郵件操作術語,tech,exact,,,,true
+reply,回覆,回复,回復,reply,0.90,mainland-term,台灣郵件操作術語,tech,exact,,,,true
+reply-all,全部回覆,回复全部,回復全部,reply all,0.90,mainland-term,台灣郵件操作術語,tech,exact,,,,true
+cc,副本,抄送,抄送,CC,0.90,mainland-term,台灣郵件功能術語,tech,exact,,,,true
+bcc,密件副本,密送,密送,BCC,0.90,mainland-term,台灣郵件功能術語,tech,exact,,,,true
+subject,主旨,主题,主題,subject,0.90,mainland-term,台灣郵件欄位術語,tech,exact,,,,true
+inbox,收件匣,收件箱,收件箱,inbox,0.90,mainland-term,台灣郵件資料夾,tech,exact,,,,true
+sent-mail,寄件備份,已发送,已發送,sent,0.90,mainland-term,台灣郵件資料夾,tech,exact,,,,true
+draft,草稿,草稿,草稿,draft,0.80,mainland-term,台灣郵件資料夾,tech,exact,,,,true
+spam,垃圾郵件,垃圾邮件,垃圾郵件,spam,0.85,mainland-term,台灣郵件分類術語,tech,exact,,,,true
+junk-mail,垃圾信,垃圾邮件,垃圾郵件,junk mail,0.85,mainland-term,台灣郵件分類術語,tech,exact,,,,true
+phishing-email,釣魚郵件,钓鱼邮件,釣魚郵件,phishing email,0.90,mainland-term,台灣資安威脅術語,tech,exact,,,,true
+signature-email,簽名檔,签名,簽名,signature,0.90,mainland-term,台灣郵件設定術語,tech,exact,,,,true
+out-of-office,不在辦公室,外出,外出,out of office,0.85,mainland-term,台灣郵件自動回覆,tech,exact,,,,true
+auto-reply,自動回覆,自动回复,自動回復,auto-reply,0.90,mainland-term,台灣郵件功能術語,tech,exact,,,,true
+filter-email,郵件篩選器,邮件过滤器,郵件過濾器,email filter,0.90,mainland-term,台灣郵件管理術語,tech,exact,,,,true
+contact,聯絡人,联系人,聯繫人,contact,0.90,mainland-term,台灣通訊錄術語,tech,exact,,,,true
+address-book,通訊錄,地址簿,地址簿,address book,0.90,mainland-term,台灣聯絡人管理,tech,exact,,,,true
+group-contact,群組,联系人组,聯繫人組,contact group,0.90,mainland-term,台灣聯絡人管理,tech,exact,,,,true
+distribution-list,通訊群組清單,分发列表,分發列表,distribution list,0.90,mainland-term,台灣郵件群發術語,tech,exact,,,,true
+project-manager,專案經理,项目经理,項目經理,project manager,0.90,mainland-term,台灣職位名稱標準,business,exact,,,,true
+project-management,專案管理,项目管理,項目管理,project management,0.90,mainland-term,台灣商業管理術語,business,exact,,,,true
+project,專案,项目,項目,project,0.95,mainland-term,台灣商業術語標準,business,exact,,,,true
+milestone,里程碑,里程碑,里程碑,milestone,0.85,mainland-term,台灣專案管理術語,business,exact,,,,true
+deliverable,交付項目,可交付成果,可交付成果,deliverable,0.85,mainland-term,台灣專案管理術語,business,exact,,,,true
+stakeholder,利害關係人,利益相关者,利益相關者,stakeholder,0.90,mainland-term,台灣商業管理術語,business,exact,,,,true
+budget,預算,预算,預算,budget,0.85,mainland-term,台灣財務管理術語,business,exact,,,,true
+revenue,營收,收入,收入,revenue,0.85,mainland-term,台灣財務術語標準,business,exact,,,,true
+profit,利潤,利润,利潤,profit,0.85,mainland-term,台灣財務術語標準,business,exact,,,,true
+loss,虧損,亏损,虧損,loss,0.90,mainland-term,台灣財務術語標準,business,exact,,,,true
+investment,投資,投资,投資,investment,0.85,mainland-term,台灣金融術語標準,business,exact,,,,true
+return,報酬,回报,回報,return,0.85,mainland-term,台灣投資術語標準,business,exact,,,,true
+dividend,股利,股息,股息,dividend,0.90,mainland-term,台灣股市術語標準,business,exact,,,,true
+stock,股票,股票,股票,stock,0.80,mainland-term,台灣證券術語標準,business,exact,,,,true
+bond,債券,债券,債券,bond,0.85,mainland-term,台灣金融商品術語,business,exact,,,,true
+futures,期貨,期货,期貨,futures,0.85,mainland-term,台灣衍生性商品,business,exact,,,,true
+option-finance,選擇權,期权,期權,option,0.90,mainland-term,台灣衍生性商品,business,exact,,,,true
+portfolio,投資組合,投资组合,投資組合,portfolio,0.85,mainland-term,台灣投資管理術語,business,exact,,,,true
+asset,資產,资产,資產,asset,0.85,mainland-term,台灣會計術語標準,business,exact,,,,true
+liability,負債,负债,負債,liability,0.85,mainland-term,台灣會計術語標準,business,exact,,,,true
+equity,權益,权益,權益,equity,0.85,mainland-term,台灣會計術語標準,business,exact,,,,true
+balance-sheet,資產負債表,资产负债表,資產負債表,balance sheet,0.90,mainland-term,台灣財務報表術語,business,exact,,,,true
+income-statement,損益表,损益表,損益表,income statement,0.90,mainland-term,台灣財務報表術語,business,exact,,,,true
+cash-flow,現金流量,现金流,現金流,cash flow,0.90,mainland-term,台灣財務管理術語,business,exact,,,,true
+audit,稽核,审计,審計,audit,0.90,mainland-term,台灣會計稽核術語,business,exact,,,,true
+compliance,法規遵循,合规,合規,compliance,0.90,mainland-term,台灣企業治理術語,business,exact,,,,true
+governance,公司治理,治理,治理,governance,0.85,mainland-term,台灣企業管理術語,business,exact,,,,true
+strategy,策略,战略,戰略,strategy,0.90,mainland-term,台灣企業規劃術語,business,exact,,,,true
+tactics,戰術,战术,戰術,tactics,0.85,mainland-term,台灣企業執行術語,business,exact,,,,true
+kpi,關鍵績效指標,关键绩效指标,關鍵績效指標,KPI,0.90,mainland-term,台灣績效管理術語,business,exact,,,,true
+roi,投資報酬率,投资回报率,投資回報率,ROI,0.90,mainland-term,台灣財務指標術語,business,exact,,,,true
+breakeven,損益兩平,盈亏平衡,盈虧平衡,breakeven,0.90,mainland-term,台灣財務分析術語,business,exact,,,,true
+margin,利潤率,利润率,利潤率,margin,0.85,mainland-term,台灣財務指標術語,business,exact,,,,true
+markup,加成,加价,加價,markup,0.85,mainland-term,台灣定價策略術語,business,exact,,,,true
+discount,折扣,折扣,折扣,discount,0.80,mainland-term,台灣行銷術語標準,business,exact,,,,true
+promotion,促銷,促销,促銷,promotion,0.85,mainland-term,台灣行銷活動術語,business,exact,,,,true
+marketing,行銷,营销,營銷,marketing,0.90,mainland-term,台灣商業功能術語,business,exact,,,,true
+advertising,廣告,广告,廣告,advertising,0.85,mainland-term,台灣行銷傳播術語,business,exact,,,,true
+brand,品牌,品牌,品牌,brand,0.80,mainland-term,台灣行銷管理術語,business,exact,,,,true
+customer,客戶,客户,客戶,customer,0.85,mainland-term,台灣顧客關係術語,business,exact,,,,true
+client-business,客戶,客户,客戶,client,0.85,mainland-term,台灣商業關係術語,business,exact,,,,true
+vendor,供應商,供应商,供應商,vendor,0.85,mainland-term,台灣供應鏈術語,business,exact,,,,true
+supplier,供應商,供货商,供貨商,supplier,0.85,mainland-term,台灣供應鏈術語,business,exact,,,,true
+procurement,採購,采购,采購,procurement,0.90,mainland-term,台灣供應鏈術語,business,exact,,,,true
+inventory,庫存,库存,庫存,inventory,0.85,mainland-term,台灣物料管理術語,business,exact,,,,true
+logistics,物流,物流,物流,logistics,0.80,mainland-term,台灣供應鏈術語,business,exact,,,,true
+warehouse,倉庫,仓库,倉庫,warehouse,0.85,mainland-term,台灣物流設施術語,business,exact,,,,true
+distribution,配銷,分销,分銷,distribution,0.90,mainland-term,台灣通路管理術語,business,exact,,,,true
+retail,零售,零售,零售,retail,0.80,mainland-term,台灣商業模式術語,business,exact,,,,true
+wholesale,批發,批发,批發,wholesale,0.85,mainland-term,台灣商業模式術語,business,exact,,,,true
+e-commerce,電子商務,电子商务,電子商務,e-commerce,0.85,mainland-term,台灣數位商業術語,business,exact,,,,true
+b2b,企業對企業,B2B,B2B,B2B,0.85,mainland-term,台灣商業模式術語,business,exact,,,,true
+b2c,企業對消費者,B2C,B2C,B2C,0.85,mainland-term,台灣商業模式術語,business,exact,,,,true
+c2c,消費者對消費者,C2C,C2C,C2C,0.85,mainland-term,台灣商業模式術語,business,exact,,,,true
+franchise,加盟,特许经营,特許經營,franchise,0.90,mainland-term,台灣商業模式術語,business,exact,,,,true
+merger,併購,并购,併購,merger,0.85,mainland-term,台灣企業發展術語,business,exact,,,,true
+acquisition,收購,收购,收購,acquisition,0.85,mainland-term,台灣企業發展術語,business,exact,,,,true
+ipo,首次公開發行,首次公开募股,首次公開募股,IPO,0.90,mainland-term,台灣資本市場術語,business,exact,,,,true
+listing,上市,上市,上市,listing,0.80,mainland-term,台灣證券市場術語,business,exact,,,,true
+delisting,下市,退市,退市,delisting,0.90,mainland-term,台灣證券市場術語,business,exact,,,,true
+shareholder,股東,股东,股東,shareholder,0.85,mainland-term,台灣公司組織術語,business,exact,,,,true
+board-of-directors,董事會,董事会,董事會,board of directors,0.85,mainland-term,台灣公司治理術語,business,exact,,,,true
+ceo,執行長,首席执行官,首席執行官,CEO,0.90,mainland-term,台灣企業職位術語,business,exact,,,,true
+cfo,財務長,首席财务官,首席財務官,CFO,0.90,mainland-term,台灣企業職位術語,business,exact,,,,true
+cto,技術長,首席技术官,首席技術官,CTO,0.90,mainland-term,台灣企業職位術語,business,exact,,,,true
+coo,營運長,首席运营官,首席運營官,COO,0.90,mainland-term,台灣企業職位術語,business,exact,,,,true
+hr,人力資源,人力资源,人力資源,HR,0.85,mainland-term,台灣企業部門術語,business,exact,,,,true
+recruitment,招募,招聘,招聘,recruitment,0.90,mainland-term,台灣人資管理術語,business,exact,,,,true
+training,訓練,培训,培訓,training,0.90,mainland-term,台灣人資發展術語,business,exact,,,,true
+performance-review,績效考核,绩效评估,績效評估,performance review,0.90,mainland-term,台灣人資管理術語,business,exact,,,,true
+compensation,薪酬,薪酬,薪酬,compensation,0.80,mainland-term,台灣人資管理術語,business,exact,,,,true
+benefit,福利,福利,福利,benefit,0.80,mainland-term,台灣人資管理術語,business,exact,,,,true
+bonus,獎金,奖金,獎金,bonus,0.85,mainland-term,台灣薪資福利術語,business,exact,,,,true
+incentive,激勵,激励,激勵,incentive,0.85,mainland-term,台灣人資管理術語,business,exact,,,,true
+overtime,加班,加班,加班,overtime,0.80,mainland-term,台灣勞動條件術語,business,exact,,,,true
+leave,請假,请假,請假,leave,0.85,mainland-term,台灣勞動條件術語,business,exact,,,,true
+resignation,離職,辞职,辭職,resignation,0.90,mainland-term,台灣人事異動術語,business,exact,,,,true
+termination,解僱,解雇,解雇,termination,0.85,mainland-term,台灣人事異動術語,business,exact,,,,true
+retirement,退休,退休,退休,retirement,0.80,mainland-term,台灣人事異動術語,business,exact,,,,true
+pension,退休金,养老金,養老金,pension,0.90,mainland-term,台灣勞工福利術語,business,exact,,,,true
+insurance,保險,保险,保險,insurance,0.85,mainland-term,台灣金融商品術語,business,exact,,,,true
+premium,保費,保费,保費,premium,0.85,mainland-term,台灣保險術語標準,business,exact,,,,true
+claim,理賠,理赔,理賠,claim,0.85,mainland-term,台灣保險術語標準,business,exact,,,,true
+deductible,自負額,免赔额,免賠額,deductible,0.90,mainland-term,台灣保險術語標準,business,exact,,,,true
+coverage,保障範圍,保险范围,保險範圍,coverage,0.85,mainland-term,台灣保險術語標準,business,exact,,,,true
+policy-insurance,保單,保单,保單,policy,0.85,mainland-term,台灣保險文件術語,business,exact,,,,true
+beneficiary,受益人,受益人,受益人,beneficiary,0.80,mainland-term,台灣保險關係術語,business,exact,,,,true
+interest-rate,利率,利率,利率,interest rate,0.80,mainland-term,台灣金融市場術語,business,exact,,,,true
+inflation,通貨膨脹,通货膨胀,通貨膨脹,inflation,0.90,mainland-term,台灣經濟指標術語,business,exact,,,,true
+deflation,通貨緊縮,通货紧缩,通貨緊縮,deflation,0.90,mainland-term,台灣經濟指標術語,business,exact,,,,true
+recession,衰退,衰退,衰退,recession,0.80,mainland-term,台灣經濟週期術語,business,exact,,,,true
+recovery,復甦,复苏,復甦,recovery,0.85,mainland-term,台灣經濟週期術語,business,exact,,,,true
+gdp,國內生產毛額,国内生产总值,國內生產總值,GDP,0.90,mainland-term,台灣經濟指標術語,business,exact,,,,true
+unemployment,失業,失业,失業,unemployment,0.85,mainland-term,台灣勞動市場術語,business,exact,,,,true
+exchange-rate,匯率,汇率,匯率,exchange rate,0.85,mainland-term,台灣外匯市場術語,business,exact,,,,true
+currency,貨幣,货币,貨幣,currency,0.85,mainland-term,台灣金融體系術語,business,exact,,,,true
+fintech,金融科技,金融科技,金融科技,fintech,0.85,mainland-term,台灣金融創新術語,business,exact,,,,true
+digital-payment,數位支付,数字支付,數字支付,digital payment,0.90,mainland-term,台灣支付科技術語,business,exact,,,,true
+mobile-payment,行動支付,移动支付,移動支付,mobile payment,0.90,mainland-term,台灣支付科技術語,business,exact,,,,true
+e-wallet,電子錢包,电子钱包,電子錢包,e-wallet,0.90,mainland-term,台灣數位金融術語,business,exact,,,,true
+qr-code,QR碼,二维码,二維碼,QR code,0.90,mainland-term,台灣數位技術術語,tech,exact,,,,true
+barcode,條碼,条形码,條形碼,barcode,0.90,mainland-term,台灣識別技術術語,tech,exact,,,,true
+scan,掃描,扫描,掃描,scan,0.85,mainland-term,台灣數位操作術語,tech,exact,,,,true
+ocr,光學字元辨識,光学字符识别,光學字符識別,OCR,0.90,mainland-term,台灣影像處理術語,tech,exact,,,,true
+facial-recognition,臉部辨識,人脸识别,人臉識別,facial recognition,0.90,mainland-term,台灣生物識別術語,tech,exact,,,,true
+fingerprint,指紋,指纹,指紋,fingerprint,0.85,mainland-term,台灣生物識別術語,tech,exact,,,,true
+biometric,生物識別,生物识别,生物識別,biometric,0.85,mainland-term,台灣身分驗證術語,tech,exact,,,,true
+two-factor,雙因素驗證,双因素认证,雙因素認證,2FA,0.90,mainland-term,台灣資安驗證術語,tech,exact,,,,true
+captcha,驗證碼,验证码,驗證碼,CAPTCHA,0.85,mainland-term,台灣網路安全術語,tech,exact,,,,true
+otp,一次性密碼,一次性密码,一次性密碼,OTP,0.85,mainland-term,台灣安全驗證術語,tech,exact,,,,true
+sms,簡訊,短信,短信,SMS,0.90,mainland-term,台灣通訊服務術語,tech,exact,,,,true
+instant-message,即時通訊,即时通讯,即時通訊,IM,0.85,mainland-term,台灣網路通訊術語,tech,exact,,,,true
+video-call,視訊通話,视频通话,視頻通話,video call,0.90,mainland-term,台灣通訊功能術語,tech,exact,,,,true
+conference-call,電話會議,电话会议,電話會議,conference call,0.90,mainland-term,台灣商務通訊術語,tech,exact,,,,true
+webinar,線上研討會,网络研讨会,網絡研討會,webinar,0.90,mainland-term,台灣線上活動術語,tech,exact,,,,true
+livestream,直播,直播,直播,livestream,0.80,mainland-term,台灣網路傳播術語,tech,exact,,,,true
+streaming,串流,流媒体,流媒體,streaming,0.90,mainland-term,台灣數位媒體術語,tech,exact,,,,true
+podcast,播客,播客,播客,podcast,0.85,mainland-term,台灣數位媒體術語,tech,exact,,,,true
+vlog,影音部落格,视频博客,視頻博客,vlog,0.90,mainland-term,台灣網路內容術語,tech,exact,,,,true
+blog,部落格,博客,博客,blog,0.90,mainland-term,台灣網路平台術語,tech,exact,,,,true
+blogger,部落客,博主,博主,blogger,0.90,mainland-term,台灣網路創作者,tech,exact,,,,true
+influencer,網紅,网红,網紅,influencer,0.85,mainland-term,台灣社群行銷術語,tech,exact,,,,true
+follower,追蹤者,粉丝,粉絲,follower,0.90,mainland-term,台灣社群媒體術語,tech,exact,,,,true
+like,按讚,点赞,點讚,like,0.90,mainland-term,台灣社群互動術語,tech,exact,,,,true
+share,分享,分享,分享,share,0.80,mainland-term,台灣社群互動術語,tech,exact,,,,true
+comment,留言,评论,評論,comment,0.90,mainland-term,台灣社群互動術語,tech,exact,,,,true
+post,貼文,帖子,帖子,post,0.90,mainland-term,台灣社群內容術語,tech,exact,,,,true
+story,限時動態,故事,故事,story,0.85,mainland-term,台灣社群功能術語,tech,exact,,,,true
+hashtag,標籤,话题标签,話題標籤,hashtag,0.85,mainland-term,台灣社群分類術語,tech,exact,,,,true
+mention,提及,@,@,mention,0.85,mainland-term,台灣社群互動術語,tech,exact,,,,true
+dm,私訊,私信,私信,DM,0.90,mainland-term,台灣社群通訊術語,tech,exact,,,,true
+emoji,表情符號,表情符号,表情符號,emoji,0.85,mainland-term,台灣數位表達術語,tech,exact,,,,true
+sticker,貼圖,贴纸,貼紙,sticker,0.90,mainland-term,台灣數位表達術語,tech,exact,,,,true
+gif,動圖,动图,動圖,GIF,0.85,mainland-term,台灣數位媒體術語,tech,exact,,,,true
+meme,迷因,表情包,表情包,meme,0.85,mainland-term,台灣網路文化術語,tech,exact,,,,true
+viral,爆紅,病毒式传播,病毒式傳播,viral,0.85,mainland-term,台灣網路傳播術語,tech,exact,,,,true
+trending,熱門,热门,熱門,trending,0.85,mainland-term,台灣社群趨勢術語,tech,exact,,,,true
+feed,動態消息,信息流,信息流,feed,0.85,mainland-term,台灣社群內容術語,tech,exact,,,,true
+timeline,時間軸,时间线,時間線,timeline,0.90,mainland-term,台灣社群顯示術語,tech,exact,,,,true
+username,使用者名稱,用户名,用戶名,username,0.90,mainland-term,台灣帳號識別術語,tech,exact,,,,true
+password,密碼,密码,密碼,password,0.85,mainland-term,台灣帳號安全術語,tech,exact,,,,true
+login,登入,登录,登錄,login,0.90,mainland-term,台灣系統存取術語,tech,exact,,,,true
+logout,登出,退出,退出,logout,0.90,mainland-term,台灣系統離開術語,tech,exact,,,,true
+sign-up,註冊,注册,註冊,sign up,0.90,mainland-term,台灣帳號建立術語,tech,exact,,,,true
+account,帳號,账号,賬號,account,0.90,mainland-term,台灣使用者管理術語,tech,exact,,,,true
+subscription,訂閱,订阅,訂閱,subscription,0.85,mainland-term,台灣服務模式術語,tech,exact,,,,true
+unsubscribe,取消訂閱,退订,退訂,unsubscribe,0.90,mainland-term,台灣服務管理術語,tech,exact,,,,true
+premium-service,付費版,高级版,高級版,premium,0.90,mainland-term,台灣服務等級術語,tech,exact,,,,true
+free-tier,免費版,免费版,免費版,free tier,0.85,mainland-term,台灣服務等級術語,tech,exact,,,,true
+trial,試用,试用,試用,trial,0.85,mainland-term,台灣服務體驗術語,tech,exact,,,,true
+upgrade,升級,升级,升級,upgrade,0.85,mainland-term,台灣服務提升術語,tech,exact,,,,true
+downgrade,降級,降级,降級,downgrade,0.85,mainland-term,台灣服務調整術語,tech,exact,,,,true
+invoice,發票,发票,發票,invoice,0.85,mainland-term,台灣財務文件術語,business,exact,,,,true
+receipt,收據,收据,收據,receipt,0.85,mainland-term,台灣財務憑證術語,business,exact,,,,true
+refund,退款,退款,退款,refund,0.80,mainland-term,台灣交易處理術語,business,exact,,,,true
+checkout,結帳,结账,結賬,checkout,0.90,mainland-term,台灣購物流程術語,business,exact,,,,true
+cart,購物車,购物车,購物車,cart,0.85,mainland-term,台灣電商功能術語,business,exact,,,,true
+wishlist,願望清單,愿望单,願望單,wishlist,0.85,mainland-term,台灣電商功能術語,business,exact,,,,true
+review-product,評價,评价,評價,review,0.85,mainland-term,台灣產品回饋術語,business,exact,,,,true
+rating,評分,评分,評分,rating,0.85,mainland-term,台灣品質評估術語,business,exact,,,,true
+feedback,回饋,反馈,反饋,feedback,0.90,mainland-term,台灣意見收集術語,business,exact,,,,true
+survey,問卷,调查,調查,survey,0.85,mainland-term,台灣市場研究術語,business,exact,,,,true
+analytics,分析,分析,分析,analytics,0.80,mainland-term,台灣數據處理術語,tech,exact,,,,true
+presentation,簡報,演示,演示,presentation,0.90,mainland-term,台灣商務溝通術語,business,exact,,,,true
+slide,投影片,幻灯片,幻燈片,slide,0.90,mainland-term,台灣簡報元件術語,business,exact,,,,true
+spreadsheet,試算表,电子表格,電子表格,spreadsheet,0.90,mainland-term,台灣辦公軟體術語,tech,exact,,,,true
+formula,公式,公式,公式,formula,0.80,mainland-term,台灣計算工具術語,tech,exact,,,,true
+macro,巨集,宏,宏,macro,0.90,mainland-term,台灣自動化功能術語,tech,exact,,,,true
+pivot-table,樞紐分析表,数据透视表,數據透視表,pivot table,0.90,mainland-term,台灣資料分析工具,tech,exact,,,,true
+chart,圖表,图表,圖表,chart,0.85,mainland-term,台灣資料視覺化工具,tech,exact,,,,true
+graph-chart,圖形,图形,圖形,graph,0.85,mainland-term,台灣資料視覺化工具,tech,exact,,,,true
+diagram,圖解,图解,圖解,diagram,0.85,mainland-term,台灣視覺說明工具,tech,exact,,,,true
+flowchart,流程圖,流程图,流程圖,flowchart,0.85,mainland-term,台灣流程設計工具,tech,exact,,,,true
+mindmap,心智圖,思维导图,思維導圖,mind map,0.90,mainland-term,台灣思考輔助工具,tech,exact,,,,true
+calendar,行事曆,日历,日曆,calendar,0.90,mainland-term,台灣時間管理工具,tech,exact,,,,true
+scheduler,排程器,调度器,調度器,scheduler,0.90,mainland-term,台灣時間管理系統,tech,exact,,,,true
+reminder-app,提醒事項,提醒事项,提醒事項,reminder,0.85,mainland-term,台灣時間管理功能,tech,exact,,,,true
+task-management,任務管理,任务管理,任務管理,task management,0.85,mainland-term,台灣工作管理系統,tech,exact,,,,true
+to-do-list,待辦清單,待办事项,待辦事項,to-do list,0.90,mainland-term,台灣工作管理工具,tech,exact,,,,true
+note-taking,筆記,笔记,筆記,note-taking,0.85,mainland-term,台灣資訊記錄工具,tech,exact,,,,true
+clipboard-manager,剪貼簿管理器,剪贴板管理器,剪貼板管理器,clipboard manager,0.90,mainland-term,台灣系統輔助工具,tech,exact,,,,true
+screenshot-tool,截圖工具,截图工具,截圖工具,screenshot tool,0.90,mainland-term,台灣螢幕擷取工具,tech,exact,,,,true
+screen-recorder,螢幕錄影,屏幕录制,屏幕錄製,screen recorder,0.90,mainland-term,台灣影像錄製工具,tech,exact,,,,true
+video-editor,影片編輯器,视频编辑器,視頻編輯器,video editor,0.90,mainland-term,台灣多媒體工具,tech,exact,,,,true
+audio-editor,音訊編輯器,音频编辑器,音頻編輯器,audio editor,0.90,mainland-term,台灣多媒體工具,tech,exact,,,,true
+photo-editor,相片編輯器,照片编辑器,照片編輯器,photo editor,0.90,mainland-term,台灣影像處理工具,tech,exact,,,,true
+filter-photo,濾鏡,滤镜,濾鏡,filter,0.85,mainland-term,台灣影像處理效果,tech,exact,,,,true
+crop,裁切,裁剪,裁剪,crop,0.90,mainland-term,台灣影像編輯操作,tech,exact,,,,true
+rotate,旋轉,旋转,旋轉,rotate,0.85,mainland-term,台灣影像編輯操作,tech,exact,,,,true
+flip,翻轉,翻转,翻轉,flip,0.85,mainland-term,台灣影像編輯操作,tech,exact,,,,true
+transparency,透明度,透明度,透明度,transparency,0.80,mainland-term,台灣影像屬性設定,tech,exact,,,,true
+layer,圖層,图层,圖層,layer,0.90,mainland-term,台灣影像編輯概念,tech,exact,,,,true
+mask,遮罩,蒙版,蒙版,mask,0.90,mainland-term,台灣影像編輯技術,tech,exact,,,,true
+watermark,浮水印,水印,水印,watermark,0.90,mainland-term,台灣版權保護技術,tech,exact,,,,true
+metadata,詮釋資料,元数据,元數據,metadata,0.90,mainland-term,台灣資料描述標準,tech,exact,,,,true
+tag-metadata,標籤,标签,標籤,tag,0.85,mainland-term,台灣資料分類方式,tech,exact,,,,true
+keyword,關鍵字,关键字,關鍵字,keyword,0.85,mainland-term,台灣搜尋索引術語,tech,exact,,,,true
+index-search,索引,索引,索引,index,0.80,mainland-term,台灣資料檢索技術,tech,exact,,,,true
+crawler,網路爬蟲,网络爬虫,網絡爬蟲,crawler,0.90,mainland-term,台灣網路技術術語,tech,exact,,,,true
+bot,機器人,机器人,機器人,bot,0.85,mainland-term,台灣自動化程式術語,tech,exact,,,,true
+chatbot,聊天機器人,聊天机器人,聊天機器人,chatbot,0.90,mainland-term,台灣人工智慧應用,tech,exact,,,,true
+voice-assistant,語音助理,语音助手,語音助手,voice assistant,0.90,mainland-term,台灣智慧助理技術,tech,exact,,,,true
+speech-to-text,語音轉文字,语音转文字,語音轉文字,speech to text,0.90,mainland-term,台灣語音辨識技術,tech,exact,,,,true
+text-to-speech,文字轉語音,文字转语音,文字轉語音,text to speech,0.90,mainland-term,台灣語音合成技術,tech,exact,,,,true
+translation,翻譯,翻译,翻譯,translation,0.85,mainland-term,台灣語言轉換技術,tech,exact,,,,true
+localization,在地化,本地化,本地化,localization,0.90,mainland-term,台灣軟體調適技術,tech,exact,,,,true
+internationalization,國際化,国际化,國際化,internationalization,0.85,mainland-term,台灣軟體設計標準,tech,exact,,,,true
+timezone,時區,时区,時區,timezone,0.85,mainland-term,台灣時間設定標準,tech,exact,,,,true
+locale,地區設定,区域设置,區域設置,locale,0.90,mainland-term,台灣系統設定標準,tech,exact,,,,true
+encoding,編碼,编码,編碼,encoding,0.85,mainland-term,台灣字元處理標準,tech,exact,,,,true
+unicode,萬國碼,统一码,統一碼,Unicode,0.90,mainland-term,台灣字元編碼標準,tech,exact,,,,true
+utf8,UTF-8,UTF-8,UTF-8,UTF-8,0.80,mainland-term,台灣字元編碼格式,tech,exact,,,,true
+ascii,ASCII碼,ASCII码,ASCII碼,ASCII,0.85,mainland-term,台灣字元編碼標準,tech,exact,,,,true
+compression,壓縮,压缩,壓縮,compression,0.85,mainland-term,台灣資料處理技術,tech,exact,,,,true
+decompression,解壓縮,解压缩,解壓縮,decompression,0.90,mainland-term,台灣資料處理技術,tech,exact,,,,true
+archive,封存,归档,歸檔,archive,0.90,mainland-term,台灣資料保存技術,tech,exact,,,,true
+extract,解壓縮,提取,提取,extract,0.85,mainland-term,台灣檔案操作術語,tech,exact,,,,true
+mount,掛載,挂载,掛載,mount,0.90,mainland-term,台灣系統操作術語,tech,exact,,,,true
+unmount,卸載,卸载,卸載,unmount,0.90,mainland-term,台灣系統操作術語,tech,exact,,,,true
+partition,分割區,分区,分區,partition,0.90,mainland-term,台灣磁碟管理術語,tech,exact,,,,true
+format-disk,格式化,格式化,格式化,format,0.80,mainland-term,台灣磁碟操作術語,tech,exact,,,,true
+defragment,重組,碎片整理,碎片整理,defragment,0.90,mainland-term,台灣磁碟優化術語,tech,exact,,,,true
+boot,開機,启动,啟動,boot,0.85,mainland-term,台灣系統啟動術語,tech,exact,,,,true
+bootloader,開機載入器,引导程序,引導程序,bootloader,0.90,mainland-term,台灣系統啟動元件,tech,exact,,,,true
+kernel,核心,内核,內核,kernel,0.90,mainland-term,台灣作業系統核心,tech,exact,,,,true
+shell,命令殼層,外壳,外殼,shell,0.90,mainland-term,台灣系統介面術語,tech,exact,,,,true
+terminal,終端機,终端,終端,terminal,0.90,mainland-term,台灣命令列介面,tech,exact,,,,true
+console,主控台,控制台,控制台,console,0.90,mainland-term,台灣系統管理介面,tech,exact,,,,true
+command-line,命令列,命令行,命令行,command line,0.90,mainland-term,台灣系統操作介面,tech,exact,,,,true
+gui,圖形介面,图形界面,圖形界面,GUI,0.90,mainland-term,台灣使用者介面類型,tech,exact,,,,true
+desktop-environment,桌面環境,桌面环境,桌面環境,desktop environment,0.90,mainland-term,台灣作業系統介面,tech,exact,,,,true
+taskbar,工作列,任务栏,任務欄,taskbar,0.90,mainland-term,台灣桌面元件術語,tech,exact,,,,true
+dock,工具列,程序坞,程序塢,dock,0.90,mainland-term,台灣macOS介面元件,tech,exact,,,,true
+launcher,啟動器,启动器,啟動器,launcher,0.85,mainland-term,台灣應用程式管理,tech,exact,,,,true
+widget,小工具,小部件,小部件,widget,0.90,mainland-term,台灣桌面元件術語,tech,exact,,,,true
+gadget,小工具,小工具,小工具,gadget,0.80,mainland-term,台灣桌面輔助工具,tech,exact,,,,true
+service,服務,服务,服務,service,0.85,mainland-term,台灣系統背景程序,tech,exact,,,,true
+daemon,常駐程式,守护进程,守護進程,daemon,0.90,mainland-term,台灣系統背景程序,tech,exact,,,,true
+process-os,處理程序,进程,進程,process,0.90,mainland-term,台灣系統執行單位,tech,exact,,,,true
+thread-os,執行緒,线程,線程,thread,0.95,mainland-term,台灣程式執行單位,tech,exact,,,,true
+scheduler-os,排程器,调度器,調度器,scheduler,0.90,mainland-term,台灣系統資源管理,tech,exact,,,,true
+priority,優先權,优先级,優先級,priority,0.90,mainland-term,台灣系統資源分配,tech,exact,,,,true
+resource,資源,资源,資源,resource,0.85,mainland-term,台灣系統管理術語,tech,exact,,,,true
+allocation,配置,分配,分配,allocation,0.85,mainland-term,台灣資源管理術語,tech,exact,,,,true
+deallocation,釋放,释放,釋放,deallocation,0.85,mainland-term,台灣資源管理術語,tech,exact,,,,true
+memory-management,記憶體管理,内存管理,內存管理,memory management,0.95,mainland-term,台灣系統管理功能,tech,exact,,,,true
+virtual-memory,虛擬記憶體,虚拟内存,虛擬內存,virtual memory,0.95,mainland-term,台灣記憶體技術,tech,exact,,,,true
+swap,交換空間,交换空间,交換空間,swap,0.85,mainland-term,台灣記憶體管理,tech,exact,,,,true
+paging,分頁,分页,分頁,paging,0.85,mainland-term,台灣記憶體管理技術,tech,exact,,,,true
+page-fault,分頁錯誤,页面错误,頁面錯誤,page fault,0.90,mainland-term,台灣記憶體錯誤類型,tech,exact,,,,true
+interrupt,中斷,中断,中斷,interrupt,0.85,mainland-term,台灣系統事件處理,tech,exact,,,,true
+exception-os,例外,异常,異常,exception,0.90,mainland-term,台灣系統錯誤處理,tech,exact,,,,true
+signal,信號,信号,信號,signal,0.85,mainland-term,台灣行程間通訊,tech,exact,,,,true
+pipe,管道,管道,管道,pipe,0.80,mainland-term,台灣行程間通訊,tech,exact,,,,true
+socket,通訊端,套接字,套接字,socket,0.90,mainland-term,台灣網路程式設計,tech,exact,,,,true
+port,連接埠,端口,端口,port,0.95,mainland-term,台灣網路通訊端點,tech,exact,,,,true
+protocol-network,協定,协议,協議,protocol,0.90,mainland-term,台灣網路通訊標準,tech,exact,,,,true
+packet,封包,数据包,數據包,packet,0.90,mainland-term,台灣網路傳輸單位,tech,exact,,,,true
+frame,訊框,帧,幀,frame,0.90,mainland-term,台灣網路傳輸單位,tech,exact,,,,true
+bandwidth-network,頻寬,带宽,帶寬,bandwidth,0.95,mainland-term,台灣網路傳輸容量,tech,exact,,,,true
+latency-network,延遲,延迟,延遲,latency,0.85,mainland-term,台灣網路效能指標,tech,exact,,,,true
+throughput-network,吞吐量,吞吐量,吞吐量,throughput,0.85,mainland-term,台灣網路效能指標,tech,exact,,,,true
+jitter,抖動,抖动,抖動,jitter,0.85,mainland-term,台灣網路品質指標,tech,exact,,,,true
+packet-loss,封包遺失,丢包,丟包,packet loss,0.90,mainland-term,台灣網路問題類型,tech,exact,,,,true
+ping,Ping,Ping,Ping,ping,0.80,mainland-term,台灣網路診斷工具,tech,exact,,,,true
+traceroute,路由追蹤,路由跟踪,路由跟蹤,traceroute,0.90,mainland-term,台灣網路診斷工具,tech,exact,,,,true
+dns,網域名稱系統,域名系统,域名系統,DNS,0.90,mainland-term,台灣網路服務系統,tech,exact,,,,true
+dhcp,動態主機設定協定,动态主机配置协议,動態主機配置協議,DHCP,0.90,mainland-term,台灣網路設定協定,tech,exact,,,,true
+gateway,閘道器,网关,網關,gateway,0.90,mainland-term,台灣網路設備術語,tech,exact,,,,true
+subnet,子網路,子网,子網,subnet,0.90,mainland-term,台灣網路架構術語,tech,exact,,,,true
+vlan,虛擬區域網路,虚拟局域网,虛擬局域網,VLAN,0.90,mainland-term,台灣網路分割技術,tech,exact,,,,true
+nat,網路位址轉換,网络地址转换,網絡地址轉換,NAT,0.90,mainland-term,台灣網路技術標準,tech,exact,,,,true

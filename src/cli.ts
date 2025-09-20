@@ -8,6 +8,7 @@ import { loadConfig } from './core/config-loader.js'
 import { createSampleConfig } from './core/config-schema.js'
 import { StylishFormatter } from './formatters/stylish.js'
 import { JsonFormatter } from './formatters/json.js'
+import { formatError } from './utils/error-utils.js'
 
 export interface CLIOptions {
   fix?: boolean
@@ -19,6 +20,12 @@ export interface CLIOptions {
 }
 
 async function performCheck(linter: TWLinter, files: string[], options: CLIOptions): Promise<void> {
+  // 檢查是否找到任何檔案
+  if (files.length === 0) {
+    console.error(chalk.red('✖ No files found matching the pattern.'))
+    process.exit(1)
+  }
+
   const results = await linter.lintFiles(files)
 
   const formatter = options.format === 'json'
@@ -30,9 +37,28 @@ async function performCheck(linter: TWLinter, files: string[], options: CLIOptio
 
   const errorCount = results.reduce((sum, result) =>
     sum + result.messages.filter(msg => msg.severity === 'error').length, 0)
+  const warningCount = results.reduce((sum, result) =>
+    sum + result.messages.filter(msg => msg.severity === 'warning').length, 0)
+  const fixableCount = results.reduce((sum, result) =>
+    sum + result.messages.filter(msg => msg.fixable !== false).length, 0)
 
-  if (errorCount > 0) {
+  // 檢查是否所有檔案都載入失敗
+  const fileReadErrors = results.filter(result =>
+    result.messages.some(msg => msg.rule === 'file-read-error')
+  )
+
+  if (fileReadErrors.length === results.length && results.length > 0) {
+    // 在顯示詳細錯誤後，再顯示匯總錯誤訊息
+    console.error(chalk.red('✖ Failed to read any of the specified files.'))
     process.exit(1)
+  }
+
+  // ESLint 風格的修復提示（僅在非 JSON 格式時顯示）
+  if (errorCount > 0 || warningCount > 0) {
+    if (fixableCount > 0 && options.format !== 'json') {
+      console.log(chalk.yellow(`\n  ${fixableCount} problem${fixableCount === 1 ? '' : 's'} potentially fixable with the \`--fix\` option.`))
+    }
+    process.exit(errorCount > 0 ? 1 : 0)
   }
 }
 
@@ -56,8 +82,7 @@ async function performAutoFix(linter: TWLinter, files: string[], options: CLIOpt
         console.log(chalk.dim(`○ No changes: ${filePath}`))
       }
     } catch (error) {
-      const message = error instanceof Error ? error.message : String(error)
-      console.error(chalk.red(`✗ Error fixing ${filePath}:`), message)
+      console.error(chalk.red(`✗ Error fixing ${filePath}:`), formatError(error))
     }
   }
 
@@ -90,7 +115,32 @@ async function performInit(force?: boolean): Promise<void> {
   await writeFile(configFile, configContent, 'utf-8')
 
   console.log(chalk.green(`✅ Created ${configFile}`))
-  console.log(chalk.dim('\nNext steps:'))
+
+  // 檢查是否有 package.json，提供 npm script 整合建議
+  try {
+    await access('package.json')
+    console.log(chalk.dim('\n📦 Detected package.json - Add these scripts for better integration:'))
+    console.log(chalk.cyan(`
+{
+  "scripts": {
+    "twlint": "twlint check **/*.md **/*.txt",
+    "twlint:fix": "twlint check **/*.md **/*.txt --fix",
+    "twlint:code": "twlint check 'src/**/*.{js,ts,jsx,tsx,vue}'",
+    "twlint:all": "twlint check **/*.md **/*.txt 'src/**/*.{js,ts,jsx,tsx,vue}'",
+    "twlint:all:fix": "twlint check **/*.md **/*.txt 'src/**/*.{js,ts,jsx,tsx,vue}' --fix"
+  }
+}`))
+    console.log(chalk.dim('Then run:'))
+    console.log(chalk.dim('• npm run twlint        # 檢查文件'))
+    console.log(chalk.dim('• npm run twlint:fix    # 檢查並修復文件'))
+    console.log(chalk.dim('• npm run twlint:code   # 檢查程式碼中的中文'))
+    console.log(chalk.dim('• npm run twlint:all    # 檢查所有檔案'))
+    console.log(chalk.dim('• npm run twlint:all:fix # 檢查並修復所有檔案'))
+  } catch {
+    // 沒有 package.json，顯示一般指引
+  }
+
+  console.log(chalk.dim('\n🚀 Next steps:'))
   console.log(chalk.dim('1. Customize the configuration to fit your needs'))
   console.log(chalk.dim('2. Run: twlint check **/*.md'))
   console.log(chalk.dim('3. Use --fix to automatically fix issues'))
@@ -137,8 +187,7 @@ async function main() {
           await performCheck(linter, files, options)
         }
       } catch (error) {
-        const message = error instanceof Error ? error.message : String(error)
-        console.error(chalk.red('Error:'), message)
+        console.error(chalk.red('Error:'), formatError(error))
         process.exit(1)
       }
     })
@@ -151,8 +200,7 @@ async function main() {
       try {
         await performInit(options.force)
       } catch (error) {
-        const message = error instanceof Error ? error.message : String(error)
-        console.error(chalk.red('Error:'), message)
+        console.error(chalk.red('Error:'), formatError(error))
         process.exit(1)
       }
     })
@@ -164,8 +212,7 @@ async function main() {
 if (import.meta.url === `file://${process.argv[1]}` ||
     process.argv[1]?.endsWith('cli.js')) {
   main().catch(error => {
-    const message = error instanceof Error ? error.message : String(error)
-    console.error(chalk.red('Fatal error:'), message)
+    console.error(chalk.red('Fatal error:'), formatError(error))
     process.exit(1)
   })
 }

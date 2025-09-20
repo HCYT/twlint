@@ -1,79 +1,139 @@
 # TWLint
 
-> 檢測簡體中文用語並建議臺灣繁體替代方案的 CLI 工具
+**關於 TWLint **
 
-TWLint 幫助臺灣開發者和內容創作者檢測並修正意外使用的大陸用語，確保你使用了正確的用語，提升文件品質。
+目前各大 LLM 訓練語料裡面繁體中文資料的比例非常的少，透過 LLM 產生的各種內容會混雜不同版本的中文，TWLint 目的在幫助開發者統一專案中文件中文字，確保使用台灣繁體中文和用語。
 
-## 特色功能
+## ✨ 核心特色
 
-- **自動檢測簡體字**：使用 OpenCC 引擎進行簡繁轉換
-- **大陸用語檢測**：識別大陸特有用語並提供臺灣替代建議
-- **自動修復**：支援 `--fix` 參數自動修正可修復的問題
-- **多種輸出格式**：支援 stylish、json 等格式
-- **靈活配置**：支援專案級配置檔案
+### 統一中文用法
+- **簡體字清除**：自動檢測並轉換所有簡體字為繁體字
+- **大陸用語替換**：識別並建議台灣本土用語替代方案
+- **技術詞彙本土化**：軟件→軟體、網絡→網路、用戶→使用者
 
-## 安裝
+### 檢索引擎
+- **語境偵測**：根據上下文精確識別同形異義詞
+- **領域專門詞庫**：1,062+ 詞目涵蓋 AI、軟體開發、商業金融等
+- **程式碼檢查**：支援註解、字串、UI 文字等程式碼中的中文內容
 
+### 🛠️ 開發者友善
+- **ESLint 風格**：預設檢查，`--fix` 修復，完美整合開發流程
+- **遵循 .gitignore**：智慧跳過不需要的檔案和目錄
+- **多種輸出格式**：stylish、json 格式滿足不同需求
+- **npm script 整合**：像使用 ESLint 一樣簡單
+
+## 🚀 快速開始
+
+### 全域安裝
 ```bash
 npm install -g @termdock/twlint
 ```
 
-## 快速開始
-
-### 基本檢查
+### 基本使用
 ```bash
+# 檢查文件（ESLint 風格：預設只檢查不修復）
 twlint check README.md
-twlint check "src/**/*.md"
-```
+twlint check "docs/**/*.md"
 
-### 自動修復
-```bash
+# 自動修復（需要明確指定 --fix）
 twlint check README.md --fix
-```
 
-### 初始化配置檔案
-```bash
+# 檢查程式碼中的中文（註解、字串等）
+twlint check "src/**/*.{js,ts,jsx,tsx,vue}"
+
+# 初始化專案配置
 twlint init
 ```
 
-## 使用範例
+### 整合到專案（推薦）
+```bash
+# 1. 初始化配置檔案
+twlint init
 
-假設有以下檔案內容（包含大陸用語）：
+# 2. 按提示加入 package.json scripts
+{
+  "scripts": {
+    "twlint": "twlint check **/*.md **/*.txt",
+    "twlint:fix": "twlint check **/*.md **/*.txt --fix",
+    "twlint:code": "twlint check 'src/**/*.{js,ts,jsx,tsx,vue}'",
+    "twlint:all": "twlint check **/*.md **/*.txt 'src/**/*.{js,ts,jsx,tsx,vue}'"
+  }
+}
+
+# 3. 簡易的使用方式
+npm run twlint      # 檢查文件
+npm run twlint:fix  # 檢查並修復文件
+npm run twlint:all  # 檢查所有檔案
+```
+
+## Demo
+
+###  文件檢查範例
+假設有以下包含大陸用語的檔案：
 ```markdown
-# 项目介绍
+# 软件开发项目
 这个软件的质量很好，我们使用了先进的算法。
 ```
 
-執行檢查：
+**第一步：檢查問題（ESLint 風格：預設只檢查）**
 ```bash
 $ twlint check example.md
 
 example.md
-  1:3   error    簡體字 '项' 建議使用繁體字 '項'          simplified-chars
-  1:4   error    簡體字 '目' 建議使用繁體字 '目'          simplified-chars
-  1:5   error    簡體字 '介' 建議使用繁體字 '介'          simplified-chars
-  1:6   error    簡體字 '绍' 建議使用繁體字 '紹'          simplified-chars
-  2:1   error    簡體字 '这' 建議使用繁體字 '這'          simplified-chars
-  2:2   error    簡體字 '个' 建議使用繁體字 '個'          simplified-chars
-  2:3   error    簡體字 '软' 建議使用繁體字 '軟'          simplified-chars
-  2:4   error    簡體字 '件' 建議使用繁體字 '件'          simplified-chars
-  1:3   warning  大陸用語 '項目' 建議使用臺灣用語 '專案'   mainland-terms
-  2:3   warning  大陸用語 '軟件' 建議使用臺灣用語 '軟體'   mainland-terms
-  2:7   warning  大陸用語 '質量' 建議使用臺灣用語 '品質'   mainland-terms
-  2:18  warning  大陸用語 '算法' 建議使用臺灣用語 '演算法' mainland-terms
+  1:3   ✖ error    簡體字 '软' 建議使用繁體字 '軟'          simplified-chars
+  1:6   ✖ error    簡體字 '开' 建議使用繁體字 '開'          simplified-chars
+  1:8   ✖ error    簡體字 '项' 建議使用繁體字 '項'          simplified-chars
+  2:1   ✖ error    簡體字 '这' 建議使用繁體字 '這'          simplified-chars
+  2:2   ✖ error    簡體字 '个' 建議使用繁體字 '個'          simplified-chars
+  1:3   ⚠ warning  大陸用語 '軟件' 建議使用臺灣用語 '軟體'   mainland-terms
+  1:8   ⚠ warning  大陸用語 '項目' 建議使用臺灣用語 '專案'   mainland-terms
+  2:7   ⚠ warning  大陸用語 '質量' 建議使用臺灣用語 '品質'   mainland-terms
+  2:18  ⚠ warning  大陸用語 '算法' 建議使用臺灣用語 '演算法' mainland-terms
 
 ✖ 12 problems (8 errors, 4 warnings)
+
   12 problems potentially fixable with the `--fix` option.
 ```
 
-自動修復後：
+**第二步：自動修復（明確使用 --fix）**
 ```bash
 $ twlint check example.md --fix
 
-✓ Fixed: example.md
+🎉 Fixed 1 file(s)
 
-# 專案介紹
+--- Remaining issues after fix ---
+✓ No problems found!
+```
+
+**修復結果：完全台灣本土化**
+```markdown
+# 軟體開發專案
 這個軟體的品質很好，我們使用了先進的演算法。
+```
+
+### 💻 程式碼檢查範例
+對於程式碼中的註解和字串：
+```javascript
+/**
+ * 这个软件用于处理用户数据
+ */
+function processData(data) {
+  console.log("网络连接失败");
+  throw new Error("文件读取失败");
+}
+```
+
+```bash
+$ twlint check src/utils.js --fix
+
+# 自動修復為台灣用語
+/**
+ * 這個軟體用於處理使用者資料
+ */
+function processData(data) {
+  console.log("網路連線失敗");
+  throw new Error("檔案讀取失敗");
+}
 ```
 
 ## 配置
@@ -88,8 +148,11 @@ export default [
     // 檢查的檔案類型
     files: ["**/*.md", "**/*.txt"],
 
-    // 使用的詞庫
-    dictionaries: ["core"],
+    // 使用的領域詞庫（新架構）
+    domains: ["software-development", "user-interface"],
+
+    // 或使用舊的詞庫配置（向後相容）
+    // dictionaries: ["core", "academic"],
 
     // 規則配置
     rules: {
@@ -106,23 +169,59 @@ export default [
 twlint check <files...> [options]
 
 Options:
-  --fix                自動修復可修復的問題
+  --fix                自動修復可修復的問題（僅安全修復）
   --format <type>      輸出格式 (stylish, json)
-  --dict <names...>    指定使用的詞庫
+  --domains <names...> 指定使用的領域詞庫（推薦）
+  --dict <names...>    指定使用的詞庫（向後相容）
   --config <path>      配置檔案路徑
   --verbose           顯示詳細輸出
   --deep              深度模式（載入所有詞庫）
 ```
 
-## 詞庫
+## 詞庫架構
 
-TWLint 包含以下內建詞庫：
+### 領域專門詞庫（新架構）
 
-- **core**：核心技術用語（預設載入）
+TWLint 採用領域導向的詞庫架構，提供更精確的用語檢測：
+
+| 領域 | 描述 | 詞目數量 |
+|------|------|----------|
+| core | 核心詞庫（必載） | 150 |
+| software-development | 軟體開發 | 139 |
+| user-interface | 使用者介面 | 119 |
+| network-cloud | 網路雲端 | 113 |
+| social-media | 社群媒體 | 106 |
+| operating-system | 作業系統 | 101 |
+| hardware-3c | 硬體3C | 91 |
+| business-finance | 商業金融 | 123 |
+| ai-emerging-tech | AI新興技術 | 108 |
+
+### 配置範例
+
+**領域專門配置**（推薦）：
+```bash
+# 軟體開發專案
+twlint check src/ --domains software-development user-interface
+
+# 商業文件
+twlint check docs/ --domains business-finance
+
+# AI 技術文檔
+twlint check papers/ --domains ai-emerging-tech network-cloud
+```
+
+**深度掃描**（載入所有詞庫）：
+```bash
+twlint check README.md --deep
+```
+
+### 傳統詞庫（向後相容）
+
+仍支援舊的詞庫配置方式：
+- **core**：核心技術用語
 - **academic**：學術用語
 - **extended**：擴充功能用語集
 
-使用特定詞庫：
 ```bash
 twlint check file.md --dict core academic
 ```
@@ -153,12 +252,42 @@ npm run dict:validate
 ### simplified-chars
 檢測簡體字並自動轉換為繁體字。
 - **嚴重度**：error
-- **可修復**：是
+- **可修復**：是（完全自動）
 
 ### mainland-terms
 檢測大陸特有用語並建議臺灣慣用詞彙。
-- **嚴重度**：warning
-- **可修復**：部分
+- **嚴重度**：warning（安全修復）/ info（需人工判斷）
+- **可修復**：智慧分級修復
+
+## 進階功能
+
+### 語境感知檢測
+
+TWLint 支援根據上下文精確檢測同形異義詞：
+
+```javascript
+// 範例：「質量」的語境檢測
+{
+  taiwan: "品質",        // 商業語境下的建議
+  china_simplified: "质量",
+  match_type: "context_sensitive",
+  context: {
+    before: ["產品", "服務", "商品"],
+    after: ["控制", "管理", "標準"],
+    exclude: ["物理"]     // 排除物理學語境
+  }
+}
+```
+
+### 自動修復分級
+
+- **安全修復**（`autofix_safe: true`）：確定無誤的用詞替換
+  - 例：「軟件」→「軟體」、「網絡」→「網路」
+  - 自動執行 `--fix` 時會修復
+
+- **建議修復**（`autofix_safe: false`）：需人工確認的替換
+  - 例：語境敏感詞、專業術語
+  - 僅提供建議，不會自動修復
 
 ## 授權
 
