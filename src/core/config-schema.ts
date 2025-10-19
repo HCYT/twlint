@@ -2,6 +2,7 @@
 
 export interface TWLintConfigRule {
   files?: string[]
+  ignores?: string[]       // 忽略模式（glob patterns）
   dictionaries?: string[]  // 舊的詞庫配置方式（向後相容）
   domains?: string[]       // 新的領域配置方式
   rules?: Record<string, 'error' | 'warning' | 'info' | 'off'>
@@ -68,9 +69,25 @@ export function createSampleConfig(): string {
 // 專注於核心功能：簡繁轉換 + 大陸用語檢測
 
 export default [
+  // Global ignores - 全域忽略模式（只有 ignores 屬性時視為全域）
+  // 
+  // 注意：以下檔案已被系統鐵律保護，無需額外設定：
+  // - 配置檔案：.gitignore, .dockerignore, .env*, 等
+  // - 版本控制：.git/, .svn/, node_modules/
+  // - 建構輸出：dist/, build/, .next/
+  // - 日誌檔案：*.log, *.tmp
+  {
+    ignores: [
+      // 專案特定的忽略模式
+      "**/test-*.md",
+      "**/draft-*.md"
+    ]
+  },
+
   {
     // 文件檔案：完整檢查
     files: ["**/*.md", "**/*.txt"],
+    ignores: ["**/README.md"],          // 排除 README
     domains: ["software-development", "user-interface"],
     rules: {
       "simplified-chars": "error",      // 簡體字檢測（自動修復）
@@ -84,6 +101,14 @@ export default [
     rules: {
       "simplified-chars": "error",      // 註解中的簡體字必須修復
       "mainland-terms": "warning"       // UI 文字中的大陸用語提醒
+    }
+  },
+  {
+    // 測試檔案：放寬規則
+    files: ["tests/**/*.{js,ts,md}"],
+    rules: {
+      "simplified-chars": "error",
+      "mainland-terms": "off"           // 測試檔案允許大陸用語
     }
   },
   {

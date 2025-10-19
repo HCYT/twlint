@@ -18,6 +18,7 @@ export interface LintResult {
 
 export interface TWLintConfig {
   files?: string[]
+  ignores?: string[]       // 忽略模式（glob patterns）
   dictionaries?: string[]  // 舊的詞庫配置方式（向後相容）
   domains?: string[]       // 新的領域配置方式
   rules?: Record<string, 'error' | 'warning' | 'info' | 'off'>

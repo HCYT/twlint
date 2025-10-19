@@ -4,6 +4,7 @@ import { DictionaryManager } from './dictionary-manager.js'
 import { SimplifiedCharsRule } from './rules/simplified-chars.js'
 import { MainlandTermsRule } from './rules/mainland-terms.js'
 import { PositionMapper } from './position-mapper.js'
+import { ConfigMatcher } from './config-matcher.js'
 import type { LintResult, Issue, TWLintConfig, Rule } from '../types.js'
 import { formatError, ErrorHandler } from '../utils/error-utils.js'
 import { DictLoadStrategyFactory } from './dictionary-loading-strategies.js'
@@ -13,11 +14,13 @@ export class TWLinter {
   private rules = new Map<string, Rule>()
   private config: TWLintConfig
   private deepMode = false
+  private configMatcher: ConfigMatcher
 
   constructor(config: TWLintConfig, options?: { deep?: boolean }) {
     this.config = config
     this.deepMode = options?.deep || false
     this.dictManager = new DictionaryManager()
+    this.configMatcher = new ConfigMatcher(config)
     this.initializeRules()
   }
 
@@ -109,45 +112,44 @@ export class TWLinter {
 
   private async expandFilePatterns(patterns: string[]): Promise<string[]> {
     const files: string[] = []
-    const ignorePatterns = await this.getIgnorePatterns()
+    const baseIgnorePatterns = await this.getBaseIgnorePatterns()
 
     for (const pattern of patterns) {
       // 檢查是否為明確的檔案路徑（沒有萬用字元）
       const hasWildcards = pattern.includes('*') || pattern.includes('?') || pattern.includes('[')
 
       if (!hasWildcards) {
-        // 明確的檔案路徑：直接加入，讓後續的檔案讀取來處理錯誤
-        files.push(pattern)
+        // 明確的檔案路徑：直接加入，但要檢查配置的 ignores
+        if (!this.configMatcher.isIgnored(pattern)) {
+          files.push(pattern)
+        }
       } else {
-        // 萬用字元模式：使用 glob 擴展，遵循 .gitignore 規則
+        // 萬用字元模式：使用 glob 擴展
         const matches = await glob(pattern, {
-          ignore: ignorePatterns,
+          ignore: baseIgnorePatterns,
           dot: false // 預設不包含隱藏檔案
         })
-        files.push(...matches)
+        // 過濾掉配置中 ignores 的檔案
+        const filtered = matches.filter(file => !this.configMatcher.isIgnored(file))
+        files.push(...filtered)
       }
     }
 
     return [...new Set(files)] // Remove duplicates
   }
 
-  private async getIgnorePatterns(): Promise<string[]> {
-    const defaultIgnores = [
+  /**
+   * 取得基礎忽略模式（僅用於 glob 擴展時的初步過濾）
+   * 
+   * 注意：
+   * - 系統鐵律（SYSTEM_IGNORES）已在 ConfigMatcher 處理
+   * - 這裡只需要最基本的過濾，避免 glob 擴展時掃描過多檔案
+   */
+  private async getBaseIgnorePatterns(): Promise<string[]> {
+    // 只保留最基本的過濾，其餘交給 ConfigMatcher
+    const baseIgnores = [
       'node_modules/**',
-      '.git/**',
-      '.next/**',
-      '.nuxt/**',
-      'dist/**',
-      'build/**',
-      'coverage/**',
-      'logs/**',
-      '*.log',
-      '.env*',
-      '.DS_Store',
-      '.vscode/**',
-      '.idea/**',
-      'test-temp/**',
-      '*.tmp'
+      '.git/**'
     ]
 
     try {
@@ -170,10 +172,10 @@ export class TWLinter {
           return line
         })
 
-      return [...defaultIgnores, ...gitignorePatterns]
+      return [...baseIgnores, ...gitignorePatterns]
     } catch {
       // 沒有 .gitignore 或讀取失敗，使用預設規則
-      return defaultIgnores
+      return baseIgnores
     }
   }
 
