@@ -17,7 +17,8 @@
 - **程式碼檢查**：支援註解、字串、UI 文字等程式碼中的中文內容
 
 ### 🛠️ 開發者友善
-- **ESLint 風格**：預設檢查，`--fix` 修復，完美整合開發流程
+- **ESLint 風格配置**：支援 `ignores`、`files`、`rules` 彈性配置
+- **系統鐵律保護**：自動忽略 `.env`、`.gitignore` 等敏感檔案
 - **遵循 .gitignore**：智慧跳過不需要的檔案和目錄
 - **多種輸出格式**：stylish、json 格式滿足不同需求
 - **npm script 整合**：像使用 ESLint 一樣簡單
@@ -50,7 +51,11 @@ twlint init
 # 1. 初始化配置檔案
 twlint init
 
-# 2. 按提示加入 package.json scripts
+# 2. 編輯 twlint.config.js 自訂規則和忽略模式
+#    支援 global ignores 和 file-level ignores
+#    詳見「配置」章節
+
+# 3. 加入 package.json scripts
 {
   "scripts": {
     "twlint": "twlint check **/*.md **/*.txt",
@@ -60,7 +65,7 @@ twlint init
   }
 }
 
-# 3. 簡易的使用方式
+# 4. 簡易的使用方式
 npm run twlint      # 檢查文件
 npm run twlint:fix  # 檢查並修復文件
 npm run twlint:all  # 檢查所有檔案
@@ -144,6 +149,15 @@ function processData(data) {
 
 ```javascript
 export default [
+  // Global ignores - 全域忽略模式
+  {
+    ignores: [
+      "**/test-*.md",      // 測試檔案
+      "**/draft-*.md",     // 草稿檔案
+      "**/legacy/**"       // 舊版程式碼
+    ]
+  },
+
   {
     // 檢查的檔案類型
     files: ["**/*.md", "**/*.txt"],
@@ -159,9 +173,58 @@ export default [
       "simplified-chars": "error",      // 簡體字檢測（自動修復）
       "mainland-terms": "warning"       // 大陸用語檢測（提供建議）
     }
+  },
+
+  {
+    // 程式碼檔案
+    files: ["src/**/*.{js,ts,jsx,tsx,vue}"],
+    domains: ["software-development"],
+    rules: {
+      "simplified-chars": "error",
+      "mainland-terms": "warning"
+    }
   }
 ]
 ```
+
+### 自訂忽略規則
+
+TWLint 支援 ESLint 風格的 `ignores` 配置：
+
+**Global Ignores（全域忽略）**
+```javascript
+export default [
+  {
+    ignores: [
+      "**/test-*.md",
+      "**/draft-*.md"
+    ]
+  }
+]
+```
+
+**File-Level Ignores（檔案級別忽略）**
+```javascript
+export default [
+  {
+    files: ["**/*.md"],
+    ignores: ["**/README.md"],  // 排除所有 README.md
+    rules: {
+      "simplified-chars": "error"
+    }
+  }
+]
+```
+
+**系統鐵律**
+
+以下檔案無論如何都不會被檢查（系統保護）：
+- 配置檔案：`.gitignore`, `.dockerignore`, `.env*`, `.*ignore`
+- 版本控制：`.git/`, `.svn/`, `node_modules/`
+- 建構輸出：`dist/`, `build/`, `.next/`
+- 日誌檔案：`*.log`, `*.tmp`
+
+> 📖 完整說明請參考 [docs/configuration-ignores.md](docs/configuration-ignores.md)
 
 ### CLI 選項
 
