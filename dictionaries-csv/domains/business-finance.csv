@@ -2,7 +2,6 @@ id,taiwan,china_simplified,china_traditional,english,confidence,category,reason,
 project-manager,專案經理,项目经理,項目經理,project manager,0.90,mainland-term,台灣職位名稱標準,business,exact,,,,true
 project-management,專案管理,项目管理,項目管理,project management,0.90,mainland-term,台灣商業管理術語,business,exact,,,,true
 project,專案,项目,項目,project,0.95,mainland-term,台灣商業術語標準,business,exact,,,,true
-milestone,里程碑,里程碑,里程碑,milestone,0.85,mainland-term,台灣專案管理術語,business,exact,,,,true
 deliverable,交付項目,可交付成果,可交付成果,deliverable,0.85,mainland-term,台灣專案管理術語,business,exact,,,,true
 stakeholder,利害關係人,利益相关者,利益相關者,stakeholder,0.90,mainland-term,台灣商業管理術語,business,exact,,,,true
 budget,預算,预算,預算,budget,0.85,mainland-term,台灣財務管理術語,business,exact,,,,true
@@ -12,7 +11,6 @@ loss,虧損,亏损,虧損,loss,0.90,mainland-term,台灣財務術語標準,busin
 investment,投資,投资,投資,investment,0.85,mainland-term,台灣金融術語標準,business,exact,,,,true
 return,報酬,回报,回報,return,0.85,mainland-term,台灣投資術語標準,business,exact,,,,true
 dividend,股利,股息,股息,dividend,0.90,mainland-term,台灣股市術語標準,business,exact,,,,true
-stock,股票,股票,股票,stock,0.80,mainland-term,台灣證券術語標準,business,exact,,,,true
 bond,債券,债券,債券,bond,0.85,mainland-term,台灣金融商品術語,business,exact,,,,true
 futures,期貨,期货,期貨,futures,0.85,mainland-term,台灣衍生性商品,business,exact,,,,true
 option-finance,選擇權,期权,期權,option,0.90,mainland-term,台灣衍生性商品,business,exact,,,,true
@@ -33,21 +31,17 @@ roi,投資報酬率,投资回报率,投資回報率,ROI,0.90,mainland-term,台�
 breakeven,損益兩平,盈亏平衡,盈虧平衡,breakeven,0.90,mainland-term,台灣財務分析術語,business,exact,,,,true
 margin,利潤率,利润率,利潤率,margin,0.85,mainland-term,台灣財務指標術語,business,exact,,,,true
 markup,加成,加价,加價,markup,0.85,mainland-term,台灣定價策略術語,business,exact,,,,true
-discount,折扣,折扣,折扣,discount,0.80,mainland-term,台灣行銷術語標準,business,exact,,,,true
 promotion,促銷,促销,促銷,promotion,0.85,mainland-term,台灣行銷活動術語,business,exact,,,,true
 marketing,行銷,营销,營銷,marketing,0.90,mainland-term,台灣商業功能術語,business,exact,,,,true
 advertising,廣告,广告,廣告,advertising,0.85,mainland-term,台灣行銷傳播術語,business,exact,,,,true
-brand,品牌,品牌,品牌,brand,0.80,mainland-term,台灣行銷管理術語,business,exact,,,,true
 customer,客戶,客户,客戶,customer,0.85,mainland-term,台灣顧客關係術語,business,exact,,,,true
 client-business,客戶,客户,客戶,client,0.85,mainland-term,台灣商業關係術語,business,exact,,,,true
 vendor,供應商,供应商,供應商,vendor,0.85,mainland-term,台灣供應鏈術語,business,exact,,,,true
 supplier,供應商,供货商,供貨商,supplier,0.85,mainland-term,台灣供應鏈術語,business,exact,,,,true
 procurement,採購,采购,采購,procurement,0.90,mainland-term,台灣供應鏈術語,business,exact,,,,true
 inventory,庫存,库存,庫存,inventory,0.85,mainland-term,台灣物料管理術語,business,exact,,,,true
-logistics,物流,物流,物流,logistics,0.80,mainland-term,台灣供應鏈術語,business,exact,,,,true
 warehouse,倉庫,仓库,倉庫,warehouse,0.85,mainland-term,台灣物流設施術語,business,exact,,,,true
 distribution,配銷,分销,分銷,distribution,0.90,mainland-term,台灣通路管理術語,business,exact,,,,true
-retail,零售,零售,零售,retail,0.80,mainland-term,台灣商業模式術語,business,exact,,,,true
 wholesale,批發,批发,批發,wholesale,0.85,mainland-term,台灣商業模式術語,business,exact,,,,true
 e-commerce,電子商務,电子商务,電子商務,e-commerce,0.85,mainland-term,台灣數位商業術語,business,exact,,,,true
 b2b,企業對企業,B2B,B2B,B2B,0.85,mainland-term,台灣商業模式術語,business,exact,,,,true
@@ -57,7 +51,6 @@ franchise,加盟,特许经营,特許經營,franchise,0.90,mainland-term,台灣�
 merger,併購,并购,併購,merger,0.85,mainland-term,台灣企業發展術語,business,exact,,,,true
 acquisition,收購,收购,收購,acquisition,0.85,mainland-term,台灣企業發展術語,business,exact,,,,true
 ipo,首次公開發行,首次公开募股,首次公開募股,IPO,0.90,mainland-term,台灣資本市場術語,business,exact,,,,true
-listing,上市,上市,上市,listing,0.80,mainland-term,台灣證券市場術語,business,exact,,,,true
 delisting,下市,退市,退市,delisting,0.90,mainland-term,台灣證券市場術語,business,exact,,,,true
 shareholder,股東,股东,股東,shareholder,0.85,mainland-term,台灣公司組織術語,business,exact,,,,true
 board-of-directors,董事會,董事会,董事會,board of directors,0.85,mainland-term,台灣公司治理術語,business,exact,,,,true
@@ -69,15 +62,11 @@ hr,人力資源,人力资源,人力資源,HR,0.85,mainland-term,台灣企業部�
 recruitment,招募,招聘,招聘,recruitment,0.90,mainland-term,台灣人資管理術語,business,exact,,,,true
 training,訓練,培训,培訓,training,0.90,mainland-term,台灣人資發展術語,business,exact,,,,true
 performance-review,績效考核,绩效评估,績效評估,performance review,0.90,mainland-term,台灣人資管理術語,business,exact,,,,true
-compensation,薪酬,薪酬,薪酬,compensation,0.80,mainland-term,台灣人資管理術語,business,exact,,,,true
-benefit,福利,福利,福利,benefit,0.80,mainland-term,台灣人資管理術語,business,exact,,,,true
 bonus,獎金,奖金,獎金,bonus,0.85,mainland-term,台灣薪資福利術語,business,exact,,,,true
 incentive,激勵,激励,激勵,incentive,0.85,mainland-term,台灣人資管理術語,business,exact,,,,true
-overtime,加班,加班,加班,overtime,0.80,mainland-term,台灣勞動條件術語,business,exact,,,,true
 leave,請假,请假,請假,leave,0.85,mainland-term,台灣勞動條件術語,business,exact,,,,true
 resignation,離職,辞职,辭職,resignation,0.90,mainland-term,台灣人事異動術語,business,exact,,,,true
 termination,解僱,解雇,解雇,termination,0.85,mainland-term,台灣人事異動術語,business,exact,,,,true
-retirement,退休,退休,退休,retirement,0.80,mainland-term,台灣人事異動術語,business,exact,,,,true
 pension,退休金,养老金,養老金,pension,0.90,mainland-term,台灣勞工福利術語,business,exact,,,,true
 insurance,保險,保险,保險,insurance,0.85,mainland-term,台灣金融商品術語,business,exact,,,,true
 premium,保費,保费,保費,premium,0.85,mainland-term,台灣保險術語標準,business,exact,,,,true
@@ -89,7 +78,6 @@ beneficiary,受益人,受益人,受益人,beneficiary,0.80,mainland-term,台灣�
 interest-rate,利率,利率,利率,interest rate,0.80,mainland-term,台灣金融市場術語,business,exact,,,,true
 inflation,通貨膨脹,通货膨胀,通貨膨脹,inflation,0.90,mainland-term,台灣經濟指標術語,business,exact,,,,true
 deflation,通貨緊縮,通货紧缩,通貨緊縮,deflation,0.90,mainland-term,台灣經濟指標術語,business,exact,,,,true
-recession,衰退,衰退,衰退,recession,0.80,mainland-term,台灣經濟週期術語,business,exact,,,,true
 recovery,復甦,复苏,復甦,recovery,0.85,mainland-term,台灣經濟週期術語,business,exact,,,,true
 gdp,國內生產毛額,国内生产总值,國內生產總值,GDP,0.90,mainland-term,台灣經濟指標術語,business,exact,,,,true
 unemployment,失業,失业,失業,unemployment,0.85,mainland-term,台灣勞動市場術語,business,exact,,,,true

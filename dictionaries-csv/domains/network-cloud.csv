@@ -5,7 +5,6 @@ client,用戶端,客户端,客戶端,client,0.90,mainland-term,台灣網路架�
 server,伺服器,服务器,服務器,server,0.95,mainland-term,台灣網路服務標準,tech,exact,,,,true
 cloud,雲端,云,雲,cloud,0.95,mainland-term,台灣雲端運算標準,tech,exact,,,,true
 virtualization,虛擬化,虚拟化,虛擬化,virtualization,0.95,mainland-term,台灣雲端技術標準,tech,exact,,,,true
-container,容器,容器,容器,container,0.80,mainland-term,台灣虛擬化技術,tech,exact,,,,true
 docker,Docker,Docker,Docker,Docker,0.85,mainland-term,台灣容器技術標準,tech,exact,,,,true
 kubernetes,Kubernetes,Kubernetes,Kubernetes,K8s,0.85,mainland-term,台灣容器編排標準,tech,exact,,,,true
 microservice,微服務,微服务,微服務,microservice,0.95,mainland-term,台灣架構設計標準,tech,exact,,,,true
@@ -19,7 +18,6 @@ failover,故障轉移,故障转移,故障轉移,failover,0.90,mainland-term,台�
 backup,備份,备份,備份,backup,0.85,mainland-term,台灣資料保護標準,tech,exact,,,,true
 restore,復原,恢复,恢復,restore,0.85,mainland-term,台灣資料救援標準,tech,exact,,,,true
 migration,遷移,迁移,遷移,migration,0.85,mainland-term,台灣系統升級標準,tech,exact,,,,true
-deployment,部署,部署,部署,deployment,0.80,mainland-term,台灣軟體發布標準,tech,exact,,,,true
 clustering,叢集,集群,集群,clustering,0.90,mainland-term,台灣分散式系統,tech,exact,,,,true
 replication,複寫,复制,複製,replication,0.85,mainland-term,台灣資料同步標準,tech,exact,,,,true
 sharding,分片,分片,分片,sharding,0.85,mainland-term,台灣資料庫擴展,tech,exact,,,,true

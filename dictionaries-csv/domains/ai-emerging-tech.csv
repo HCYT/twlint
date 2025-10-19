@@ -91,13 +91,11 @@ fuel-cell,燃料電池,燃料电池,燃料電池,fuel cell,0.85,mainland-term,�
 smart-grid,智慧電網,智能电网,智能電網,smart grid,0.90,mainland-term,台灣電力系統技術,tech,exact,,,,true
 energy-storage,能源儲存,能源存储,能源存儲,energy storage,0.90,mainland-term,台灣能源管理技術,tech,exact,,,,true
 carbon-footprint,碳足跡,碳足迹,碳足跡,carbon footprint,0.90,mainland-term,台灣環保指標術語,tech,exact,,,,true
-carbon-neutral,碳中和,碳中和,碳中和,carbon neutral,0.85,mainland-term,台灣環保目標術語,tech,exact,,,,true
 net-zero,淨零,净零,淨零,net zero,0.85,mainland-term,台灣環保目標術語,tech,exact,,,,true
 sustainable-development,永續發展,可持续发展,可持續發展,sustainable development,0.85,mainland-term,台灣永續目標標準,tech,exact,,,,true
 circular-economy,循環經濟,循环经济,循環經濟,circular economy,0.90,mainland-term,台灣永續經濟模式,tech,exact,,,,true
 green-technology,綠色科技,绿色科技,綠色科技,green technology,0.85,mainland-term,台灣環保技術總稱,tech,exact,,,,true
 clean-tech,潔淨科技,清洁技术,清潔技術,clean tech,0.90,mainland-term,台灣環保技術標準,tech,exact,,,,true
-smart-city,智慧城市,智慧城市,智慧城市,smart city,0.85,mainland-term,台灣都市發展概念,tech,exact,,,,true
 digital-twin,數位雙胞胎,数字孪生,數字孿生,digital twin,0.90,mainland-term,台灣虛實整合技術,tech,exact,,,,true
 industry-4,工業4.0,工业4.0,工業4.0,Industry 4.0,0.85,mainland-term,台灣製造業革新,tech,exact,,,,true
 cyber-physical-system,虛實整合系統,信息物理系统,信息物理系統,CPS,0.90,mainland-term,台灣工業自動化,tech,exact,,,,true

@@ -26,7 +26,6 @@ display,顯示器,显示器,顯示器,display,0.90,mainland-term,台灣顯示裝
 monitor,監視器,监视器,監視器,monitor,0.85,mainland-term,台灣顯示設備標準,tech,exact,,,,true
 resolution,解析度,分辨率,分辨率,resolution,0.90,mainland-term,台灣顯示技術標準,tech,exact,,,,true
 refresh-rate,更新率,刷新率,刷新率,refresh rate,0.90,mainland-term,台灣顯示技術標準,tech,exact,,,,true
-pixel,像素,像素,像素,pixel,0.80,mainland-term,台灣顯示技術標準,tech,exact,,,,true
 lcd,液晶顯示器,液晶显示器,液晶顯示器,LCD,0.90,mainland-term,台灣顯示技術標準,tech,exact,,,,true
 led,發光二極體,发光二极管,發光二極管,LED,0.90,mainland-term,台灣顯示技術標準,tech,exact,,,,true
 oled,有機發光二極體,有机发光二极管,有機發光二極管,OLED,0.90,mainland-term,台灣顯示技術標準,tech,exact,,,,true
@@ -80,7 +79,6 @@ wifi,無線網路,无线网络,無線網絡,Wi-Fi,0.90,mainland-term,台灣無�
 lte,長期演進技術,长期演进,長期演進,LTE,0.85,mainland-term,台灣通訊技術標準,tech,exact,,,,true
 nfc,近場通訊,近场通信,近場通信,NFC,0.85,mainland-term,台灣無線技術標準,tech,exact,,,,true
 ethernet,乙太網路,以太网,以太網,Ethernet,0.90,mainland-term,台灣網路標準,tech,exact,,,,true
-router,路由器,路由器,路由器,router,0.80,mainland-term,台灣網路設備標準,tech,exact,,,,true
 switch,交換器,交换机,交換機,switch,0.90,mainland-term,台灣網路設備標準,tech,exact,,,,true
 hub,集線器,集线器,集線器,hub,0.90,mainland-term,台灣網路設備標準,tech,exact,,,,true
 modem,數據機,调制解调器,調製解調器,modem,0.90,mainland-term,台灣網路設備標準,tech,exact,,,,true

@@ -76,11 +76,9 @@ system-tray,系統匣,系统托盘,系統托盤,system tray,0.90,mainland-term,�
 notification-area,通知區域,通知区域,通知區域,notification area,0.85,mainland-term,台灣桌面元件術語,tech,exact,,,,true
 clipboard-os,剪貼簿,剪贴板,剪貼板,clipboard,0.90,mainland-term,台灣系統功能術語,tech,exact,,,,true
 recycle-bin,資源回收筒,回收站,回收站,recycle bin,0.90,mainland-term,台灣檔案管理術語,tech,exact,,,,true
-trash,垃圾桶,垃圾桶,垃圾桶,trash,0.80,mainland-term,台灣檔案管理術語,tech,exact,,,,true
 restore-point,還原點,还原点,還原點,restore point,0.90,mainland-term,台灣系統復原術語,tech,exact,,,,true
 system-restore,系統還原,系统还原,系統還原,system restore,0.90,mainland-term,台灣系統復原功能,tech,exact,,,,true
 recovery-mode,復原模式,恢复模式,恢復模式,recovery mode,0.90,mainland-term,台灣系統修復術語,tech,exact,,,,true
-safe-mode,安全模式,安全模式,安全模式,safe mode,0.85,mainland-term,台灣系統診斷模式,tech,exact,,,,true
 compatibility-mode,相容性模式,兼容模式,兼容模式,compatibility mode,0.90,mainland-term,台灣系統相容術語,tech,exact,,,,true
 virtual-machine,虛擬機器,虚拟机,虛擬機,virtual machine,0.90,mainland-term,台灣虛擬化技術,tech,exact,,,,true
 hypervisor,虛擬機器監視器,虚拟机监视器,虛擬機監視器,hypervisor,0.90,mainland-term,台灣虛擬化技術,tech,exact,,,,true
@@ -93,8 +91,6 @@ partition-table,分割表,分区表,分區表,partition table,0.90,mainland-term
 master-boot-record,主開機紀錄,主引导记录,主引導記錄,MBR,0.90,mainland-term,台灣開機系統術語,tech,exact,,,,true
 gpt,GUID分割表,GUID分区表,GUID分區表,GPT,0.90,mainland-term,台灣磁碟分割標準,tech,exact,,,,true
 file-allocation-table,檔案配置表,文件分配表,文件分配表,FAT,0.90,mainland-term,台灣檔案系統類型,tech,exact,,,,true
-ntfs,NTFS,NTFS,NTFS,NTFS,0.80,mainland-term,台灣檔案系統類型,tech,exact,,,,true
-ext4,ext4,ext4,ext4,ext4,0.80,mainland-term,台灣檔案系統類型,tech,exact,,,,true
 journaling,日誌式,日志式,日誌式,journaling,0.85,mainland-term,台灣檔案系統特性,tech,exact,,,,true
 symbolic-link,符號連結,符号链接,符號鏈接,symbolic link,0.90,mainland-term,台灣檔案系統功能,tech,exact,,,,true
 hard-link,實體連結,硬链接,硬鏈接,hard link,0.90,mainland-term,台灣檔案系統功能,tech,exact,,,,true
