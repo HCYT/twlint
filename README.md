@@ -189,9 +189,26 @@ export default [
 
 ### 自訂忽略規則
 
-TWLint 支援 ESLint 風格的 `ignores` 配置：
+TWLint 提供三種方式設定忽略規則：
 
-**Global Ignores（全域忽略）**
+#### 1. `.twlintignore` 檔案（推薦）
+
+類似 `.eslintignore`，在專案根目錄建立：
+
+```
+# .twlintignore
+
+# 測試文件
+test-*.md
+tests/
+
+# 草稿文件
+draft-*.md
+temp/
+```
+
+#### 2. 配置檔案 Global Ignores
+
 ```javascript
 export default [
   {
@@ -203,7 +220,8 @@ export default [
 ]
 ```
 
-**File-Level Ignores（檔案級別忽略）**
+#### 3. File-Level Ignores
+
 ```javascript
 export default [
   {
@@ -216,13 +234,17 @@ export default [
 ]
 ```
 
-**系統鐵律**
+**忽略優先順序**
 
-以下檔案無論如何都不會被檢查（系統保護）：
-- 配置檔案：`.gitignore`, `.dockerignore`, `.env*`, `.*ignore`
-- 版本控制：`.git/`, `.svn/`, `node_modules/`
-- 建構輸出：`dist/`, `build/`, `.next/`
-- 日誌檔案：`*.log`, `*.tmp`
+1. **系統鐵律** - 最高優先（不可覆寫）
+   - 配置檔案：`.gitignore`, `.dockerignore`, `.env*`, `.*ignore`
+   - 版本控制：`.git/`, `.svn/`, `node_modules/`
+   - 建構輸出：`dist/`, `build/`, `.next/`
+   - 日誌檔案：`*.log`, `*.tmp`
+
+2. **`.twlintignore` 檔案** - TWLint 專用忽略規則
+3. **Global Ignores** - 配置檔案中的全域忽略
+4. **File-Level Ignores** - 特定配置區塊的忽略規則
 
 > 📖 完整說明請參考 [docs/configuration-ignores.md](docs/configuration-ignores.md)
 

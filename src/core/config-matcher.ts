@@ -63,20 +63,33 @@ const SYSTEM_IGNORES = [
  * 
  * 設計原則（Linus style）：
  * 1. 系統鐵律優先（SYSTEM_IGNORES 絕對不可覆寫）
- * 2. 線性掃描所有配置區塊
- * 3. 收集所有匹配的規則
- * 4. 後面的規則覆寫前面的（ESLint flat config 風格）
+ * 2. .twlintignore 檔案模式
+ * 3. 線性掃描所有配置區塊
+ * 4. 收集所有匹配的規則
+ * 5. 後面的規則覆寫前面的（ESLint flat config 風格）
  */
 export class ConfigMatcher {
+  private twlintignorePatterns: string[] = []
+
   constructor(private configs: TWLintConfigRule | TWLintConfigRule[]) {}
+
+  /**
+   * 設定 .twlintignore 檔案的模式
+   * 
+   * 應該在建構後立即呼叫，從外部載入
+   */
+  setTwlintignorePatterns(patterns: string[]): void {
+    this.twlintignorePatterns = patterns
+  }
 
   /**
    * 判斷檔案是否應該被忽略
    * 
    * 邏輯：
    * 1. 系統鐵律（SYSTEM_IGNORES）最優先 - 絕對不可覆寫
-   * 2. Global ignores（只有 ignores 屬性的配置）
-   * 3. 檔案級別的 ignores
+   * 2. .twlintignore 檔案模式
+   * 3. Global ignores（只有 ignores 屬性的配置）
+   * 4. 檔案級別的 ignores
    */
   isIgnored(filePath: string): boolean {
     // 第一層：系統鐵律檢查（絕對優先）
@@ -84,9 +97,16 @@ export class ConfigMatcher {
       return true
     }
 
+    // 第二層：.twlintignore 檔案模式
+    if (this.twlintignorePatterns.length > 0) {
+      if (this.matchesAnyPattern(filePath, this.twlintignorePatterns)) {
+        return true
+      }
+    }
+
     const configArray = Array.isArray(this.configs) ? this.configs : [this.configs]
 
-    // 第二層：收集所有 global ignores（只有 ignores 屬性，沒有 files/rules）
+    // 第三層：收集所有 global ignores（只有 ignores 屬性，沒有 files/rules）
     const globalIgnores = configArray
       .filter(config => config.ignores && !config.files && !config.rules)
       .flatMap(config => config.ignores!)

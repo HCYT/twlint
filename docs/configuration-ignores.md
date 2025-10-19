@@ -120,16 +120,77 @@ export default [
 
 ---
 
+## `.twlintignore` 檔案
+
+類似 ESLint 的 `.eslintignore`，TWLint 支援專門的忽略規則檔案。
+
+### 格式
+
+在專案根目錄建立 `.twlintignore` 檔案：
+
+```
+# TWLint 忽略文件
+
+# 測試文件
+test-*.md
+*test*.md
+tests/
+
+# 草稿和臨時文件
+draft-*.md
+temp/
+
+# 特定目錄
+legacy/
+archive/
+```
+
+### 規則說明
+
+- 每行一個 glob pattern
+- `#` 開頭為註解
+- 空行會被忽略
+- 結尾 `/` 的目錄會自動轉換為 `/**`
+- 不含 `/` 和 `*` 的模式會自動加上 `**/` 前綴
+
+### 範例
+
+```
+# .twlintignore
+
+# 忽略所有測試檔案（任何深度）
+test-*.md
+
+# 忽略特定目錄
+draft/
+legacy/
+
+# 忽略特定檔案
+TODO.md
+DRAFT.md
+```
+
+---
+
 ## 忽略優先順序
 
 TWLint 按以下順序檢查忽略規則：
 
 1. **系統鐵律（SYSTEM_IGNORES）** - 最高優先，絕對不可覆寫
-2. **Global Ignores** - 配置檔案中的全域忽略
-3. **File-Level Ignores** - 特定配置區塊的忽略規則
+2. **`.twlintignore` 檔案** - 專門的忽略規則檔案
+3. **Global Ignores** - 配置檔案中的全域忽略
+4. **File-Level Ignores** - 特定配置區塊的忽略規則
 
 ### 範例：優先順序運作方式
 
+假設有以下配置：
+
+**.twlintignore**
+```
+test-*.md
+```
+
+**twlint.config.js**
 ```javascript
 export default [
   {
@@ -145,6 +206,7 @@ export default [
 
 檔案檢查流程：
 - `.env` → ❌ 系統鐵律阻擋
+- `test-example.md` → ❌ .twlintignore 阻擋
 - `temp/file.md` → ❌ 全域 ignores 阻擋
 - `draft.md` → ❌ 檔案級別 ignores 阻擋
 - `guide.md` → ✅ 通過，執行檢查
@@ -174,9 +236,23 @@ export default [
 
 TWLint 會自動讀取專案根目錄的 `.gitignore` 檔案，並在 glob 擴展時使用這些模式進行初步過濾。
 
+### 三種 ignore 檔案的差異
+
+| 檔案 | 用途 | 優先順序 |
+|------|------|----------|
+| **系統鐵律** | 自動保護敏感檔案 | 最高（不可覆寫） |
+| **.twlintignore** | TWLint 專用忽略規則 | 第二 |
+| **.gitignore** | Git 版本控制忽略（TWLint 也會讀取） | 第三（僅 glob 過濾） |
+
 系統鐵律的設計確保：
-- 即使 `.gitignore` 未排除某些敏感檔案，TWLint 也會自動保護它們
+- 即使 `.gitignore` 或 `.twlintignore` 未排除某些敏感檔案，TWLint 也會自動保護它們
 - 使用者無需擔心意外檢查到配置檔案或環境變數
+
+### 最佳實踐
+
+1. **使用 .gitignore** - 大多數情況下已經足夠
+2. **使用 .twlintignore** - 當需要 TWLint 特定的忽略規則時
+3. **使用配置檔案 ignores** - 當需要更精細的控制（如針對不同檔案類型）
 
 ---
 

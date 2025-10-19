@@ -5,6 +5,7 @@ import { SimplifiedCharsRule } from './rules/simplified-chars.js'
 import { MainlandTermsRule } from './rules/mainland-terms.js'
 import { PositionMapper } from './position-mapper.js'
 import { ConfigMatcher } from './config-matcher.js'
+import { IgnoreFileLoader } from './ignore-file-loader.js'
 import type { LintResult, Issue, TWLintConfig, Rule } from '../types.js'
 import { formatError, ErrorHandler } from '../utils/error-utils.js'
 import { DictLoadStrategyFactory } from './dictionary-loading-strategies.js'
@@ -15,6 +16,7 @@ export class TWLinter {
   private config: TWLintConfig
   private deepMode = false
   private configMatcher: ConfigMatcher
+  private twlintignoreLoaded = false
 
   constructor(config: TWLintConfig, options?: { deep?: boolean }) {
     this.config = config
@@ -22,6 +24,22 @@ export class TWLinter {
     this.dictManager = new DictionaryManager()
     this.configMatcher = new ConfigMatcher(config)
     this.initializeRules()
+  }
+
+  /**
+   * 載入 .twlintignore 檔案（如果存在）
+   * 
+   * 這個方法會在第一次需要時自動呼叫
+   */
+  private async loadTwlintignore(): Promise<void> {
+    if (this.twlintignoreLoaded) return
+
+    const patterns = await IgnoreFileLoader.load()
+    if (patterns.length > 0) {
+      this.configMatcher.setTwlintignorePatterns(patterns)
+    }
+
+    this.twlintignoreLoaded = true
   }
 
   private initializeRules(): void {
@@ -33,6 +51,9 @@ export class TWLinter {
   }
 
   async lintFiles(patterns: string[]): Promise<LintResult[]> {
+    // 載入 .twlintignore（如果存在）
+    await this.loadTwlintignore()
+
     const files = await this.expandFilePatterns(patterns)
     const results: LintResult[] = []
 

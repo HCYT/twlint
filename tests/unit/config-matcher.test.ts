@@ -238,6 +238,53 @@ describe('ConfigMatcher', () => {
     })
   })
 
+  describe('.twlintignore 支援', () => {
+    it('應該支援 .twlintignore 模式', () => {
+      const config: TWLintConfigRule[] = [
+        {
+          files: ['**/*.md'],
+          rules: { 'simplified-chars': 'error' }
+        }
+      ]
+
+      const matcher = new ConfigMatcher(config)
+      
+      // 設定 .twlintignore 模式
+      matcher.setTwlintignorePatterns([
+        'test-*.md',
+        'draft/**'
+      ])
+
+      expect(matcher.isIgnored('test-example.md')).toBe(true)
+      expect(matcher.isIgnored('draft/notes.md')).toBe(true)
+      expect(matcher.isIgnored('docs/guide.md')).toBe(false)
+    })
+
+    it('.twlintignore 應該優先於配置檔案的 ignores', () => {
+      const config: TWLintConfigRule[] = [
+        {
+          files: ['**/*.md'],
+          rules: { 'simplified-chars': 'error' }
+        }
+      ]
+
+      const matcher = new ConfigMatcher(config)
+      matcher.setTwlintignorePatterns(['*.md'])
+
+      // .twlintignore 設定忽略所有 .md，配置檔案無法覆寫
+      expect(matcher.isIgnored('any-file.md')).toBe(true)
+    })
+
+    it('系統鐵律仍然優先於 .twlintignore', () => {
+      const config: TWLintConfigRule[] = []
+      const matcher = new ConfigMatcher(config)
+      
+      // 即使 .twlintignore 沒有設定，系統鐵律依然生效
+      expect(matcher.isIgnored('.env')).toBe(true)
+      expect(matcher.isIgnored('node_modules/package.json')).toBe(true)
+    })
+  })
+
   describe('邊界情況', () => {
     it('應該處理單一配置物件（非陣列）', () => {
       const config: TWLintConfigRule = {
