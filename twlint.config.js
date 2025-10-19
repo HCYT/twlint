@@ -1,11 +1,11 @@
-// TWLint 配置檔案
+// TWLint 設定檔案
 // 專注於核心功能：簡繁轉換 + 大陸用語檢測
 
 export default [
   // Global ignores - 全域忽略模式（只有 ignores 屬性時視為全域）
   // 
   // 注意：以下檔案已被系統鐵律保護，無需額外設定：
-  // - 配置檔案：.gitignore, .dockerignore, .env*, 等
+  // - 設定檔案：.gitignore, .dockerignore, .env*, 等
   // - 版本控制：.git/, .svn/, node_modules/
   // - 建構輸出：dist/, build/, .next/
   // - 日誌檔案：*.log, *.tmp

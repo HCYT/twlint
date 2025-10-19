@@ -19,11 +19,11 @@ export interface CLIOptions {
   verbose?: boolean
 }
 
-async function performCheck(linter: TWLinter, files: string[], options: CLIOptions): Promise<void> {
+async function performCheck(linter: TWLinter, files: string[], options: CLIOptions): Promise<number> {
   // 檢查是否找到任何檔案
   if (files.length === 0) {
     console.error(chalk.red('✖ No files found matching the pattern.'))
-    process.exit(1)
+    return 1
   }
 
   const results = await linter.lintFiles(files)
@@ -50,7 +50,7 @@ async function performCheck(linter: TWLinter, files: string[], options: CLIOptio
   if (fileReadErrors.length === results.length && results.length > 0) {
     // 在顯示詳細錯誤後，再顯示匯總錯誤訊息
     console.error(chalk.red('✖ Failed to read any of the specified files.'))
-    process.exit(1)
+    return 1
   }
 
   // ESLint 風格的修復提示（僅在非 JSON 格式時顯示）
@@ -58,8 +58,10 @@ async function performCheck(linter: TWLinter, files: string[], options: CLIOptio
     if (fixableCount > 0 && options.format !== 'json') {
       console.log(chalk.yellow(`\n  ${fixableCount} problem${fixableCount === 1 ? '' : 's'} potentially fixable with the \`--fix\` option.`))
     }
-    process.exit(errorCount > 0 ? 1 : 0)
+    return errorCount > 0 ? 1 : 0
   }
+
+  return 0
 }
 
 async function performAutoFix(linter: TWLinter, files: string[], options: CLIOptions): Promise<void> {
@@ -69,7 +71,7 @@ async function performAutoFix(linter: TWLinter, files: string[], options: CLIOpt
   for (const filePath of files) {
     try {
       const originalContent = await readFile(filePath, 'utf-8')
-      const fixedContent = await linter.fixText(originalContent)
+      const fixedContent = await linter.fixText(originalContent, filePath)
 
       if (originalContent !== fixedContent) {
         await writeFile(filePath, fixedContent, 'utf-8')
@@ -87,18 +89,12 @@ async function performAutoFix(linter: TWLinter, files: string[], options: CLIOpt
   }
 
   console.log(chalk.green(`\n🎉 Fixed ${totalFixed} file(s)`))
-
-  // 修復後重新檢查，顯示剩餘問題
-  if (totalFixed > 0) {
-    console.log(chalk.dim('\n--- Remaining issues after fix ---'))
-    await performCheck(linter, files, { ...options, fix: false })
-  }
 }
 
 async function performInit(force?: boolean): Promise<void> {
   const configFile = 'twlint.config.js'
 
-  // 檢查是否已存在配置檔案
+  // 檢查是否已存在設定檔案
   try {
     await access(configFile)
     if (!force) {
@@ -110,7 +106,7 @@ async function performInit(force?: boolean): Promise<void> {
     // 檔案不存在，可以繼續建立
   }
 
-  // 建立配置檔案
+  // 建立設定檔案
   const configContent = createSampleConfig()
   await writeFile(configFile, configContent, 'utf-8')
 
@@ -176,11 +172,16 @@ async function main() {
     .option('--verbose', 'Enable verbose output')
     .action(async (files: string[], options: CLIOptions) => {
       try {
-        const config = await loadConfig(options.config)
+        let config = await loadConfig(options.config)
 
-        // 如果指定了 --dict 選項，覆蓋配置中的詞庫設定
+        // 如果指定了 --dict 選項，覆蓋設定中的詞庫設定
         if (options.dict) {
-          config.dictionaries = options.dict
+          if (Array.isArray(config)) {
+            // 修改第一個設定物件
+            config = config.map((c, i) => i === 0 ? { ...c, dictionaries: options.dict } : c)
+          } else {
+            config = { ...config, dictionaries: options.dict }
+          }
         }
 
         const linter = new TWLinter(config, { deep: options.deep })
@@ -194,7 +195,8 @@ async function main() {
           await performAutoFix(linter, files, options)
         } else {
           // 檢查模式
-          await performCheck(linter, files, options)
+          const exitCode = await performCheck(linter, files, options)
+          process.exit(exitCode)
         }
       } catch (error) {
         console.error(chalk.red('Error:'), formatError(error))

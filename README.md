@@ -1,8 +1,9 @@
 # TWLint
 
-**關於 TWLint **
-
-目前各大 LLM 訓練語料裡面繁體中文資料的比例非常的少，透過 LLM 產生的各種內容會混雜不同版本的中文，TWLint 目的在幫助開發者統一專案中文件中文字，確保使用台灣繁體中文和用語。
+> **你是否也有這樣的困擾？**  
+> AI 生成的文件裡，「软件」「軟件」「軟體」混在一起；技術文檔充滿「用戶」「使用者」不統一的用語；明明用繁體中文卻到處是大陸用語...
+> 
+> 因為 LLM 訓練語料中繁體中文資料極少，生成內容常混雜簡體字和大陸用語。**TWLint 就是為了解決這個痛點而生**，讓你的專案文件保持一致的台灣繁體中文，不再手動校對到崩潰。
 
 ## ✨ 核心特色
 
@@ -13,11 +14,11 @@
 
 ### 檢索引擎
 - **語境偵測**：根據上下文精確識別同形異義詞
-- **領域專門詞庫**：1,062+ 詞目涵蓋 AI、軟體開發、商業金融等
+- **領域專門詞庫**：多領域詞目涵蓋 AI、軟體開發、商業金融等
 - **程式碼檢查**：支援註解、字串、UI 文字等程式碼中的中文內容
 
 ### 🛠️ 開發者友善
-- **ESLint 風格配置**：支援 `ignores`、`files`、`rules` 彈性配置
+- **ESLint 風格設定**：支援 `ignores`、`files`、`rules` 彈性設定
 - **系統鐵律保護**：自動忽略 `.env`、`.gitignore` 等敏感檔案
 - **遵循 .gitignore**：智慧跳過不需要的檔案和目錄
 - **多種輸出格式**：stylish、json 格式滿足不同需求
@@ -42,18 +43,18 @@ twlint check README.md --fix
 # 檢查程式碼中的中文（註解、字串等）
 twlint check "src/**/*.{js,ts,jsx,tsx,vue}"
 
-# 初始化專案配置
+# 初始化專案設定
 twlint init
 ```
 
 ### 整合到專案（推薦）
 ```bash
-# 1. 初始化配置檔案
+# 1. 初始化設定檔案
 twlint init
 
 # 2. 編輯 twlint.config.js 自訂規則和忽略模式
 #    支援 global ignores 和 file-level ignores
-#    詳見「配置」章節
+#    詳見「設定」章節
 
 # 3. 加入 package.json scripts
 {
@@ -76,6 +77,7 @@ npm run twlint:all  # 檢查所有檔案
 ###  文件檢查範例
 假設有以下包含大陸用語的檔案：
 ```markdown
+<!-- 以下為示範用簡體字內容 -->
 # 软件开发项目
 这个软件的质量很好，我们使用了先进的算法。
 ```
@@ -141,9 +143,9 @@ function processData(data) {
 }
 ```
 
-## 配置
+## 設定
 
-### 專案配置檔案
+### 專案設定檔案
 
 建立 `twlint.config.js`：
 
@@ -165,10 +167,10 @@ export default [
     // 使用的領域詞庫（新架構）
     domains: ["software-development", "user-interface"],
 
-    // 或使用舊的詞庫配置（向後相容）
+    // 或使用舊的詞庫設定（向後相容）
     // dictionaries: ["core", "academic"],
 
-    // 規則配置
+    // 規則設定
     rules: {
       "simplified-chars": "error",      // 簡體字檢測（自動修復）
       "mainland-terms": "warning"       // 大陸用語檢測（提供建議）
@@ -207,7 +209,7 @@ draft-*.md
 temp/
 ```
 
-#### 2. 配置檔案 Global Ignores
+#### 2. 設定檔案 Global Ignores
 
 ```javascript
 export default [
@@ -237,14 +239,14 @@ export default [
 **忽略優先順序**
 
 1. **系統鐵律** - 最高優先（不可覆寫）
-   - 配置檔案：`.gitignore`, `.dockerignore`, `.env*`, `.*ignore`
+   - 設定檔案：`.gitignore`, `.dockerignore`, `.env*`, `.*ignore`
    - 版本控制：`.git/`, `.svn/`, `node_modules/`
    - 建構輸出：`dist/`, `build/`, `.next/`
    - 日誌檔案：`*.log`, `*.tmp`
 
 2. **`.twlintignore` 檔案** - TWLint 專用忽略規則
-3. **Global Ignores** - 配置檔案中的全域忽略
-4. **File-Level Ignores** - 特定配置區塊的忽略規則
+3. **Global Ignores** - 設定檔案中的全域忽略
+4. **File-Level Ignores** - 特定設定區塊的忽略規則
 
 > 📖 完整說明請參考 [docs/configuration-ignores.md](docs/configuration-ignores.md)
 
@@ -258,7 +260,7 @@ Options:
   --format <type>      輸出格式 (stylish, json)
   --domains <names...> 指定使用的領域詞庫（推薦）
   --dict <names...>    指定使用的詞庫（向後相容）
-  --config <path>      配置檔案路徑
+  --config <path>      設定檔案路徑
   --verbose           顯示詳細輸出
   --deep              深度模式（載入所有詞庫）
 ```
@@ -281,9 +283,9 @@ TWLint 採用領域導向的詞庫架構，提供更精確的用語檢測：
 | business-finance | 商業金融 | 123 |
 | ai-emerging-tech | AI新興技術 | 108 |
 
-### 配置範例
+### 設定範例
 
-**領域專門配置**（推薦）：
+**領域專門設定**（推薦）：
 ```bash
 # 軟體開發專案
 twlint check src/ --domains software-development user-interface
@@ -302,7 +304,7 @@ twlint check README.md --deep
 
 ### 傳統詞庫（向後相容）
 
-仍支援舊的詞庫配置方式：
+仍支援舊的詞庫設定方式：
 - **core**：核心技術用語
 - **academic**：學術用語
 - **extended**：擴充功能用語集

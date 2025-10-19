@@ -14,7 +14,7 @@ describe('ConfigMatcher', () => {
 
       const matcher = new ConfigMatcher(config)
 
-      // 配置檔案 - 絕對不檢查
+      // 設定檔案 - 絕對不檢查
       expect(matcher.isIgnored('.gitignore')).toBe(true)
       expect(matcher.isIgnored('.dockerignore')).toBe(true)
       expect(matcher.isIgnored('config/.eslintignore')).toBe(true)
@@ -37,7 +37,7 @@ describe('ConfigMatcher', () => {
       expect(matcher.isIgnored('temp.tmp')).toBe(true)
     })
 
-    it('系統鐵律不可被使用者配置覆寫', () => {
+    it('系統鐵律不可被使用者設定覆寫', () => {
       const config: TWLintConfigRule[] = [
         {
           // 即使使用者明確指定要檢查 .env
@@ -102,7 +102,7 @@ describe('ConfigMatcher', () => {
       expect(matcher.isIgnored('important.test.js')).toBe(false)
     })
 
-    it('全域 ignores 應該優先於檔案級別配置', () => {
+    it('全域 ignores 應該優先於檔案級別設定', () => {
       const config: TWLintConfigRule[] = [
         {
           ignores: ['**/*.tmp']
@@ -134,7 +134,7 @@ describe('ConfigMatcher', () => {
       expect(rules).toEqual({ 'simplified-chars': 'error' })
     })
 
-    it('應該合併多個配置區塊的規則（後面的覆寫前面的）', () => {
+    it('應該合併多個設定區塊的規則（後面的覆寫前面的）', () => {
       const config: TWLintConfigRule[] = [
         {
           files: ['**/*.md'],
@@ -205,7 +205,7 @@ describe('ConfigMatcher', () => {
       expect(domains).toEqual(['software-development', 'user-interface'])
     })
 
-    it('應該合併多個配置區塊的領域並去重', () => {
+    it('應該合併多個設定區塊的領域並去重', () => {
       const config: TWLintConfigRule[] = [
         {
           files: ['**/*.md'],
@@ -260,7 +260,7 @@ describe('ConfigMatcher', () => {
       expect(matcher.isIgnored('docs/guide.md')).toBe(false)
     })
 
-    it('.twlintignore 應該優先於配置檔案的 ignores', () => {
+    it('.twlintignore 應該優先於設定檔案的 ignores', () => {
       const config: TWLintConfigRule[] = [
         {
           files: ['**/*.md'],
@@ -271,7 +271,7 @@ describe('ConfigMatcher', () => {
       const matcher = new ConfigMatcher(config)
       matcher.setTwlintignorePatterns(['*.md'])
 
-      // .twlintignore 設定忽略所有 .md，配置檔案無法覆寫
+      // .twlintignore 設定忽略所有 .md，設定檔案無法覆寫
       expect(matcher.isIgnored('any-file.md')).toBe(true)
     })
 
@@ -286,7 +286,7 @@ describe('ConfigMatcher', () => {
   })
 
   describe('邊界情況', () => {
-    it('應該處理單一配置物件（非陣列）', () => {
+    it('應該處理單一設定物件（非陣列）', () => {
       const config: TWLintConfigRule = {
         files: ['**/*.md'],
         rules: { 'simplified-chars': 'error' }
@@ -298,7 +298,7 @@ describe('ConfigMatcher', () => {
       expect(rules).toEqual({ 'simplified-chars': 'error' })
     })
 
-    it('應該處理空配置陣列', () => {
+    it('應該處理空設定陣列', () => {
       const config: TWLintConfigRule[] = []
 
       const matcher = new ConfigMatcher(config)
@@ -308,7 +308,7 @@ describe('ConfigMatcher', () => {
       expect(matcher.getDomainsForFile('test.md')).toEqual([])
     })
 
-    it('應該處理沒有 files 模式的配置', () => {
+    it('應該處理沒有 files 模式的設定', () => {
       const config: TWLintConfigRule[] = [
         {
           rules: { 'simplified-chars': 'error' }

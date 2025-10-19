@@ -1,12 +1,12 @@
-# TWLint 忽略模式配置
+# TWLint 忽略模式設定
 
 ## 系統鐵律（SYSTEM_IGNORES）
 
-**"有些東西就是不該被碰。配置檔案就是其中之一。"**
+**"有些東西就是不該被碰。設定檔案就是其中之一。"**
 
 TWLint 有一套**不可覆寫**的系統級忽略規則，確保以下檔案永遠不會被檢查：
 
-### 配置檔案
+### 設定檔案
 - `.gitignore`, `.dockerignore`, `.npmignore`
 - `.eslintignore`, `.prettierignore`
 - 任何 `.*ignore` 檔案
@@ -24,7 +24,7 @@ TWLint 有一套**不可覆寫**的系統級忽略規則，確保以下檔案永
 - `dist/`, `build/`, `out/`
 - `.next/`, `.nuxt/`
 
-### 編輯器配置
+### 編輯器設定
 - `.vscode/`, `.idea/`, `.vs/`
 
 ### 日誌和臨時檔案
@@ -38,11 +38,11 @@ TWLint 有一套**不可覆寫**的系統級忽略規則，確保以下檔案永
 
 ## 使用者自訂忽略
 
-在系統鐵律之外，你可以透過配置檔案自訂專案特定的忽略規則。
+在系統鐵律之外，你可以透過設定檔案自訂專案特定的忽略規則。
 
 ### Global Ignores（全域忽略）
 
-只有 `ignores` 屬性的配置區塊會被視為全域忽略：
+只有 `ignores` 屬性的設定區塊會被視為全域忽略：
 
 ```javascript
 // twlint.config.js
@@ -60,7 +60,7 @@ export default [
 
 ### File-Level Ignores（檔案級別忽略）
 
-在特定配置區塊內的 `ignores` 只對該區塊生效：
+在特定設定區塊內的 `ignores` 只對該區塊生效：
 
 ```javascript
 export default [
@@ -178,12 +178,12 @@ TWLint 按以下順序檢查忽略規則：
 
 1. **系統鐵律（SYSTEM_IGNORES）** - 最高優先，絕對不可覆寫
 2. **`.twlintignore` 檔案** - 專門的忽略規則檔案
-3. **Global Ignores** - 配置檔案中的全域忽略
-4. **File-Level Ignores** - 特定配置區塊的忽略規則
+3. **Global Ignores** - 設定檔案中的全域忽略
+4. **File-Level Ignores** - 特定設定區塊的忽略規則
 
 ### 範例：優先順序運作方式
 
-假設有以下配置：
+假設有以下設定：
 
 **.twlintignore**
 ```
@@ -246,13 +246,13 @@ TWLint 會自動讀取專案根目錄的 `.gitignore` 檔案，並在 glob 擴�
 
 系統鐵律的設計確保：
 - 即使 `.gitignore` 或 `.twlintignore` 未排除某些敏感檔案，TWLint 也會自動保護它們
-- 使用者無需擔心意外檢查到配置檔案或環境變數
+- 使用者無需擔心意外檢查到設定檔案或環境變數
 
 ### 最佳實踐
 
 1. **使用 .gitignore** - 大多數情況下已經足夠
 2. **使用 .twlintignore** - 當需要 TWLint 特定的忽略規則時
-3. **使用配置檔案 ignores** - 當需要更精細的控制（如針對不同檔案類型）
+3. **使用設定檔案 ignores** - 當需要更精細的控制（如針對不同檔案類型）
 
 ---
 

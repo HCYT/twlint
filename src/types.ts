@@ -19,10 +19,13 @@ export interface LintResult {
 export interface TWLintConfig {
   files?: string[]
   ignores?: string[]       // 忽略模式（glob patterns）
-  dictionaries?: string[]  // 舊的詞庫配置方式（向後相容）
-  domains?: string[]       // 新的領域配置方式
+  dictionaries?: string[]  // 舊的詞庫設定方式（向後相容）
+  domains?: string[]       // 新的領域設定方式
   rules?: Record<string, 'error' | 'warning' | 'info' | 'off'>
 }
+
+// 支援單一設定或設定陣列（ESLint flat config 風格）
+export type TWLintUserConfig = TWLintConfig | TWLintConfig[]
 
 export type MatchType = 'exact' | 'word_boundary' | 'context_sensitive'
 

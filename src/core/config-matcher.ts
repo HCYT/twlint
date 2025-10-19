@@ -4,10 +4,10 @@ import type { TWLintConfigRule } from './config-schema.js'
 /**
  * 系統級忽略模式 - 鐵律，無論如何都不檢查這些檔案
  * 
- * "有些東西就是不該被碰。配置檔案就是其中之一。"
+ * "有些東西就是不該被碰。設定檔案就是其中之一。"
  * 
- * 這些模式優先於任何使用者配置，確保：
- * 1. 不會誤檢查敏感配置檔案（.env, .gitignore 等）
+ * 這些模式優先於任何使用者設定，確保：
+ * 1. 不會誤檢查敏感設定檔案（.env, .gitignore 等）
  * 2. 不會進入版本控制系統目錄（.git, .svn）
  * 3. 不會掃描第三方套件（node_modules）
  */
@@ -21,7 +21,7 @@ const SYSTEM_IGNORES = [
   '**/node_modules/**',
   '**/vendor/**',
   
-  // 配置檔案（鐵律：絕對不檢查）
+  // 設定檔案（鐵律：絕對不檢查）
   '**/.gitignore',
   '**/.dockerignore',
   '**/.npmignore',
@@ -39,7 +39,7 @@ const SYSTEM_IGNORES = [
   '**/Thumbs.db',
   '**/desktop.ini',
   
-  // 編輯器和 IDE 配置
+  // 編輯器和 IDE 設定
   '**/.vscode/**',
   '**/.idea/**',
   '**/.vs/**',
@@ -59,12 +59,12 @@ const SYSTEM_IGNORES = [
 ] as const
 
 /**
- * ConfigMatcher - 判斷檔案該套用哪些配置規則
+ * ConfigMatcher - 判斷檔案該套用哪些設定規則
  * 
  * 設計原則（Linus style）：
  * 1. 系統鐵律優先（SYSTEM_IGNORES 絕對不可覆寫）
  * 2. .twlintignore 檔案模式
- * 3. 線性掃描所有配置區塊
+ * 3. 線性掃描所有設定區塊
  * 4. 收集所有匹配的規則
  * 5. 後面的規則覆寫前面的（ESLint flat config 風格）
  */
@@ -88,7 +88,7 @@ export class ConfigMatcher {
    * 邏輯：
    * 1. 系統鐵律（SYSTEM_IGNORES）最優先 - 絕對不可覆寫
    * 2. .twlintignore 檔案模式
-   * 3. Global ignores（只有 ignores 屬性的配置）
+   * 3. Global ignores（只有 ignores 屬性的設定）
    * 4. 檔案級別的 ignores
    */
   isIgnored(filePath: string): boolean {
@@ -116,7 +116,7 @@ export class ConfigMatcher {
       return true
     }
 
-    // 檢查每個配置區塊的 ignores
+    // 檢查每個設定區塊的 ignores
     for (const config of configArray) {
       // 跳過 global ignore 區塊
       if (config.ignores && !config.files && !config.rules) {
@@ -140,7 +140,7 @@ export class ConfigMatcher {
   /**
    * 取得檔案適用的規則
    * 
-   * 合併所有匹配配置區塊的規則，後面的覆寫前面的
+   * 合併所有匹配設定區塊的規則，後面的覆寫前面的
    */
   getRulesForFile(filePath: string): Record<string, 'error' | 'warning' | 'info' | 'off'> {
     if (this.isIgnored(filePath)) {
@@ -215,24 +215,49 @@ export class ConfigMatcher {
 
   /**
    * 檢查檔案路徑是否匹配任何 glob 模式
+   * 
+   * 邏輯：
+   * 1. 分離正向模式和否定模式
+   * 2. 先檢查正向模式是否匹配
+   * 3. 如果匹配，檢查否定模式是否排除
+   * 
+   * "好品味"：消除 if/else 特殊情況，分離兩種邏輯
    */
   private matchesAnyPattern(filePath: string, patterns: string[]): boolean {
-    for (const pattern of patterns) {
-      // 處理否定模式（!pattern）
-      if (pattern.startsWith('!')) {
-        const positivePattern = pattern.slice(1)
-        if (this.matchPattern(filePath, positivePattern)) {
-          return false // 明確排除
-        }
-        continue
-      }
+    const positivePatterns: string[] = []
+    const negativePatterns: string[] = []
 
-      if (this.matchPattern(filePath, pattern)) {
-        return true
+    // 分離正向和否定模式
+    for (const pattern of patterns) {
+      if (pattern.startsWith('!')) {
+        negativePatterns.push(pattern.slice(1))
+      } else {
+        positivePatterns.push(pattern)
       }
     }
 
-    return false
+    // 檢查正向模式
+    let matched = false
+    for (const pattern of positivePatterns) {
+      if (this.matchPattern(filePath, pattern)) {
+        matched = true
+        break
+      }
+    }
+
+    // 如果沒有匹配任何正向模式，直接返回 false
+    if (!matched) {
+      return false
+    }
+
+    // 如果匹配了正向模式，檢查否定模式是否排除
+    for (const pattern of negativePatterns) {
+      if (this.matchPattern(filePath, pattern)) {
+        return false // 被否定模式排除
+      }
+    }
+
+    return true
   }
 
   /**

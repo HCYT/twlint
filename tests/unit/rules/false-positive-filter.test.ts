@@ -14,17 +14,17 @@ describe('MainlandTermsRule - False Positive Filter (Real-world Scenarios)', () 
   it('should filter false positives in code comments', async () => {
     // 真實場景：程式碼註解中的假陽性
     const text = `/**
- * 配置 Docker 容器的環境變數
- * @param {Object} config - 配置對象
+ * 設定 Docker 容器的環境變數
+ * @param {Object} config - 設定對象
  * @returns {Container} 容器實例
  */
 function setupContainer(config) {
-  // 初始化容器配置
+  // 初始化容器設定
   const container = new Container(config);
   return container;
 }`
 
-    // 模擬詞庫匹配：配置、容器都是假陽性（簡繁轉換後相同）
+    // 模擬詞庫匹配：設定、容器都是假陽性（簡繁轉換後相同）
     dictManager.findMatches = (text) => [
       { term: '配置', replacement: '配置', start: 7, end: 9, confidence: 0.9, rule: 'core-exact', autofix_safe: true },
       { term: '容器', replacement: '容器', start: 17, end: 19, confidence: 0.8, rule: 'core-exact', autofix_safe: true },

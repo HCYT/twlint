@@ -1,17 +1,17 @@
-// TWLint 配置檔案結構定義和驗證
+// TWLint 設定檔案結構定義和驗證
 
 export interface TWLintConfigRule {
   files?: string[]
   ignores?: string[]       // 忽略模式（glob patterns）
-  dictionaries?: string[]  // 舊的詞庫配置方式（向後相容）
-  domains?: string[]       // 新的領域配置方式
+  dictionaries?: string[]  // 舊的詞庫設定方式（向後相容）
+  domains?: string[]       // 新的領域設定方式
   rules?: Record<string, 'error' | 'warning' | 'info' | 'off'>
 }
 
 export type TWLintConfigArray = TWLintConfigRule[]
 export type TWLintConfigSingle = TWLintConfigRule
 
-// 支援單一配置物件或配置陣列
+// 支援單一設定物件或設定陣列
 export type TWLintUserConfig = TWLintConfigSingle | TWLintConfigArray
 
 export const DEFAULT_CONFIG: TWLintConfigSingle = {
@@ -23,56 +23,29 @@ export const DEFAULT_CONFIG: TWLintConfigSingle = {
   }
 }
 
-export function validateConfig(config: unknown): TWLintConfigSingle {
+export function validateConfig(config: unknown): TWLintUserConfig {
   if (!config || typeof config !== 'object') {
     return DEFAULT_CONFIG
   }
 
-  // 如果是陣列，合併所有配置
+  // 如果是陣列，保持陣列形式（ESLint flat config 風格）
   if (Array.isArray(config)) {
-    return mergeConfigs(config)
+    return config as TWLintConfigArray
   }
 
-  // 單一配置物件
-  return mergeConfig(DEFAULT_CONFIG, config as Partial<TWLintConfigSingle>)
-}
-
-function mergeConfigs(configs: unknown[]): TWLintConfigSingle {
-  let merged = { ...DEFAULT_CONFIG }
-
-  for (const config of configs) {
-    if (config && typeof config === 'object') {
-      merged = mergeConfig(merged, config as Partial<TWLintConfigSingle>)
-    }
-  }
-
-  return merged
-}
-
-function mergeConfig(
-  defaultConfig: TWLintConfigSingle,
-  userConfig: Partial<TWLintConfigSingle>
-): TWLintConfigSingle {
-  return {
-    files: userConfig.files || defaultConfig.files,
-    dictionaries: userConfig.dictionaries || defaultConfig.dictionaries,
-    domains: userConfig.domains || defaultConfig.domains,  // 保留 domains 配置
-    rules: {
-      ...defaultConfig.rules,
-      ...userConfig.rules
-    }
-  }
+  // 單一設定物件
+  return config as TWLintConfigSingle
 }
 
 export function createSampleConfig(): string {
-  return `// TWLint 配置檔案
+  return `// TWLint 設定檔案
 // 專注於核心功能：簡繁轉換 + 大陸用語檢測
 
 export default [
   // Global ignores - 全域忽略模式（只有 ignores 屬性時視為全域）
   // 
   // 注意：以下檔案已被系統鐵律保護，無需額外設定：
-  // - 配置檔案：.gitignore, .dockerignore, .env*, 等
+  // - 設定檔案：.gitignore, .dockerignore, .env*, 等
   // - 版本控制：.git/, .svn/, node_modules/
   // - 建構輸出：dist/, build/, .next/
   // - 日誌檔案：*.log, *.tmp

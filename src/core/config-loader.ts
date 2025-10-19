@@ -1,9 +1,9 @@
 import { readFile, access } from 'fs/promises'
 import { join } from 'path'
 import { validateConfig, DEFAULT_CONFIG } from './config-schema.js'
-import type { TWLintConfig } from '../types.js'
+import type { TWLintUserConfig } from '../types.js'
 
-export async function loadConfig(configPath?: string): Promise<TWLintConfig> {
+export async function loadConfig(configPath?: string): Promise<TWLintUserConfig> {
   const paths = configPath
     ? [configPath]
     : [
@@ -36,7 +36,7 @@ export async function loadConfig(configPath?: string): Promise<TWLintConfig> {
           if (path.endsWith('.js') || path.endsWith('.mjs')) {
             const content = await readFile(path, 'utf-8')
 
-            // 簡單的配置檔案執行（僅支援 export default）
+            // 簡單的設定檔案執行（僅支援 export default）
             if (content.includes('export default')) {
               console.warn(`Config file ${path} found but unable to import. Using default config.`)
               return DEFAULT_CONFIG
