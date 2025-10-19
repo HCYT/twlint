@@ -2,7 +2,7 @@
   "metadata": {
     "name": "business-finance",
     "version": "1.0.0",
-    "entries": 123
+    "entries": 111
   },
   "lookup": {
     "项目经理": {
@@ -98,22 +98,6 @@
       "confidence": 0.95,
       "category": "mainland-term",
       "reason": "台灣商業術語標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "里程碑": {
-      "taiwan": "里程碑",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣專案管理術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "里程碑_milestone": {
-      "taiwan": "里程碑",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣專案管理術語",
       "match_type": "exact",
       "autofix_safe": true
     },
@@ -354,22 +338,6 @@
       "confidence": 0.9,
       "category": "mainland-term",
       "reason": "台灣股市術語標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "股票": {
-      "taiwan": "股票",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣證券術語標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "股票_stock": {
-      "taiwan": "股票",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣證券術語標準",
       "match_type": "exact",
       "autofix_safe": true
     },
@@ -997,22 +965,6 @@
       "match_type": "exact",
       "autofix_safe": true
     },
-    "折扣": {
-      "taiwan": "折扣",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣行銷術語標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "折扣_discount": {
-      "taiwan": "折扣",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣行銷術語標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
     "促销": {
       "taiwan": "促銷",
       "confidence": 0.85,
@@ -1106,22 +1058,6 @@
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣行銷傳播術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "品牌": {
-      "taiwan": "品牌",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣行銷管理術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "品牌_brand": {
-      "taiwan": "品牌",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣行銷管理術語",
       "match_type": "exact",
       "autofix_safe": true
     },
@@ -1301,22 +1237,6 @@
       "match_type": "exact",
       "autofix_safe": true
     },
-    "物流": {
-      "taiwan": "物流",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣供應鏈術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "物流_logistics": {
-      "taiwan": "物流",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣供應鏈術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
     "仓库": {
       "taiwan": "倉庫",
       "confidence": 0.85,
@@ -1378,22 +1298,6 @@
       "confidence": 0.9,
       "category": "mainland-term",
       "reason": "台灣通路管理術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "零售": {
-      "taiwan": "零售",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣商業模式術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "零售_retail": {
-      "taiwan": "零售",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣商業模式術語",
       "match_type": "exact",
       "autofix_safe": true
     },
@@ -1634,22 +1538,6 @@
       "confidence": 0.9,
       "category": "mainland-term",
       "reason": "台灣資本市場術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "上市": {
-      "taiwan": "上市",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣證券市場術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "上市_listing": {
-      "taiwan": "上市",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣證券市場術語",
       "match_type": "exact",
       "autofix_safe": true
     },
@@ -1973,38 +1861,6 @@
       "match_type": "exact",
       "autofix_safe": true
     },
-    "薪酬": {
-      "taiwan": "薪酬",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣人資管理術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "薪酬_compensation": {
-      "taiwan": "薪酬",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣人資管理術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "福利": {
-      "taiwan": "福利",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣人資管理術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "福利_benefit": {
-      "taiwan": "福利",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣人資管理術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
     "奖金": {
       "taiwan": "獎金",
       "confidence": 0.85,
@@ -2066,22 +1922,6 @@
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣人資管理術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "加班": {
-      "taiwan": "加班",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣勞動條件術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "加班_overtime": {
-      "taiwan": "加班",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣勞動條件術語",
       "match_type": "exact",
       "autofix_safe": true
     },
@@ -2160,22 +2000,6 @@
     "解雇_termination": {
       "taiwan": "解僱",
       "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣人事異動術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "退休": {
-      "taiwan": "退休",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣人事異動術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "退休_retirement": {
-      "taiwan": "退休",
-      "confidence": 0.8,
       "category": "mainland-term",
       "reason": "台灣人事異動術語",
       "match_type": "exact",
@@ -2498,22 +2322,6 @@
       "confidence": 0.9,
       "category": "mainland-term",
       "reason": "台灣經濟指標術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "衰退": {
-      "taiwan": "衰退",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣經濟週期術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "衰退_recession": {
-      "taiwan": "衰退",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣經濟週期術語",
       "match_type": "exact",
       "autofix_safe": true
     },

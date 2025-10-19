@@ -2,7 +2,7 @@
   "metadata": {
     "name": "social-media",
     "version": "1.0.0",
-    "entries": 106
+    "entries": 97
   },
   "lookup": {
     "社交媒体": {
@@ -309,22 +309,6 @@
       "match_type": "exact",
       "autofix_safe": true
     },
-    "分享": {
-      "taiwan": "分享",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣社群互動術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "分享_share": {
-      "taiwan": "分享",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣社群互動術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
     "评论": {
       "taiwan": "留言",
       "confidence": 0.9,
@@ -533,22 +517,6 @@
       "match_type": "exact",
       "autofix_safe": true
     },
-    "通知": {
-      "taiwan": "通知",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣社群系統術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "通知_notification": {
-      "taiwan": "通知",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣社群系統術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
     "消息": {
       "taiwan": "訊息",
       "confidence": 0.85,
@@ -576,22 +544,6 @@
     "私信_dm": {
       "taiwan": "私訊",
       "confidence": 0.9,
-      "category": "mainland-term",
-      "reason": "台灣社群通訊術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "聊天": {
-      "taiwan": "聊天",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣社群通訊術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "聊天_chat": {
-      "taiwan": "聊天",
-      "confidence": 0.8,
       "category": "mainland-term",
       "reason": "台灣社群通訊術語",
       "match_type": "exact",
@@ -642,30 +594,6 @@
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣社群傳播術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "直播": {
-      "taiwan": "直播",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣網路傳播術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "直播_live": {
-      "taiwan": "直播",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣社群功能術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "直播_livestream": {
-      "taiwan": "直播",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣網路傳播術語",
       "match_type": "exact",
       "autofix_safe": true
     },
@@ -1405,22 +1333,6 @@
       "match_type": "exact",
       "autofix_safe": true
     },
-    "分析": {
-      "taiwan": "分析",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣數據處理術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "分析_analytics": {
-      "taiwan": "分析",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣數據處理術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
     "洞察": {
       "taiwan": "洞察報告",
       "confidence": 0.85,
@@ -1626,22 +1538,6 @@
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣商業合作術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "合作": {
-      "taiwan": "合作",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣商業關係術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "合作_collaboration": {
-      "taiwan": "合作",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣商業關係術語",
       "match_type": "exact",
       "autofix_safe": true
     },
@@ -1981,22 +1877,6 @@
       "match_type": "exact",
       "autofix_safe": true
     },
-    "投票": {
-      "taiwan": "投票",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣互動功能術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "投票_poll": {
-      "taiwan": "投票",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣互動功能術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
     "测验": {
       "taiwan": "測驗",
       "confidence": 0.85,
@@ -2056,22 +1936,6 @@
     "濾鏡_filter": {
       "taiwan": "濾鏡",
       "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣影像處理術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "特效": {
-      "taiwan": "特效",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣影像處理術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "特效_effect": {
-      "taiwan": "特效",
-      "confidence": 0.8,
       "category": "mainland-term",
       "reason": "台灣影像處理術語",
       "match_type": "exact",

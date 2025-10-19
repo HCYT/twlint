@@ -2,7 +2,7 @@
   "metadata": {
     "name": "user-interface",
     "version": "1.0.0",
-    "entries": 119
+    "entries": 106
   },
   "lookup": {
     "窗口": {
@@ -405,22 +405,6 @@
       "match_type": "exact",
       "autofix_safe": true
     },
-    "工具提示": {
-      "taiwan": "工具提示",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣介面元件標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "工具提示_tooltip": {
-      "taiwan": "工具提示",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣介面元件標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
     "控件": {
       "taiwan": "控制項",
       "confidence": 0.9,
@@ -736,22 +720,6 @@
     "撤銷_undo": {
       "taiwan": "復原",
       "confidence": 0.9,
-      "category": "mainland-term",
-      "reason": "台灣編輯操作標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "重做": {
-      "taiwan": "重做",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣編輯操作標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "重做_redo": {
-      "taiwan": "重做",
-      "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣編輯操作標準",
       "match_type": "exact",
@@ -1525,22 +1493,6 @@
       "match_type": "exact",
       "autofix_safe": true
     },
-    "放大": {
-      "taiwan": "放大",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣顯示操作術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "放大_zoom_in": {
-      "taiwan": "放大",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣顯示操作術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
     "缩小": {
       "taiwan": "縮小",
       "confidence": 0.85,
@@ -1570,38 +1522,6 @@
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣顯示操作術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "最大化": {
-      "taiwan": "最大化",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣視窗操作術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "最大化_maximize": {
-      "taiwan": "最大化",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣視窗操作術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "最小化": {
-      "taiwan": "最小化",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣視窗操作術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "最小化_minimize": {
-      "taiwan": "最小化",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣視窗操作術語",
       "match_type": "exact",
       "autofix_safe": true
     },
@@ -1712,22 +1632,6 @@
     "分辨率設置_resolution_setting": {
       "taiwan": "解析度設定",
       "confidence": 0.9,
-      "category": "mainland-term",
-      "reason": "台灣顯示設定術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "亮度": {
-      "taiwan": "亮度",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣顯示設定術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "亮度_brightness": {
-      "taiwan": "亮度",
-      "confidence": 0.8,
       "category": "mainland-term",
       "reason": "台灣顯示設定術語",
       "match_type": "exact",
@@ -2085,22 +1989,6 @@
       "match_type": "exact",
       "autofix_safe": true
     },
-    "段落": {
-      "taiwan": "段落",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣文字排版術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "段落_paragraph": {
-      "taiwan": "段落",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣文字排版術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
     "标题": {
       "taiwan": "標題",
       "confidence": 0.85,
@@ -2261,38 +2149,6 @@
       "match_type": "exact",
       "autofix_safe": true
     },
-    "通知": {
-      "taiwan": "通知",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣系統訊息術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "通知_notification": {
-      "taiwan": "通知",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣系統訊息術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "提醒": {
-      "taiwan": "提醒",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣系統訊息術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "提醒_reminder": {
-      "taiwan": "提醒",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣系統訊息術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
     "警告": {
       "taiwan": "警示",
       "confidence": 0.85,
@@ -2304,22 +2160,6 @@
     "警告_alert": {
       "taiwan": "警示",
       "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣系統訊息術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "提示": {
-      "taiwan": "提示",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣系統訊息術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "提示_prompt": {
-      "taiwan": "提示",
-      "confidence": 0.8,
       "category": "mainland-term",
       "reason": "台灣系統訊息術語",
       "match_type": "exact",
@@ -2354,22 +2194,6 @@
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣系統訊息術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "取消": {
-      "taiwan": "取消",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣系統操作術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "取消_cancel": {
-      "taiwan": "取消",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣系統操作術語",
       "match_type": "exact",
       "autofix_safe": true
     },
@@ -2981,22 +2805,6 @@
       "match_type": "exact",
       "autofix_safe": true
     },
-    "桌面": {
-      "taiwan": "桌面",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣作業系統介面",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "桌面_desktop": {
-      "taiwan": "桌面",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣作業系統介面",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
     "壁纸": {
       "taiwan": "桌布",
       "confidence": 0.9,
@@ -3138,22 +2946,6 @@
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣介面設計術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "面板": {
-      "taiwan": "面板",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣介面元件術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "面板_panel": {
-      "taiwan": "面板",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣介面元件術語",
       "match_type": "exact",
       "autofix_safe": true
     },

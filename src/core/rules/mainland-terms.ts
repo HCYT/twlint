@@ -30,6 +30,11 @@ export class MainlandTermsRule implements Rule {
     const matches = this.dictManager.findMatches(text)
 
     for (const match of matches) {
+      // 過濾假陽性：如果建議詞和原詞相同，跳過
+      if (match.term === match.replacement) {
+        continue
+      }
+
       const lineInfo = this.getLineInfo(text, match.start)
 
       // 根據 autofix_safe 決定訊息和可修復性
@@ -56,8 +61,10 @@ export class MainlandTermsRule implements Rule {
     let fixedText = text
     const matches = this.dictManager.findMatches(text)
 
-    // 只修正標記為安全的詞彙
-    const safeMatches = matches.filter(match => match.autofix_safe)
+    // 只修正標記為安全的詞彙，並過濾假陽性（term === replacement）
+    const safeMatches = matches.filter(match => 
+      match.autofix_safe && match.term !== match.replacement
+    )
 
     // Sort by position (from end to start) to avoid offset issues
     const sortedMatches = safeMatches.sort((a, b) => b.start - a.start)

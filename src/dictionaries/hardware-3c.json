@@ -2,7 +2,7 @@
   "metadata": {
     "name": "hardware-3c",
     "version": "1.0.0",
-    "entries": 91
+    "entries": 89
   },
   "lookup": {
     "硬件": {
@@ -736,22 +736,6 @@
     "刷新率_refresh_rate": {
       "taiwan": "更新率",
       "confidence": 0.9,
-      "category": "mainland-term",
-      "reason": "台灣顯示技術標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "像素": {
-      "taiwan": "像素",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣顯示技術標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "像素_pixel": {
-      "taiwan": "像素",
-      "confidence": 0.8,
       "category": "mainland-term",
       "reason": "台灣顯示技術標準",
       "match_type": "exact",
@@ -2354,22 +2338,6 @@
       "confidence": 0.9,
       "category": "mainland-term",
       "reason": "台灣網路標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "路由器": {
-      "taiwan": "路由器",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣網路設備標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "路由器_router": {
-      "taiwan": "路由器",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣網路設備標準",
       "match_type": "exact",
       "autofix_safe": true
     },

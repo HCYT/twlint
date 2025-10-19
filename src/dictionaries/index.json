@@ -12,21 +12,21 @@
       "description": "AI新興技術",
       "type": "domain",
       "required": false,
-      "entries": 108
+      "entries": 106
     },
     {
       "name": "business-finance",
       "description": "商業金融",
       "type": "domain",
       "required": false,
-      "entries": 123
+      "entries": 111
     },
     {
       "name": "core",
       "description": "核心詞庫",
       "type": "core",
       "required": true,
-      "entries": 150
+      "entries": 142
     },
     {
       "name": "extended",
@@ -40,44 +40,44 @@
       "description": "硬體3C",
       "type": "domain",
       "required": false,
-      "entries": 91
+      "entries": 89
     },
     {
       "name": "network-cloud",
       "description": "網路雲端",
       "type": "domain",
       "required": false,
-      "entries": 113
+      "entries": 111
     },
     {
       "name": "operating-system",
       "description": "作業系統",
       "type": "domain",
       "required": false,
-      "entries": 101
+      "entries": 97
     },
     {
       "name": "social-media",
       "description": "社群媒體",
       "type": "domain",
       "required": false,
-      "entries": 106
+      "entries": 97
     },
     {
       "name": "software-development",
       "description": "軟體開發",
       "type": "domain",
       "required": false,
-      "entries": 139
+      "entries": 117
     },
     {
       "name": "user-interface",
       "description": "使用者介面",
       "type": "domain",
       "required": false,
-      "entries": 119
+      "entries": 106
     }
   ],
   "version": "1.0.0",
-  "buildTime": "2025-09-20T14:31:25.950Z"
+  "buildTime": "2025-10-19T08:46:55.895Z"
 }

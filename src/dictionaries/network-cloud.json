@@ -2,7 +2,7 @@
   "metadata": {
     "name": "network-cloud",
     "version": "1.0.0",
-    "entries": 113
+    "entries": 111
   },
   "lookup": {
     "网络": {
@@ -194,22 +194,6 @@
       "confidence": 0.95,
       "category": "mainland-term",
       "reason": "台灣雲端技術標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "容器": {
-      "taiwan": "容器",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣虛擬化技術",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "容器_container": {
-      "taiwan": "容器",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣虛擬化技術",
       "match_type": "exact",
       "autofix_safe": true
     },
@@ -578,22 +562,6 @@
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣系統升級標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "部署": {
-      "taiwan": "部署",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣軟體發布標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "部署_deployment": {
-      "taiwan": "部署",
-      "confidence": 0.8,
-      "category": "mainland-term",
-      "reason": "台灣軟體發布標準",
       "match_type": "exact",
       "autofix_safe": true
     },

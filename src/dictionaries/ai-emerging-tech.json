@@ -2,7 +2,7 @@
   "metadata": {
     "name": "ai-emerging-tech",
     "version": "1.0.0",
-    "entries": 108
+    "entries": 106
   },
   "lookup": {
     "人工智能": {
@@ -2725,22 +2725,6 @@
       "match_type": "exact",
       "autofix_safe": true
     },
-    "碳中和": {
-      "taiwan": "碳中和",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣環保目標術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "碳中和_carbon_neutral": {
-      "taiwan": "碳中和",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣環保目標術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
     "净零": {
       "taiwan": "淨零",
       "confidence": 0.85,
@@ -2898,22 +2882,6 @@
       "confidence": 0.9,
       "category": "mainland-term",
       "reason": "台灣環保技術標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "智慧城市": {
-      "taiwan": "智慧城市",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣都市發展概念",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "智慧城市_smart_city": {
-      "taiwan": "智慧城市",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣都市發展概念",
       "match_type": "exact",
       "autofix_safe": true
     },
