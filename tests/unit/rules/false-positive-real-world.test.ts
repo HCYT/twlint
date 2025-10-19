@@ -13,19 +13,19 @@ describe('MainlandTermsRule - Real-world Code & Documentation Scenarios', () => 
 
   it('should filter false positives in JSDoc comments', async () => {
     const codeText = `/**
- * 配置 Docker 容器的環境變數
- * @param {Object} config - 配置對象
+ * 設定 Docker 容器的環境變數
+ * @param {Object} config - 設定對象
  * @param {string} network - 網絡名稱
  * @returns {Container} 容器實例
  */
 function setupContainer(config, network) {
-  // 初始化容器配置
+  // 初始化容器設定
   const container = new Container(config);
   container.attachNetwork(network);
   return container;
 }`
 
-    // 模擬：配置、容器是假陽性，網絡→網路是真實匹配
+    // 模擬：設定、容器是假陽性，網絡→網路是真實匹配
     dictManager.findMatches = () => [
       { term: '配置', replacement: '配置', start: 7, end: 9, confidence: 0.9, rule: 'core-exact', autofix_safe: true },
       { term: '容器', replacement: '容器', start: 17, end: 19, confidence: 0.8, rule: 'core-exact', autofix_safe: true },
@@ -72,7 +72,7 @@ function setupContainer(config, network) {
 npm install @example/data-processor
 \`\`\`
 
-## 配置示例
+## 設定示例
 
 \`\`\`json
 {
@@ -103,7 +103,7 @@ npm install @example/data-processor
     const issues = await rule.check(readmeText)
     const fixedText = await rule.fix(readmeText)
 
-    // 應該報告所有真實的大陸用語，過濾假陽性（用戶、配置）
+    // 應該報告所有真實的大陸用語，過濾假陽性（用戶、設定）
     expect(issues.length).toBeGreaterThan(6)
     expect(issues.every(i => !i.message.includes('配置 → 配置'))).toBe(true)
 
@@ -115,7 +115,7 @@ npm install @example/data-processor
     expect(fixedText).toContain('介面')
     expect(fixedText).toContain('快取')
     expect(fixedText).toContain('日誌')
-    // 保留假陽性的配置
+    // 保留假陽性的設定
     expect(fixedText).toContain('配置')
   })
 
@@ -174,7 +174,7 @@ function connectDatabase(config) {
   } catch (error) {
     throw new DatabaseError(
       \`無法連接到數據庫: \${config.host}:\${config.port}. \\n\` +
-      \`請檢查網絡連接和服務器配置。\\n\` +
+      \`請檢查網絡連接和服務器設定。\\n\` +
       \`錯誤信息: \${error.message}\`
     );
   }
@@ -193,7 +193,7 @@ function connectDatabase(config) {
     const issues = await rule.check(errorCode)
     const fixedText = await rule.fix(errorCode)
 
-    // 過濾假陽性（配置），只報告真實大陸用語
+    // 過濾假陽性（設定），只報告真實大陸用語
     expect(issues.length).toBe(4) // 數據庫、網絡、服務器、信息
     expect(issues.every(i => !i.message.includes('配置 → 配置'))).toBe(true)
 
@@ -213,12 +213,12 @@ function connectDatabase(config) {
   /** 用戶顯示名稱 */
   username: string;
   
-  /** 配置選項 */
+  /** 設定選項 */
   options: {
     /** 是否啟用緩存 */
     enableCache: boolean;
     
-    /** 數據源配置 */
+    /** 數據源設定 */
     dataSource: DatabaseConfig;
   };
 }
@@ -242,7 +242,7 @@ interface DatabaseConfig {
     const issues = await rule.check(tsCode)
     const fixedText = await rule.fix(tsCode)
 
-    // 過濾假陽性（用戶、配置），只報告真實匹配
+    // 過濾假陽性（用戶、設定），只報告真實匹配
     expect(issues.length).toBe(2) // 緩存→快取, 數據→資料
     expect(issues.some(i => i.message.includes('緩存') && i.message.includes('快取'))).toBe(true)
     expect(issues.some(i => i.message.includes('數據') && i.message.includes('資料'))).toBe(true)

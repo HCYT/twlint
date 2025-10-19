@@ -4,21 +4,42 @@ import { DictionaryManager } from './dictionary-manager.js'
 import { SimplifiedCharsRule } from './rules/simplified-chars.js'
 import { MainlandTermsRule } from './rules/mainland-terms.js'
 import { PositionMapper } from './position-mapper.js'
-import type { LintResult, Issue, TWLintConfig, Rule } from '../types.js'
+import { ConfigMatcher } from './config-matcher.js'
+import { IgnoreFileLoader } from './ignore-file-loader.js'
+import type { LintResult, Issue, TWLintUserConfig, Rule } from '../types.js'
 import { formatError, ErrorHandler } from '../utils/error-utils.js'
 import { DictLoadStrategyFactory } from './dictionary-loading-strategies.js'
 
 export class TWLinter {
   private dictManager: DictionaryManager
   private rules = new Map<string, Rule>()
-  private config: TWLintConfig
+  private config: TWLintUserConfig
   private deepMode = false
+  private configMatcher: ConfigMatcher
+  private twlintignoreLoaded = false
 
-  constructor(config: TWLintConfig, options?: { deep?: boolean }) {
+  constructor(config: TWLintUserConfig, options?: { deep?: boolean }) {
     this.config = config
     this.deepMode = options?.deep || false
     this.dictManager = new DictionaryManager()
+    this.configMatcher = new ConfigMatcher(config)
     this.initializeRules()
+  }
+
+  /**
+   * 載入 .twlintignore 檔案（如果存在）
+   * 
+   * 這個方法會在第一次需要時自動呼叫
+   */
+  private async loadTwlintignore(): Promise<void> {
+    if (this.twlintignoreLoaded) return
+
+    const patterns = await IgnoreFileLoader.load()
+    if (patterns.length > 0) {
+      this.configMatcher.setTwlintignorePatterns(patterns)
+    }
+
+    this.twlintignoreLoaded = true
   }
 
   private initializeRules(): void {
@@ -30,6 +51,9 @@ export class TWLinter {
   }
 
   async lintFiles(patterns: string[]): Promise<LintResult[]> {
+    // 載入 .twlintignore（如果存在）
+    await this.loadTwlintignore()
+
     const files = await this.expandFilePatterns(patterns)
     const results: LintResult[] = []
 
@@ -59,11 +83,12 @@ export class TWLinter {
     return results
   }
 
-  async lintText(text: string, _filePath?: string): Promise<Issue[]> {
-    await this.loadDictionaries(this.deepMode)
+  async lintText(text: string, filePath?: string): Promise<Issue[]> {
+    // 根據檔案路徑載入對應的詞庫
+    await this.loadDictionariesForFile(filePath)
 
     const issues: Issue[] = []
-    const activeRules = this.getActiveRules()
+    const activeRules = this.getActiveRulesForFile(filePath)
 
     // Process all active rules with unified preprocessing
     for (const rule of activeRules) {
@@ -89,10 +114,10 @@ export class TWLinter {
     return issues
   }
 
-  async fixText(text: string): Promise<string> {
-    await this.loadDictionaries(this.deepMode)
+  async fixText(text: string, filePath?: string): Promise<string> {
+    await this.loadDictionariesForFile(filePath)
 
-    const activeRules = this.getActiveRules().filter(rule => rule.fix)
+    const activeRules = this.getActiveRulesForFile(filePath).filter(rule => rule.fix)
     let result = text
 
     // 按規則順序依次應用修復
@@ -109,45 +134,44 @@ export class TWLinter {
 
   private async expandFilePatterns(patterns: string[]): Promise<string[]> {
     const files: string[] = []
-    const ignorePatterns = await this.getIgnorePatterns()
+    const baseIgnorePatterns = await this.getBaseIgnorePatterns()
 
     for (const pattern of patterns) {
       // 檢查是否為明確的檔案路徑（沒有萬用字元）
       const hasWildcards = pattern.includes('*') || pattern.includes('?') || pattern.includes('[')
 
       if (!hasWildcards) {
-        // 明確的檔案路徑：直接加入，讓後續的檔案讀取來處理錯誤
-        files.push(pattern)
+        // 明確的檔案路徑：直接加入，但要檢查設定的 ignores
+        if (!this.configMatcher.isIgnored(pattern)) {
+          files.push(pattern)
+        }
       } else {
-        // 萬用字元模式：使用 glob 擴展，遵循 .gitignore 規則
+        // 萬用字元模式：使用 glob 擴展
         const matches = await glob(pattern, {
-          ignore: ignorePatterns,
+          ignore: baseIgnorePatterns,
           dot: false // 預設不包含隱藏檔案
         })
-        files.push(...matches)
+        // 過濾掉設定中 ignores 的檔案
+        const filtered = matches.filter(file => !this.configMatcher.isIgnored(file))
+        files.push(...filtered)
       }
     }
 
     return [...new Set(files)] // Remove duplicates
   }
 
-  private async getIgnorePatterns(): Promise<string[]> {
-    const defaultIgnores = [
+  /**
+   * 取得基礎忽略模式（僅用於 glob 擴展時的初步過濾）
+   * 
+   * 注意：
+   * - 系統鐵律（SYSTEM_IGNORES）已在 ConfigMatcher 處理
+   * - 這裡只需要最基本的過濾，避免 glob 擴展時掃描過多檔案
+   */
+  private async getBaseIgnorePatterns(): Promise<string[]> {
+    // 只保留最基本的過濾，其餘交給 ConfigMatcher
+    const baseIgnores = [
       'node_modules/**',
-      '.git/**',
-      '.next/**',
-      '.nuxt/**',
-      'dist/**',
-      'build/**',
-      'coverage/**',
-      'logs/**',
-      '*.log',
-      '.env*',
-      '.DS_Store',
-      '.vscode/**',
-      '.idea/**',
-      'test-temp/**',
-      '*.tmp'
+      '.git/**'
     ]
 
     try {
@@ -170,16 +194,69 @@ export class TWLinter {
           return line
         })
 
-      return [...defaultIgnores, ...gitignorePatterns]
+      return [...baseIgnores, ...gitignorePatterns]
     } catch {
       // 沒有 .gitignore 或讀取失敗，使用預設規則
-      return defaultIgnores
+      return baseIgnores
     }
   }
 
+  /**
+   * 根據檔案路徑載入對應的詞庫
+   */
+  private async loadDictionariesForFile(filePath?: string): Promise<void> {
+    if (this.deepMode) {
+      // Deep mode: 載入所有可用詞庫
+      const strategy = DictLoadStrategyFactory.create(Array.isArray(this.config) ? this.config[0] : this.config, true)
+      const dictNames = await strategy.getDictionaries(Array.isArray(this.config) ? this.config[0] : this.config, this.dictManager)
+      for (const name of dictNames) {
+        try {
+          await this.dictManager.loadDictionary(name)
+        } catch (error) {
+          ErrorHandler.handle(error, `Failed to load dictionary "${name}"`)
+        }
+      }
+      return
+    }
+
+    // 根據檔案獲取對應的 domains
+    const domains = filePath ? this.configMatcher.getDomainsForFile(filePath) : []
+    
+    // 組合要載入的詞庫：core (永遠載入) + domains
+    const dictNames: string[] = ['core']  // 永遠包含 core
+    
+    if (domains.length > 0) {
+      dictNames.push(...domains)
+    } else {
+      // 如果沒有指定 domains，使用設定中的 dictionaries
+      const defaultDicts = this.getDefaultDictionaries().filter(d => d !== 'core')
+      dictNames.push(...defaultDicts)
+    }
+
+    for (const name of dictNames) {
+      try {
+        await this.dictManager.loadDictionary(name)
+      } catch (error) {
+        ErrorHandler.handle(error, `Failed to load dictionary "${name}"`)
+      }
+    }
+  }
+
+  /**
+   * 取得預設詞庫列表
+   */
+  private getDefaultDictionaries(): string[] {
+    const config = Array.isArray(this.config) ? this.config[0] : this.config
+    return config.dictionaries || ['core']
+  }
+
+  /**
+   * 舊方法保留向後相容
+   */
   private async loadDictionaries(deep?: boolean): Promise<void> {
-    const strategy = DictLoadStrategyFactory.create(this.config, deep)
-    const dictNames = await strategy.getDictionaries(this.config, this.dictManager)
+    const config = Array.isArray(this.config) ? this.config[0] : this.config
+    const strategy = DictLoadStrategyFactory.create(config, deep)
+    const dictNames = await strategy.getDictionaries(config, this.dictManager)
 
     for (const name of dictNames) {
       try {
@@ -192,12 +269,16 @@ export class TWLinter {
   }
 
 
-  private getActiveRules(): Rule[] {
+  /**
+   * 根據檔案路徑獲取適用的規則
+   */
+  private getActiveRulesForFile(filePath?: string): Rule[] {
     const activeRules: Rule[] = []
-    const rules = this.config.rules || {
-      'simplified-chars': 'error',
-      'mainland-terms': 'warning'
-    }
+    
+    // 如果有檔案路徑，使用 ConfigMatcher 獲取檔案特定的規則
+    const rules = filePath 
+      ? this.configMatcher.getRulesForFile(filePath)
+      : this.getDefaultRules()
 
     for (const [ruleName, severity] of Object.entries(rules)) {
       if (severity !== 'off') {
@@ -211,12 +292,31 @@ export class TWLinter {
     return activeRules
   }
 
+  /**
+   * 取得預設規則
+   */
+  private getDefaultRules(): Record<string, 'error' | 'warning' | 'info' | 'off'> {
+    const config = Array.isArray(this.config) ? this.config[0] : this.config
+    return config.rules || {
+      'simplified-chars': 'error',
+      'mainland-terms': 'warning'
+    }
+  }
+
+  /**
+   * 舊方法保留向後相容
+   */
+  private getActiveRules(): Rule[] {
+    return this.getActiveRulesForFile(undefined)
+  }
+
 
   /**
    * 檢查規則是否啟用
    */
   private isRuleActive(ruleName: string): boolean {
-    const rules = this.config.rules || {}
+    const config = Array.isArray(this.config) ? this.config[0] : this.config
+    const rules = config.rules || {}
     return rules[ruleName] !== 'off'
   }
 

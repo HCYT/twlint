@@ -20,7 +20,7 @@ src/
 ├── cli.ts                    # CLI 主入口點
 ├── core/                     # 核心檢測引擎
 │   ├── linter.ts            # 主要檢測邏輯
-│   ├── config-loader.ts     # 配置載入器
+│   ├── config-loader.ts     # 設定載入器
 │   ├── dictionary-manager.ts # 詞庫管理器
 │   ├── lru-cache.ts         # LRU 快取實現
 │   └── rules/               # 檢測規則

@@ -8,7 +8,7 @@ const execAsync = promisify(exec)
 
 describe('CLI Integration Tests', () => {
   const testDir = join(process.cwd(), 'test-temp')
-  const testFile = join(testDir, 'test.md')
+  const testFile = join(testDir, 'sample.md')
   const cliPath = join(process.cwd(), 'dist', 'cli.js')
 
   beforeEach(async () => {

@@ -6,12 +6,17 @@ dictionaries-csv/
 src/dictionaries/
 dist/dictionaries/
 
+# 測試臨時檔案
+test-temp/
+
 # 測試文件 - 可能包含測試用的簡體字
-test-*.md
 *test*.md
 *.test.ts
 tests/
 __tests__/
+
+# 發布相關文檔（包含大量程式碼範例，不自動修復）
+CHANGELOG.md
 
 # 建構輸出
 dist/

@@ -121,7 +121,7 @@ npm run dict:test 新領域名
 
 ## 🚀 使用方式
 
-### 新版領域配置（推薦）
+### 新版領域設定（推薦）
 ```bash
 # 軟體開發專案
 twlint check src/ --domains software-development user-interface
@@ -136,19 +136,19 @@ twlint check papers/ --domains ai-emerging-tech network-cloud
 twlint check *.md --deep
 ```
 
-### 傳統詞庫配置（向後相容）
+### 傳統詞庫設定（向後相容）
 ```bash
 # 使用傳統詞庫
 twlint check *.md --dict core academic extended
 ```
 
-### 配置檔案
+### 設定檔案
 ```javascript
 // twlint.config.js
 export default [
   {
     files: ["**/*.md"],
-    // 新版領域配置
+    // 新版領域設定
     domains: ["software-development", "user-interface"],
     rules: {
       "simplified-chars": "error",
@@ -165,7 +165,7 @@ export default [
   },
   {
     files: ["legacy/**/*.md"],
-    // 舊版詞庫配置（向後相容）
+    // 舊版詞庫設定（向後相容）
     dictionaries: ["core", "academic"],
     rules: {
       "simplified-chars": "error",
@@ -225,7 +225,7 @@ npm run test
 - ✅ **語境感知檢測** - 同形異義詞精確識別
 - ✅ **智慧自動修復** - 安全修復 vs 建議修復
 - ✅ **領域專門化** - 按需載入特定領域詞庫
-- ✅ **向後相容** - 支援舊版配置格式
+- ✅ **向後相容** - 支援舊版設定格式
 
 ### 未來擴展方向
 - 📋 醫療健康領域

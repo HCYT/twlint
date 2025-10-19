@@ -58,7 +58,7 @@ export class DeepDictStrategy implements DictLoadStrategy {
 }
 
 /**
- * 策略工廠：根據配置選擇適當的策略
+ * 策略工廠：根據設定選擇適當的策略
  */
 export class DictLoadStrategyFactory {
   static create(config: TWLintConfig, deep?: boolean): DictLoadStrategy {
