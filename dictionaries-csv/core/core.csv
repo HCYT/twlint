@@ -141,3 +141,18 @@ view,檢視,视图,視圖,view,0.85,mainland-term,台灣介面設計標準,tech,
 volume,磁碟區,卷,卷,volume,0.85,mainland-term,台灣儲存管理標準,tech,exact,,,,true
 window,視窗,窗口,窗口,window,0.90,mainland-term,台灣介面設計標準,tech,exact,,,,true
 write,寫入,写入,寫入,write,0.80,mainland-term,台灣檔案操作標準,tech,exact,,,,true
+contain,包含,包含,包含,contain,1.0,fixed-term,避免 '包' 被錯誤匹配,general,exact,,,,false
+include,包括,包括,包括,include,1.0,fixed-term,避免 '包' 被錯誤匹配,general,exact,,,,false
+packaging,包裝,包装,包裝,packaging,1.0,fixed-term,避免 '包' 被錯誤匹配,general,exact,,,,false
+human,人類,人类,人類,human,1.0,fixed-term,避免 '类' 被錯誤匹配,general,exact,,,,false
+kind,種類,种类,種類,kind,1.0,fixed-term,避免 '类' 被錯誤匹配,general,exact,,,,false
+cloudy,多雲,多云,多雲,cloudy,1.0,fixed-term,避免 '云' 被錯誤匹配,general,exact,,,,false
+region,區域,区域,區域,region,1.0,fixed-term,避免 '域' 被錯誤匹配,general,exact,,,,false
+field-domain,領域,领域,領域,field,1.0,fixed-term,避免 '域' 被錯誤匹配,general,exact,,,,false
+inn,客棧,客栈,客棧,inn,1.0,fixed-term,避免 '栈' 被錯誤匹配,general,exact,,,,false
+plank-road,棧道,栈道,棧道,plank road,1.0,fixed-term,避免 '栈' 被錯誤匹配,general,exact,,,,false
+river,河流,河流,河流,river,1.0,fixed-term,避免 '流' 被錯誤匹配,general,exact,,,,false
+communicate,交流,交流,交流,communicate,1.0,fixed-term,避免 '流' 被錯誤匹配,general,exact,,,,false
+exam-paper,考卷,考卷,考卷,exam paper,1.0,fixed-term,避免 '卷' 被錯誤匹配,general,exact,,,,false
+questionnaire,問卷,问卷,問卷,questionnaire,1.0,fixed-term,避免 '卷' 被錯誤匹配,general,exact,,,,false
+mound,土堆,土堆,土堆,mound,1.0,fixed-term,避免 '堆' 被錯誤匹配,general,exact,,,,false
