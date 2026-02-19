@@ -2,7 +2,7 @@
   "metadata": {
     "name": "software-development",
     "version": "1.0.0",
-    "entries": 117
+    "entries": 118
   },
   "lookup": {
     "算法": {
@@ -1906,6 +1906,38 @@
       "confidence": 0.9,
       "category": "mainland-term",
       "reason": "台灣協作開發標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "鲁棒性": {
+      "taiwan": "穩健性",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣標準意譯",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "鲁棒性_robustness": {
+      "taiwan": "穩健性",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣標準意譯",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "魯棒性": {
+      "taiwan": "穩健性",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣標準意譯",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "魯棒性_robustness": {
+      "taiwan": "穩健性",
+      "confidence": 0.95,
+      "category": "mainland-term",
+      "reason": "台灣標準意譯",
       "match_type": "exact",
       "autofix_safe": true
     },
