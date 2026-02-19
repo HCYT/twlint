@@ -66,6 +66,7 @@ continuous-delivery,持續交付,持续交付,持續交付,CD,0.90,mainland-term
 repository,版本庫,仓库,倉庫,repository,0.90,mainland-term,台灣版本控制標準,tech,exact,,,,true
 merge,合併,合并,合併,merge,0.85,mainland-term,台灣版本控制標準,tech,exact,,,,true
 pull-request,拉取請求,拉取请求,拉取請求,pull request,0.90,mainland-term,台灣協作開發標準,tech,exact,,,,true
+robustness,穩健性,鲁棒性,魯棒性,robustness,0.95,mainland-term,台灣標準意譯,tech,exact,,,,true
 rollback,回溯,回滚,回滾,rollback,0.90,mainland-term,台灣版本控制標準,tech,exact,,,,true
 unit-test,單元測試,单元测试,單元測試,unit test,0.90,mainland-term,台灣測試標準,tech,exact,,,,true
 integration-test,整合測試,集成测试,集成測試,integration test,0.90,mainland-term,台灣測試標準,tech,exact,,,,true

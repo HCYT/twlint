@@ -68,7 +68,7 @@
       "description": "軟體開發",
       "type": "domain",
       "required": false,
-      "entries": 117
+      "entries": 118
     },
     {
       "name": "user-interface",
@@ -79,5 +79,5 @@
     }
   ],
   "version": "1.0.0",
-  "buildTime": "2025-10-19T10:23:42.699Z"
+  "buildTime": "2026-02-19T06:23:19.171Z"
 }
