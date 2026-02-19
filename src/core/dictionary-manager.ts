@@ -44,7 +44,6 @@ export class DictionaryManager {
 
   findMatches(text: string): MatchResult[] {
     const allMatches: MatchResult[] = []
-    const processedRanges = new Map<string, MatchResult>() // 改為 Map 來追蹤最佳匹配
 
     for (const dict of this.cache.values()) {
       // 先處理所有基本詞彙匹配
@@ -60,7 +59,7 @@ export class DictionaryManager {
         const matches = strategy.match(text, term, entry.context)
 
         for (const match of matches) {
-          this.addMatchWithPriority(allMatches, processedRanges, match, entry, dict.metadata.name)
+          this.addMatch(allMatches, match, entry, dict.metadata.name)
         }
 
         // 對於語境敏感詞彙，同時檢查其變體
@@ -77,54 +76,62 @@ export class DictionaryManager {
             const variantMatches = variantStrategy.match(text, term, variantEntry.context)
 
             for (const match of variantMatches) {
-              this.addMatchWithPriority(allMatches, processedRanges, match, variantEntry, dict.metadata.name, true)
+              this.addMatch(allMatches, match, variantEntry, dict.metadata.name, true)
             }
           }
         }
       }
     }
 
-    // 按信心度和位置排序：高信心度優先，相同信心度則按位置順序
-    return allMatches.sort((a, b) => {
+    // 1. 排序：優先長度，其次信心度，最後位置
+    // Sort logic: Longest length > Higher confidence > Earlier position
+    allMatches.sort((a, b) => {
+      const lenA = a.end - a.start
+      const lenB = b.end - b.start
+      if (lenA !== lenB) return lenB - lenA // Longest first
+
       if (Math.abs(a.confidence - b.confidence) > 0.01) {
-        return b.confidence - a.confidence
+        return b.confidence - a.confidence // Higher confidence first
       }
-      return a.start - b.start
+
+      return a.start - b.start // Earlier position first
     })
+
+    // 2. 去重：過濾掉與高優先級匹配重疊的結果
+    // Deduplication: Filter out overlapping matches
+    const acceptedMatches: MatchResult[] = []
+
+    for (const candidate of allMatches) {
+      const isOverlapping = acceptedMatches.some(accepted => {
+        // Check for overlap: 
+        // candidate starts before accepted ends AND candidate ends after accepted starts
+        return candidate.start < accepted.end && candidate.end > accepted.start
+      })
+
+      if (!isOverlapping) {
+        acceptedMatches.push(candidate)
+      }
+    }
+
+    // 3. 最終排序：按位置輸出，符合閱讀順序
+    // Final sort: By position for readability
+    return acceptedMatches.sort((a, b) => a.start - b.start)
   }
 
-  private addMatchWithPriority(
+  private addMatch(
     allMatches: MatchResult[],
-    processedRanges: Map<string, MatchResult>,
     match: MatchResult,
     entry: DictLookupEntry,
     dictName: string,
     isVariant = false
   ): void {
-    const rangeKey = `${match.start}-${match.end}`
-
-    const newMatch: MatchResult = {
+    allMatches.push({
       ...match,
       replacement: entry.taiwan,
       confidence: entry.confidence,
       rule: `${dictName}-${entry.match_type || 'exact'}${isVariant ? '-variant' : ''}`,
       autofix_safe: entry.autofix_safe || false
-    }
-
-    // 如果這個範圍還沒有匹配，或者新匹配的信心度更高
-    const existingMatch = processedRanges.get(rangeKey)
-    if (!existingMatch || newMatch.confidence > existingMatch.confidence) {
-      if (existingMatch) {
-        // 移除舊的匹配
-        const index = allMatches.indexOf(existingMatch)
-        if (index > -1) {
-          allMatches.splice(index, 1)
-        }
-      }
-
-      processedRanges.set(rangeKey, newMatch)
-      allMatches.push(newMatch)
-    }
+    })
   }
 
   async scanAvailableDictionaries(): Promise<string[]> {

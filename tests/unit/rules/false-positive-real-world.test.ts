@@ -13,13 +13,13 @@ describe('MainlandTermsRule - Real-world Code & Documentation Scenarios', () => 
 
   it('should filter false positives in JSDoc comments', async () => {
     const codeText = `/**
- * 設定 Docker 容器的環境變數
- * @param {Object} config - 設定對象
+ * 配置 Docker 容器的環境變數
+ * @param {Object} config - 配置對象
  * @param {string} network - 網絡名稱
  * @returns {Container} 容器實例
  */
 function setupContainer(config, network) {
-  // 初始化容器設定
+  // 初始化容器配置
   const container = new Container(config);
   container.attachNetwork(network);
   return container;
@@ -72,7 +72,7 @@ function setupContainer(config, network) {
 npm install @example/data-processor
 \`\`\`
 
-## 設定示例
+## 配置示例
 
 \`\`\`json
 {
@@ -174,7 +174,7 @@ function connectDatabase(config) {
   } catch (error) {
     throw new DatabaseError(
       \`無法連接到數據庫: \${config.host}:\${config.port}. \\n\` +
-      \`請檢查網絡連接和服務器設定。\\n\` +
+      \`請檢查網絡連接和服務器配置。\\n\` +
       \`錯誤信息: \${error.message}\`
     );
   }
@@ -213,12 +213,12 @@ function connectDatabase(config) {
   /** 用戶顯示名稱 */
   username: string;
   
-  /** 設定選項 */
+  /** 配置選項 */
   options: {
     /** 是否啟用緩存 */
     enableCache: boolean;
     
-    /** 數據源設定 */
+    /** 數據源配置 */
     dataSource: DatabaseConfig;
   };
 }
