@@ -2,7 +2,7 @@
   "metadata": {
     "name": "core",
     "version": "1.0.0",
-    "entries": 142
+    "entries": 157
   },
   "lookup": {
     "访问": {
@@ -4012,6 +4012,390 @@
       "reason": "台灣檔案操作標準",
       "match_type": "exact",
       "autofix_safe": true
+    },
+    "包含": {
+      "taiwan": "包含",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '包' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "包含_contain": {
+      "taiwan": "包含",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '包' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "包括": {
+      "taiwan": "包括",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '包' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "包括_include": {
+      "taiwan": "包括",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '包' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "包装": {
+      "taiwan": "包裝",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '包' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "包装_packaging": {
+      "taiwan": "包裝",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '包' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "包裝": {
+      "taiwan": "包裝",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '包' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "包裝_packaging": {
+      "taiwan": "包裝",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '包' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "人类": {
+      "taiwan": "人類",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '类' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "人类_human": {
+      "taiwan": "人類",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '类' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "人類": {
+      "taiwan": "人類",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '类' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "人類_human": {
+      "taiwan": "人類",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '类' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "种类": {
+      "taiwan": "種類",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '类' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "种类_kind": {
+      "taiwan": "種類",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '类' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "種類": {
+      "taiwan": "種類",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '类' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "種類_kind": {
+      "taiwan": "種類",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '类' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "多云": {
+      "taiwan": "多雲",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '云' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "多云_cloudy": {
+      "taiwan": "多雲",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '云' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "多雲": {
+      "taiwan": "多雲",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '云' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "多雲_cloudy": {
+      "taiwan": "多雲",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '云' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "区域": {
+      "taiwan": "區域",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '域' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "区域_region": {
+      "taiwan": "區域",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '域' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "區域": {
+      "taiwan": "區域",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '域' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "區域_region": {
+      "taiwan": "區域",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '域' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "领域": {
+      "taiwan": "領域",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '域' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "领域_field_domain": {
+      "taiwan": "領域",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '域' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "領域": {
+      "taiwan": "領域",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '域' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "領域_field_domain": {
+      "taiwan": "領域",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '域' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "客栈": {
+      "taiwan": "客棧",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '栈' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "客栈_inn": {
+      "taiwan": "客棧",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '栈' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "客棧": {
+      "taiwan": "客棧",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '栈' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "客棧_inn": {
+      "taiwan": "客棧",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '栈' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "栈道": {
+      "taiwan": "棧道",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '栈' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "栈道_plank_road": {
+      "taiwan": "棧道",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '栈' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "棧道": {
+      "taiwan": "棧道",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '栈' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "棧道_plank_road": {
+      "taiwan": "棧道",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '栈' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "河流": {
+      "taiwan": "河流",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '流' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "河流_river": {
+      "taiwan": "河流",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '流' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "交流": {
+      "taiwan": "交流",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '流' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "交流_communicate": {
+      "taiwan": "交流",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '流' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "考卷": {
+      "taiwan": "考卷",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '卷' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "考卷_exam_paper": {
+      "taiwan": "考卷",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '卷' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "问卷": {
+      "taiwan": "問卷",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '卷' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "问卷_questionnaire": {
+      "taiwan": "問卷",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '卷' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "問卷": {
+      "taiwan": "問卷",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '卷' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "問卷_questionnaire": {
+      "taiwan": "問卷",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '卷' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "土堆": {
+      "taiwan": "土堆",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '堆' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "土堆_mound": {
+      "taiwan": "土堆",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '堆' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
     }
   }
 }
