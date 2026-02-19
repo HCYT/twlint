@@ -188,7 +188,7 @@ class DictBuilder {
 
     const index = {
       dictionaries: builtDictionaries,
-      version: '1.0.0',
+      version: '1.2.0',
       buildTime: new Date().toISOString()
     }
 
@@ -244,7 +244,7 @@ class DictBuilder {
     return {
       metadata: {
         name,
-        version: '1.0.0',
+        version: '1.2.0',
         entries: entries.length
       },
       lookup: this.optimizeForLookup(entries)
