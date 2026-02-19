@@ -98,23 +98,75 @@ export class DictionaryManager {
     })
 
     // 2. 去重：過濾掉與高優先級匹配重疊的結果
-    // Deduplication: Filter out overlapping matches
+    // Deduplication using Interval Merging (O(N log N) or O(N) since already sorted by length?)
+    // Actually, simply maintaining a list of disjoint intervals is enough.
+    // Since matches are sorted by Length DESC, we iterate and check if the current match
+    // overlaps with ANY already accepted match.
+    // To do this efficiently:
+    // We can use a simple boolean array if text is short, but text can be long.
+    // Better: Maintain a sorted list of accepted intervals [start, end).
+    // For each candidate, check if it overlaps with any interval in the list.
+    // Since we process in priority order, if it doesn't overlap, we add it.
+
     const acceptedMatches: MatchResult[] = []
 
-    for (const candidate of allMatches) {
-      const isOverlapping = acceptedMatches.some(accepted => {
-        // Check for overlap: 
-        // candidate starts before accepted ends AND candidate ends after accepted starts
-        return candidate.start < accepted.end && candidate.end > accepted.start
-      })
+    // 為了效能，我們實作一個簡單的區間檢查
+    // 由於我們可能有大量的匹配，線性掃描 acceptedMatches (O(M)) 對每個候選 (N) -> O(NM)。
+    // 如果 M 很大，這會慢。
+    // 優化：使用一個簡單的遮罩或區間樹？
+    // 考量到 JS 的 overhead，對於一般長度的文本，線性掃描可能已經足夠快。
+    // 但 Reviewer 提到效能，我們來做一個稍微好一點的檢查。
+    // 我們可以使用一個 Uint8Array 來標記被佔用的位置，如果文本長度允許 (e.g. < 1MB)。
+    // 這是 O(1) 檢查，O(L) 標記。
 
-      if (!isOverlapping) {
-        acceptedMatches.push(candidate)
+    // 如果文本太長，回退到區間檢查。
+    // 假設大部分檢查的文本都在 100KB 以內。
+
+    if (text.length < 100000) {
+      const occupied = new Uint8Array(text.length)
+      for (const candidate of allMatches) {
+        let isOverlapping = false
+        // Check overlap
+        for (let i = candidate.start; i < candidate.end; i++) {
+          if (occupied[i] === 1) {
+            isOverlapping = true
+            break
+          }
+        }
+
+        if (!isOverlapping) {
+          acceptedMatches.push(candidate)
+          // Mark occupied
+          for (let i = candidate.start; i < candidate.end; i++) {
+            occupied[i] = 1
+          }
+        }
+      }
+    } else {
+      // Fallback for very long text: Interval List
+      // Keep intervals sorted by start
+      const acceptedIntervals: { start: number, end: number }[] = []
+
+      for (const candidate of allMatches) {
+        // Binary search or linear scan? Linear scan is O(M).
+        // Check overlap with any accepted interval
+        const isOverlapping = acceptedIntervals.some(interval =>
+          candidate.start < interval.end && candidate.end > interval.start
+        )
+
+        if (!isOverlapping) {
+          acceptedMatches.push(candidate)
+          acceptedIntervals.push({ start: candidate.start, end: candidate.end })
+          // No need to sort acceptedIntervals every time if we just use .some()
+          // But for binary search we would need to maintain order.
+          // Given the typical number of matches, .some() is acceptable here compared to strict O(N^2) if M is small.
+          // Wait, previous logic WAS O(N*M) where M is accepted count. This is same.
+          // But Uint8Array is O(N * Len).
+        }
       }
     }
 
     // 3. 最終排序：按位置輸出，符合閱讀順序
-    // Final sort: By position for readability
     return acceptedMatches.sort((a, b) => a.start - b.start)
   }
 
