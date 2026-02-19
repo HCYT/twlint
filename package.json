@@ -1,6 +1,6 @@
 {
   "name": "@termdock/twlint",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A CLI tool for detecting simplified Chinese terms and suggesting Taiwan traditional alternatives",
   "main": "dist/cli.js",
   "type": "module",
