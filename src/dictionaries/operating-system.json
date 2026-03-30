@@ -2,7 +2,7 @@
   "metadata": {
     "name": "operating-system",
     "version": "1.3.0",
-    "entries": 97
+    "entries": 98
   },
   "lookup": {
     "操作系统": {
@@ -2818,6 +2818,38 @@
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣檔案系統功能",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "多任务": {
+      "taiwan": "多工",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣作業系統標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "多任务_multitasking": {
+      "taiwan": "多工",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣作業系統標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "多任務": {
+      "taiwan": "多工",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣作業系統標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "多任務_multitasking": {
+      "taiwan": "多工",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣作業系統標準",
       "match_type": "exact",
       "autofix_safe": true
     }

@@ -2,7 +2,7 @@
   "metadata": {
     "name": "user-interface",
     "version": "1.3.0",
-    "entries": 97
+    "entries": 99
   },
   "lookup": {
     "窗口": {
@@ -10,16 +10,50 @@
       "confidence": 0.9,
       "category": "mainland-term",
       "reason": "台灣介面設計標準",
-      "match_type": "exact",
-      "autofix_safe": true
+      "match_type": "context_sensitive",
+      "autofix_safe": false,
+      "context": {
+        "before": [
+          "彈出",
+          "對話",
+          "應用",
+          "瀏覽器",
+          "作業系統",
+          "最小化",
+          "最大化",
+          "視窗"
+        ],
+        "exclude": [
+          "服務",
+          "售票",
+          "掛號"
+        ]
+      }
     },
     "窗口_window": {
       "taiwan": "視窗",
       "confidence": 0.9,
       "category": "mainland-term",
       "reason": "台灣介面設計標準",
-      "match_type": "exact",
-      "autofix_safe": true
+      "match_type": "context_sensitive",
+      "autofix_safe": false,
+      "context": {
+        "before": [
+          "彈出",
+          "對話",
+          "應用",
+          "瀏覽器",
+          "作業系統",
+          "最小化",
+          "最大化",
+          "視窗"
+        ],
+        "exclude": [
+          "服務",
+          "售票",
+          "掛號"
+        ]
+      }
     },
     "对话框": {
       "taiwan": "對話方塊",
@@ -122,32 +156,108 @@
       "confidence": 0.9,
       "category": "mainland-term",
       "reason": "台灣介面設計標準",
-      "match_type": "exact",
-      "autofix_safe": true
+      "match_type": "context_sensitive",
+      "autofix_safe": false,
+      "context": {
+        "before": [
+          "下拉",
+          "右鍵",
+          "導航",
+          "功能",
+          "系統",
+          "介面",
+          "工具列",
+          "點擊",
+          "彈出"
+        ],
+        "exclude": [
+          "餐廳",
+          "料理",
+          "美食",
+          "點菜"
+        ]
+      }
     },
     "菜单_menu": {
       "taiwan": "選單",
       "confidence": 0.9,
       "category": "mainland-term",
       "reason": "台灣介面設計標準",
-      "match_type": "exact",
-      "autofix_safe": true
+      "match_type": "context_sensitive",
+      "autofix_safe": false,
+      "context": {
+        "before": [
+          "下拉",
+          "右鍵",
+          "導航",
+          "功能",
+          "系統",
+          "介面",
+          "工具列",
+          "點擊",
+          "彈出"
+        ],
+        "exclude": [
+          "餐廳",
+          "料理",
+          "美食",
+          "點菜"
+        ]
+      }
     },
     "菜單": {
       "taiwan": "選單",
       "confidence": 0.9,
       "category": "mainland-term",
       "reason": "台灣介面設計標準",
-      "match_type": "exact",
-      "autofix_safe": true
+      "match_type": "context_sensitive",
+      "autofix_safe": false,
+      "context": {
+        "before": [
+          "下拉",
+          "右鍵",
+          "導航",
+          "功能",
+          "系統",
+          "介面",
+          "工具列",
+          "點擊",
+          "彈出"
+        ],
+        "exclude": [
+          "餐廳",
+          "料理",
+          "美食",
+          "點菜"
+        ]
+      }
     },
     "菜單_menu": {
       "taiwan": "選單",
       "confidence": 0.9,
       "category": "mainland-term",
       "reason": "台灣介面設計標準",
-      "match_type": "exact",
-      "autofix_safe": true
+      "match_type": "context_sensitive",
+      "autofix_safe": false,
+      "context": {
+        "before": [
+          "下拉",
+          "右鍵",
+          "導航",
+          "功能",
+          "系統",
+          "介面",
+          "工具列",
+          "點擊",
+          "彈出"
+        ],
+        "exclude": [
+          "餐廳",
+          "料理",
+          "美食",
+          "點菜"
+        ]
+      }
     },
     "状态栏": {
       "taiwan": "狀態列",
@@ -1018,16 +1128,52 @@
       "confidence": 0.9,
       "category": "mainland-term",
       "reason": "台灣文件標準術語",
-      "match_type": "exact",
-      "autofix_safe": true
+      "match_type": "context_sensitive",
+      "autofix_safe": false,
+      "context": {
+        "before": [
+          "程式",
+          "代碼",
+          "HTML",
+          "CSS",
+          "設計",
+          "網頁",
+          "郵件",
+          "專案"
+        ],
+        "exclude": [
+          "混凝土",
+          "工程",
+          "建築",
+          "營建"
+        ]
+      }
     },
     "模板_template": {
       "taiwan": "範本",
       "confidence": 0.9,
       "category": "mainland-term",
       "reason": "台灣文件標準術語",
-      "match_type": "exact",
-      "autofix_safe": true
+      "match_type": "context_sensitive",
+      "autofix_safe": false,
+      "context": {
+        "before": [
+          "程式",
+          "代碼",
+          "HTML",
+          "CSS",
+          "設計",
+          "網頁",
+          "郵件",
+          "專案"
+        ],
+        "exclude": [
+          "混凝土",
+          "工程",
+          "建築",
+          "營建"
+        ]
+      }
     },
     "首选项": {
       "taiwan": "偏好設定",
@@ -1119,22 +1265,6 @@
     },
     "設置_setting": {
       "taiwan": "設定",
-      "confidence": 0.9,
-      "category": "mainland-term",
-      "reason": "台灣系統設定術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "配置": {
-      "taiwan": "組態",
-      "confidence": 0.9,
-      "category": "mainland-term",
-      "reason": "台灣系統設定術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "配置_configuration": {
-      "taiwan": "組態",
       "confidence": 0.9,
       "category": "mainland-term",
       "reason": "台灣系統設定術語",
@@ -1978,16 +2108,54 @@
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣檔案操作標準",
-      "match_type": "exact",
-      "autofix_safe": true
+      "match_type": "context_sensitive",
+      "autofix_safe": false,
+      "context": {
+        "before": [
+          "檔案",
+          "資料",
+          "設定",
+          "修改",
+          "變更",
+          "按鈕",
+          "Ctrl",
+          "對話方塊",
+          "自動"
+        ],
+        "exclude": [
+          "食物",
+          "紀念",
+          "實力",
+          "體力"
+        ]
+      }
     },
     "保存_save": {
       "taiwan": "儲存",
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣檔案操作標準",
-      "match_type": "exact",
-      "autofix_safe": true
+      "match_type": "context_sensitive",
+      "autofix_safe": false,
+      "context": {
+        "before": [
+          "檔案",
+          "資料",
+          "設定",
+          "修改",
+          "變更",
+          "按鈕",
+          "Ctrl",
+          "對話方塊",
+          "自動"
+        ],
+        "exclude": [
+          "食物",
+          "紀念",
+          "實力",
+          "體力"
+        ]
+      }
     },
     "加载": {
       "taiwan": "載入",
@@ -2234,64 +2402,224 @@
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣系統操作標準",
-      "match_type": "exact",
-      "autofix_safe": true
+      "match_type": "context_sensitive",
+      "autofix_safe": false,
+      "context": {
+        "before": [
+          "檔案",
+          "資料夾",
+          "帳號",
+          "專案",
+          "伺服器",
+          "資料庫",
+          "分支",
+          "容器",
+          "環境",
+          "實體"
+        ],
+        "exclude": [
+          "公司",
+          "品牌",
+          "企業",
+          "王朝"
+        ]
+      }
     },
     "创建_create": {
       "taiwan": "建立",
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣系統操作標準",
-      "match_type": "exact",
-      "autofix_safe": true
+      "match_type": "context_sensitive",
+      "autofix_safe": false,
+      "context": {
+        "before": [
+          "檔案",
+          "資料夾",
+          "帳號",
+          "專案",
+          "伺服器",
+          "資料庫",
+          "分支",
+          "容器",
+          "環境",
+          "實體"
+        ],
+        "exclude": [
+          "公司",
+          "品牌",
+          "企業",
+          "王朝"
+        ]
+      }
     },
     "創建": {
       "taiwan": "建立",
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣系統操作標準",
-      "match_type": "exact",
-      "autofix_safe": true
+      "match_type": "context_sensitive",
+      "autofix_safe": false,
+      "context": {
+        "before": [
+          "檔案",
+          "資料夾",
+          "帳號",
+          "專案",
+          "伺服器",
+          "資料庫",
+          "分支",
+          "容器",
+          "環境",
+          "實體"
+        ],
+        "exclude": [
+          "公司",
+          "品牌",
+          "企業",
+          "王朝"
+        ]
+      }
     },
     "創建_create": {
       "taiwan": "建立",
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣系統操作標準",
-      "match_type": "exact",
-      "autofix_safe": true
+      "match_type": "context_sensitive",
+      "autofix_safe": false,
+      "context": {
+        "before": [
+          "檔案",
+          "資料夾",
+          "帳號",
+          "專案",
+          "伺服器",
+          "資料庫",
+          "分支",
+          "容器",
+          "環境",
+          "實體"
+        ],
+        "exclude": [
+          "公司",
+          "品牌",
+          "企業",
+          "王朝"
+        ]
+      }
     },
     "打开": {
       "taiwan": "開啟",
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣檔案操作標準",
-      "match_type": "exact",
-      "autofix_safe": true
+      "match_type": "context_sensitive",
+      "autofix_safe": false,
+      "context": {
+        "before": [
+          "檔案",
+          "程式",
+          "軟體",
+          "應用",
+          "瀏覽器",
+          "設定",
+          "連結",
+          "終端",
+          "視窗"
+        ],
+        "exclude": [
+          "門",
+          "書",
+          "窗",
+          "蓋",
+          "瓶"
+        ]
+      }
     },
     "打开_open": {
       "taiwan": "開啟",
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣檔案操作標準",
-      "match_type": "exact",
-      "autofix_safe": true
+      "match_type": "context_sensitive",
+      "autofix_safe": false,
+      "context": {
+        "before": [
+          "檔案",
+          "程式",
+          "軟體",
+          "應用",
+          "瀏覽器",
+          "設定",
+          "連結",
+          "終端",
+          "視窗"
+        ],
+        "exclude": [
+          "門",
+          "書",
+          "窗",
+          "蓋",
+          "瓶"
+        ]
+      }
     },
     "打開": {
       "taiwan": "開啟",
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣檔案操作標準",
-      "match_type": "exact",
-      "autofix_safe": true
+      "match_type": "context_sensitive",
+      "autofix_safe": false,
+      "context": {
+        "before": [
+          "檔案",
+          "程式",
+          "軟體",
+          "應用",
+          "瀏覽器",
+          "設定",
+          "連結",
+          "終端",
+          "視窗"
+        ],
+        "exclude": [
+          "門",
+          "書",
+          "窗",
+          "蓋",
+          "瓶"
+        ]
+      }
     },
     "打開_open": {
       "taiwan": "開啟",
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣檔案操作標準",
-      "match_type": "exact",
-      "autofix_safe": true
+      "match_type": "context_sensitive",
+      "autofix_safe": false,
+      "context": {
+        "before": [
+          "檔案",
+          "程式",
+          "軟體",
+          "應用",
+          "瀏覽器",
+          "設定",
+          "連結",
+          "終端",
+          "視窗"
+        ],
+        "exclude": [
+          "門",
+          "書",
+          "窗",
+          "蓋",
+          "瓶"
+        ]
+      }
     },
     "关闭": {
       "taiwan": "關閉",
@@ -2330,16 +2658,62 @@
       "confidence": 0.9,
       "category": "mainland-term",
       "reason": "台灣檔案系統標準",
-      "match_type": "exact",
-      "autofix_safe": true
+      "match_type": "context_sensitive",
+      "autofix_safe": false,
+      "context": {
+        "before": [
+          "系統",
+          "程式",
+          "軟體",
+          "下載",
+          "上傳",
+          "刪除",
+          "複製",
+          "路徑",
+          "資料夾",
+          "副檔名",
+          ".json",
+          ".txt",
+          ".md",
+          "config",
+          "README"
+        ],
+        "exclude": [
+          "公文",
+          "正式"
+        ]
+      }
     },
     "文件_file": {
       "taiwan": "檔案",
       "confidence": 0.9,
       "category": "mainland-term",
       "reason": "台灣檔案系統標準",
-      "match_type": "exact",
-      "autofix_safe": true
+      "match_type": "context_sensitive",
+      "autofix_safe": false,
+      "context": {
+        "before": [
+          "系統",
+          "程式",
+          "軟體",
+          "下載",
+          "上傳",
+          "刪除",
+          "複製",
+          "路徑",
+          "資料夾",
+          "副檔名",
+          ".json",
+          ".txt",
+          ".md",
+          "config",
+          "README"
+        ],
+        "exclude": [
+          "公文",
+          "正式"
+        ]
+      }
     },
     "文件夹": {
       "taiwan": "資料夾",
@@ -2650,16 +3024,54 @@
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣介面設計術語",
-      "match_type": "exact",
-      "autofix_safe": true
+      "match_type": "context_sensitive",
+      "autofix_safe": false,
+      "context": {
+        "before": [
+          "CSS",
+          "網頁",
+          "介面",
+          "頁面",
+          "flexbox",
+          "grid",
+          "UI",
+          "排版",
+          "元件"
+        ],
+        "exclude": [
+          "戰略",
+          "全球",
+          "產業",
+          "市場"
+        ]
+      }
     },
     "布局_layout": {
       "taiwan": "版面配置",
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣介面設計術語",
-      "match_type": "exact",
-      "autofix_safe": true
+      "match_type": "context_sensitive",
+      "autofix_safe": false,
+      "context": {
+        "before": [
+          "CSS",
+          "網頁",
+          "介面",
+          "頁面",
+          "flexbox",
+          "grid",
+          "UI",
+          "排版",
+          "元件"
+        ],
+        "exclude": [
+          "戰略",
+          "全球",
+          "產業",
+          "市場"
+        ]
+      }
     },
     "网格": {
       "taiwan": "格線",
@@ -2754,6 +3166,102 @@
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣Office介面術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "占位符": {
+      "taiwan": "預留位置",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣介面設計術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "占位符_placeholder": {
+      "taiwan": "預留位置",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣介面設計術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "佔位符": {
+      "taiwan": "預留位置",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣介面設計術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "佔位符_placeholder": {
+      "taiwan": "預留位置",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣介面設計術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "滑块": {
+      "taiwan": "滑桿",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣介面元件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "滑块_slider": {
+      "taiwan": "滑桿",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣介面元件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "滑塊": {
+      "taiwan": "滑桿",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣介面元件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "滑塊_slider": {
+      "taiwan": "滑桿",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣介面元件術語",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "截图": {
+      "taiwan": "擷圖",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣螢幕操作標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "截图_screenshot_ui": {
+      "taiwan": "擷圖",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣螢幕操作標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "截圖": {
+      "taiwan": "擷圖",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣螢幕操作標準",
+      "match_type": "exact",
+      "autofix_safe": true
+    },
+    "截圖_screenshot_ui": {
+      "taiwan": "擷圖",
+      "confidence": 0.9,
+      "category": "mainland-term",
+      "reason": "台灣螢幕操作標準",
       "match_type": "exact",
       "autofix_safe": true
     }

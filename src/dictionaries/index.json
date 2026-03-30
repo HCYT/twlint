@@ -12,7 +12,7 @@
       "description": "AI新興技術",
       "type": "domain",
       "required": false,
-      "entries": 106
+      "entries": 107
     },
     {
       "name": "business-finance",
@@ -26,7 +26,7 @@
       "description": "核心詞庫",
       "type": "core",
       "required": true,
-      "entries": 150
+      "entries": 147
     },
     {
       "name": "extended",
@@ -40,21 +40,21 @@
       "description": "硬體3C",
       "type": "domain",
       "required": false,
-      "entries": 89
+      "entries": 92
     },
     {
       "name": "network-cloud",
       "description": "網路雲端",
       "type": "domain",
       "required": false,
-      "entries": 109
+      "entries": 112
     },
     {
       "name": "operating-system",
       "description": "作業系統",
       "type": "domain",
       "required": false,
-      "entries": 97
+      "entries": 98
     },
     {
       "name": "social-media",
@@ -68,16 +68,16 @@
       "description": "軟體開發",
       "type": "domain",
       "required": false,
-      "entries": 115
+      "entries": 167
     },
     {
       "name": "user-interface",
       "description": "使用者介面",
       "type": "domain",
       "required": false,
-      "entries": 97
+      "entries": 99
     }
   ],
   "version": "1.3.0",
-  "buildTime": "2026-03-30T02:31:13.309Z"
+  "buildTime": "2026-03-30T04:25:14.067Z"
 }
