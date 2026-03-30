@@ -6,7 +6,8 @@ export class SimplifiedCharsRule implements Rule {
   private converter: ReturnType<typeof Converter>
   private readonly ignoredVariantPairs = new Set([
     '了->瞭',
-    '布->佈'
+    '布->佈',
+    '台->臺'
   ])
 
   constructor() {

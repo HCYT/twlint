@@ -104,6 +104,138 @@ describe('TWLinter', () => {
       )).toBeUndefined()
     })
 
+    it('should flag 類型 in explicit type-system contexts', async () => {
+      const text = '函式類型需要與參數類型一致'
+      const issues = await linter.lintText(text)
+
+      expect(issues.some(issue =>
+        issue.rule === 'mainland-terms' &&
+        issue.message.includes('類型') &&
+        issue.message.includes('型別')
+      )).toBe(true)
+    })
+
+    it('should not flag 類型 in general categorization contexts', async () => {
+      const text = '請選擇商品類型與膚質類型'
+      const issues = await linter.lintText(text)
+
+      expect(issues.find(issue =>
+        issue.rule === 'mainland-terms' &&
+        issue.message.includes('類型') &&
+        issue.message.includes('型別')
+      )).toBeUndefined()
+    })
+
+    it('should flag 協議 in explicit protocol contexts', async () => {
+      const text = 'HTTP 協議與通訊協議需要保持一致'
+      const issues = await linter.lintText(text)
+
+      expect(issues.some(issue =>
+        issue.rule === 'mainland-terms' &&
+        issue.message.includes('協議') &&
+        issue.message.includes('協定')
+      )).toBe(true)
+    })
+
+    it('should not flag 協議 in general agreement contexts', async () => {
+      const text = '授權協議與合作協議已更新'
+      const issues = await linter.lintText(text)
+
+      expect(issues.find(issue =>
+        issue.rule === 'mainland-terms' &&
+        issue.message.includes('協議') &&
+        issue.message.includes('協定')
+      )).toBeUndefined()
+    })
+
+    it('should not flag 配置 in common engineering documentation contexts', async () => {
+      const text = '請檢查環境配置與模型配置是否正確'
+      const issues = await linter.lintText(text)
+
+      expect(issues.find(issue =>
+        issue.rule === 'mainland-terms' &&
+        issue.message.includes('配置') &&
+        (issue.message.includes('設定') || issue.message.includes('組態'))
+      )).toBeUndefined()
+    })
+
+    it('should not flag 構建 in common engineering writing contexts', async () => {
+      const text = '系統會構建查詢與構建提示詞'
+      const issues = await linter.lintText(text)
+
+      expect(issues.find(issue =>
+        issue.rule === 'mainland-terms' &&
+        issue.message.includes('構建') &&
+        issue.message.includes('建構')
+      )).toBeUndefined()
+    })
+
+    it('should not flag 抽象 in common conceptual writing contexts', async () => {
+      const text = '這個概念太抽象，不夠具體'
+      const issues = await linter.lintText(text)
+
+      expect(issues.find(issue =>
+        issue.rule === 'mainland-terms' &&
+        issue.message.includes('抽象') &&
+        issue.message.includes('抽象化')
+      )).toBeUndefined()
+    })
+
+    it('should not flag 對象 in common non-OOP contexts', async () => {
+      const text = '這個研究的適合對象與回覆對象不同'
+      const issues = await linter.lintText(text)
+
+      expect(issues.find(issue =>
+        issue.rule === 'mainland-terms' &&
+        issue.message.includes('對象') &&
+        issue.message.includes('物件')
+      )).toBeUndefined()
+    })
+
+    // --- Batch 2: context_sensitive false-positive prevention ---
+
+    it.each([
+      ['文件', '檔案', '這份政府文件需要簽署'],
+      ['添加', '新增', '請添加調味料到湯裡'],
+      ['創建', '建立', '他創建了一家公司'],
+      ['移動', '行動', '請移動到左邊的位置'],
+      ['頭部', '標頭', '他的頭部受了輕傷'],
+      ['連接', '連線', '用管子連接兩個水槽'],
+      ['響應', '回應', '民眾積極響應號召'],
+      ['菜單', '選單', '這家餐廳的菜單很豐富'],
+      ['窗口', '視窗', '請到服務窗口辦理'],
+      ['程序', '程式', '法律程序已經完成'],
+      ['循環', '迴圈', '血液循環系統很重要'],
+      ['實現', '實作', '終於實現了夢想'],
+      ['運行', '執行', '這列火車正常運行中'],
+    ])('should not flag %s in non-tech context: %s', async (term, replacement, text) => {
+      const issues = await linter.lintText(text)
+
+      expect(issues.find(issue =>
+        issue.rule === 'mainland-terms' &&
+        issue.message.includes(term) &&
+        issue.message.includes(replacement)
+      )).toBeUndefined()
+    })
+
+    it.each([
+      ['文件', '檔案', '下載系統文件到本機'],
+      ['程序', '程式', '這個軟體程序有 bug'],
+      ['循環', '迴圈', '這個 for 循環有問題'],
+      ['實現', '實作', '這個 API 功能的實現有問題'],
+      ['運行', '執行', '程式運行時出現錯誤'],
+      ['菜單', '選單', '點擊下拉菜單選擇'],
+      ['窗口', '視窗', '彈出窗口顯示錯誤'],
+    ])('should flag %s in tech context: %s', async (term, replacement, text) => {
+      const issues = await linter.lintText(text)
+
+      expect(issues.some(issue =>
+        issue.rule === 'mainland-terms' &&
+        issue.message.includes(term) &&
+        issue.message.includes(replacement)
+      )).toBe(true)
+    })
+
     it('should mark issues as fixable', async () => {
       const text = '软件开发'
       const issues = await linter.lintText(text)
@@ -136,7 +268,8 @@ describe('TWLinter', () => {
       expect(fixed).toContain('軟體')
       expect(fixed).toContain('開發')
       expect(fixed).toContain('網路')
-      expect(fixed).toContain('程式')
+      // 程序 now context_sensitive (autofix_safe=false), detected but not auto-fixed
+      expect(fixed).toContain('程序')
     })
 
     it('should preserve content that does not need fixing', async () => {

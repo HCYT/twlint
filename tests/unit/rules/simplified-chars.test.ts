@@ -66,6 +66,16 @@ describe('SimplifiedCharsRule', () => {
       )).toBeUndefined()
     })
 
+    it('should not flag 台灣 as needing 臺灣', async () => {
+      const text = '台灣保養品'
+      const issues = await rule.check(text)
+
+      expect(issues.find(issue =>
+        issue.message.includes("'台'") &&
+        issue.message.includes("'臺'")
+      )).toBeUndefined()
+    })
+
     it('should still detect explicit simplified single-character forms', async () => {
       const text = '这'
       const issues = await rule.check(text)
@@ -141,6 +151,13 @@ describe('SimplifiedCharsRule', () => {
       const fixed = await rule.fix(text)
 
       expect(fixed).toBe('頁面布局')
+    })
+
+    it('should not rewrite 台灣 to 臺灣 during fix', async () => {
+      const text = '台灣与简体字'
+      const fixed = await rule.fix(text)
+
+      expect(fixed).toBe('台灣與簡體字')
     })
 
     it('should handle already traditional text', async () => {

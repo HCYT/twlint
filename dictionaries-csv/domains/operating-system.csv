@@ -96,3 +96,4 @@ symbolic-link,符號連結,符号链接,符號鏈接,symbolic link,0.90,mainland
 hard-link,實體連結,硬链接,硬鏈接,hard link,0.90,mainland-term,台灣檔案系統功能,tech,exact,,,,true
 shortcut-os,捷徑,快捷方式,快捷方式,shortcut,0.90,mainland-term,台灣檔案系統功能,tech,exact,,,,true
 alias,別名,别名,別名,alias,0.85,mainland-term,台灣檔案系統功能,tech,exact,,,,true
+multitasking,多工,多任务,多任務,multitasking,0.90,mainland-term,台灣作業系統標準,tech,exact,,,,true

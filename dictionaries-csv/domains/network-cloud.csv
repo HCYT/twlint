@@ -108,3 +108,6 @@ offline,離線,离线,離線,offline,0.85,mainland-term,台灣網路狀態標準
 remote,遠端,远程,遠程,remote,0.90,mainland-term,台灣網路連線標準,tech,exact,,,,true
 integrate,整合,集成,集成,integrate,0.85,mainland-term,台灣系統整合標準,tech,exact,,,,true
 session,工作階段,会话,會話,session,0.90,mainland-term,台灣網路連線標準,tech,exact,,,,true
+cloud-computing,雲端運算,云计算,雲計算,cloud computing,0.90,mainland-term,台灣雲端技術標準,tech,exact,,,,true
+distributed,分散式,分布式,分布式,distributed,0.90,mainland-term,台灣系統架構標準,tech,exact,,,,true
+redirect,重新導向,重定向,重定向,redirect,0.90,mainland-term,台灣網路技術標準,tech,exact,,,,true
