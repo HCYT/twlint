@@ -26,7 +26,7 @@
       "description": "核心詞庫",
       "type": "core",
       "required": true,
-      "entries": 157
+      "entries": 159
     },
     {
       "name": "extended",
@@ -78,6 +78,6 @@
       "entries": 106
     }
   ],
-  "version": "1.2.0",
-  "buildTime": "2026-02-19T06:53:50.118Z"
+  "version": "1.2.2",
+  "buildTime": "2026-03-30T02:04:25.552Z"
 }

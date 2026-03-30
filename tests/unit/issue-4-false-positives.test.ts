@@ -30,13 +30,10 @@ describe('Issue #4: False Positives (ACGN/Net Slang/Common Words)', () => {
         expect(issues.find(i => i.message.includes('包'))).toBeUndefined()
     })
 
-    it('should still replace "软件包" (software package) or "包" when it means package', async () => {
+    it('should not replace standalone single-character mainland terms', async () => {
         const text = '請下載這個源碼包'
-        // "源碼包" -> Source Package. "包" here means Package.
-        // If "源碼包" is not in dict, "包" should be matched.
 
         const issues = await rule.check(text)
-        expect(issues.length).toBeGreaterThan(0)
-        expect(issues[0].suggestions).toContain('套件')
+        expect(issues).toHaveLength(0)
     })
 })

@@ -21,7 +21,7 @@ describe('Risk Assessment (Issue #4 Follow-up)', () => {
     })
 
     // High Risk: Single-char / Partial Loop Candidates
-    // These should work because of Identity Mappings added in previous step.
+    // Single-character mainland-term checks are disabled to avoid noisy matches.
 
     it('should not flag "串流" (Streaming) as containing context-less "流"', async () => {
         const text = '我們正在進行影音串流測試。'
@@ -42,6 +42,13 @@ describe('Risk Assessment (Issue #4 Follow-up)', () => {
         const issues = await rule.check(text)
         const incorrectMatch = issues.find(i => i.message.includes('類') && !i.message.includes('類別'))
         expect(incorrectMatch).toBeUndefined()
+    })
+
+    it('should not flag standalone single-character terms such as "包"', async () => {
+        const text = '請下載這個源碼包。'
+        const issues = await rule.check(text)
+
+        expect(issues.find(i => i.message.includes('套件'))).toBeUndefined()
     })
 
     it('should not flag "網域" (Domain) as containing "域"', async () => {

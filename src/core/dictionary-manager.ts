@@ -47,8 +47,17 @@ export class DictionaryManager {
 
     for (const dict of this.cache.values()) {
       // 先處理所有基本詞彙匹配
-      const basicTerms = Object.keys(dict.lookup).filter(term => !term.includes('_'))
-      const contextVariants = Object.keys(dict.lookup).filter(term => term.includes('_'))
+      const basicTerms = Object.keys(dict.lookup).filter(term =>
+        !term.includes('_') && !this.isSingleCharacterTerm(term)
+      )
+      const contextVariants = Object.keys(dict.lookup).filter(term => {
+        if (!term.includes('_')) {
+          return false
+        }
+
+        const [baseTerm] = term.split('_', 1)
+        return !this.isSingleCharacterTerm(baseTerm)
+      })
 
       // 處理基本詞彙
       for (const term of basicTerms) {
@@ -184,6 +193,10 @@ export class DictionaryManager {
       rule: `${dictName}-${entry.match_type || 'exact'}${isVariant ? '-variant' : ''}`,
       autofix_safe: entry.autofix_safe || false
     })
+  }
+
+  private isSingleCharacterTerm(term: string): boolean {
+    return [...term].length === 1
   }
 
   async scanAvailableDictionaries(): Promise<string[]> {

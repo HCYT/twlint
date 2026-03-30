@@ -5,6 +5,14 @@ All notable changes to TWLint will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.2] - 2026-03-30
+
+### 🐛 Fixed
+- 取消 `mainland-terms` 的單一字匹配，降低 `包`、`流`、`域`、`類` 等高誤判噪音
+- 保留 `simplified-chars` 的單一簡體字檢查，維持字形層級的高置信檢測
+- 移除只為單一字誤判補洞的 fixed-term 詞庫項目，保留仍需要的非單字保護詞
+- 修正 CLI 版本讀取在 ESLint 下的 `URL` 未定義問題
+
 ## [1.1.0] - 2025-10-19
 
 ### ✨ Added

@@ -1,8 +1,8 @@
 {
   "metadata": {
     "name": "core",
-    "version": "1.2.0",
-    "entries": 157
+    "version": "1.2.2",
+    "entries": 159
   },
   "lookup": {
     "访问": {
@@ -4394,6 +4394,54 @@
       "confidence": 1,
       "category": "fixed-term",
       "reason": "避免 '堆' 被錯誤匹配",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "演算法": {
+      "taiwan": "演算法",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '算法' 錯誤匹配 '演算法'",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "演算法_algorithm": {
+      "taiwan": "演算法",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '算法' 錯誤匹配 '演算法'",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "影响应用": {
+      "taiwan": "影響應用",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '響應' 錯誤匹配 '影響應用'",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "影响应用_influence_application": {
+      "taiwan": "影響應用",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '響應' 錯誤匹配 '影響應用'",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "影響應用": {
+      "taiwan": "影響應用",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '響應' 錯誤匹配 '影響應用'",
+      "match_type": "exact",
+      "autofix_safe": false
+    },
+    "影響應用_influence_application": {
+      "taiwan": "影響應用",
+      "confidence": 1,
+      "category": "fixed-term",
+      "reason": "避免 '響應' 錯誤匹配 '影響應用'",
       "match_type": "exact",
       "autofix_safe": false
     }

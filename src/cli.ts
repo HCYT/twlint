@@ -3,6 +3,7 @@
 import { Command } from 'commander'
 import chalk from 'chalk'
 import { writeFile, access, readFile } from 'fs/promises'
+import { URL } from 'node:url'
 import { TWLinter } from './core/linter.js'
 import { loadConfig } from './core/config-loader.js'
 import { createSampleConfig } from './core/config-schema.js'

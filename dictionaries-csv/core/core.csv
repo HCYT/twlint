@@ -157,10 +157,4 @@ exam-paper,考卷,考卷,考卷,exam paper,1.0,fixed-term,避免 '卷' 被錯誤
 questionnaire,問卷,问卷,問卷,questionnaire,1.0,fixed-term,避免 '卷' 被錯誤匹配,general,exact,,,,false
 mound,土堆,土堆,土堆,mound,1.0,fixed-term,避免 '堆' 被錯誤匹配,general,exact,,,,false
 algorithm,演算法,演算法,演算法,algorithm,1.0,fixed-term,避免 '算法' 錯誤匹配 '演算法',general,exact,,,,false
-class-category,類別,类别,類別,category,1.0,fixed-term,避免 '类' 錯誤匹配 '類別',general,exact,,,,false
-cloud-computing,雲端,云端,雲端,cloud,1.0,fixed-term,避免 '云' 錯誤匹配 '雲端',general,exact,,,,false
-accumulate,堆積,堆积,堆積,accumulate,1.0,fixed-term,避免 '堆' 錯誤匹配 '堆積',general,exact,,,,false
-streaming,串流,串流,串流,streaming,1.0,fixed-term,避免 '流' 錯誤匹配 '串流',general,exact,,,,false
-internet,網路,玩路,網路,internet,1.0,fixed-term,避免 '网' 錯誤匹配 '網路',general,exact,,,,false
-domain,網域,网域,網域,domain,1.0,fixed-term,避免 '域' 錯誤匹配 '網域',general,exact,,,,false
 influence-application,影響應用,影响应用,影響應用,influence application,1.0,fixed-term,避免 '響應' 錯誤匹配 '影響應用',general,exact,,,,false
