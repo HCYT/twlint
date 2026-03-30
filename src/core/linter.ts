@@ -1,5 +1,5 @@
 import { glob } from 'glob'
-import { readFile } from 'fs/promises'
+import { readFile, stat } from 'fs/promises'
 import { DictionaryManager } from './dictionary-manager.js'
 import { SimplifiedCharsRule } from './rules/simplified-chars.js'
 import { MainlandTermsRule } from './rules/mainland-terms.js'
@@ -141,15 +141,23 @@ export class TWLinter {
       const hasWildcards = pattern.includes('*') || pattern.includes('?') || pattern.includes('[')
 
       if (!hasWildcards) {
-        // 明確的檔案路徑：直接加入，但要檢查設定的 ignores
-        if (!this.configMatcher.isIgnored(pattern)) {
-          files.push(pattern)
+        try {
+          const fileStats = await stat(pattern)
+          if (fileStats.isFile() && !this.configMatcher.isIgnored(pattern)) {
+            files.push(pattern)
+          }
+        } catch {
+          // 保留不存在檔案的舊行為，交給後續讀取階段產生錯誤
+          if (!this.configMatcher.isIgnored(pattern)) {
+            files.push(pattern)
+          }
         }
       } else {
         // 萬用字元模式：使用 glob 擴展
         const matches = await glob(pattern, {
           ignore: baseIgnorePatterns,
-          dot: false // 預設不包含隱藏檔案
+          dot: false,
+          nodir: true // 只回傳檔案，避免目錄被當成輸入
         })
         // 過濾掉設定中 ignores 的檔案
         const filtered = matches.filter(file => !this.configMatcher.isIgnored(file))

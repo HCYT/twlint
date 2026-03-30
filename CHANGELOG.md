@@ -5,7 +5,15 @@ All notable changes to TWLint will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.2.2] - 2026-03-30
+## [1.3.0] - 2026-03-30
+
+### Changed
+- 重新調整用語規則策略，從「盡量全抓」改成優先降低誤判與不自然建議
+- `mainland-terms` 停用單一字匹配，避免 `包`、`流`、`域`、`類` 等高噪音命中
+- 移除多個高爭議或語境依賴過強的詞條，例如 `解析 -> 剖析`、`客戶端 -> 用戶端`、`本地 -> 本機`、`支持 -> 支援`、`渲染 -> 算繪`
+- 移除部分 UI/文件型噪音詞條與中間態建議，例如 `文檔 -> 文件`、`收藏 -> 我的最愛`、`消息 -> 訊息`、`生成 -> 產生`
+- `simplified-chars` 改為忽略非必要的單字異體差異，目前包含 `了 -> 瞭`、`布 -> 佈`
+- CLI 現在會跳過目錄輸入，不再把目錄當成檔案報 `file-read-error`
 
 ### 🐛 Fixed
 - 取消 `mainland-terms` 的單一字匹配，降低 `包`、`流`、`域`、`類` 等高誤判噪音

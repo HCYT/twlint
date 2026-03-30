@@ -1,8 +1,8 @@
 {
   "metadata": {
     "name": "social-media",
-    "version": "1.2.2",
-    "entries": 97
+    "version": "1.3.0",
+    "entries": 96
   },
   "lookup": {
     "社交媒体": {
@@ -514,22 +514,6 @@
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣社群互動術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "消息": {
-      "taiwan": "訊息",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣社群通訊術語",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "消息_message": {
-      "taiwan": "訊息",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣社群通訊術語",
       "match_type": "exact",
       "autofix_safe": true
     },

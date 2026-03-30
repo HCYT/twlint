@@ -563,7 +563,6 @@ refresh,重新整理,刷新,刷新,refresh,0.90,mainland-term,台灣瀏覽器操
 reload,重新載入,重新加载,重新加載,reload,0.90,mainland-term,台灣瀏覽器操作,tech,exact,,,,true
 home-page,首頁,主页,主頁,homepage,0.90,mainland-term,台灣網頁標準術語,tech,exact,,,,true
 bookmark,書籤,收藏夹,收藏夾,bookmark,0.90,mainland-term,台灣瀏覽器功能,tech,exact,,,,true
-favorites,我的最愛,收藏,收藏,favorites,0.90,mainland-term,台灣瀏覽器功能,tech,exact,,,,true
 history,歷程記錄,历史记录,歷史記錄,history,0.85,mainland-term,台灣瀏覽器功能,tech,exact,,,,true
 extension-browser,擴充套件,浏览器扩展,瀏覽器擴展,browser extension,0.90,mainland-term,台灣瀏覽器功能,tech,exact,,,,true
 incognito,無痕模式,隐身模式,隱身模式,incognito,0.90,mainland-term,台灣瀏覽器隱私,tech,exact,,,,true

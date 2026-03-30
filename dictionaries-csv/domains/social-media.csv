@@ -17,7 +17,6 @@ retweet,轉推,转推,轉推,retweet,0.85,mainland-term,台灣Twitter術語,tech
 hashtag,標籤,话题标签,話題標籤,hashtag,0.85,mainland-term,台灣社群分類術語,tech,exact,,,,true
 tag,標記,标记,標記,tag,0.85,mainland-term,台灣社群功能術語,tech,exact,,,,true
 mention,提及,@,@,mention,0.85,mainland-term,台灣社群互動術語,tech,exact,,,,true
-message,訊息,消息,消息,message,0.85,mainland-term,台灣社群通訊術語,tech,exact,,,,true
 dm,私訊,私信,私信,DM,0.90,mainland-term,台灣社群通訊術語,tech,exact,,,,true
 group-chat,群組聊天,群聊,群聊,group chat,0.90,mainland-term,台灣社群通訊術語,tech,exact,,,,true
 broadcast,廣播,广播,廣播,broadcast,0.85,mainland-term,台灣社群傳播術語,tech,exact,,,,true

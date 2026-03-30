@@ -1,8 +1,8 @@
 {
   "metadata": {
     "name": "core",
-    "version": "1.2.2",
-    "entries": 159
+    "version": "1.3.0",
+    "entries": 150
   },
   "lookup": {
     "访问": {
@@ -813,38 +813,6 @@
       "match_type": "exact",
       "autofix_safe": true
     },
-    "客户端": {
-      "taiwan": "用戶端",
-      "confidence": 0.9,
-      "category": "mainland-term",
-      "reason": "台灣網路架構標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "客户端_client": {
-      "taiwan": "用戶端",
-      "confidence": 0.9,
-      "category": "mainland-term",
-      "reason": "台灣網路架構標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "客戶端": {
-      "taiwan": "用戶端",
-      "confidence": 0.9,
-      "category": "mainland-term",
-      "reason": "台灣網路架構標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "客戶端_client": {
-      "taiwan": "用戶端",
-      "confidence": 0.9,
-      "category": "mainland-term",
-      "reason": "台灣網路架構標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
     "克隆": {
       "taiwan": "複製",
       "confidence": 0.85,
@@ -1533,38 +1501,6 @@
       "match_type": "exact",
       "autofix_safe": true
     },
-    "文档": {
-      "taiwan": "文件",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣技術文件標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "文档_document": {
-      "taiwan": "文件",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣技術文件標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "文檔": {
-      "taiwan": "文件",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣技術文件標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "文檔_document": {
-      "taiwan": "文件",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣技術文件標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
     "域": {
       "taiwan": "網域",
       "confidence": 0.9,
@@ -1944,38 +1880,6 @@
     "函數_function": {
       "taiwan": "函式",
       "confidence": 0.95,
-      "category": "mainland-term",
-      "reason": "台灣程式設計標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "生成": {
-      "taiwan": "產生",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣程式開發標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "生成_generate": {
-      "taiwan": "產生",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣程式開發標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "全局": {
-      "taiwan": "全域",
-      "confidence": 0.9,
-      "category": "mainland-term",
-      "reason": "台灣程式設計標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "全局_global": {
-      "taiwan": "全域",
-      "confidence": 0.9,
       "category": "mainland-term",
       "reason": "台灣程式設計標準",
       "match_type": "exact",
@@ -2493,22 +2397,6 @@
       "match_type": "exact",
       "autofix_safe": true
     },
-    "本地": {
-      "taiwan": "本機",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣系統術語標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "本地_local": {
-      "taiwan": "本機",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣系統術語標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
     "日志": {
       "taiwan": "日誌",
       "confidence": 0.85,
@@ -2634,22 +2522,6 @@
       "confidence": 0.9,
       "category": "mainland-term",
       "reason": "台灣介面設計標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "消息": {
-      "taiwan": "訊息",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣通訊協定標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "消息_message": {
-      "taiwan": "訊息",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣通訊協定標準",
       "match_type": "exact",
       "autofix_safe": true
     },
@@ -2938,22 +2810,6 @@
       "confidence": 0.85,
       "category": "mainland-term",
       "reason": "台灣程式設計標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "解析": {
-      "taiwan": "剖析",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣資料處理標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "解析_parse": {
-      "taiwan": "剖析",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣資料處理標準",
       "match_type": "exact",
       "autofix_safe": true
     },
@@ -3258,22 +3114,6 @@
       "confidence": 0.9,
       "category": "mainland-term",
       "reason": "台灣網路連線標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "渲染": {
-      "taiwan": "算繪",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣圖形處理標準 (工程師也常用 render)",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "渲染_render": {
-      "taiwan": "算繪",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣圖形處理標準 (工程師也常用 render)",
       "match_type": "exact",
       "autofix_safe": true
     },
@@ -3658,22 +3498,6 @@
       "confidence": 0.95,
       "category": "mainland-term",
       "reason": "台灣程式設計標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "支持": {
-      "taiwan": "支援",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣技術服務標準",
-      "match_type": "exact",
-      "autofix_safe": true
-    },
-    "支持_support": {
-      "taiwan": "支援",
-      "confidence": 0.85,
-      "category": "mainland-term",
-      "reason": "台灣技術服務標準",
       "match_type": "exact",
       "autofix_safe": true
     },

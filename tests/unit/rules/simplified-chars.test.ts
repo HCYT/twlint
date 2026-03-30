@@ -35,6 +35,45 @@ describe('SimplifiedCharsRule', () => {
       expect(issues[0].suggestions).toContain('這')
     })
 
+    it('should not treat 了 as a simplified character for 瞭', async () => {
+      const text = '更新完成了'
+      const issues = await rule.check(text)
+
+      expect(issues.find(issue =>
+        issue.message.includes('簡體字') &&
+        issue.message.includes("'了'") &&
+        issue.message.includes("'瞭'")
+      )).toBeUndefined()
+    })
+
+    it('should not flag 了解 as needing 瞭解', async () => {
+      const text = '了解詳情'
+      const issues = await rule.check(text)
+
+      expect(issues.find(issue =>
+        issue.message.includes("'了'") &&
+        issue.message.includes("'瞭'")
+      )).toBeUndefined()
+    })
+
+    it('should not flag 布局 as needing 佈局', async () => {
+      const text = '页面布局'
+      const issues = await rule.check(text)
+
+      expect(issues.find(issue =>
+        issue.message.includes("'布'") &&
+        issue.message.includes("'佈'")
+      )).toBeUndefined()
+    })
+
+    it('should still detect explicit simplified single-character forms', async () => {
+      const text = '这'
+      const issues = await rule.check(text)
+
+      expect(issues).toHaveLength(1)
+      expect(issues[0].suggestions).toContain('這')
+    })
+
     it('should mark all issues as fixable', async () => {
       const text = '这是简体字测试'
       const issues = await rule.check(text)
@@ -88,6 +127,20 @@ describe('SimplifiedCharsRule', () => {
       const fixed = await rule.fix(text)
 
       expect(fixed).toBe('Hello 這是簡體字 123')
+    })
+
+    it('should not rewrite 了解 to 瞭解 during fix', async () => {
+      const text = '了解詳情與简体字'
+      const fixed = await rule.fix(text)
+
+      expect(fixed).toBe('了解詳情與簡體字')
+    })
+
+    it('should not rewrite 布局 to 佈局 during fix', async () => {
+      const text = '页面布局'
+      const fixed = await rule.fix(text)
+
+      expect(fixed).toBe('頁面布局')
     })
 
     it('should handle already traditional text', async () => {

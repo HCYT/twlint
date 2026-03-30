@@ -51,6 +51,59 @@ describe('TWLinter', () => {
       expect(issues.some(issue => issue.suggestions?.includes('軟體'))).toBe(true)
     })
 
+    it('should not flag parse-related wording for generic 解析 text', async () => {
+      const text = '這個工具可以解析 JSON 回應'
+      const issues = await linter.lintText(text)
+
+      expect(issues.find(issue =>
+        issue.rule === 'mainland-terms' &&
+        issue.message.includes('解析') &&
+        issue.message.includes('剖析')
+      )).toBeUndefined()
+    })
+
+    it.each([
+      ['客戶端', '用戶端'],
+      ['本地', '本機'],
+      ['全局', '全域'],
+      ['支持', '支援'],
+      ['渲染', '算繪'],
+      ['消息', '訊息'],
+      ['构建', '建構'],
+      ['生成', '產生'],
+      ['实例', '實體'],
+      ['对象', '物件'],
+      ['預設', '預設集'],
+      ['警告', '警示'],
+      ['歷史記錄', '歷程記錄'],
+      ['字體', '字型'],
+      ['主頁', '首頁'],
+      ['頁腳', '頁尾'],
+      ['標籤頁', '分頁'],
+      ['對話框', '對話方塊'],
+      ['皮膚', '外觀']
+    ])('should not flag high-ambiguity wording %s', async (term, replacement) => {
+      const text = `文件提到 ${term} 的一般說法`
+      const issues = await linter.lintText(text)
+
+      expect(issues.find(issue =>
+        issue.rule === 'mainland-terms' &&
+        issue.message.includes(term) &&
+        issue.message.includes(replacement)
+      )).toBeUndefined()
+    })
+
+    it('should not suggest intermediate document wording such as 文檔 -> 文件', async () => {
+      const text = '這份 API 文檔已更新'
+      const issues = await linter.lintText(text)
+
+      expect(issues.find(issue =>
+        issue.rule === 'mainland-terms' &&
+        issue.message.includes('文檔') &&
+        issue.message.includes('文件')
+      )).toBeUndefined()
+    })
+
     it('should mark issues as fixable', async () => {
       const text = '软件开发'
       const issues = await linter.lintText(text)

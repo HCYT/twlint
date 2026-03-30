@@ -9,15 +9,18 @@ const execAsync = promisify(exec)
 describe('CLI Integration Tests', () => {
   const testDir = join(process.cwd(), 'test-temp')
   const testFile = join(testDir, 'sample.md')
+  const nestedDir = join(testDir, 'nested')
   const cliPath = join(process.cwd(), 'dist', 'cli.js')
 
   beforeEach(async () => {
     await mkdir(testDir, { recursive: true })
+    await mkdir(nestedDir, { recursive: true })
   })
 
   afterEach(async () => {
     try {
       await unlink(testFile)
+      await rmdir(nestedDir)
       await rmdir(testDir)
     } catch {
       // Ignore cleanup errors
@@ -77,6 +80,20 @@ describe('CLI Integration Tests', () => {
       const result = await execAsync(`node ${cliPath} check ${testFile}`)
       // 當沒有錯誤時，應該顯示成功訊息
       expect(result.stdout).toContain('✓ No problems found!')
+    })
+
+    it('should skip directory inputs instead of reporting file read errors', async () => {
+      const content = '简体字测试'
+      await writeFile(testFile, content, 'utf-8')
+
+      try {
+        await execAsync(`node ${cliPath} check ${nestedDir} ${testFile}`)
+        expect.fail('Should have exited with error code')
+      } catch (error: any) {
+        expect(error.code).toBe(1)
+        expect(error.stdout).not.toContain('file-read-error')
+        expect(error.stdout).toContain('simplified-chars')
+      }
     })
   })
 
